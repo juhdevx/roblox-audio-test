@@ -1,0 +1,1 @@
+Drake___You_Broke_My_Heart__Audio_ = {Frames = 13847, FPS = 60, Voices = 96, SegmentFrames = 480, Segments = 29, BaseUrl = "https://raw.githubusercontent.com/juhdevx/roblox-audio-test/main/spectral"},
