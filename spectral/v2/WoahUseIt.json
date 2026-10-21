@@ -1,0 +1,421 @@
+{
+  "Name": "WoahUseIt",
+  "Frames": 6902,
+  "FPS": 60,
+  "Voices": 96,
+  "SegmentFrames": 120,
+  "Segments": 58,
+  "Duration": 115.031625,
+  "SampleRate": 24000,
+  "BaseSampleAssetId": 9040512197,
+  "BaseFrequency": 440,
+  "Files": [
+    {
+      "file": "WoahUseIt_000.spc",
+      "bytes": 69168,
+      "checksum": 3704877275,
+      "frames": 120,
+      "first": 0
+    },
+    {
+      "file": "WoahUseIt_001.spc",
+      "bytes": 69168,
+      "checksum": 3742698257,
+      "frames": 120,
+      "first": 120
+    },
+    {
+      "file": "WoahUseIt_002.spc",
+      "bytes": 69168,
+      "checksum": 390889670,
+      "frames": 120,
+      "first": 240
+    },
+    {
+      "file": "WoahUseIt_003.spc",
+      "bytes": 69168,
+      "checksum": 1316245997,
+      "frames": 120,
+      "first": 360
+    },
+    {
+      "file": "WoahUseIt_004.spc",
+      "bytes": 69168,
+      "checksum": 704881375,
+      "frames": 120,
+      "first": 480
+    },
+    {
+      "file": "WoahUseIt_005.spc",
+      "bytes": 69168,
+      "checksum": 274027889,
+      "frames": 120,
+      "first": 600
+    },
+    {
+      "file": "WoahUseIt_006.spc",
+      "bytes": 69168,
+      "checksum": 289949952,
+      "frames": 120,
+      "first": 720
+    },
+    {
+      "file": "WoahUseIt_007.spc",
+      "bytes": 69168,
+      "checksum": 713741390,
+      "frames": 120,
+      "first": 840
+    },
+    {
+      "file": "WoahUseIt_008.spc",
+      "bytes": 69168,
+      "checksum": 443486479,
+      "frames": 120,
+      "first": 960
+    },
+    {
+      "file": "WoahUseIt_009.spc",
+      "bytes": 69168,
+      "checksum": 2577959046,
+      "frames": 120,
+      "first": 1080
+    },
+    {
+      "file": "WoahUseIt_010.spc",
+      "bytes": 69168,
+      "checksum": 1937360743,
+      "frames": 120,
+      "first": 1200
+    },
+    {
+      "file": "WoahUseIt_011.spc",
+      "bytes": 69168,
+      "checksum": 1081651589,
+      "frames": 120,
+      "first": 1320
+    },
+    {
+      "file": "WoahUseIt_012.spc",
+      "bytes": 69168,
+      "checksum": 1392886266,
+      "frames": 120,
+      "first": 1440
+    },
+    {
+      "file": "WoahUseIt_013.spc",
+      "bytes": 69168,
+      "checksum": 12235935,
+      "frames": 120,
+      "first": 1560
+    },
+    {
+      "file": "WoahUseIt_014.spc",
+      "bytes": 69168,
+      "checksum": 1818235892,
+      "frames": 120,
+      "first": 1680
+    },
+    {
+      "file": "WoahUseIt_015.spc",
+      "bytes": 69168,
+      "checksum": 1084253737,
+      "frames": 120,
+      "first": 1800
+    },
+    {
+      "file": "WoahUseIt_016.spc",
+      "bytes": 69168,
+      "checksum": 2201477430,
+      "frames": 120,
+      "first": 1920
+    },
+    {
+      "file": "WoahUseIt_017.spc",
+      "bytes": 69168,
+      "checksum": 1633246575,
+      "frames": 120,
+      "first": 2040
+    },
+    {
+      "file": "WoahUseIt_018.spc",
+      "bytes": 69168,
+      "checksum": 2355907052,
+      "frames": 120,
+      "first": 2160
+    },
+    {
+      "file": "WoahUseIt_019.spc",
+      "bytes": 69168,
+      "checksum": 878854225,
+      "frames": 120,
+      "first": 2280
+    },
+    {
+      "file": "WoahUseIt_020.spc",
+      "bytes": 69168,
+      "checksum": 525274441,
+      "frames": 120,
+      "first": 2400
+    },
+    {
+      "file": "WoahUseIt_021.spc",
+      "bytes": 69168,
+      "checksum": 2565814146,
+      "frames": 120,
+      "first": 2520
+    },
+    {
+      "file": "WoahUseIt_022.spc",
+      "bytes": 69168,
+      "checksum": 3590378506,
+      "frames": 120,
+      "first": 2640
+    },
+    {
+      "file": "WoahUseIt_023.spc",
+      "bytes": 69168,
+      "checksum": 3804455964,
+      "frames": 120,
+      "first": 2760
+    },
+    {
+      "file": "WoahUseIt_024.spc",
+      "bytes": 69168,
+      "checksum": 1726106576,
+      "frames": 120,
+      "first": 2880
+    },
+    {
+      "file": "WoahUseIt_025.spc",
+      "bytes": 69168,
+      "checksum": 3212819131,
+      "frames": 120,
+      "first": 3000
+    },
+    {
+      "file": "WoahUseIt_026.spc",
+      "bytes": 69168,
+      "checksum": 916682153,
+      "frames": 120,
+      "first": 3120
+    },
+    {
+      "file": "WoahUseIt_027.spc",
+      "bytes": 69168,
+      "checksum": 2516601402,
+      "frames": 120,
+      "first": 3240
+    },
+    {
+      "file": "WoahUseIt_028.spc",
+      "bytes": 69168,
+      "checksum": 3746781354,
+      "frames": 120,
+      "first": 3360
+    },
+    {
+      "file": "WoahUseIt_029.spc",
+      "bytes": 69168,
+      "checksum": 669263984,
+      "frames": 120,
+      "first": 3480
+    },
+    {
+      "file": "WoahUseIt_030.spc",
+      "bytes": 69168,
+      "checksum": 2716014959,
+      "frames": 120,
+      "first": 3600
+    },
+    {
+      "file": "WoahUseIt_031.spc",
+      "bytes": 69168,
+      "checksum": 1593191157,
+      "frames": 120,
+      "first": 3720
+    },
+    {
+      "file": "WoahUseIt_032.spc",
+      "bytes": 69168,
+      "checksum": 4071118403,
+      "frames": 120,
+      "first": 3840
+    },
+    {
+      "file": "WoahUseIt_033.spc",
+      "bytes": 69168,
+      "checksum": 103351969,
+      "frames": 120,
+      "first": 3960
+    },
+    {
+      "file": "WoahUseIt_034.spc",
+      "bytes": 69168,
+      "checksum": 1641388996,
+      "frames": 120,
+      "first": 4080
+    },
+    {
+      "file": "WoahUseIt_035.spc",
+      "bytes": 69168,
+      "checksum": 2035342093,
+      "frames": 120,
+      "first": 4200
+    },
+    {
+      "file": "WoahUseIt_036.spc",
+      "bytes": 69168,
+      "checksum": 64106012,
+      "frames": 120,
+      "first": 4320
+    },
+    {
+      "file": "WoahUseIt_037.spc",
+      "bytes": 69168,
+      "checksum": 4255279750,
+      "frames": 120,
+      "first": 4440
+    },
+    {
+      "file": "WoahUseIt_038.spc",
+      "bytes": 69168,
+      "checksum": 2859414783,
+      "frames": 120,
+      "first": 4560
+    },
+    {
+      "file": "WoahUseIt_039.spc",
+      "bytes": 69168,
+      "checksum": 3142993004,
+      "frames": 120,
+      "first": 4680
+    },
+    {
+      "file": "WoahUseIt_040.spc",
+      "bytes": 69168,
+      "checksum": 767738206,
+      "frames": 120,
+      "first": 4800
+    },
+    {
+      "file": "WoahUseIt_041.spc",
+      "bytes": 69168,
+      "checksum": 24480161,
+      "frames": 120,
+      "first": 4920
+    },
+    {
+      "file": "WoahUseIt_042.spc",
+      "bytes": 69168,
+      "checksum": 1330100595,
+      "frames": 120,
+      "first": 5040
+    },
+    {
+      "file": "WoahUseIt_043.spc",
+      "bytes": 69168,
+      "checksum": 2320259522,
+      "frames": 120,
+      "first": 5160
+    },
+    {
+      "file": "WoahUseIt_044.spc",
+      "bytes": 69168,
+      "checksum": 1179540676,
+      "frames": 120,
+      "first": 5280
+    },
+    {
+      "file": "WoahUseIt_045.spc",
+      "bytes": 69168,
+      "checksum": 3025653175,
+      "frames": 120,
+      "first": 5400
+    },
+    {
+      "file": "WoahUseIt_046.spc",
+      "bytes": 69168,
+      "checksum": 405619579,
+      "frames": 120,
+      "first": 5520
+    },
+    {
+      "file": "WoahUseIt_047.spc",
+      "bytes": 69168,
+      "checksum": 3238896189,
+      "frames": 120,
+      "first": 5640
+    },
+    {
+      "file": "WoahUseIt_048.spc",
+      "bytes": 69168,
+      "checksum": 4199608696,
+      "frames": 120,
+      "first": 5760
+    },
+    {
+      "file": "WoahUseIt_049.spc",
+      "bytes": 69168,
+      "checksum": 22729016,
+      "frames": 120,
+      "first": 5880
+    },
+    {
+      "file": "WoahUseIt_050.spc",
+      "bytes": 69168,
+      "checksum": 2425005887,
+      "frames": 120,
+      "first": 6000
+    },
+    {
+      "file": "WoahUseIt_051.spc",
+      "bytes": 69168,
+      "checksum": 3044997184,
+      "frames": 120,
+      "first": 6120
+    },
+    {
+      "file": "WoahUseIt_052.spc",
+      "bytes": 69168,
+      "checksum": 1588972985,
+      "frames": 120,
+      "first": 6240
+    },
+    {
+      "file": "WoahUseIt_053.spc",
+      "bytes": 69168,
+      "checksum": 556664426,
+      "frames": 120,
+      "first": 6360
+    },
+    {
+      "file": "WoahUseIt_054.spc",
+      "bytes": 69168,
+      "checksum": 3054116385,
+      "frames": 120,
+      "first": 6480
+    },
+    {
+      "file": "WoahUseIt_055.spc",
+      "bytes": 69168,
+      "checksum": 1130296358,
+      "frames": 120,
+      "first": 6600
+    },
+    {
+      "file": "WoahUseIt_056.spc",
+      "bytes": 69168,
+      "checksum": 860671224,
+      "frames": 120,
+      "first": 6720
+    },
+    {
+      "file": "WoahUseIt_057.spc",
+      "bytes": 35760,
+      "checksum": 3053792641,
+      "frames": 62,
+      "first": 6840
+    }
+  ],
+  "SourceSHA256": "855047a0cec9a01c8f898647aa65ca7dd373dd3a1f85dd9b2de2200dc495b259"
+}
