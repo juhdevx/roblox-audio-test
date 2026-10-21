@@ -1,0 +1,120 @@
+{
+  "Name": "WoahUseIt",
+  "Frames": 6902,
+  "FPS": 60,
+  "Voices": 96,
+  "SegmentFrames": 480,
+  "Segments": 15,
+  "Duration": 115.031625,
+  "SampleRate": 24000,
+  "BaseSampleAssetId": 9040512197,
+  "BaseFrequency": 440,
+  "Files": [
+    {
+      "file": "WoahUseIt_000.spc",
+      "bytes": 276528,
+      "checksum": 616965142,
+      "frames": 480,
+      "first": 0
+    },
+    {
+      "file": "WoahUseIt_001.spc",
+      "bytes": 276528,
+      "checksum": 2285423990,
+      "frames": 480,
+      "first": 480
+    },
+    {
+      "file": "WoahUseIt_002.spc",
+      "bytes": 276528,
+      "checksum": 838297580,
+      "frames": 480,
+      "first": 960
+    },
+    {
+      "file": "WoahUseIt_003.spc",
+      "bytes": 276528,
+      "checksum": 2399648923,
+      "frames": 480,
+      "first": 1440
+    },
+    {
+      "file": "WoahUseIt_004.spc",
+      "bytes": 276528,
+      "checksum": 3519995266,
+      "frames": 480,
+      "first": 1920
+    },
+    {
+      "file": "WoahUseIt_005.spc",
+      "bytes": 276528,
+      "checksum": 3240166692,
+      "frames": 480,
+      "first": 2400
+    },
+    {
+      "file": "WoahUseIt_006.spc",
+      "bytes": 276528,
+      "checksum": 4178007449,
+      "frames": 480,
+      "first": 2880
+    },
+    {
+      "file": "WoahUseIt_007.spc",
+      "bytes": 276528,
+      "checksum": 4188345019,
+      "frames": 480,
+      "first": 3360
+    },
+    {
+      "file": "WoahUseIt_008.spc",
+      "bytes": 276528,
+      "checksum": 3896550869,
+      "frames": 480,
+      "first": 3840
+    },
+    {
+      "file": "WoahUseIt_009.spc",
+      "bytes": 276528,
+      "checksum": 245062792,
+      "frames": 480,
+      "first": 4320
+    },
+    {
+      "file": "WoahUseIt_010.spc",
+      "bytes": 276528,
+      "checksum": 748575184,
+      "frames": 480,
+      "first": 4800
+    },
+    {
+      "file": "WoahUseIt_011.spc",
+      "bytes": 276528,
+      "checksum": 3540023803,
+      "frames": 480,
+      "first": 5280
+    },
+    {
+      "file": "WoahUseIt_012.spc",
+      "bytes": 276528,
+      "checksum": 1019541326,
+      "frames": 480,
+      "first": 5760
+    },
+    {
+      "file": "WoahUseIt_013.spc",
+      "bytes": 276528,
+      "checksum": 1328641601,
+      "frames": 480,
+      "first": 6240
+    },
+    {
+      "file": "WoahUseIt_014.spc",
+      "bytes": 104880,
+      "checksum": 2525091123,
+      "frames": 182,
+      "first": 6720
+    }
+  ],
+  "SourceSHA256": "855047a0cec9a01c8f898647aa65ca7dd373dd3a1f85dd9b2de2200dc495b259"
+}
