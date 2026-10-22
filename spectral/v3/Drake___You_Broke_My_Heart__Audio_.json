@@ -1,0 +1,829 @@
+{
+  "Name": "Drake___You_Broke_My_Heart__Audio_",
+  "Frames": 13847,
+  "FPS": 60,
+  "Voices": 96,
+  "SegmentFrames": 120,
+  "Segments": 116,
+  "Duration": 230.783125,
+  "SampleRate": 24000,
+  "BaseSampleAssetId": 9040512197,
+  "BaseFrequency": 440,
+  "Encoding": 3,
+  "NoiseBands": 12,
+  "Files": [
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__000.spc",
+      "bytes": 97968,
+      "checksum": 2786578507,
+      "frames": 120,
+      "first": 0
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__001.spc",
+      "bytes": 97968,
+      "checksum": 3271456773,
+      "frames": 120,
+      "first": 120
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__002.spc",
+      "bytes": 97968,
+      "checksum": 2018656224,
+      "frames": 120,
+      "first": 240
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__003.spc",
+      "bytes": 97968,
+      "checksum": 4288618805,
+      "frames": 120,
+      "first": 360
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__004.spc",
+      "bytes": 97968,
+      "checksum": 4264372929,
+      "frames": 120,
+      "first": 480
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__005.spc",
+      "bytes": 97968,
+      "checksum": 3383908046,
+      "frames": 120,
+      "first": 600
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__006.spc",
+      "bytes": 97968,
+      "checksum": 3005132552,
+      "frames": 120,
+      "first": 720
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__007.spc",
+      "bytes": 97968,
+      "checksum": 1549777709,
+      "frames": 120,
+      "first": 840
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__008.spc",
+      "bytes": 97968,
+      "checksum": 431260316,
+      "frames": 120,
+      "first": 960
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__009.spc",
+      "bytes": 97968,
+      "checksum": 870875778,
+      "frames": 120,
+      "first": 1080
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__010.spc",
+      "bytes": 97968,
+      "checksum": 632072547,
+      "frames": 120,
+      "first": 1200
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__011.spc",
+      "bytes": 97968,
+      "checksum": 3367846493,
+      "frames": 120,
+      "first": 1320
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__012.spc",
+      "bytes": 97968,
+      "checksum": 353431934,
+      "frames": 120,
+      "first": 1440
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__013.spc",
+      "bytes": 97968,
+      "checksum": 1931583821,
+      "frames": 120,
+      "first": 1560
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__014.spc",
+      "bytes": 97968,
+      "checksum": 3184270349,
+      "frames": 120,
+      "first": 1680
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__015.spc",
+      "bytes": 97968,
+      "checksum": 2196090244,
+      "frames": 120,
+      "first": 1800
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__016.spc",
+      "bytes": 97968,
+      "checksum": 1566396477,
+      "frames": 120,
+      "first": 1920
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__017.spc",
+      "bytes": 97968,
+      "checksum": 1670481431,
+      "frames": 120,
+      "first": 2040
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__018.spc",
+      "bytes": 97968,
+      "checksum": 3794874739,
+      "frames": 120,
+      "first": 2160
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__019.spc",
+      "bytes": 97968,
+      "checksum": 3078922242,
+      "frames": 120,
+      "first": 2280
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__020.spc",
+      "bytes": 97968,
+      "checksum": 3371780298,
+      "frames": 120,
+      "first": 2400
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__021.spc",
+      "bytes": 97968,
+      "checksum": 2662931062,
+      "frames": 120,
+      "first": 2520
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__022.spc",
+      "bytes": 97968,
+      "checksum": 599297377,
+      "frames": 120,
+      "first": 2640
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__023.spc",
+      "bytes": 97968,
+      "checksum": 4008466260,
+      "frames": 120,
+      "first": 2760
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__024.spc",
+      "bytes": 97968,
+      "checksum": 3222839644,
+      "frames": 120,
+      "first": 2880
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__025.spc",
+      "bytes": 97968,
+      "checksum": 260049313,
+      "frames": 120,
+      "first": 3000
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__026.spc",
+      "bytes": 97968,
+      "checksum": 319354550,
+      "frames": 120,
+      "first": 3120
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__027.spc",
+      "bytes": 97968,
+      "checksum": 2842939411,
+      "frames": 120,
+      "first": 3240
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__028.spc",
+      "bytes": 97968,
+      "checksum": 256538674,
+      "frames": 120,
+      "first": 3360
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__029.spc",
+      "bytes": 97968,
+      "checksum": 1083230029,
+      "frames": 120,
+      "first": 3480
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__030.spc",
+      "bytes": 97968,
+      "checksum": 2185666296,
+      "frames": 120,
+      "first": 3600
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__031.spc",
+      "bytes": 97968,
+      "checksum": 485681122,
+      "frames": 120,
+      "first": 3720
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__032.spc",
+      "bytes": 97968,
+      "checksum": 4018111870,
+      "frames": 120,
+      "first": 3840
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__033.spc",
+      "bytes": 97968,
+      "checksum": 2184085873,
+      "frames": 120,
+      "first": 3960
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__034.spc",
+      "bytes": 97968,
+      "checksum": 4028351624,
+      "frames": 120,
+      "first": 4080
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__035.spc",
+      "bytes": 97968,
+      "checksum": 503436036,
+      "frames": 120,
+      "first": 4200
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__036.spc",
+      "bytes": 97968,
+      "checksum": 1818631971,
+      "frames": 120,
+      "first": 4320
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__037.spc",
+      "bytes": 97968,
+      "checksum": 1155379555,
+      "frames": 120,
+      "first": 4440
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__038.spc",
+      "bytes": 97968,
+      "checksum": 1333778237,
+      "frames": 120,
+      "first": 4560
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__039.spc",
+      "bytes": 97968,
+      "checksum": 1429140654,
+      "frames": 120,
+      "first": 4680
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__040.spc",
+      "bytes": 97968,
+      "checksum": 1519711315,
+      "frames": 120,
+      "first": 4800
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__041.spc",
+      "bytes": 97968,
+      "checksum": 4217135890,
+      "frames": 120,
+      "first": 4920
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__042.spc",
+      "bytes": 97968,
+      "checksum": 461615398,
+      "frames": 120,
+      "first": 5040
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__043.spc",
+      "bytes": 97968,
+      "checksum": 1652840637,
+      "frames": 120,
+      "first": 5160
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__044.spc",
+      "bytes": 97968,
+      "checksum": 383496600,
+      "frames": 120,
+      "first": 5280
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__045.spc",
+      "bytes": 97968,
+      "checksum": 2617818989,
+      "frames": 120,
+      "first": 5400
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__046.spc",
+      "bytes": 97968,
+      "checksum": 2056644149,
+      "frames": 120,
+      "first": 5520
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__047.spc",
+      "bytes": 97968,
+      "checksum": 1401381060,
+      "frames": 120,
+      "first": 5640
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__048.spc",
+      "bytes": 97968,
+      "checksum": 143981394,
+      "frames": 120,
+      "first": 5760
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__049.spc",
+      "bytes": 97968,
+      "checksum": 2268791805,
+      "frames": 120,
+      "first": 5880
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__050.spc",
+      "bytes": 97968,
+      "checksum": 1601801780,
+      "frames": 120,
+      "first": 6000
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__051.spc",
+      "bytes": 97968,
+      "checksum": 858749176,
+      "frames": 120,
+      "first": 6120
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__052.spc",
+      "bytes": 97968,
+      "checksum": 587469473,
+      "frames": 120,
+      "first": 6240
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__053.spc",
+      "bytes": 97968,
+      "checksum": 3319170658,
+      "frames": 120,
+      "first": 6360
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__054.spc",
+      "bytes": 97968,
+      "checksum": 496437756,
+      "frames": 120,
+      "first": 6480
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__055.spc",
+      "bytes": 97968,
+      "checksum": 4283945860,
+      "frames": 120,
+      "first": 6600
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__056.spc",
+      "bytes": 97968,
+      "checksum": 316576180,
+      "frames": 120,
+      "first": 6720
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__057.spc",
+      "bytes": 97968,
+      "checksum": 85482123,
+      "frames": 120,
+      "first": 6840
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__058.spc",
+      "bytes": 97968,
+      "checksum": 1722596141,
+      "frames": 120,
+      "first": 6960
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__059.spc",
+      "bytes": 97968,
+      "checksum": 2704313678,
+      "frames": 120,
+      "first": 7080
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__060.spc",
+      "bytes": 97968,
+      "checksum": 370595350,
+      "frames": 120,
+      "first": 7200
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__061.spc",
+      "bytes": 97968,
+      "checksum": 1380135057,
+      "frames": 120,
+      "first": 7320
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__062.spc",
+      "bytes": 97968,
+      "checksum": 3888816944,
+      "frames": 120,
+      "first": 7440
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__063.spc",
+      "bytes": 97968,
+      "checksum": 1010737339,
+      "frames": 120,
+      "first": 7560
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__064.spc",
+      "bytes": 97968,
+      "checksum": 3322382091,
+      "frames": 120,
+      "first": 7680
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__065.spc",
+      "bytes": 97968,
+      "checksum": 1067930901,
+      "frames": 120,
+      "first": 7800
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__066.spc",
+      "bytes": 97968,
+      "checksum": 3162979838,
+      "frames": 120,
+      "first": 7920
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__067.spc",
+      "bytes": 97968,
+      "checksum": 3966473135,
+      "frames": 120,
+      "first": 8040
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__068.spc",
+      "bytes": 97968,
+      "checksum": 4233741479,
+      "frames": 120,
+      "first": 8160
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__069.spc",
+      "bytes": 97968,
+      "checksum": 3337337316,
+      "frames": 120,
+      "first": 8280
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__070.spc",
+      "bytes": 97968,
+      "checksum": 4279087294,
+      "frames": 120,
+      "first": 8400
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__071.spc",
+      "bytes": 97968,
+      "checksum": 2690972891,
+      "frames": 120,
+      "first": 8520
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__072.spc",
+      "bytes": 97968,
+      "checksum": 703241176,
+      "frames": 120,
+      "first": 8640
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__073.spc",
+      "bytes": 97968,
+      "checksum": 57784421,
+      "frames": 120,
+      "first": 8760
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__074.spc",
+      "bytes": 97968,
+      "checksum": 3379293923,
+      "frames": 120,
+      "first": 8880
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__075.spc",
+      "bytes": 97968,
+      "checksum": 1255011126,
+      "frames": 120,
+      "first": 9000
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__076.spc",
+      "bytes": 97968,
+      "checksum": 2415078829,
+      "frames": 120,
+      "first": 9120
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__077.spc",
+      "bytes": 97968,
+      "checksum": 2642599801,
+      "frames": 120,
+      "first": 9240
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__078.spc",
+      "bytes": 97968,
+      "checksum": 3501066159,
+      "frames": 120,
+      "first": 9360
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__079.spc",
+      "bytes": 97968,
+      "checksum": 2190225118,
+      "frames": 120,
+      "first": 9480
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__080.spc",
+      "bytes": 97968,
+      "checksum": 2343046431,
+      "frames": 120,
+      "first": 9600
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__081.spc",
+      "bytes": 97968,
+      "checksum": 2405093689,
+      "frames": 120,
+      "first": 9720
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__082.spc",
+      "bytes": 97968,
+      "checksum": 39141861,
+      "frames": 120,
+      "first": 9840
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__083.spc",
+      "bytes": 97968,
+      "checksum": 1055555043,
+      "frames": 120,
+      "first": 9960
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__084.spc",
+      "bytes": 97968,
+      "checksum": 4125401550,
+      "frames": 120,
+      "first": 10080
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__085.spc",
+      "bytes": 97968,
+      "checksum": 4149074863,
+      "frames": 120,
+      "first": 10200
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__086.spc",
+      "bytes": 97968,
+      "checksum": 2598690620,
+      "frames": 120,
+      "first": 10320
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__087.spc",
+      "bytes": 97968,
+      "checksum": 3230819025,
+      "frames": 120,
+      "first": 10440
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__088.spc",
+      "bytes": 97968,
+      "checksum": 1294844117,
+      "frames": 120,
+      "first": 10560
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__089.spc",
+      "bytes": 97968,
+      "checksum": 426585177,
+      "frames": 120,
+      "first": 10680
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__090.spc",
+      "bytes": 97968,
+      "checksum": 1766241313,
+      "frames": 120,
+      "first": 10800
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__091.spc",
+      "bytes": 97968,
+      "checksum": 861990743,
+      "frames": 120,
+      "first": 10920
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__092.spc",
+      "bytes": 97968,
+      "checksum": 1311618288,
+      "frames": 120,
+      "first": 11040
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__093.spc",
+      "bytes": 97968,
+      "checksum": 238620283,
+      "frames": 120,
+      "first": 11160
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__094.spc",
+      "bytes": 97968,
+      "checksum": 2975276977,
+      "frames": 120,
+      "first": 11280
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__095.spc",
+      "bytes": 97968,
+      "checksum": 3007070542,
+      "frames": 120,
+      "first": 11400
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__096.spc",
+      "bytes": 97968,
+      "checksum": 372944396,
+      "frames": 120,
+      "first": 11520
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__097.spc",
+      "bytes": 97968,
+      "checksum": 295294771,
+      "frames": 120,
+      "first": 11640
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__098.spc",
+      "bytes": 97968,
+      "checksum": 3097172111,
+      "frames": 120,
+      "first": 11760
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__099.spc",
+      "bytes": 97968,
+      "checksum": 4267287725,
+      "frames": 120,
+      "first": 11880
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__100.spc",
+      "bytes": 97968,
+      "checksum": 1947186897,
+      "frames": 120,
+      "first": 12000
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__101.spc",
+      "bytes": 97968,
+      "checksum": 580575262,
+      "frames": 120,
+      "first": 12120
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__102.spc",
+      "bytes": 97968,
+      "checksum": 804008844,
+      "frames": 120,
+      "first": 12240
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__103.spc",
+      "bytes": 97968,
+      "checksum": 3670861501,
+      "frames": 120,
+      "first": 12360
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__104.spc",
+      "bytes": 97968,
+      "checksum": 1847598230,
+      "frames": 120,
+      "first": 12480
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__105.spc",
+      "bytes": 97968,
+      "checksum": 2766936836,
+      "frames": 120,
+      "first": 12600
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__106.spc",
+      "bytes": 97968,
+      "checksum": 675779625,
+      "frames": 120,
+      "first": 12720
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__107.spc",
+      "bytes": 97968,
+      "checksum": 3759516946,
+      "frames": 120,
+      "first": 12840
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__108.spc",
+      "bytes": 97968,
+      "checksum": 3313768135,
+      "frames": 120,
+      "first": 12960
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__109.spc",
+      "bytes": 97968,
+      "checksum": 1941670176,
+      "frames": 120,
+      "first": 13080
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__110.spc",
+      "bytes": 97968,
+      "checksum": 2612292934,
+      "frames": 120,
+      "first": 13200
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__111.spc",
+      "bytes": 97968,
+      "checksum": 321666280,
+      "frames": 120,
+      "first": 13320
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__112.spc",
+      "bytes": 97968,
+      "checksum": 4226608248,
+      "frames": 120,
+      "first": 13440
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__113.spc",
+      "bytes": 97968,
+      "checksum": 2563060539,
+      "frames": 120,
+      "first": 13560
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__114.spc",
+      "bytes": 97968,
+      "checksum": 3185929613,
+      "frames": 120,
+      "first": 13680
+    },
+    {
+      "file": "Drake___You_Broke_My_Heart__Audio__115.spc",
+      "bytes": 38400,
+      "checksum": 2207949637,
+      "frames": 47,
+      "first": 13800
+    }
+  ],
+  "SourceSHA256": "837875db59db40d8ec394940a92624712da45b026cb14dcf40124d546ac40e19"
+}
