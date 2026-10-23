@@ -1,0 +1,604 @@
+{
+  "Name": "YippeVideo",
+  "Frames": 9924,
+  "FPS": 60,
+  "Voices": 128,
+  "SegmentFrames": 120,
+  "Segments": 83,
+  "Duration": 165.39570833333335,
+  "SampleRate": 24000,
+  "BaseSampleAssetId": 9040512197,
+  "BaseFrequency": 440,
+  "Encoding": 3,
+  "NoiseBands": 12,
+  "Files": [
+    {
+      "file": "YippeVideo_000.spc",
+      "bytes": 128688,
+      "checksum": 336392972,
+      "frames": 120,
+      "first": 0
+    },
+    {
+      "file": "YippeVideo_001.spc",
+      "bytes": 128688,
+      "checksum": 258474767,
+      "frames": 120,
+      "first": 120
+    },
+    {
+      "file": "YippeVideo_002.spc",
+      "bytes": 128688,
+      "checksum": 3992609632,
+      "frames": 120,
+      "first": 240
+    },
+    {
+      "file": "YippeVideo_003.spc",
+      "bytes": 128688,
+      "checksum": 1505042097,
+      "frames": 120,
+      "first": 360
+    },
+    {
+      "file": "YippeVideo_004.spc",
+      "bytes": 128688,
+      "checksum": 2771479062,
+      "frames": 120,
+      "first": 480
+    },
+    {
+      "file": "YippeVideo_005.spc",
+      "bytes": 128688,
+      "checksum": 2242928191,
+      "frames": 120,
+      "first": 600
+    },
+    {
+      "file": "YippeVideo_006.spc",
+      "bytes": 128688,
+      "checksum": 1456874111,
+      "frames": 120,
+      "first": 720
+    },
+    {
+      "file": "YippeVideo_007.spc",
+      "bytes": 128688,
+      "checksum": 361166447,
+      "frames": 120,
+      "first": 840
+    },
+    {
+      "file": "YippeVideo_008.spc",
+      "bytes": 128688,
+      "checksum": 1508445678,
+      "frames": 120,
+      "first": 960
+    },
+    {
+      "file": "YippeVideo_009.spc",
+      "bytes": 128688,
+      "checksum": 4037875921,
+      "frames": 120,
+      "first": 1080
+    },
+    {
+      "file": "YippeVideo_010.spc",
+      "bytes": 128688,
+      "checksum": 3869084915,
+      "frames": 120,
+      "first": 1200
+    },
+    {
+      "file": "YippeVideo_011.spc",
+      "bytes": 128688,
+      "checksum": 1392414677,
+      "frames": 120,
+      "first": 1320
+    },
+    {
+      "file": "YippeVideo_012.spc",
+      "bytes": 128688,
+      "checksum": 3359683775,
+      "frames": 120,
+      "first": 1440
+    },
+    {
+      "file": "YippeVideo_013.spc",
+      "bytes": 128688,
+      "checksum": 2872492245,
+      "frames": 120,
+      "first": 1560
+    },
+    {
+      "file": "YippeVideo_014.spc",
+      "bytes": 128688,
+      "checksum": 1294509323,
+      "frames": 120,
+      "first": 1680
+    },
+    {
+      "file": "YippeVideo_015.spc",
+      "bytes": 128688,
+      "checksum": 3697572216,
+      "frames": 120,
+      "first": 1800
+    },
+    {
+      "file": "YippeVideo_016.spc",
+      "bytes": 128688,
+      "checksum": 3360496185,
+      "frames": 120,
+      "first": 1920
+    },
+    {
+      "file": "YippeVideo_017.spc",
+      "bytes": 128688,
+      "checksum": 2721722655,
+      "frames": 120,
+      "first": 2040
+    },
+    {
+      "file": "YippeVideo_018.spc",
+      "bytes": 128688,
+      "checksum": 1485193557,
+      "frames": 120,
+      "first": 2160
+    },
+    {
+      "file": "YippeVideo_019.spc",
+      "bytes": 128688,
+      "checksum": 21999394,
+      "frames": 120,
+      "first": 2280
+    },
+    {
+      "file": "YippeVideo_020.spc",
+      "bytes": 128688,
+      "checksum": 3948070372,
+      "frames": 120,
+      "first": 2400
+    },
+    {
+      "file": "YippeVideo_021.spc",
+      "bytes": 128688,
+      "checksum": 1455401785,
+      "frames": 120,
+      "first": 2520
+    },
+    {
+      "file": "YippeVideo_022.spc",
+      "bytes": 128688,
+      "checksum": 1125913305,
+      "frames": 120,
+      "first": 2640
+    },
+    {
+      "file": "YippeVideo_023.spc",
+      "bytes": 128688,
+      "checksum": 2467730854,
+      "frames": 120,
+      "first": 2760
+    },
+    {
+      "file": "YippeVideo_024.spc",
+      "bytes": 128688,
+      "checksum": 917193834,
+      "frames": 120,
+      "first": 2880
+    },
+    {
+      "file": "YippeVideo_025.spc",
+      "bytes": 128688,
+      "checksum": 1721217845,
+      "frames": 120,
+      "first": 3000
+    },
+    {
+      "file": "YippeVideo_026.spc",
+      "bytes": 128688,
+      "checksum": 4123128431,
+      "frames": 120,
+      "first": 3120
+    },
+    {
+      "file": "YippeVideo_027.spc",
+      "bytes": 128688,
+      "checksum": 1564401199,
+      "frames": 120,
+      "first": 3240
+    },
+    {
+      "file": "YippeVideo_028.spc",
+      "bytes": 128688,
+      "checksum": 3220828773,
+      "frames": 120,
+      "first": 3360
+    },
+    {
+      "file": "YippeVideo_029.spc",
+      "bytes": 128688,
+      "checksum": 3835335326,
+      "frames": 120,
+      "first": 3480
+    },
+    {
+      "file": "YippeVideo_030.spc",
+      "bytes": 128688,
+      "checksum": 4209928076,
+      "frames": 120,
+      "first": 3600
+    },
+    {
+      "file": "YippeVideo_031.spc",
+      "bytes": 128688,
+      "checksum": 3793155123,
+      "frames": 120,
+      "first": 3720
+    },
+    {
+      "file": "YippeVideo_032.spc",
+      "bytes": 128688,
+      "checksum": 1670098307,
+      "frames": 120,
+      "first": 3840
+    },
+    {
+      "file": "YippeVideo_033.spc",
+      "bytes": 128688,
+      "checksum": 3588753790,
+      "frames": 120,
+      "first": 3960
+    },
+    {
+      "file": "YippeVideo_034.spc",
+      "bytes": 128688,
+      "checksum": 159321484,
+      "frames": 120,
+      "first": 4080
+    },
+    {
+      "file": "YippeVideo_035.spc",
+      "bytes": 128688,
+      "checksum": 2150162633,
+      "frames": 120,
+      "first": 4200
+    },
+    {
+      "file": "YippeVideo_036.spc",
+      "bytes": 128688,
+      "checksum": 1505656728,
+      "frames": 120,
+      "first": 4320
+    },
+    {
+      "file": "YippeVideo_037.spc",
+      "bytes": 128688,
+      "checksum": 2211541174,
+      "frames": 120,
+      "first": 4440
+    },
+    {
+      "file": "YippeVideo_038.spc",
+      "bytes": 128688,
+      "checksum": 4024990810,
+      "frames": 120,
+      "first": 4560
+    },
+    {
+      "file": "YippeVideo_039.spc",
+      "bytes": 128688,
+      "checksum": 1305118057,
+      "frames": 120,
+      "first": 4680
+    },
+    {
+      "file": "YippeVideo_040.spc",
+      "bytes": 128688,
+      "checksum": 1994456290,
+      "frames": 120,
+      "first": 4800
+    },
+    {
+      "file": "YippeVideo_041.spc",
+      "bytes": 128688,
+      "checksum": 393808760,
+      "frames": 120,
+      "first": 4920
+    },
+    {
+      "file": "YippeVideo_042.spc",
+      "bytes": 128688,
+      "checksum": 1870607590,
+      "frames": 120,
+      "first": 5040
+    },
+    {
+      "file": "YippeVideo_043.spc",
+      "bytes": 128688,
+      "checksum": 1714540469,
+      "frames": 120,
+      "first": 5160
+    },
+    {
+      "file": "YippeVideo_044.spc",
+      "bytes": 128688,
+      "checksum": 2245863491,
+      "frames": 120,
+      "first": 5280
+    },
+    {
+      "file": "YippeVideo_045.spc",
+      "bytes": 128688,
+      "checksum": 3949510610,
+      "frames": 120,
+      "first": 5400
+    },
+    {
+      "file": "YippeVideo_046.spc",
+      "bytes": 128688,
+      "checksum": 197991935,
+      "frames": 120,
+      "first": 5520
+    },
+    {
+      "file": "YippeVideo_047.spc",
+      "bytes": 128688,
+      "checksum": 3301378210,
+      "frames": 120,
+      "first": 5640
+    },
+    {
+      "file": "YippeVideo_048.spc",
+      "bytes": 128688,
+      "checksum": 2491301592,
+      "frames": 120,
+      "first": 5760
+    },
+    {
+      "file": "YippeVideo_049.spc",
+      "bytes": 128688,
+      "checksum": 2384743627,
+      "frames": 120,
+      "first": 5880
+    },
+    {
+      "file": "YippeVideo_050.spc",
+      "bytes": 128688,
+      "checksum": 3519080456,
+      "frames": 120,
+      "first": 6000
+    },
+    {
+      "file": "YippeVideo_051.spc",
+      "bytes": 128688,
+      "checksum": 670047142,
+      "frames": 120,
+      "first": 6120
+    },
+    {
+      "file": "YippeVideo_052.spc",
+      "bytes": 128688,
+      "checksum": 3351986910,
+      "frames": 120,
+      "first": 6240
+    },
+    {
+      "file": "YippeVideo_053.spc",
+      "bytes": 128688,
+      "checksum": 3642881732,
+      "frames": 120,
+      "first": 6360
+    },
+    {
+      "file": "YippeVideo_054.spc",
+      "bytes": 128688,
+      "checksum": 550884506,
+      "frames": 120,
+      "first": 6480
+    },
+    {
+      "file": "YippeVideo_055.spc",
+      "bytes": 128688,
+      "checksum": 2139714621,
+      "frames": 120,
+      "first": 6600
+    },
+    {
+      "file": "YippeVideo_056.spc",
+      "bytes": 128688,
+      "checksum": 1369869257,
+      "frames": 120,
+      "first": 6720
+    },
+    {
+      "file": "YippeVideo_057.spc",
+      "bytes": 128688,
+      "checksum": 1906227543,
+      "frames": 120,
+      "first": 6840
+    },
+    {
+      "file": "YippeVideo_058.spc",
+      "bytes": 128688,
+      "checksum": 1110221844,
+      "frames": 120,
+      "first": 6960
+    },
+    {
+      "file": "YippeVideo_059.spc",
+      "bytes": 128688,
+      "checksum": 902427470,
+      "frames": 120,
+      "first": 7080
+    },
+    {
+      "file": "YippeVideo_060.spc",
+      "bytes": 128688,
+      "checksum": 2203930560,
+      "frames": 120,
+      "first": 7200
+    },
+    {
+      "file": "YippeVideo_061.spc",
+      "bytes": 128688,
+      "checksum": 92004818,
+      "frames": 120,
+      "first": 7320
+    },
+    {
+      "file": "YippeVideo_062.spc",
+      "bytes": 128688,
+      "checksum": 788936282,
+      "frames": 120,
+      "first": 7440
+    },
+    {
+      "file": "YippeVideo_063.spc",
+      "bytes": 128688,
+      "checksum": 4165145900,
+      "frames": 120,
+      "first": 7560
+    },
+    {
+      "file": "YippeVideo_064.spc",
+      "bytes": 128688,
+      "checksum": 91417238,
+      "frames": 120,
+      "first": 7680
+    },
+    {
+      "file": "YippeVideo_065.spc",
+      "bytes": 128688,
+      "checksum": 1340055734,
+      "frames": 120,
+      "first": 7800
+    },
+    {
+      "file": "YippeVideo_066.spc",
+      "bytes": 128688,
+      "checksum": 3843702935,
+      "frames": 120,
+      "first": 7920
+    },
+    {
+      "file": "YippeVideo_067.spc",
+      "bytes": 128688,
+      "checksum": 1801299858,
+      "frames": 120,
+      "first": 8040
+    },
+    {
+      "file": "YippeVideo_068.spc",
+      "bytes": 128688,
+      "checksum": 370044166,
+      "frames": 120,
+      "first": 8160
+    },
+    {
+      "file": "YippeVideo_069.spc",
+      "bytes": 128688,
+      "checksum": 4155005864,
+      "frames": 120,
+      "first": 8280
+    },
+    {
+      "file": "YippeVideo_070.spc",
+      "bytes": 128688,
+      "checksum": 3239949156,
+      "frames": 120,
+      "first": 8400
+    },
+    {
+      "file": "YippeVideo_071.spc",
+      "bytes": 128688,
+      "checksum": 2833073416,
+      "frames": 120,
+      "first": 8520
+    },
+    {
+      "file": "YippeVideo_072.spc",
+      "bytes": 128688,
+      "checksum": 3892239855,
+      "frames": 120,
+      "first": 8640
+    },
+    {
+      "file": "YippeVideo_073.spc",
+      "bytes": 128688,
+      "checksum": 3042331446,
+      "frames": 120,
+      "first": 8760
+    },
+    {
+      "file": "YippeVideo_074.spc",
+      "bytes": 128688,
+      "checksum": 1486071977,
+      "frames": 120,
+      "first": 8880
+    },
+    {
+      "file": "YippeVideo_075.spc",
+      "bytes": 128688,
+      "checksum": 1045189175,
+      "frames": 120,
+      "first": 9000
+    },
+    {
+      "file": "YippeVideo_076.spc",
+      "bytes": 128688,
+      "checksum": 1052379686,
+      "frames": 120,
+      "first": 9120
+    },
+    {
+      "file": "YippeVideo_077.spc",
+      "bytes": 128688,
+      "checksum": 2992902495,
+      "frames": 120,
+      "first": 9240
+    },
+    {
+      "file": "YippeVideo_078.spc",
+      "bytes": 128688,
+      "checksum": 716097899,
+      "frames": 120,
+      "first": 9360
+    },
+    {
+      "file": "YippeVideo_079.spc",
+      "bytes": 128688,
+      "checksum": 2535712453,
+      "frames": 120,
+      "first": 9480
+    },
+    {
+      "file": "YippeVideo_080.spc",
+      "bytes": 128688,
+      "checksum": 3051950670,
+      "frames": 120,
+      "first": 9600
+    },
+    {
+      "file": "YippeVideo_081.spc",
+      "bytes": 128688,
+      "checksum": 1905066419,
+      "frames": 120,
+      "first": 9720
+    },
+    {
+      "file": "YippeVideo_082.spc",
+      "bytes": 90096,
+      "checksum": 2605058223,
+      "frames": 84,
+      "first": 9840
+    }
+  ],
+  "MixGain": 1.18239954,
+  "SourceRms": 0.3349436972,
+  "ModelRms": 0.2832745492,
+  "MixAnalysis": "SPC_ENERGY_V1",
+  "AudioProfile": "fidelity",
+  "PayloadBytesPerSecond": 64320,
+  "SourceSHA256": "afef88d17264f0ede641948c56f6312b7378912415bccf1beefb14b042120109"
+}
