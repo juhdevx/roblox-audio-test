@@ -1,0 +1,661 @@
+{
+  "Name": "maybe",
+  "Frames": 10960,
+  "FPS": 60,
+  "Voices": 96,
+  "SegmentFrames": 120,
+  "Segments": 92,
+  "Duration": 182.65829166666666,
+  "SampleRate": 24000,
+  "BaseSampleAssetId": 9040512197,
+  "BaseFrequency": 440,
+  "Encoding": 3,
+  "NoiseBands": 12,
+  "Files": [
+    {
+      "file": "maybe_000.spc",
+      "bytes": 97968,
+      "checksum": 2194534549,
+      "frames": 120,
+      "first": 0
+    },
+    {
+      "file": "maybe_001.spc",
+      "bytes": 97968,
+      "checksum": 770586966,
+      "frames": 120,
+      "first": 120
+    },
+    {
+      "file": "maybe_002.spc",
+      "bytes": 97968,
+      "checksum": 4264481393,
+      "frames": 120,
+      "first": 240
+    },
+    {
+      "file": "maybe_003.spc",
+      "bytes": 97968,
+      "checksum": 167593780,
+      "frames": 120,
+      "first": 360
+    },
+    {
+      "file": "maybe_004.spc",
+      "bytes": 97968,
+      "checksum": 2503082217,
+      "frames": 120,
+      "first": 480
+    },
+    {
+      "file": "maybe_005.spc",
+      "bytes": 97968,
+      "checksum": 3875855439,
+      "frames": 120,
+      "first": 600
+    },
+    {
+      "file": "maybe_006.spc",
+      "bytes": 97968,
+      "checksum": 1303559927,
+      "frames": 120,
+      "first": 720
+    },
+    {
+      "file": "maybe_007.spc",
+      "bytes": 97968,
+      "checksum": 1877353015,
+      "frames": 120,
+      "first": 840
+    },
+    {
+      "file": "maybe_008.spc",
+      "bytes": 97968,
+      "checksum": 1328776565,
+      "frames": 120,
+      "first": 960
+    },
+    {
+      "file": "maybe_009.spc",
+      "bytes": 97968,
+      "checksum": 452283805,
+      "frames": 120,
+      "first": 1080
+    },
+    {
+      "file": "maybe_010.spc",
+      "bytes": 97968,
+      "checksum": 3955040083,
+      "frames": 120,
+      "first": 1200
+    },
+    {
+      "file": "maybe_011.spc",
+      "bytes": 97968,
+      "checksum": 4176322315,
+      "frames": 120,
+      "first": 1320
+    },
+    {
+      "file": "maybe_012.spc",
+      "bytes": 97968,
+      "checksum": 2794102500,
+      "frames": 120,
+      "first": 1440
+    },
+    {
+      "file": "maybe_013.spc",
+      "bytes": 97968,
+      "checksum": 4107045428,
+      "frames": 120,
+      "first": 1560
+    },
+    {
+      "file": "maybe_014.spc",
+      "bytes": 97968,
+      "checksum": 1331909192,
+      "frames": 120,
+      "first": 1680
+    },
+    {
+      "file": "maybe_015.spc",
+      "bytes": 97968,
+      "checksum": 423541950,
+      "frames": 120,
+      "first": 1800
+    },
+    {
+      "file": "maybe_016.spc",
+      "bytes": 97968,
+      "checksum": 252806050,
+      "frames": 120,
+      "first": 1920
+    },
+    {
+      "file": "maybe_017.spc",
+      "bytes": 97968,
+      "checksum": 3783430658,
+      "frames": 120,
+      "first": 2040
+    },
+    {
+      "file": "maybe_018.spc",
+      "bytes": 97968,
+      "checksum": 1840483227,
+      "frames": 120,
+      "first": 2160
+    },
+    {
+      "file": "maybe_019.spc",
+      "bytes": 97968,
+      "checksum": 3119757122,
+      "frames": 120,
+      "first": 2280
+    },
+    {
+      "file": "maybe_020.spc",
+      "bytes": 97968,
+      "checksum": 2133325186,
+      "frames": 120,
+      "first": 2400
+    },
+    {
+      "file": "maybe_021.spc",
+      "bytes": 97968,
+      "checksum": 3391596199,
+      "frames": 120,
+      "first": 2520
+    },
+    {
+      "file": "maybe_022.spc",
+      "bytes": 97968,
+      "checksum": 338079075,
+      "frames": 120,
+      "first": 2640
+    },
+    {
+      "file": "maybe_023.spc",
+      "bytes": 97968,
+      "checksum": 945489193,
+      "frames": 120,
+      "first": 2760
+    },
+    {
+      "file": "maybe_024.spc",
+      "bytes": 97968,
+      "checksum": 412425037,
+      "frames": 120,
+      "first": 2880
+    },
+    {
+      "file": "maybe_025.spc",
+      "bytes": 97968,
+      "checksum": 3136539148,
+      "frames": 120,
+      "first": 3000
+    },
+    {
+      "file": "maybe_026.spc",
+      "bytes": 97968,
+      "checksum": 2615782805,
+      "frames": 120,
+      "first": 3120
+    },
+    {
+      "file": "maybe_027.spc",
+      "bytes": 97968,
+      "checksum": 4012238141,
+      "frames": 120,
+      "first": 3240
+    },
+    {
+      "file": "maybe_028.spc",
+      "bytes": 97968,
+      "checksum": 92963344,
+      "frames": 120,
+      "first": 3360
+    },
+    {
+      "file": "maybe_029.spc",
+      "bytes": 97968,
+      "checksum": 3983568848,
+      "frames": 120,
+      "first": 3480
+    },
+    {
+      "file": "maybe_030.spc",
+      "bytes": 97968,
+      "checksum": 4141397480,
+      "frames": 120,
+      "first": 3600
+    },
+    {
+      "file": "maybe_031.spc",
+      "bytes": 97968,
+      "checksum": 3872330424,
+      "frames": 120,
+      "first": 3720
+    },
+    {
+      "file": "maybe_032.spc",
+      "bytes": 97968,
+      "checksum": 3182047284,
+      "frames": 120,
+      "first": 3840
+    },
+    {
+      "file": "maybe_033.spc",
+      "bytes": 97968,
+      "checksum": 2622220417,
+      "frames": 120,
+      "first": 3960
+    },
+    {
+      "file": "maybe_034.spc",
+      "bytes": 97968,
+      "checksum": 4269776716,
+      "frames": 120,
+      "first": 4080
+    },
+    {
+      "file": "maybe_035.spc",
+      "bytes": 97968,
+      "checksum": 762790291,
+      "frames": 120,
+      "first": 4200
+    },
+    {
+      "file": "maybe_036.spc",
+      "bytes": 97968,
+      "checksum": 2625903742,
+      "frames": 120,
+      "first": 4320
+    },
+    {
+      "file": "maybe_037.spc",
+      "bytes": 97968,
+      "checksum": 4032320810,
+      "frames": 120,
+      "first": 4440
+    },
+    {
+      "file": "maybe_038.spc",
+      "bytes": 97968,
+      "checksum": 2540856824,
+      "frames": 120,
+      "first": 4560
+    },
+    {
+      "file": "maybe_039.spc",
+      "bytes": 97968,
+      "checksum": 2998558248,
+      "frames": 120,
+      "first": 4680
+    },
+    {
+      "file": "maybe_040.spc",
+      "bytes": 97968,
+      "checksum": 3344105492,
+      "frames": 120,
+      "first": 4800
+    },
+    {
+      "file": "maybe_041.spc",
+      "bytes": 97968,
+      "checksum": 1404398825,
+      "frames": 120,
+      "first": 4920
+    },
+    {
+      "file": "maybe_042.spc",
+      "bytes": 97968,
+      "checksum": 3680491997,
+      "frames": 120,
+      "first": 5040
+    },
+    {
+      "file": "maybe_043.spc",
+      "bytes": 97968,
+      "checksum": 84836613,
+      "frames": 120,
+      "first": 5160
+    },
+    {
+      "file": "maybe_044.spc",
+      "bytes": 97968,
+      "checksum": 2318308637,
+      "frames": 120,
+      "first": 5280
+    },
+    {
+      "file": "maybe_045.spc",
+      "bytes": 97968,
+      "checksum": 1330238213,
+      "frames": 120,
+      "first": 5400
+    },
+    {
+      "file": "maybe_046.spc",
+      "bytes": 97968,
+      "checksum": 846217204,
+      "frames": 120,
+      "first": 5520
+    },
+    {
+      "file": "maybe_047.spc",
+      "bytes": 97968,
+      "checksum": 3842258616,
+      "frames": 120,
+      "first": 5640
+    },
+    {
+      "file": "maybe_048.spc",
+      "bytes": 97968,
+      "checksum": 662883509,
+      "frames": 120,
+      "first": 5760
+    },
+    {
+      "file": "maybe_049.spc",
+      "bytes": 97968,
+      "checksum": 1629323878,
+      "frames": 120,
+      "first": 5880
+    },
+    {
+      "file": "maybe_050.spc",
+      "bytes": 97968,
+      "checksum": 3587200425,
+      "frames": 120,
+      "first": 6000
+    },
+    {
+      "file": "maybe_051.spc",
+      "bytes": 97968,
+      "checksum": 3036097142,
+      "frames": 120,
+      "first": 6120
+    },
+    {
+      "file": "maybe_052.spc",
+      "bytes": 97968,
+      "checksum": 857578416,
+      "frames": 120,
+      "first": 6240
+    },
+    {
+      "file": "maybe_053.spc",
+      "bytes": 97968,
+      "checksum": 2038185321,
+      "frames": 120,
+      "first": 6360
+    },
+    {
+      "file": "maybe_054.spc",
+      "bytes": 97968,
+      "checksum": 4226183939,
+      "frames": 120,
+      "first": 6480
+    },
+    {
+      "file": "maybe_055.spc",
+      "bytes": 97968,
+      "checksum": 2116794330,
+      "frames": 120,
+      "first": 6600
+    },
+    {
+      "file": "maybe_056.spc",
+      "bytes": 97968,
+      "checksum": 2810366754,
+      "frames": 120,
+      "first": 6720
+    },
+    {
+      "file": "maybe_057.spc",
+      "bytes": 97968,
+      "checksum": 1829597626,
+      "frames": 120,
+      "first": 6840
+    },
+    {
+      "file": "maybe_058.spc",
+      "bytes": 97968,
+      "checksum": 2522488152,
+      "frames": 120,
+      "first": 6960
+    },
+    {
+      "file": "maybe_059.spc",
+      "bytes": 97968,
+      "checksum": 3018625849,
+      "frames": 120,
+      "first": 7080
+    },
+    {
+      "file": "maybe_060.spc",
+      "bytes": 97968,
+      "checksum": 3796850399,
+      "frames": 120,
+      "first": 7200
+    },
+    {
+      "file": "maybe_061.spc",
+      "bytes": 97968,
+      "checksum": 2949921069,
+      "frames": 120,
+      "first": 7320
+    },
+    {
+      "file": "maybe_062.spc",
+      "bytes": 97968,
+      "checksum": 3922112702,
+      "frames": 120,
+      "first": 7440
+    },
+    {
+      "file": "maybe_063.spc",
+      "bytes": 97968,
+      "checksum": 1771436324,
+      "frames": 120,
+      "first": 7560
+    },
+    {
+      "file": "maybe_064.spc",
+      "bytes": 97968,
+      "checksum": 3433412052,
+      "frames": 120,
+      "first": 7680
+    },
+    {
+      "file": "maybe_065.spc",
+      "bytes": 97968,
+      "checksum": 311847553,
+      "frames": 120,
+      "first": 7800
+    },
+    {
+      "file": "maybe_066.spc",
+      "bytes": 97968,
+      "checksum": 4157091920,
+      "frames": 120,
+      "first": 7920
+    },
+    {
+      "file": "maybe_067.spc",
+      "bytes": 97968,
+      "checksum": 3351986948,
+      "frames": 120,
+      "first": 8040
+    },
+    {
+      "file": "maybe_068.spc",
+      "bytes": 97968,
+      "checksum": 2060778566,
+      "frames": 120,
+      "first": 8160
+    },
+    {
+      "file": "maybe_069.spc",
+      "bytes": 97968,
+      "checksum": 2148089460,
+      "frames": 120,
+      "first": 8280
+    },
+    {
+      "file": "maybe_070.spc",
+      "bytes": 97968,
+      "checksum": 3237116738,
+      "frames": 120,
+      "first": 8400
+    },
+    {
+      "file": "maybe_071.spc",
+      "bytes": 97968,
+      "checksum": 1167808458,
+      "frames": 120,
+      "first": 8520
+    },
+    {
+      "file": "maybe_072.spc",
+      "bytes": 97968,
+      "checksum": 4206279036,
+      "frames": 120,
+      "first": 8640
+    },
+    {
+      "file": "maybe_073.spc",
+      "bytes": 97968,
+      "checksum": 2413942162,
+      "frames": 120,
+      "first": 8760
+    },
+    {
+      "file": "maybe_074.spc",
+      "bytes": 97968,
+      "checksum": 3799807926,
+      "frames": 120,
+      "first": 8880
+    },
+    {
+      "file": "maybe_075.spc",
+      "bytes": 97968,
+      "checksum": 1252747101,
+      "frames": 120,
+      "first": 9000
+    },
+    {
+      "file": "maybe_076.spc",
+      "bytes": 97968,
+      "checksum": 893921222,
+      "frames": 120,
+      "first": 9120
+    },
+    {
+      "file": "maybe_077.spc",
+      "bytes": 97968,
+      "checksum": 3616185801,
+      "frames": 120,
+      "first": 9240
+    },
+    {
+      "file": "maybe_078.spc",
+      "bytes": 97968,
+      "checksum": 4108219574,
+      "frames": 120,
+      "first": 9360
+    },
+    {
+      "file": "maybe_079.spc",
+      "bytes": 97968,
+      "checksum": 3001803779,
+      "frames": 120,
+      "first": 9480
+    },
+    {
+      "file": "maybe_080.spc",
+      "bytes": 97968,
+      "checksum": 1594009228,
+      "frames": 120,
+      "first": 9600
+    },
+    {
+      "file": "maybe_081.spc",
+      "bytes": 97968,
+      "checksum": 3635034016,
+      "frames": 120,
+      "first": 9720
+    },
+    {
+      "file": "maybe_082.spc",
+      "bytes": 97968,
+      "checksum": 3394047713,
+      "frames": 120,
+      "first": 9840
+    },
+    {
+      "file": "maybe_083.spc",
+      "bytes": 97968,
+      "checksum": 3633824495,
+      "frames": 120,
+      "first": 9960
+    },
+    {
+      "file": "maybe_084.spc",
+      "bytes": 97968,
+      "checksum": 675055158,
+      "frames": 120,
+      "first": 10080
+    },
+    {
+      "file": "maybe_085.spc",
+      "bytes": 97968,
+      "checksum": 1641232755,
+      "frames": 120,
+      "first": 10200
+    },
+    {
+      "file": "maybe_086.spc",
+      "bytes": 97968,
+      "checksum": 3486451845,
+      "frames": 120,
+      "first": 10320
+    },
+    {
+      "file": "maybe_087.spc",
+      "bytes": 97968,
+      "checksum": 3799849990,
+      "frames": 120,
+      "first": 10440
+    },
+    {
+      "file": "maybe_088.spc",
+      "bytes": 97968,
+      "checksum": 3002202617,
+      "frames": 120,
+      "first": 10560
+    },
+    {
+      "file": "maybe_089.spc",
+      "bytes": 97968,
+      "checksum": 590641378,
+      "frames": 120,
+      "first": 10680
+    },
+    {
+      "file": "maybe_090.spc",
+      "bytes": 97968,
+      "checksum": 137326330,
+      "frames": 120,
+      "first": 10800
+    },
+    {
+      "file": "maybe_091.spc",
+      "bytes": 32688,
+      "checksum": 3768605572,
+      "frames": 40,
+      "first": 10920
+    }
+  ],
+  "SourceSHA256": "0b3db93990eaef07e1f3d0abf86dea3e8bddffdbf8828ff67f80d2ad7f0f0856"
+}
