@@ -1,0 +1,633 @@
+{
+  "Name": "Check_from_Tel_Aviv___DaveDaHow",
+  "Frames": 10544,
+  "FPS": 60,
+  "Voices": 96,
+  "SegmentFrames": 120,
+  "Segments": 88,
+  "Duration": 175.72570833333333,
+  "SampleRate": 24000,
+  "BaseSampleAssetId": 9040512197,
+  "BaseFrequency": 440,
+  "Encoding": 3,
+  "NoiseBands": 12,
+  "Files": [
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_000.spc",
+      "bytes": 97968,
+      "checksum": 3348860094,
+      "frames": 120,
+      "first": 0
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_001.spc",
+      "bytes": 97968,
+      "checksum": 323293346,
+      "frames": 120,
+      "first": 120
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_002.spc",
+      "bytes": 97968,
+      "checksum": 2213635991,
+      "frames": 120,
+      "first": 240
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_003.spc",
+      "bytes": 97968,
+      "checksum": 2848743968,
+      "frames": 120,
+      "first": 360
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_004.spc",
+      "bytes": 97968,
+      "checksum": 1144896960,
+      "frames": 120,
+      "first": 480
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_005.spc",
+      "bytes": 97968,
+      "checksum": 3550347916,
+      "frames": 120,
+      "first": 600
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_006.spc",
+      "bytes": 97968,
+      "checksum": 3160325641,
+      "frames": 120,
+      "first": 720
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_007.spc",
+      "bytes": 97968,
+      "checksum": 3499922458,
+      "frames": 120,
+      "first": 840
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_008.spc",
+      "bytes": 97968,
+      "checksum": 3961838975,
+      "frames": 120,
+      "first": 960
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_009.spc",
+      "bytes": 97968,
+      "checksum": 2801114491,
+      "frames": 120,
+      "first": 1080
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_010.spc",
+      "bytes": 97968,
+      "checksum": 3852790891,
+      "frames": 120,
+      "first": 1200
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_011.spc",
+      "bytes": 97968,
+      "checksum": 809036447,
+      "frames": 120,
+      "first": 1320
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_012.spc",
+      "bytes": 97968,
+      "checksum": 2409924333,
+      "frames": 120,
+      "first": 1440
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_013.spc",
+      "bytes": 97968,
+      "checksum": 1633644797,
+      "frames": 120,
+      "first": 1560
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_014.spc",
+      "bytes": 97968,
+      "checksum": 2957428831,
+      "frames": 120,
+      "first": 1680
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_015.spc",
+      "bytes": 97968,
+      "checksum": 3837352895,
+      "frames": 120,
+      "first": 1800
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_016.spc",
+      "bytes": 97968,
+      "checksum": 3420757377,
+      "frames": 120,
+      "first": 1920
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_017.spc",
+      "bytes": 97968,
+      "checksum": 2953998828,
+      "frames": 120,
+      "first": 2040
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_018.spc",
+      "bytes": 97968,
+      "checksum": 2764090864,
+      "frames": 120,
+      "first": 2160
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_019.spc",
+      "bytes": 97968,
+      "checksum": 2415291635,
+      "frames": 120,
+      "first": 2280
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_020.spc",
+      "bytes": 97968,
+      "checksum": 2104360318,
+      "frames": 120,
+      "first": 2400
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_021.spc",
+      "bytes": 97968,
+      "checksum": 3513290922,
+      "frames": 120,
+      "first": 2520
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_022.spc",
+      "bytes": 97968,
+      "checksum": 1861240191,
+      "frames": 120,
+      "first": 2640
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_023.spc",
+      "bytes": 97968,
+      "checksum": 3316769654,
+      "frames": 120,
+      "first": 2760
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_024.spc",
+      "bytes": 97968,
+      "checksum": 1464941,
+      "frames": 120,
+      "first": 2880
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_025.spc",
+      "bytes": 97968,
+      "checksum": 958796321,
+      "frames": 120,
+      "first": 3000
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_026.spc",
+      "bytes": 97968,
+      "checksum": 1283242395,
+      "frames": 120,
+      "first": 3120
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_027.spc",
+      "bytes": 97968,
+      "checksum": 102239282,
+      "frames": 120,
+      "first": 3240
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_028.spc",
+      "bytes": 97968,
+      "checksum": 3292915710,
+      "frames": 120,
+      "first": 3360
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_029.spc",
+      "bytes": 97968,
+      "checksum": 1610791365,
+      "frames": 120,
+      "first": 3480
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_030.spc",
+      "bytes": 97968,
+      "checksum": 3567778389,
+      "frames": 120,
+      "first": 3600
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_031.spc",
+      "bytes": 97968,
+      "checksum": 3756947793,
+      "frames": 120,
+      "first": 3720
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_032.spc",
+      "bytes": 97968,
+      "checksum": 3525002983,
+      "frames": 120,
+      "first": 3840
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_033.spc",
+      "bytes": 97968,
+      "checksum": 813227189,
+      "frames": 120,
+      "first": 3960
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_034.spc",
+      "bytes": 97968,
+      "checksum": 1158487756,
+      "frames": 120,
+      "first": 4080
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_035.spc",
+      "bytes": 97968,
+      "checksum": 535533828,
+      "frames": 120,
+      "first": 4200
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_036.spc",
+      "bytes": 97968,
+      "checksum": 3307435919,
+      "frames": 120,
+      "first": 4320
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_037.spc",
+      "bytes": 97968,
+      "checksum": 1810214062,
+      "frames": 120,
+      "first": 4440
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_038.spc",
+      "bytes": 97968,
+      "checksum": 336488615,
+      "frames": 120,
+      "first": 4560
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_039.spc",
+      "bytes": 97968,
+      "checksum": 528634851,
+      "frames": 120,
+      "first": 4680
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_040.spc",
+      "bytes": 97968,
+      "checksum": 201933188,
+      "frames": 120,
+      "first": 4800
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_041.spc",
+      "bytes": 97968,
+      "checksum": 1406555172,
+      "frames": 120,
+      "first": 4920
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_042.spc",
+      "bytes": 97968,
+      "checksum": 1743761817,
+      "frames": 120,
+      "first": 5040
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_043.spc",
+      "bytes": 97968,
+      "checksum": 2559557857,
+      "frames": 120,
+      "first": 5160
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_044.spc",
+      "bytes": 97968,
+      "checksum": 1945973123,
+      "frames": 120,
+      "first": 5280
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_045.spc",
+      "bytes": 97968,
+      "checksum": 3719868516,
+      "frames": 120,
+      "first": 5400
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_046.spc",
+      "bytes": 97968,
+      "checksum": 1587257055,
+      "frames": 120,
+      "first": 5520
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_047.spc",
+      "bytes": 97968,
+      "checksum": 1911409403,
+      "frames": 120,
+      "first": 5640
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_048.spc",
+      "bytes": 97968,
+      "checksum": 3853003227,
+      "frames": 120,
+      "first": 5760
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_049.spc",
+      "bytes": 97968,
+      "checksum": 1397262093,
+      "frames": 120,
+      "first": 5880
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_050.spc",
+      "bytes": 97968,
+      "checksum": 2382347324,
+      "frames": 120,
+      "first": 6000
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_051.spc",
+      "bytes": 97968,
+      "checksum": 2461989934,
+      "frames": 120,
+      "first": 6120
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_052.spc",
+      "bytes": 97968,
+      "checksum": 2389635610,
+      "frames": 120,
+      "first": 6240
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_053.spc",
+      "bytes": 97968,
+      "checksum": 1930954071,
+      "frames": 120,
+      "first": 6360
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_054.spc",
+      "bytes": 97968,
+      "checksum": 2977421467,
+      "frames": 120,
+      "first": 6480
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_055.spc",
+      "bytes": 97968,
+      "checksum": 3759944933,
+      "frames": 120,
+      "first": 6600
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_056.spc",
+      "bytes": 97968,
+      "checksum": 1732395602,
+      "frames": 120,
+      "first": 6720
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_057.spc",
+      "bytes": 97968,
+      "checksum": 296301568,
+      "frames": 120,
+      "first": 6840
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_058.spc",
+      "bytes": 97968,
+      "checksum": 4122763354,
+      "frames": 120,
+      "first": 6960
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_059.spc",
+      "bytes": 97968,
+      "checksum": 3743756326,
+      "frames": 120,
+      "first": 7080
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_060.spc",
+      "bytes": 97968,
+      "checksum": 935859495,
+      "frames": 120,
+      "first": 7200
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_061.spc",
+      "bytes": 97968,
+      "checksum": 2494777593,
+      "frames": 120,
+      "first": 7320
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_062.spc",
+      "bytes": 97968,
+      "checksum": 3095574278,
+      "frames": 120,
+      "first": 7440
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_063.spc",
+      "bytes": 97968,
+      "checksum": 2023429063,
+      "frames": 120,
+      "first": 7560
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_064.spc",
+      "bytes": 97968,
+      "checksum": 784278501,
+      "frames": 120,
+      "first": 7680
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_065.spc",
+      "bytes": 97968,
+      "checksum": 2328879047,
+      "frames": 120,
+      "first": 7800
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_066.spc",
+      "bytes": 97968,
+      "checksum": 1295191376,
+      "frames": 120,
+      "first": 7920
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_067.spc",
+      "bytes": 97968,
+      "checksum": 2086281125,
+      "frames": 120,
+      "first": 8040
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_068.spc",
+      "bytes": 97968,
+      "checksum": 2398454685,
+      "frames": 120,
+      "first": 8160
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_069.spc",
+      "bytes": 97968,
+      "checksum": 3527684612,
+      "frames": 120,
+      "first": 8280
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_070.spc",
+      "bytes": 97968,
+      "checksum": 3347652038,
+      "frames": 120,
+      "first": 8400
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_071.spc",
+      "bytes": 97968,
+      "checksum": 1355916993,
+      "frames": 120,
+      "first": 8520
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_072.spc",
+      "bytes": 97968,
+      "checksum": 2155912627,
+      "frames": 120,
+      "first": 8640
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_073.spc",
+      "bytes": 97968,
+      "checksum": 534429103,
+      "frames": 120,
+      "first": 8760
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_074.spc",
+      "bytes": 97968,
+      "checksum": 3232818351,
+      "frames": 120,
+      "first": 8880
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_075.spc",
+      "bytes": 97968,
+      "checksum": 3618540420,
+      "frames": 120,
+      "first": 9000
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_076.spc",
+      "bytes": 97968,
+      "checksum": 3833570342,
+      "frames": 120,
+      "first": 9120
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_077.spc",
+      "bytes": 97968,
+      "checksum": 698982317,
+      "frames": 120,
+      "first": 9240
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_078.spc",
+      "bytes": 97968,
+      "checksum": 1418823539,
+      "frames": 120,
+      "first": 9360
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_079.spc",
+      "bytes": 97968,
+      "checksum": 2214067770,
+      "frames": 120,
+      "first": 9480
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_080.spc",
+      "bytes": 97968,
+      "checksum": 459980300,
+      "frames": 120,
+      "first": 9600
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_081.spc",
+      "bytes": 97968,
+      "checksum": 1470459520,
+      "frames": 120,
+      "first": 9720
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_082.spc",
+      "bytes": 97968,
+      "checksum": 1938329964,
+      "frames": 120,
+      "first": 9840
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_083.spc",
+      "bytes": 97968,
+      "checksum": 2684725798,
+      "frames": 120,
+      "first": 9960
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_084.spc",
+      "bytes": 97968,
+      "checksum": 3967625736,
+      "frames": 120,
+      "first": 10080
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_085.spc",
+      "bytes": 97968,
+      "checksum": 2668658592,
+      "frames": 120,
+      "first": 10200
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_086.spc",
+      "bytes": 97968,
+      "checksum": 3054296268,
+      "frames": 120,
+      "first": 10320
+    },
+    {
+      "file": "Check_from_Tel_Aviv___DaveDaHow_087.spc",
+      "bytes": 84912,
+      "checksum": 226378420,
+      "frames": 104,
+      "first": 10440
+    }
+  ],
+  "SourceSHA256": "6352acc7a753fd289cf250186301a219f3eb699ac3e2501a33ae2e679f999d8d"
+}
