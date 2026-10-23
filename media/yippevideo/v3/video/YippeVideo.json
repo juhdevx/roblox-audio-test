@@ -1,0 +1,714 @@
+{
+  "Format": "RVF2",
+  "Encoding": 2,
+  "Id": "YippeVideo",
+  "AudioTrack": "YippeVideo",
+  "Width": 384,
+  "Height": 216,
+  "FPS": 20,
+  "Frames": 3308,
+  "Duration": 165.395737,
+  "SegmentFrames": 40,
+  "Segments": 83,
+  "ColorBits": [
+    6,
+    6,
+    6
+  ],
+  "Layout": "YCbCr420",
+  "Compression": "Zstd",
+  "Bytes": 76486799,
+  "BytesPerSecond": 462447.2213573437,
+  "PeakSegmentBytes": 1606018,
+  "PSNR": 36.3754744792566,
+  "PSNRReference": "Source resized to 384x216; excludes downscaling loss",
+  "ModeCounts": [
+    2166,
+    575,
+    567
+  ],
+  "SecondsToEncode": 62.38999999999942,
+  "DecoderFixture": [
+    {
+      "Frame": 0,
+      "RGBAAdler32": 3619295294,
+      "RGBABytes": 331776
+    },
+    {
+      "Frame": 20,
+      "RGBAAdler32": 4116859755,
+      "RGBABytes": 331776
+    },
+    {
+      "Frame": 39,
+      "RGBAAdler32": 4288435118,
+      "RGBABytes": 331776
+    }
+  ],
+  "Files": [
+    {
+      "File": "YippeVideo_0000.rvf",
+      "Bytes": 585657,
+      "Checksum": 3579537898,
+      "FirstFrame": 0,
+      "Frames": 40,
+      "SHA256": "ecbc16a99fde929ae8f569b0531aeb7b05b9945b276c3d61ab16243e784dd269"
+    },
+    {
+      "File": "YippeVideo_0001.rvf",
+      "Bytes": 463350,
+      "Checksum": 31198326,
+      "FirstFrame": 40,
+      "Frames": 40,
+      "SHA256": "8b5d42e601a4fefaf3c6f806ca12d847377f429497c9f431d4e09acfd69eaabb"
+    },
+    {
+      "File": "YippeVideo_0002.rvf",
+      "Bytes": 328697,
+      "Checksum": 141344310,
+      "FirstFrame": 80,
+      "Frames": 40,
+      "SHA256": "4f2de6839bae1fdffa997b0d2499e0e240731f2b8d9dd490ea126f9ed2ab674d"
+    },
+    {
+      "File": "YippeVideo_0003.rvf",
+      "Bytes": 817820,
+      "Checksum": 4079226228,
+      "FirstFrame": 120,
+      "Frames": 40,
+      "SHA256": "58e09d1506cb8cad1e812e89f05bdc809f7f503e757f93fa90e5ee79b4e13d6b"
+    },
+    {
+      "File": "YippeVideo_0004.rvf",
+      "Bytes": 499423,
+      "Checksum": 1727981403,
+      "FirstFrame": 160,
+      "Frames": 40,
+      "SHA256": "73b79ee7d25e236c6b78601f94178b0979a31b20929c766f68afeec0b1098173"
+    },
+    {
+      "File": "YippeVideo_0005.rvf",
+      "Bytes": 419117,
+      "Checksum": 2483935103,
+      "FirstFrame": 200,
+      "Frames": 40,
+      "SHA256": "8dab11e3daf69d98d9b3b13103afcad7069cc650983dcdb5534a1a3a0ea0f9ba"
+    },
+    {
+      "File": "YippeVideo_0006.rvf",
+      "Bytes": 879458,
+      "Checksum": 407729877,
+      "FirstFrame": 240,
+      "Frames": 40,
+      "SHA256": "2538e254b420acce3a191b2992b4b5049bfbce2a1d0415437f045e71fba54148"
+    },
+    {
+      "File": "YippeVideo_0007.rvf",
+      "Bytes": 998912,
+      "Checksum": 743398641,
+      "FirstFrame": 280,
+      "Frames": 40,
+      "SHA256": "c19fb38c8be627b5c4a02ae9bb904ed5a1d1e02801588f01b50ecfcb15040958"
+    },
+    {
+      "File": "YippeVideo_0008.rvf",
+      "Bytes": 949772,
+      "Checksum": 1107286741,
+      "FirstFrame": 320,
+      "Frames": 40,
+      "SHA256": "072218c1683c678ad4d702c4194bec4609e1c7ae86ca3a44437def4c012d9538"
+    },
+    {
+      "File": "YippeVideo_0009.rvf",
+      "Bytes": 963460,
+      "Checksum": 3885484597,
+      "FirstFrame": 360,
+      "Frames": 40,
+      "SHA256": "7bebd951f978f9c3cc450f3c57188d5fdf3c2dbf3dd4e6dd50a48d90757d8e83"
+    },
+    {
+      "File": "YippeVideo_0010.rvf",
+      "Bytes": 961161,
+      "Checksum": 478888875,
+      "FirstFrame": 400,
+      "Frames": 40,
+      "SHA256": "5388a537edba4eb2930c1c92b808bf1685918d7cac11f1d1e882fffedd2390e7"
+    },
+    {
+      "File": "YippeVideo_0011.rvf",
+      "Bytes": 824679,
+      "Checksum": 2336351424,
+      "FirstFrame": 440,
+      "Frames": 40,
+      "SHA256": "58fecca4451cf325dac58232b58c6762fc90bab54469314c6c1e6abd9315e780"
+    },
+    {
+      "File": "YippeVideo_0012.rvf",
+      "Bytes": 959995,
+      "Checksum": 1508105357,
+      "FirstFrame": 480,
+      "Frames": 40,
+      "SHA256": "825bc7c0c391fb366a93977e7b28a870e86cb57c8fd262fe38e9044efb881405"
+    },
+    {
+      "File": "YippeVideo_0013.rvf",
+      "Bytes": 1059152,
+      "Checksum": 1573235883,
+      "FirstFrame": 520,
+      "Frames": 40,
+      "SHA256": "1ef8dceed66c8174b5a40a4f279bff5144052a486cae2b1f2a99d2760584bec4"
+    },
+    {
+      "File": "YippeVideo_0014.rvf",
+      "Bytes": 1117699,
+      "Checksum": 4287063404,
+      "FirstFrame": 560,
+      "Frames": 40,
+      "SHA256": "c35629dcaffd75701ec223c6e9c3479eca9e9213457ebbc4ea6b7f67b5970711"
+    },
+    {
+      "File": "YippeVideo_0015.rvf",
+      "Bytes": 1122126,
+      "Checksum": 1850448979,
+      "FirstFrame": 600,
+      "Frames": 40,
+      "SHA256": "85b57b3903ca6a7df5b7d4872c4e5de36d8c3668a205f360550ea28bc85b9749"
+    },
+    {
+      "File": "YippeVideo_0016.rvf",
+      "Bytes": 1037804,
+      "Checksum": 1238483022,
+      "FirstFrame": 640,
+      "Frames": 40,
+      "SHA256": "4c561b4e3d9a4bcbb160fb3d2893e2b8d12cb2634bad7b10b4757d017a1bf716"
+    },
+    {
+      "File": "YippeVideo_0017.rvf",
+      "Bytes": 250333,
+      "Checksum": 2757969017,
+      "FirstFrame": 680,
+      "Frames": 40,
+      "SHA256": "b7200632f64f099c7ff7a274d06b87013402288b404e82feeea532df49568a38"
+    },
+    {
+      "File": "YippeVideo_0018.rvf",
+      "Bytes": 994546,
+      "Checksum": 3083054535,
+      "FirstFrame": 720,
+      "Frames": 40,
+      "SHA256": "6f15cbc5f3aebd1a8db7f26ddef1c99cf2610413528e1eb5338c654955a60c68"
+    },
+    {
+      "File": "YippeVideo_0019.rvf",
+      "Bytes": 944596,
+      "Checksum": 4206138187,
+      "FirstFrame": 760,
+      "Frames": 40,
+      "SHA256": "8cea1560a57ddc680464cdbae30e18e57031a4b85672ade46517997fda118c59"
+    },
+    {
+      "File": "YippeVideo_0020.rvf",
+      "Bytes": 942768,
+      "Checksum": 1927978363,
+      "FirstFrame": 800,
+      "Frames": 40,
+      "SHA256": "078152a1209f3951bd8b8e4ec33890b3e7904fc37a6a54608143f7454e65f50a"
+    },
+    {
+      "File": "YippeVideo_0021.rvf",
+      "Bytes": 913887,
+      "Checksum": 2403107014,
+      "FirstFrame": 840,
+      "Frames": 40,
+      "SHA256": "3d67278e8075fed32c05938aff468af39961bed998810f8a356aab7ec0776df6"
+    },
+    {
+      "File": "YippeVideo_0022.rvf",
+      "Bytes": 894440,
+      "Checksum": 2926774158,
+      "FirstFrame": 880,
+      "Frames": 40,
+      "SHA256": "7486ec7ae7fe5f59fafcd785d59ca66ae2d48517721fa3f5bec6223bfd5e4e0a"
+    },
+    {
+      "File": "YippeVideo_0023.rvf",
+      "Bytes": 726323,
+      "Checksum": 4158693485,
+      "FirstFrame": 920,
+      "Frames": 40,
+      "SHA256": "6805c6b3283e319910be5669a7d86195d6d7251b8e48525af7abc377a694d589"
+    },
+    {
+      "File": "YippeVideo_0024.rvf",
+      "Bytes": 1444051,
+      "Checksum": 1764141373,
+      "FirstFrame": 960,
+      "Frames": 40,
+      "SHA256": "fc8c01af0f14fd526d39dbece1f7ac2d9eeba0bf63949461c397da7fe66c07c1"
+    },
+    {
+      "File": "YippeVideo_0025.rvf",
+      "Bytes": 1350899,
+      "Checksum": 3987363952,
+      "FirstFrame": 1000,
+      "Frames": 40,
+      "SHA256": "5ab3e28bf446e82fc0dacd3d70a9fa33e2e5f14ab2cc90cbba2180c6ce36b79a"
+    },
+    {
+      "File": "YippeVideo_0026.rvf",
+      "Bytes": 1187948,
+      "Checksum": 1210423663,
+      "FirstFrame": 1040,
+      "Frames": 40,
+      "SHA256": "f0c8474f99c6c9b61933af7db03c013dc3f34807531faa6d5d2bf3c400f2b655"
+    },
+    {
+      "File": "YippeVideo_0027.rvf",
+      "Bytes": 1112940,
+      "Checksum": 2441940433,
+      "FirstFrame": 1080,
+      "Frames": 40,
+      "SHA256": "75854f44feae2913bf80b2882429e3d83c890ded1178ac6624182559e96be385"
+    },
+    {
+      "File": "YippeVideo_0028.rvf",
+      "Bytes": 1017207,
+      "Checksum": 3091235782,
+      "FirstFrame": 1120,
+      "Frames": 40,
+      "SHA256": "bf799f46f55c8d0b103584a0d17a35157a4b1851d846a6fc7ea7282f3dd7cde4"
+    },
+    {
+      "File": "YippeVideo_0029.rvf",
+      "Bytes": 1134428,
+      "Checksum": 3704058003,
+      "FirstFrame": 1160,
+      "Frames": 40,
+      "SHA256": "1a8c2944d1ef5f4e555a7ff2fc2db462824a8a3e2ce949009f057c6f26b0a034"
+    },
+    {
+      "File": "YippeVideo_0030.rvf",
+      "Bytes": 847426,
+      "Checksum": 1165390981,
+      "FirstFrame": 1200,
+      "Frames": 40,
+      "SHA256": "325361c55b5ee2d4674195a5be2d575a130f561f71961f4248a513c1783013b3"
+    },
+    {
+      "File": "YippeVideo_0031.rvf",
+      "Bytes": 540732,
+      "Checksum": 3490957293,
+      "FirstFrame": 1240,
+      "Frames": 40,
+      "SHA256": "be5604cbb643e462afc5963e829d0cbd76a8cf279321b8516ea93b8583ab8804"
+    },
+    {
+      "File": "YippeVideo_0032.rvf",
+      "Bytes": 458707,
+      "Checksum": 4215016831,
+      "FirstFrame": 1280,
+      "Frames": 40,
+      "SHA256": "3c3f3e9127ce916edd5e159dbd5f252f9f102243e17098e2a97ec5ddc34fa221"
+    },
+    {
+      "File": "YippeVideo_0033.rvf",
+      "Bytes": 438196,
+      "Checksum": 398334289,
+      "FirstFrame": 1320,
+      "Frames": 40,
+      "SHA256": "627fc1941df6bf65cf6c9583ae091cc8cfd7a561ba54273515957912635d7581"
+    },
+    {
+      "File": "YippeVideo_0034.rvf",
+      "Bytes": 477274,
+      "Checksum": 4002680431,
+      "FirstFrame": 1360,
+      "Frames": 40,
+      "SHA256": "16a9bff35c29dc1cff64ef4466fc7857244a1538fa0db17d844a6a45c43be478"
+    },
+    {
+      "File": "YippeVideo_0035.rvf",
+      "Bytes": 683284,
+      "Checksum": 4003856360,
+      "FirstFrame": 1400,
+      "Frames": 40,
+      "SHA256": "6832eba358ef3e0dc90d1ed761d7a28e14f0598f03899bde866bfbd4a174212c"
+    },
+    {
+      "File": "YippeVideo_0036.rvf",
+      "Bytes": 1056198,
+      "Checksum": 600795296,
+      "FirstFrame": 1440,
+      "Frames": 40,
+      "SHA256": "12cbcd3e8605cd38c60add29e50e2e893f14ded2125df4a9a5bb94153a5a6c20"
+    },
+    {
+      "File": "YippeVideo_0037.rvf",
+      "Bytes": 1015394,
+      "Checksum": 3828885,
+      "FirstFrame": 1480,
+      "Frames": 40,
+      "SHA256": "590049f920177554a57e2981c5be5e23ee6b2e5f58f50675fc797d441bb826bf"
+    },
+    {
+      "File": "YippeVideo_0038.rvf",
+      "Bytes": 872844,
+      "Checksum": 3796524997,
+      "FirstFrame": 1520,
+      "Frames": 40,
+      "SHA256": "1154a577a203b2de765353a523b69045a10cff860c3dfb9f5e93fd915343aaa6"
+    },
+    {
+      "File": "YippeVideo_0039.rvf",
+      "Bytes": 767023,
+      "Checksum": 2739086777,
+      "FirstFrame": 1560,
+      "Frames": 40,
+      "SHA256": "d90d191766f90d9cbc68c561a29d8e5de881aff888449ea8052edbc28de7b677"
+    },
+    {
+      "File": "YippeVideo_0040.rvf",
+      "Bytes": 1007328,
+      "Checksum": 169286737,
+      "FirstFrame": 1600,
+      "Frames": 40,
+      "SHA256": "532c2afc34fe5a60081f94a563517c4ddd751b2cf543089be47c7428b9aa5efd"
+    },
+    {
+      "File": "YippeVideo_0041.rvf",
+      "Bytes": 872327,
+      "Checksum": 2786947042,
+      "FirstFrame": 1640,
+      "Frames": 40,
+      "SHA256": "d14d7ebe26de9300428aea0c14f4f253a8b4cb5b553fa01a008340347c3a77cf"
+    },
+    {
+      "File": "YippeVideo_0042.rvf",
+      "Bytes": 707867,
+      "Checksum": 3345656325,
+      "FirstFrame": 1680,
+      "Frames": 40,
+      "SHA256": "6cd44c7912e00f581e718baf5b09626e79ccd6f4e2b270dfba66251c34993ed8"
+    },
+    {
+      "File": "YippeVideo_0043.rvf",
+      "Bytes": 1433089,
+      "Checksum": 3230082836,
+      "FirstFrame": 1720,
+      "Frames": 40,
+      "SHA256": "6ec5b8934f465628dde1b3de8fd6caab56841b61e69196304f50ada89c508935"
+    },
+    {
+      "File": "YippeVideo_0044.rvf",
+      "Bytes": 1420019,
+      "Checksum": 3503252128,
+      "FirstFrame": 1760,
+      "Frames": 40,
+      "SHA256": "a0015d286d5eb9984f888de95a9b02d42e6b78fb8be6b515c927fd7baaa107eb"
+    },
+    {
+      "File": "YippeVideo_0045.rvf",
+      "Bytes": 1397024,
+      "Checksum": 2446213887,
+      "FirstFrame": 1800,
+      "Frames": 40,
+      "SHA256": "f44ba383d6638aec74006cc9dd31add4547f3144c2cc2bd5205165290f473fb1"
+    },
+    {
+      "File": "YippeVideo_0046.rvf",
+      "Bytes": 1406021,
+      "Checksum": 1582743593,
+      "FirstFrame": 1840,
+      "Frames": 40,
+      "SHA256": "1c85a81584f6f46e896b2cfc9d57fd708a265d679f571f7dcf0fb0f85bc3f5fd"
+    },
+    {
+      "File": "YippeVideo_0047.rvf",
+      "Bytes": 1350066,
+      "Checksum": 343235103,
+      "FirstFrame": 1880,
+      "Frames": 40,
+      "SHA256": "557dcd8a478a958ceb756934b5824fa84696aea804dfbb23118854adc9e888f1"
+    },
+    {
+      "File": "YippeVideo_0048.rvf",
+      "Bytes": 1355987,
+      "Checksum": 4142692587,
+      "FirstFrame": 1920,
+      "Frames": 40,
+      "SHA256": "86a14773ba999933da2b6a3d6a95f521f088557f2d0478dd9f31b8cad0d50565"
+    },
+    {
+      "File": "YippeVideo_0049.rvf",
+      "Bytes": 1396314,
+      "Checksum": 2405622536,
+      "FirstFrame": 1960,
+      "Frames": 40,
+      "SHA256": "d6fd2c551665d3242210bb32883413302c2f2f464004a014b47dd8d0ad10f243"
+    },
+    {
+      "File": "YippeVideo_0050.rvf",
+      "Bytes": 1391019,
+      "Checksum": 3001902787,
+      "FirstFrame": 2000,
+      "Frames": 40,
+      "SHA256": "3749f7fc7acc0bcd1a5658bc578120108432250b59b29c26b1ac720aecb70a96"
+    },
+    {
+      "File": "YippeVideo_0051.rvf",
+      "Bytes": 1386537,
+      "Checksum": 4089838976,
+      "FirstFrame": 2040,
+      "Frames": 40,
+      "SHA256": "3de3b04463f1882c70d8dc7567417a822af15a8b3756ce5f7d6484eb4dbcd9c7"
+    },
+    {
+      "File": "YippeVideo_0052.rvf",
+      "Bytes": 1318936,
+      "Checksum": 1795212977,
+      "FirstFrame": 2080,
+      "Frames": 40,
+      "SHA256": "9ee013a1a338f21685368c91ea1ea4fdfef0c4cb944d5e04b039022533a939be"
+    },
+    {
+      "File": "YippeVideo_0053.rvf",
+      "Bytes": 724772,
+      "Checksum": 2747445737,
+      "FirstFrame": 2120,
+      "Frames": 40,
+      "SHA256": "15a0ae3b12e045d87ceacbc80cd23e2516363904957e834b584595c8a9d0f924"
+    },
+    {
+      "File": "YippeVideo_0054.rvf",
+      "Bytes": 604081,
+      "Checksum": 3655143559,
+      "FirstFrame": 2160,
+      "Frames": 40,
+      "SHA256": "46bf41c1f956156b4c713855796f409c588801fcfd1148cddbf440e1130040da"
+    },
+    {
+      "File": "YippeVideo_0055.rvf",
+      "Bytes": 438198,
+      "Checksum": 4097043255,
+      "FirstFrame": 2200,
+      "Frames": 40,
+      "SHA256": "a1b3d672e6070768541cbdef93295b77bfe5e55adb633f950ece69d3b5c1e921"
+    },
+    {
+      "File": "YippeVideo_0056.rvf",
+      "Bytes": 595754,
+      "Checksum": 3940821731,
+      "FirstFrame": 2240,
+      "Frames": 40,
+      "SHA256": "1dcf49552c40fe49cbf6e6360461b83982ef90490b5d4ff584433e2f55e81633"
+    },
+    {
+      "File": "YippeVideo_0057.rvf",
+      "Bytes": 905373,
+      "Checksum": 2629443164,
+      "FirstFrame": 2280,
+      "Frames": 40,
+      "SHA256": "8c43d44dd26021294bf513fcf469e5592dbcb92042980361dbecd273e27b52f7"
+    },
+    {
+      "File": "YippeVideo_0058.rvf",
+      "Bytes": 966945,
+      "Checksum": 3088122843,
+      "FirstFrame": 2320,
+      "Frames": 40,
+      "SHA256": "06c2de445e953006b7da097ed37ff8c0d5b762c03a91b9267256e9c4b5c7b704"
+    },
+    {
+      "File": "YippeVideo_0059.rvf",
+      "Bytes": 514368,
+      "Checksum": 871293868,
+      "FirstFrame": 2360,
+      "Frames": 40,
+      "SHA256": "65fa390e2ca0943a3ed4b6189389a2107e211692bbf7a07518dfb00683584bf9"
+    },
+    {
+      "File": "YippeVideo_0060.rvf",
+      "Bytes": 650240,
+      "Checksum": 2035643312,
+      "FirstFrame": 2400,
+      "Frames": 40,
+      "SHA256": "3e1fba917d92865ca94bc537a87026249e18bce5fbad4a4e2638a530dd419c3d"
+    },
+    {
+      "File": "YippeVideo_0061.rvf",
+      "Bytes": 678775,
+      "Checksum": 1783956165,
+      "FirstFrame": 2440,
+      "Frames": 40,
+      "SHA256": "c4cb0b543e234628e4dbbb0f10ec9f020c181224ffa50e0530c5eda5cd7fe020"
+    },
+    {
+      "File": "YippeVideo_0062.rvf",
+      "Bytes": 800829,
+      "Checksum": 363206310,
+      "FirstFrame": 2480,
+      "Frames": 40,
+      "SHA256": "4a9361d1ae6fa496be555a3d09aa6e13c012b7b371da753011e8711039b8568e"
+    },
+    {
+      "File": "YippeVideo_0063.rvf",
+      "Bytes": 1220316,
+      "Checksum": 935595747,
+      "FirstFrame": 2520,
+      "Frames": 40,
+      "SHA256": "44a2f54d9f6cb44d82676bc1eb4185932937ec9d8407d299467095bfbb26a8ea"
+    },
+    {
+      "File": "YippeVideo_0064.rvf",
+      "Bytes": 941021,
+      "Checksum": 1383899297,
+      "FirstFrame": 2560,
+      "Frames": 40,
+      "SHA256": "50627bdfdf13c9295246cb8530c999a12b6299dbc862b47ae504cd13b6efa943"
+    },
+    {
+      "File": "YippeVideo_0065.rvf",
+      "Bytes": 1033259,
+      "Checksum": 4067557247,
+      "FirstFrame": 2600,
+      "Frames": 40,
+      "SHA256": "1f49ed1a800984029f91a5bdca1b8574a9ac8b5ab95c0a49b7b066d02f46c176"
+    },
+    {
+      "File": "YippeVideo_0066.rvf",
+      "Bytes": 1089772,
+      "Checksum": 3543522802,
+      "FirstFrame": 2640,
+      "Frames": 40,
+      "SHA256": "cae20d04f5f3d5a4267115e13c73d06f9792520b9c83d663d898d922638fd5d7"
+    },
+    {
+      "File": "YippeVideo_0067.rvf",
+      "Bytes": 953161,
+      "Checksum": 4238896509,
+      "FirstFrame": 2680,
+      "Frames": 40,
+      "SHA256": "5fb81154c9c89d303dc41023f4a8242f0699ae2cdd99e6491e5e4bf9017e8da5"
+    },
+    {
+      "File": "YippeVideo_0068.rvf",
+      "Bytes": 1093238,
+      "Checksum": 3535442387,
+      "FirstFrame": 2720,
+      "Frames": 40,
+      "SHA256": "b6aac53aa9534c8647f6a92f32a8ee88aba3296fe5e4d029ae0f8e74208d2c18"
+    },
+    {
+      "File": "YippeVideo_0069.rvf",
+      "Bytes": 1173322,
+      "Checksum": 2904098108,
+      "FirstFrame": 2760,
+      "Frames": 40,
+      "SHA256": "06d6ef38d98d33cee3c7eca4cbf3ea52bc8c3eb239065e7f2e538404e8a52554"
+    },
+    {
+      "File": "YippeVideo_0070.rvf",
+      "Bytes": 795143,
+      "Checksum": 2209831215,
+      "FirstFrame": 2800,
+      "Frames": 40,
+      "SHA256": "135c4aadd6bcf6c800c7a97bdd7c964c9393439a939cf393aab70522dc6ca7c0"
+    },
+    {
+      "File": "YippeVideo_0071.rvf",
+      "Bytes": 1606018,
+      "Checksum": 3085843600,
+      "FirstFrame": 2840,
+      "Frames": 40,
+      "SHA256": "365312a2c408820ef3e66d618d91ad0d5eb5b9a5563c9c1f7eca32ba830c0c4b"
+    },
+    {
+      "File": "YippeVideo_0072.rvf",
+      "Bytes": 665726,
+      "Checksum": 305578054,
+      "FirstFrame": 2880,
+      "Frames": 40,
+      "SHA256": "242fff4fb62db608b37c152ebfb5388e2596d3c81fa8c011fdc172916bfe49d5"
+    },
+    {
+      "File": "YippeVideo_0073.rvf",
+      "Bytes": 1026081,
+      "Checksum": 981636644,
+      "FirstFrame": 2920,
+      "Frames": 40,
+      "SHA256": "8bc1d275340d62c1baae1a6155bd021a4465acdc4972c19008b486157c6c9460"
+    },
+    {
+      "File": "YippeVideo_0074.rvf",
+      "Bytes": 1466186,
+      "Checksum": 2344930196,
+      "FirstFrame": 2960,
+      "Frames": 40,
+      "SHA256": "bd167c037fbbc232303f41590e7abaa7274bd40d2a9885bcc11a64d6ae3a1427"
+    },
+    {
+      "File": "YippeVideo_0075.rvf",
+      "Bytes": 883871,
+      "Checksum": 2283550918,
+      "FirstFrame": 3000,
+      "Frames": 40,
+      "SHA256": "55e58d1da2dc1e0405eb5b54b780e69981093baac21f8d4b9af971e8bb0e70a4"
+    },
+    {
+      "File": "YippeVideo_0076.rvf",
+      "Bytes": 990281,
+      "Checksum": 3229512017,
+      "FirstFrame": 3040,
+      "Frames": 40,
+      "SHA256": "564be562a0819a78fdf13087cb38798cff47a961e5f6bc3ab6e6970999a9715b"
+    },
+    {
+      "File": "YippeVideo_0077.rvf",
+      "Bytes": 1147915,
+      "Checksum": 2139012410,
+      "FirstFrame": 3080,
+      "Frames": 40,
+      "SHA256": "55e097e5db23eb532d454acc6dd34da0a603fb983397d6050eb9b9f9276ce1b7"
+    },
+    {
+      "File": "YippeVideo_0078.rvf",
+      "Bytes": 1316667,
+      "Checksum": 4169060231,
+      "FirstFrame": 3120,
+      "Frames": 40,
+      "SHA256": "5a15c0c56683ade5fc43e8610e0cadee29987ea23073e31a2228bc101bf62da5"
+    },
+    {
+      "File": "YippeVideo_0079.rvf",
+      "Bytes": 1022712,
+      "Checksum": 6800385,
+      "FirstFrame": 3160,
+      "Frames": 40,
+      "SHA256": "f61fc123992a2cb7291998897e24573a310aadaa03f9f9a8c6db7488ee372909"
+    },
+    {
+      "File": "YippeVideo_0080.rvf",
+      "Bytes": 667523,
+      "Checksum": 1752447349,
+      "FirstFrame": 3200,
+      "Frames": 40,
+      "SHA256": "81cc4282b67cf32717bef97dd742434f77a11530cc4066fd15f1a391c492b66d"
+    },
+    {
+      "File": "YippeVideo_0081.rvf",
+      "Bytes": 11556,
+      "Checksum": 2712726716,
+      "FirstFrame": 3240,
+      "Frames": 40,
+      "SHA256": "c3c43a357025720a1fb9e612113bb8470d65cba6d5b8c788988198e3452e89be"
+    },
+    {
+      "File": "YippeVideo_0082.rvf",
+      "Bytes": 1436,
+      "Checksum": 2203941524,
+      "FirstFrame": 3280,
+      "Frames": 28,
+      "SHA256": "f9ecc492eb105ef5722688c4e418afaebc6452befe8acfb27fc14b1d99b753f1"
+    }
+  ]
+}
