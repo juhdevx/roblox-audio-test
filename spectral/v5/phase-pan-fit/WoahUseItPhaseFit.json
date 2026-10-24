@@ -1,0 +1,431 @@
+{
+  "Name": "WoahUseItPhaseFit",
+  "Frames": 6902,
+  "FPS": 60,
+  "Voices": 128,
+  "SegmentFrames": 120,
+  "Segments": 58,
+  "Duration": 115.031625,
+  "SampleRate": 24000,
+  "BaseSampleAssetId": 9040512197,
+  "BaseFrequency": 440,
+  "Encoding": 3,
+  "NoiseBands": 12,
+  "Files": [
+    {
+      "file": "WoahUseItPhaseFit_000.spc",
+      "bytes": 128688,
+      "checksum": 1632695616,
+      "frames": 120,
+      "first": 0
+    },
+    {
+      "file": "WoahUseItPhaseFit_001.spc",
+      "bytes": 128688,
+      "checksum": 1433138120,
+      "frames": 120,
+      "first": 120
+    },
+    {
+      "file": "WoahUseItPhaseFit_002.spc",
+      "bytes": 128688,
+      "checksum": 1193699893,
+      "frames": 120,
+      "first": 240
+    },
+    {
+      "file": "WoahUseItPhaseFit_003.spc",
+      "bytes": 128688,
+      "checksum": 3251431070,
+      "frames": 120,
+      "first": 360
+    },
+    {
+      "file": "WoahUseItPhaseFit_004.spc",
+      "bytes": 128688,
+      "checksum": 812360923,
+      "frames": 120,
+      "first": 480
+    },
+    {
+      "file": "WoahUseItPhaseFit_005.spc",
+      "bytes": 128688,
+      "checksum": 3799749049,
+      "frames": 120,
+      "first": 600
+    },
+    {
+      "file": "WoahUseItPhaseFit_006.spc",
+      "bytes": 128688,
+      "checksum": 1160971826,
+      "frames": 120,
+      "first": 720
+    },
+    {
+      "file": "WoahUseItPhaseFit_007.spc",
+      "bytes": 128688,
+      "checksum": 1457154312,
+      "frames": 120,
+      "first": 840
+    },
+    {
+      "file": "WoahUseItPhaseFit_008.spc",
+      "bytes": 128688,
+      "checksum": 1341545793,
+      "frames": 120,
+      "first": 960
+    },
+    {
+      "file": "WoahUseItPhaseFit_009.spc",
+      "bytes": 128688,
+      "checksum": 3726016769,
+      "frames": 120,
+      "first": 1080
+    },
+    {
+      "file": "WoahUseItPhaseFit_010.spc",
+      "bytes": 128688,
+      "checksum": 2779242512,
+      "frames": 120,
+      "first": 1200
+    },
+    {
+      "file": "WoahUseItPhaseFit_011.spc",
+      "bytes": 128688,
+      "checksum": 4291641290,
+      "frames": 120,
+      "first": 1320
+    },
+    {
+      "file": "WoahUseItPhaseFit_012.spc",
+      "bytes": 128688,
+      "checksum": 2116574056,
+      "frames": 120,
+      "first": 1440
+    },
+    {
+      "file": "WoahUseItPhaseFit_013.spc",
+      "bytes": 128688,
+      "checksum": 1012912802,
+      "frames": 120,
+      "first": 1560
+    },
+    {
+      "file": "WoahUseItPhaseFit_014.spc",
+      "bytes": 128688,
+      "checksum": 3637581348,
+      "frames": 120,
+      "first": 1680
+    },
+    {
+      "file": "WoahUseItPhaseFit_015.spc",
+      "bytes": 128688,
+      "checksum": 1069337232,
+      "frames": 120,
+      "first": 1800
+    },
+    {
+      "file": "WoahUseItPhaseFit_016.spc",
+      "bytes": 128688,
+      "checksum": 1188965392,
+      "frames": 120,
+      "first": 1920
+    },
+    {
+      "file": "WoahUseItPhaseFit_017.spc",
+      "bytes": 128688,
+      "checksum": 2285987924,
+      "frames": 120,
+      "first": 2040
+    },
+    {
+      "file": "WoahUseItPhaseFit_018.spc",
+      "bytes": 128688,
+      "checksum": 3400361349,
+      "frames": 120,
+      "first": 2160
+    },
+    {
+      "file": "WoahUseItPhaseFit_019.spc",
+      "bytes": 128688,
+      "checksum": 2150148294,
+      "frames": 120,
+      "first": 2280
+    },
+    {
+      "file": "WoahUseItPhaseFit_020.spc",
+      "bytes": 128688,
+      "checksum": 3921262096,
+      "frames": 120,
+      "first": 2400
+    },
+    {
+      "file": "WoahUseItPhaseFit_021.spc",
+      "bytes": 128688,
+      "checksum": 1845095523,
+      "frames": 120,
+      "first": 2520
+    },
+    {
+      "file": "WoahUseItPhaseFit_022.spc",
+      "bytes": 128688,
+      "checksum": 2038397030,
+      "frames": 120,
+      "first": 2640
+    },
+    {
+      "file": "WoahUseItPhaseFit_023.spc",
+      "bytes": 128688,
+      "checksum": 2918502847,
+      "frames": 120,
+      "first": 2760
+    },
+    {
+      "file": "WoahUseItPhaseFit_024.spc",
+      "bytes": 128688,
+      "checksum": 869279762,
+      "frames": 120,
+      "first": 2880
+    },
+    {
+      "file": "WoahUseItPhaseFit_025.spc",
+      "bytes": 128688,
+      "checksum": 4172142157,
+      "frames": 120,
+      "first": 3000
+    },
+    {
+      "file": "WoahUseItPhaseFit_026.spc",
+      "bytes": 128688,
+      "checksum": 1138479110,
+      "frames": 120,
+      "first": 3120
+    },
+    {
+      "file": "WoahUseItPhaseFit_027.spc",
+      "bytes": 128688,
+      "checksum": 3093974488,
+      "frames": 120,
+      "first": 3240
+    },
+    {
+      "file": "WoahUseItPhaseFit_028.spc",
+      "bytes": 128688,
+      "checksum": 2416949286,
+      "frames": 120,
+      "first": 3360
+    },
+    {
+      "file": "WoahUseItPhaseFit_029.spc",
+      "bytes": 128688,
+      "checksum": 817753176,
+      "frames": 120,
+      "first": 3480
+    },
+    {
+      "file": "WoahUseItPhaseFit_030.spc",
+      "bytes": 128688,
+      "checksum": 2626287311,
+      "frames": 120,
+      "first": 3600
+    },
+    {
+      "file": "WoahUseItPhaseFit_031.spc",
+      "bytes": 128688,
+      "checksum": 312506237,
+      "frames": 120,
+      "first": 3720
+    },
+    {
+      "file": "WoahUseItPhaseFit_032.spc",
+      "bytes": 128688,
+      "checksum": 3800851088,
+      "frames": 120,
+      "first": 3840
+    },
+    {
+      "file": "WoahUseItPhaseFit_033.spc",
+      "bytes": 128688,
+      "checksum": 1932025197,
+      "frames": 120,
+      "first": 3960
+    },
+    {
+      "file": "WoahUseItPhaseFit_034.spc",
+      "bytes": 128688,
+      "checksum": 1240270881,
+      "frames": 120,
+      "first": 4080
+    },
+    {
+      "file": "WoahUseItPhaseFit_035.spc",
+      "bytes": 128688,
+      "checksum": 33974023,
+      "frames": 120,
+      "first": 4200
+    },
+    {
+      "file": "WoahUseItPhaseFit_036.spc",
+      "bytes": 128688,
+      "checksum": 380718265,
+      "frames": 120,
+      "first": 4320
+    },
+    {
+      "file": "WoahUseItPhaseFit_037.spc",
+      "bytes": 128688,
+      "checksum": 2761732437,
+      "frames": 120,
+      "first": 4440
+    },
+    {
+      "file": "WoahUseItPhaseFit_038.spc",
+      "bytes": 128688,
+      "checksum": 2564275162,
+      "frames": 120,
+      "first": 4560
+    },
+    {
+      "file": "WoahUseItPhaseFit_039.spc",
+      "bytes": 128688,
+      "checksum": 2701996885,
+      "frames": 120,
+      "first": 4680
+    },
+    {
+      "file": "WoahUseItPhaseFit_040.spc",
+      "bytes": 128688,
+      "checksum": 1357125037,
+      "frames": 120,
+      "first": 4800
+    },
+    {
+      "file": "WoahUseItPhaseFit_041.spc",
+      "bytes": 128688,
+      "checksum": 1208491058,
+      "frames": 120,
+      "first": 4920
+    },
+    {
+      "file": "WoahUseItPhaseFit_042.spc",
+      "bytes": 128688,
+      "checksum": 743230442,
+      "frames": 120,
+      "first": 5040
+    },
+    {
+      "file": "WoahUseItPhaseFit_043.spc",
+      "bytes": 128688,
+      "checksum": 2697925936,
+      "frames": 120,
+      "first": 5160
+    },
+    {
+      "file": "WoahUseItPhaseFit_044.spc",
+      "bytes": 128688,
+      "checksum": 1713582630,
+      "frames": 120,
+      "first": 5280
+    },
+    {
+      "file": "WoahUseItPhaseFit_045.spc",
+      "bytes": 128688,
+      "checksum": 206294471,
+      "frames": 120,
+      "first": 5400
+    },
+    {
+      "file": "WoahUseItPhaseFit_046.spc",
+      "bytes": 128688,
+      "checksum": 4264368285,
+      "frames": 120,
+      "first": 5520
+    },
+    {
+      "file": "WoahUseItPhaseFit_047.spc",
+      "bytes": 128688,
+      "checksum": 113118532,
+      "frames": 120,
+      "first": 5640
+    },
+    {
+      "file": "WoahUseItPhaseFit_048.spc",
+      "bytes": 128688,
+      "checksum": 2366038169,
+      "frames": 120,
+      "first": 5760
+    },
+    {
+      "file": "WoahUseItPhaseFit_049.spc",
+      "bytes": 128688,
+      "checksum": 567021866,
+      "frames": 120,
+      "first": 5880
+    },
+    {
+      "file": "WoahUseItPhaseFit_050.spc",
+      "bytes": 128688,
+      "checksum": 3221457248,
+      "frames": 120,
+      "first": 6000
+    },
+    {
+      "file": "WoahUseItPhaseFit_051.spc",
+      "bytes": 128688,
+      "checksum": 3758067725,
+      "frames": 120,
+      "first": 6120
+    },
+    {
+      "file": "WoahUseItPhaseFit_052.spc",
+      "bytes": 128688,
+      "checksum": 3068976158,
+      "frames": 120,
+      "first": 6240
+    },
+    {
+      "file": "WoahUseItPhaseFit_053.spc",
+      "bytes": 128688,
+      "checksum": 2776023153,
+      "frames": 120,
+      "first": 6360
+    },
+    {
+      "file": "WoahUseItPhaseFit_054.spc",
+      "bytes": 128688,
+      "checksum": 1237685166,
+      "frames": 120,
+      "first": 6480
+    },
+    {
+      "file": "WoahUseItPhaseFit_055.spc",
+      "bytes": 128688,
+      "checksum": 1746022920,
+      "frames": 120,
+      "first": 6600
+    },
+    {
+      "file": "WoahUseItPhaseFit_056.spc",
+      "bytes": 128688,
+      "checksum": 3436992092,
+      "frames": 120,
+      "first": 6720
+    },
+    {
+      "file": "WoahUseItPhaseFit_057.spc",
+      "bytes": 66512,
+      "checksum": 306579545,
+      "frames": 62,
+      "first": 6840
+    }
+  ],
+  "Analysis": "phase-pan-fit-v1",
+  "Experimental": true,
+  "MixGain": 1.09949041,
+  "SourceRms": 0.3002267411,
+  "ModelRms": 0.2730598988,
+  "MixAnalysis": "SPC_ENERGY_V1",
+  "AudioProfile": "fidelity",
+  "PayloadBytesPerSecond": 64320,
+  "SourceSHA256": "855047a0cec9a01c8f898647aa65ca7dd373dd3a1f85dd9b2de2200dc495b259"
+}
