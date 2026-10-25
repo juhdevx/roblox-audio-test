@@ -1,0 +1,4458 @@
+{
+  "Format": "RVF2",
+  "Encoding": 2,
+  "Id": "Mommy_GF_Cuddles_SnapYT_App",
+  "AudioTrack": "Mommy_GF_Cuddles_SnapYT_App",
+  "Width": 256,
+  "Height": 144,
+  "FPS": 15,
+  "Frames": 16517,
+  "Duration": 1101.113469,
+  "SegmentFrames": 30,
+  "Segments": 551,
+  "ColorBits": [
+    6,
+    6,
+    6
+  ],
+  "Layout": "YCbCr420",
+  "Compression": "Zstd",
+  "Bytes": 18542722,
+  "BytesPerSecond": 16839.97382834666,
+  "PeakSegmentBytes": 195302,
+  "PSNR": 40.17202668194766,
+  "PSNRReference": "Source resized to 256x144; excludes downscaling loss",
+  "ModeCounts": [
+    1079,
+    15401,
+    37
+  ],
+  "SecondsToEncode": 170.75,
+  "DecoderFixture": [
+    {
+      "Frame": 0,
+      "RGBAAdler32": 2423736463,
+      "RGBABytes": 147456
+    },
+    {
+      "Frame": 15,
+      "RGBAAdler32": 2423736463,
+      "RGBABytes": 147456
+    },
+    {
+      "Frame": 29,
+      "RGBAAdler32": 2423736463,
+      "RGBABytes": 147456
+    }
+  ],
+  "Files": [
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0000.rvf",
+      "Bytes": 1144,
+      "Checksum": 2714769456,
+      "FirstFrame": 0,
+      "Frames": 30,
+      "SHA256": "aa06700a32f4c28fbc38cc791e1da388fb81b418d6872a54cb55957f3f114feb"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0001.rvf",
+      "Bytes": 1144,
+      "Checksum": 622794830,
+      "FirstFrame": 30,
+      "Frames": 30,
+      "SHA256": "cf2664945080309f8a0b489012e5b90f9d58abcf03ee913b94d6475d5779adf8"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0002.rvf",
+      "Bytes": 1144,
+      "Checksum": 2824804460,
+      "FirstFrame": 60,
+      "Frames": 30,
+      "SHA256": "5bc84b8492c314eb35052dda3d4e3989e291b90ef7274631ece900daa4163bac"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0003.rvf",
+      "Bytes": 1144,
+      "Checksum": 732829834,
+      "FirstFrame": 90,
+      "Frames": 30,
+      "SHA256": "31f2f338ee78502507b8e03ad48e67ebf1ccdf747bfbeff79bb1279bd7f88ed5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0004.rvf",
+      "Bytes": 1144,
+      "Checksum": 2934839464,
+      "FirstFrame": 120,
+      "Frames": 30,
+      "SHA256": "ec3df43720cca9afa77499620c72ef81c15a88c84db034069c876a687fab80cc"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0005.rvf",
+      "Bytes": 1144,
+      "Checksum": 842864838,
+      "FirstFrame": 150,
+      "Frames": 30,
+      "SHA256": "64d4502a9098d2ec90dfa17c2ab50af7639bba695216a0d9ac521fee0e3b6afb"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0006.rvf",
+      "Bytes": 1144,
+      "Checksum": 3044874468,
+      "FirstFrame": 180,
+      "Frames": 30,
+      "SHA256": "bf9a86b1b94e163e5d6581ab6ef40734abe960821564a4cba9bd5b82e91e53e2"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0007.rvf",
+      "Bytes": 1144,
+      "Checksum": 952899842,
+      "FirstFrame": 210,
+      "Frames": 30,
+      "SHA256": "0b02b77744d92909a0e32d1245f8ae04bf4f4f35d4430927b86b2729b2ace396"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0008.rvf",
+      "Bytes": 1144,
+      "Checksum": 3154909472,
+      "FirstFrame": 240,
+      "Frames": 30,
+      "SHA256": "4dec3520d99e01b1baa28dc08a814845aa31dc3eeddac07e8a9ad2a84047ed22"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0009.rvf",
+      "Bytes": 1144,
+      "Checksum": 3815708735,
+      "FirstFrame": 270,
+      "Frames": 30,
+      "SHA256": "d549fa992b34839ce27da4623abacd3ae379540e1cdb88a574d79dbd6008e0f4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0010.rvf",
+      "Bytes": 1144,
+      "Checksum": 1723734109,
+      "FirstFrame": 300,
+      "Frames": 30,
+      "SHA256": "95677cda3b8f0e65336b2dc4b84f0cc9cf937f9b272c7b649e234c1412501a3e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0011.rvf",
+      "Bytes": 1144,
+      "Checksum": 3925743739,
+      "FirstFrame": 330,
+      "Frames": 30,
+      "SHA256": "2f6de8f399787637e56e41da167d4e6593da4523d4c5f05dc3de0f1cf26813f0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0012.rvf",
+      "Bytes": 1144,
+      "Checksum": 1833769113,
+      "FirstFrame": 360,
+      "Frames": 30,
+      "SHA256": "244b483db67aa14cbf630a3a35896d3e8c02c1363788085eaa2d1d4f6091a86e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0013.rvf",
+      "Bytes": 1144,
+      "Checksum": 4035778743,
+      "FirstFrame": 390,
+      "Frames": 30,
+      "SHA256": "d9387c3ec957d086cd8eb9a5841eb526ac98d090d44120f6cc892cf1c3328d99"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0014.rvf",
+      "Bytes": 1144,
+      "Checksum": 1943804117,
+      "FirstFrame": 420,
+      "Frames": 30,
+      "SHA256": "1e062c0225fa1695d4d10a82df9ac2d6e23bdb1c1f5ad32b1ce0ba8ebfe89494"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0015.rvf",
+      "Bytes": 1144,
+      "Checksum": 4145813747,
+      "FirstFrame": 450,
+      "Frames": 30,
+      "SHA256": "caa7a20e3dca4071fdd3b8f0683bee5199e6fc89625c03d5a8bada42fe9d27f8"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0016.rvf",
+      "Bytes": 1144,
+      "Checksum": 2053839121,
+      "FirstFrame": 480,
+      "Frames": 30,
+      "SHA256": "82f670cf33bdf9783f8561ecd98dcceb5912064469ca806535357f4d98bb8ffb"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0017.rvf",
+      "Bytes": 2564,
+      "Checksum": 3054413125,
+      "FirstFrame": 510,
+      "Frames": 30,
+      "SHA256": "95f186d7cb64111545cb04307ed4979e7cf21afab410c0f12e5558f248443d6c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0018.rvf",
+      "Bytes": 195302,
+      "Checksum": 3118636023,
+      "FirstFrame": 540,
+      "Frames": 30,
+      "SHA256": "38ab00446a71aa258b97cd893b94e9f719fe329dfddc7e3e0801e9b03da2887d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0019.rvf",
+      "Bytes": 49499,
+      "Checksum": 1542272836,
+      "FirstFrame": 570,
+      "Frames": 30,
+      "SHA256": "08dfbd34a51ebccecaacada35207177e7211a5505cf3c484878750252e689093"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0020.rvf",
+      "Bytes": 39589,
+      "Checksum": 483845084,
+      "FirstFrame": 600,
+      "Frames": 30,
+      "SHA256": "673e2effb98bae63493e9cc4b3187eaba929f10ccb647261b0f83411d3e1bfbf"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0021.rvf",
+      "Bytes": 35900,
+      "Checksum": 2711407342,
+      "FirstFrame": 630,
+      "Frames": 30,
+      "SHA256": "62be746de64ad1072acad1eaaa44ffd71f8846901206418cff641f7b94ea4aef"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0022.rvf",
+      "Bytes": 29311,
+      "Checksum": 3708290601,
+      "FirstFrame": 660,
+      "Frames": 30,
+      "SHA256": "03bcf3f8b693bc0ad6877509c0701e1473d5133a5115de21589219be0fb3aafa"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0023.rvf",
+      "Bytes": 37229,
+      "Checksum": 3950132099,
+      "FirstFrame": 690,
+      "Frames": 30,
+      "SHA256": "58b61f45a9a90d99c391354c5e0db2d9abb8f37cf18c9e3d810ff8694686a8d7"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0024.rvf",
+      "Bytes": 37370,
+      "Checksum": 425886187,
+      "FirstFrame": 720,
+      "Frames": 30,
+      "SHA256": "2bc79407f11932b88f422d0815d8e24c193b6540ad1da095720074934122fd2f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0025.rvf",
+      "Bytes": 31789,
+      "Checksum": 4284808751,
+      "FirstFrame": 750,
+      "Frames": 30,
+      "SHA256": "7693aa87023ddfe6c436124efa6e75e6c8e89bd6d9d1569ba7254fc6f9949966"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0026.rvf",
+      "Bytes": 31292,
+      "Checksum": 3981549758,
+      "FirstFrame": 780,
+      "Frames": 30,
+      "SHA256": "ef1d98842dbd4d4dd7d4cfba9fcf572d1e5a1250a5e3a855c0bfecca0b2d8d34"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0027.rvf",
+      "Bytes": 37710,
+      "Checksum": 2610524428,
+      "FirstFrame": 810,
+      "Frames": 30,
+      "SHA256": "3bf72b99a66c5c70771f50f31b576e28caecdaa918136f6654c8723bfe6971d5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0028.rvf",
+      "Bytes": 36338,
+      "Checksum": 4162082523,
+      "FirstFrame": 840,
+      "Frames": 30,
+      "SHA256": "bd618d8b897e9b43e99f604b34effd2ba7535381d4b29f8434d81a3510ab0eb5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0029.rvf",
+      "Bytes": 29031,
+      "Checksum": 1762230153,
+      "FirstFrame": 870,
+      "Frames": 30,
+      "SHA256": "b612060e226b41fb8840979afc80f9d759a9fb36cc50e0e5c17165d18f158733"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0030.rvf",
+      "Bytes": 36297,
+      "Checksum": 494938100,
+      "FirstFrame": 900,
+      "Frames": 30,
+      "SHA256": "ead7818f735a557e179411e9594251bff133b101afb9108b047be972e972bf21"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0031.rvf",
+      "Bytes": 36724,
+      "Checksum": 988419844,
+      "FirstFrame": 930,
+      "Frames": 30,
+      "SHA256": "0df474a0e9786c842c45c1d8aade062f1d14c36c76fd6bdff487db70ca68c311"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0032.rvf",
+      "Bytes": 32288,
+      "Checksum": 1426260825,
+      "FirstFrame": 960,
+      "Frames": 30,
+      "SHA256": "e99843069ca74285a8b63308264affc3fd8372a568eda97cf6115cfc2dd49fd0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0033.rvf",
+      "Bytes": 30944,
+      "Checksum": 4005819818,
+      "FirstFrame": 990,
+      "Frames": 30,
+      "SHA256": "63b2606078a6eb9eb09b1e2f649e0f889f6a8c1768062a62e07dd732cae4cba8"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0034.rvf",
+      "Bytes": 37710,
+      "Checksum": 1694265822,
+      "FirstFrame": 1020,
+      "Frames": 30,
+      "SHA256": "3c5c272808224b388bb511792866fb931fd3de5af7b9bdd065a4179870157fb0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0035.rvf",
+      "Bytes": 36299,
+      "Checksum": 3153079738,
+      "FirstFrame": 1050,
+      "Frames": 30,
+      "SHA256": "36e2c723f8139f46309860c7341f725907ee4eede8e8b2c0d88f27c578dd570a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0036.rvf",
+      "Bytes": 29520,
+      "Checksum": 2364362307,
+      "FirstFrame": 1080,
+      "Frames": 30,
+      "SHA256": "2eb0faa744f891d009619a71e1538a64ca72f985cf53385759eaac9ed113e1d3"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0037.rvf",
+      "Bytes": 36276,
+      "Checksum": 3951645916,
+      "FirstFrame": 1110,
+      "Frames": 30,
+      "SHA256": "810a2cfc39a095cbb79f9c1d92625dd59e570c117dbb47fba48d7249c9a53cbd"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0038.rvf",
+      "Bytes": 36628,
+      "Checksum": 1887114182,
+      "FirstFrame": 1140,
+      "Frames": 30,
+      "SHA256": "77747d6c0881f8e8548614f9c61080052aa10c8d32da27d08061aa8e475a5da6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0039.rvf",
+      "Bytes": 31645,
+      "Checksum": 1351736607,
+      "FirstFrame": 1170,
+      "Frames": 30,
+      "SHA256": "e27c7c14cfae6053e0fc93663c6ebc6ca70bcf800aa5277b39e2c791bde20bf4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0040.rvf",
+      "Bytes": 30944,
+      "Checksum": 2992633213,
+      "FirstFrame": 1200,
+      "Frames": 30,
+      "SHA256": "22392048f0d5b28e778f245a9d1345688bcbc3886af014720e4308aabaf1a284"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0041.rvf",
+      "Bytes": 37083,
+      "Checksum": 983322440,
+      "FirstFrame": 1230,
+      "Frames": 30,
+      "SHA256": "62d290d37786ed35c4c55f946f897bba27ce03edf66b68b4a08449ea5466e523"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0042.rvf",
+      "Bytes": 35399,
+      "Checksum": 1504221999,
+      "FirstFrame": 1260,
+      "Frames": 30,
+      "SHA256": "e08eb36145ea5611fd796b46a4fd86d2414bbb80d21bff58f79addcef6fbe7ba"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0043.rvf",
+      "Bytes": 29528,
+      "Checksum": 2744150652,
+      "FirstFrame": 1290,
+      "Frames": 30,
+      "SHA256": "b8821a588fded15029ceb169bc91540a3ddeb242c14fed9c39cdf0bb17f70c91"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0044.rvf",
+      "Bytes": 36268,
+      "Checksum": 3224445397,
+      "FirstFrame": 1320,
+      "Frames": 30,
+      "SHA256": "7c8955c143131f8c5cb3ea73548239debf39b3ad6456beb1c191bf8973f6ba0a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0045.rvf",
+      "Bytes": 37466,
+      "Checksum": 506037110,
+      "FirstFrame": 1350,
+      "Frames": 30,
+      "SHA256": "604b483bebde29372821c99df5597994165cc2df24a4d836435877e6fc246486"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0046.rvf",
+      "Bytes": 32432,
+      "Checksum": 289547444,
+      "FirstFrame": 1380,
+      "Frames": 30,
+      "SHA256": "b11e4cd27b8c97940d21e37afc6a0c50a536a93042e6e69304b591625b478750"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0047.rvf",
+      "Bytes": 31068,
+      "Checksum": 3746053996,
+      "FirstFrame": 1410,
+      "Frames": 30,
+      "SHA256": "595ac13965f2c08096cdf18ca14d1ff59022115ec72c729402a0f5e42380cb5f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0048.rvf",
+      "Bytes": 37710,
+      "Checksum": 2700243332,
+      "FirstFrame": 1440,
+      "Frames": 30,
+      "SHA256": "603be2c441b9735e1ddd9250c4ba29218bda42796c8ad64a3af0ba0a006884fd"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0049.rvf",
+      "Bytes": 36203,
+      "Checksum": 1437930848,
+      "FirstFrame": 1470,
+      "Frames": 30,
+      "SHA256": "9305fd24e2bdfcb48d2be15ca63559d0065dc96d74ad5d6e6138f2e10a63b683"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0050.rvf",
+      "Bytes": 29031,
+      "Checksum": 2301263873,
+      "FirstFrame": 1500,
+      "Frames": 30,
+      "SHA256": "9a8874d1fcadaaa8e9a6d128922351cad20289c1ea19a7f29c60e411d52d8e80"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0051.rvf",
+      "Bytes": 36268,
+      "Checksum": 3932496551,
+      "FirstFrame": 1530,
+      "Frames": 30,
+      "SHA256": "bd85f07495c6fbf3cacf492730de6308232d124f1bf3b7cc0c9d8327d13f9ead"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0052.rvf",
+      "Bytes": 37466,
+      "Checksum": 1728611145,
+      "FirstFrame": 1560,
+      "Frames": 30,
+      "SHA256": "42be6b68665d85689836041248ed91096d120c86a06c54d8a3b7a22b8b41884d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0053.rvf",
+      "Bytes": 32288,
+      "Checksum": 3671786194,
+      "FirstFrame": 1590,
+      "Frames": 30,
+      "SHA256": "f8d5a07db648ad94deef3905e0876271509debb261efc818403abcb6ceec16da"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0054.rvf",
+      "Bytes": 31168,
+      "Checksum": 2756335356,
+      "FirstFrame": 1620,
+      "Frames": 30,
+      "SHA256": "f7c3372fc31a55b90dca75ade76336c9e8117a10feffc3a19871ea8e68f5538e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0055.rvf",
+      "Bytes": 37710,
+      "Checksum": 3203232087,
+      "FirstFrame": 1650,
+      "Frames": 30,
+      "SHA256": "78ac1eb220c81f82d12105e184ad5e21419397ef29221be1ff7c6ea9ca8d46f1"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0056.rvf",
+      "Bytes": 36434,
+      "Checksum": 1672507174,
+      "FirstFrame": 1680,
+      "Frames": 30,
+      "SHA256": "8d579fdd528e16aaa431939e62e1fcf25bd9a00d47929bfa1ffada0f2c0bf065"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0057.rvf",
+      "Bytes": 28929,
+      "Checksum": 862603428,
+      "FirstFrame": 1710,
+      "Frames": 30,
+      "SHA256": "26bc63dbf7b623177fb82699ba7a68816b400ebe9580044c98908475c8c19292"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0058.rvf",
+      "Bytes": 36276,
+      "Checksum": 1351898452,
+      "FirstFrame": 1740,
+      "Frames": 30,
+      "SHA256": "57a24482bdfa3ff8c044596ca85fae7c8e0a973fe70a666b9ce7664879bbf95b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0059.rvf",
+      "Bytes": 36724,
+      "Checksum": 1028724559,
+      "FirstFrame": 1770,
+      "Frames": 30,
+      "SHA256": "c2487624af23a7f6dcd8b68c3ba3bd96c2885f5fab3deb04d1c45cb778fa6512"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0060.rvf",
+      "Bytes": 31789,
+      "Checksum": 3934780750,
+      "FirstFrame": 1800,
+      "Frames": 30,
+      "SHA256": "843bf5da361147fb96cee0f0819c1ff94d40d93e466c42ca06980350e298d82a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0061.rvf",
+      "Bytes": 30944,
+      "Checksum": 4247057654,
+      "FirstFrame": 1830,
+      "Frames": 30,
+      "SHA256": "21e0985c80460156315d934d735bfdaaa81c5b951a8b1d804283cb762ad4fb6c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0062.rvf",
+      "Bytes": 37083,
+      "Checksum": 3745599169,
+      "FirstFrame": 1860,
+      "Frames": 30,
+      "SHA256": "9d37079d8699ab2d2c8b0e3dccd7398a21ef6f2deed384e43fa81929e1a30088"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0063.rvf",
+      "Bytes": 35652,
+      "Checksum": 3979086764,
+      "FirstFrame": 1890,
+      "Frames": 30,
+      "SHA256": "1b76055a729ec2476b58764282a16b9f1a450a75b25c7a8d4f5e55a6a3f6c750"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0064.rvf",
+      "Bytes": 28929,
+      "Checksum": 1497909367,
+      "FirstFrame": 1920,
+      "Frames": 30,
+      "SHA256": "1eba95e6c39d1187893c5f0554173a0d03feb2f0a7f032e5aea1d177efe60e44"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0065.rvf",
+      "Bytes": 36276,
+      "Checksum": 1789941031,
+      "FirstFrame": 1950,
+      "Frames": 30,
+      "SHA256": "0e86fd88f3e4b7190582324dc3ddeefd02095af660b1653c32de89e3be6e5aa4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0066.rvf",
+      "Bytes": 37370,
+      "Checksum": 2358804956,
+      "FirstFrame": 1980,
+      "Frames": 30,
+      "SHA256": "0908b34201fb1846fe67b770d64d09f1e1344e12515c7ba3fd32aa2588565fa2"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0067.rvf",
+      "Bytes": 32288,
+      "Checksum": 449839991,
+      "FirstFrame": 2010,
+      "Frames": 30,
+      "SHA256": "0475a8d0bc91970c0c729bcd99a0181335a03d228ff7ff5438c062cb36cdc620"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0068.rvf",
+      "Bytes": 30944,
+      "Checksum": 386987464,
+      "FirstFrame": 2040,
+      "Frames": 30,
+      "SHA256": "fc07e91a8067a5dc0a5579f5b195324145ae20e112e93c2bc1cf426d9b094c48"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0069.rvf",
+      "Bytes": 37710,
+      "Checksum": 4209209597,
+      "FirstFrame": 2070,
+      "Frames": 30,
+      "SHA256": "cb52e9222df43b0fc69d13ac45b467af19376650eca2fd228fd740ea6c31428a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0070.rvf",
+      "Bytes": 36338,
+      "Checksum": 2815514316,
+      "FirstFrame": 2100,
+      "Frames": 30,
+      "SHA256": "d0481d88ae13475eae23944dccf60ffbfa0a01bff1ef5ab835b145349326b12e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0071.rvf",
+      "Bytes": 29453,
+      "Checksum": 777472719,
+      "FirstFrame": 2130,
+      "Frames": 30,
+      "SHA256": "c2fc559a2d19b3738dfa91beb93f196a9c4e76d159bffebc360c59de0e723ffd"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0072.rvf",
+      "Bytes": 36297,
+      "Checksum": 3482658789,
+      "FirstFrame": 2160,
+      "Frames": 30,
+      "SHA256": "b8ce8f22bb30a02cb23ebf39c8f062fd2239a38424e81f0082b781f7e373f455"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0073.rvf",
+      "Bytes": 37466,
+      "Checksum": 4193420225,
+      "FirstFrame": 2190,
+      "Frames": 30,
+      "SHA256": "a63188f7040e962a4a0ac099d2e633b3bc1131c42ee870c2d095f35a3caac7f9"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0074.rvf",
+      "Bytes": 32288,
+      "Checksum": 4061004618,
+      "FirstFrame": 2220,
+      "Frames": 30,
+      "SHA256": "daa3f4bcbcb696d219b89ddb7327f837e67007813b8dc0a82d7b0496fd1f0a06"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0075.rvf",
+      "Bytes": 30944,
+      "Checksum": 3667785115,
+      "FirstFrame": 2250,
+      "Frames": 30,
+      "SHA256": "9e2fc2c540501ca4b08a152c06a03e10f2ec899474fc1dfa3797b4e1788f22d8"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0076.rvf",
+      "Bytes": 37710,
+      "Checksum": 3292950991,
+      "FirstFrame": 2280,
+      "Frames": 30,
+      "SHA256": "2af077d549a20746924b88b6be280c4a68db5fc075f2ddd03c0027120a3a8b99"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0077.rvf",
+      "Bytes": 36338,
+      "Checksum": 3070711455,
+      "FirstFrame": 2310,
+      "Frames": 30,
+      "SHA256": "0a9451f69e1be52933fbd54e915644542eebefeb8e88b85f89b28a7ce4edb5a1"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0078.rvf",
+      "Bytes": 29031,
+      "Checksum": 3639246669,
+      "FirstFrame": 2340,
+      "Frames": 30,
+      "SHA256": "753f24b7904bd40785e3b7c3e787494e0e19d37ce120b33e60fd128ba059a46e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0079.rvf",
+      "Bytes": 36297,
+      "Checksum": 3858769848,
+      "FirstFrame": 2370,
+      "Frames": 30,
+      "SHA256": "1da1fd8d4cf1c514a826e7c6ff0d98eba1f750212b612090875159a95dc72343"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0080.rvf",
+      "Bytes": 37466,
+      "Checksum": 1122010004,
+      "FirstFrame": 2400,
+      "Frames": 30,
+      "SHA256": "f5e835d5d0b9c7e7c63f6b9b2c34501e583a2552cb2a7260c5915759a3264e1d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0081.rvf",
+      "Bytes": 31789,
+      "Checksum": 399703494,
+      "FirstFrame": 2430,
+      "Frames": 30,
+      "SHA256": "619e21d45ee2bed619509c6b8925750392886fae3309db7cf1e94a220f6ed3a6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0082.rvf",
+      "Bytes": 31168,
+      "Checksum": 1251694407,
+      "FirstFrame": 2460,
+      "Frames": 30,
+      "SHA256": "8de039352b148ee3b5d5a98a40e55f9c57d11c71328975fc0b646abfb9b33d3a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0083.rvf",
+      "Bytes": 37710,
+      "Checksum": 3795939746,
+      "FirstFrame": 2490,
+      "Frames": 30,
+      "SHA256": "208f051894b81a86964362787018aae9c9cc8ae2928702f75c4ba96ee276112b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0084.rvf",
+      "Bytes": 35517,
+      "Checksum": 1276627745,
+      "FirstFrame": 2520,
+      "Frames": 30,
+      "SHA256": "01dd9a291ba26f943a15b424019af351695214a0efb356c5a9f8c8d5a0789a9c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0085.rvf",
+      "Bytes": 29520,
+      "Checksum": 1438142214,
+      "FirstFrame": 2550,
+      "Frames": 30,
+      "SHA256": "41a374290cf23d0f4eabb1038803ca41acd16f1cea9dec5868ca3955ab215f17"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0086.rvf",
+      "Bytes": 36276,
+      "Checksum": 3104068768,
+      "FirstFrame": 2580,
+      "Frames": 30,
+      "SHA256": "fc069608529ccbc8e4a051bb75c0ca2484075601050f6ab2914610823f32e337"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0087.rvf",
+      "Bytes": 36724,
+      "Checksum": 1790056091,
+      "FirstFrame": 2610,
+      "Frames": 30,
+      "SHA256": "432a95d44d6bd5051ce774b2061d51578770ea50a456351671841d8a616ac939"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0088.rvf",
+      "Bytes": 32432,
+      "Checksum": 2782733477,
+      "FirstFrame": 2640,
+      "Frames": 30,
+      "SHA256": "59c06aeb70189ade0cf935ae8ca53b6e7967b27e3cba743b43b0f1fc85f94dc6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0089.rvf",
+      "Bytes": 31068,
+      "Checksum": 3286122333,
+      "FirstFrame": 2670,
+      "Frames": 30,
+      "SHA256": "d222833d825488da1fbc1484185731fe9fd4ff85957d1b0df4e48e2c3fa21c5e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0090.rvf",
+      "Bytes": 37083,
+      "Checksum": 1256476428,
+      "FirstFrame": 2700,
+      "Frames": 30,
+      "SHA256": "944c4a3c0ed52de9cad12ead8a2c3b5ac91af599121ff79d272118d5174995d2"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0091.rvf",
+      "Bytes": 35517,
+      "Checksum": 3953052404,
+      "FirstFrame": 2730,
+      "Frames": 30,
+      "SHA256": "fec67101fffa55da3c4efaf949900937333ac346f70f502338081d76d1554f22"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0092.rvf",
+      "Bytes": 28929,
+      "Checksum": 1870088386,
+      "FirstFrame": 2760,
+      "Frames": 30,
+      "SHA256": "002cd66bfb24d05e5f3b2b7b5b003dea460bf32cd557ffdaa2df2892f0ca142d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0093.rvf",
+      "Bytes": 36276,
+      "Checksum": 3922220402,
+      "FirstFrame": 2790,
+      "Frames": 30,
+      "SHA256": "440f616164e7bcac086df143e495d4586933f6de4dfe352c159a5a139ecfcf3f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0094.rvf",
+      "Bytes": 36724,
+      "Checksum": 906892910,
+      "FirstFrame": 2820,
+      "Frames": 30,
+      "SHA256": "7aebab9fb439dfd61c44357fdb9c7e363d12db3f9ad5b239ac72047cc30cdbbc"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0095.rvf",
+      "Bytes": 32432,
+      "Checksum": 1675240568,
+      "FirstFrame": 2850,
+      "Frames": 30,
+      "SHA256": "411f24dbe245f3c98a60e1754ccdb7c72aef7b564ddeb1907700510a7bbb4e71"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0096.rvf",
+      "Bytes": 31292,
+      "Checksum": 2406260986,
+      "FirstFrame": 2880,
+      "Frames": 30,
+      "SHA256": "bac1e03b90741389a582c1c30ef1026d72ffbaf97605ed1fc901dd85727f8b8a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0097.rvf",
+      "Bytes": 37710,
+      "Checksum": 507933000,
+      "FirstFrame": 2910,
+      "Frames": 30,
+      "SHA256": "6d28f88c854a8ff16ef085248b880f3037e90aa555a61ad5f9d45cb7c07af72c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0098.rvf",
+      "Bytes": 36434,
+      "Checksum": 231567127,
+      "FirstFrame": 2940,
+      "Frames": 30,
+      "SHA256": "8572a71c9a59ab69ea5e8ba83376ee6425e190d2780d94ad8744c51e9f293315"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0099.rvf",
+      "Bytes": 29023,
+      "Checksum": 352150367,
+      "FirstFrame": 2970,
+      "Frames": 30,
+      "SHA256": "d17e498a0ff6f73a29e57a43bc59963196a9d85d0cd8ebe561b7a3de438e4c9a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0100.rvf",
+      "Bytes": 36306,
+      "Checksum": 2403602465,
+      "FirstFrame": 3000,
+      "Frames": 30,
+      "SHA256": "fb16db821395e1d72b8c1d5f041fcde92cd9c52ebe7c12020cc347baff01e8e2"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0101.rvf",
+      "Bytes": 37466,
+      "Checksum": 3586819084,
+      "FirstFrame": 3030,
+      "Frames": 30,
+      "SHA256": "96f34c953c00430bd16b4da654b92739c6c7bba198fda8eb13feeafc90c891de"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0102.rvf",
+      "Bytes": 32432,
+      "Checksum": 1117922634,
+      "FirstFrame": 3060,
+      "Frames": 30,
+      "SHA256": "9942eab8aa552f7fbe62870d8cc0a9d5dcde60f8c2c0d997151e3f715843e49d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0103.rvf",
+      "Bytes": 31168,
+      "Checksum": 524310208,
+      "FirstFrame": 3090,
+      "Frames": 30,
+      "SHA256": "01052bb5b9c19df71e15f16e3eba5890bc799797dca3ba63f5efac9c84eef5fa"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0104.rvf",
+      "Bytes": 37710,
+      "Checksum": 1010921755,
+      "FirstFrame": 3120,
+      "Frames": 30,
+      "SHA256": "afc0b8eabd257d40e528d8e507a82dc70d1ecc21abd43d0a95f8b90ef81faa55"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0105.rvf",
+      "Bytes": 36299,
+      "Checksum": 4090179062,
+      "FirstFrame": 3150,
+      "Frames": 30,
+      "SHA256": "ecfc125e2d0f3168f82b20fbbcf3a11cfca0b18d2ab6ce85980c8d223f3502e3"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0106.rvf",
+      "Bytes": 29023,
+      "Checksum": 710239026,
+      "FirstFrame": 3180,
+      "Frames": 30,
+      "SHA256": "7bb45290ce9e27267c4841a77096af2dae701d5379592ad0965e0f108c5fef94"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0107.rvf",
+      "Bytes": 36306,
+      "Checksum": 2753171444,
+      "FirstFrame": 3210,
+      "Frames": 30,
+      "SHA256": "c1a0c8961e1de665930049b5615a6004c1c8dffa114d067fd8e074042be1844c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0108.rvf",
+      "Bytes": 37466,
+      "Checksum": 515408863,
+      "FirstFrame": 3240,
+      "Frames": 30,
+      "SHA256": "d715e6804705c937512efb23e5d34175eb8af0573af69abefc70fd8947996e97"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0109.rvf",
+      "Bytes": 32432,
+      "Checksum": 10429725,
+      "FirstFrame": 3270,
+      "Frames": 30,
+      "SHA256": "1ef10a72dbf901fe18dfc222c068148cf68d5b7c225ea75f8ef2b4ba9da6b53d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0110.rvf",
+      "Bytes": 31292,
+      "Checksum": 1296081311,
+      "FirstFrame": 3300,
+      "Frames": 30,
+      "SHA256": "e7e563219d49bdad6ce8cc798df16e0a0b85fe0dcc9bdface2a4b0f78c8f15c0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0111.rvf",
+      "Bytes": 37710,
+      "Checksum": 1513910510,
+      "FirstFrame": 3330,
+      "Frames": 30,
+      "SHA256": "634f062472136c2107b20e3486e7c4c7f076281ba84e48cd86974859d19ea213"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0112.rvf",
+      "Bytes": 35517,
+      "Checksum": 3394357869,
+      "FirstFrame": 3360,
+      "Frames": 30,
+      "SHA256": "9410d60ee2ca2e394a3a4c52a7d6d33169393aaaf8c40bcaa74f0a05d9491789"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0113.rvf",
+      "Bytes": 29023,
+      "Checksum": 1068327685,
+      "FirstFrame": 3390,
+      "Frames": 30,
+      "SHA256": "29e304f10e167679ccc24ae4870797bd922f4e13f305591806825b9803ecfebc"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0114.rvf",
+      "Bytes": 36276,
+      "Checksum": 942363883,
+      "FirstFrame": 3420,
+      "Frames": 30,
+      "SHA256": "702532ef2900d666d8c7c89cc8199aa79bcbfafb60f69e17ca6f925e9bd38c72"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0115.rvf",
+      "Bytes": 37370,
+      "Checksum": 1503429024,
+      "FirstFrame": 3450,
+      "Frames": 30,
+      "SHA256": "5b20e1130378b3b21a13175a3acbd339c8acc9bb0deff3943722f06e99de3e36"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0116.rvf",
+      "Bytes": 31789,
+      "Checksum": 2736192996,
+      "FirstFrame": 3480,
+      "Frames": 30,
+      "SHA256": "94a673d3d3f7d90f1dd2c5d72553ffab8f9a2c6b4fe572d8b5f528870f01154e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0117.rvf",
+      "Bytes": 31068,
+      "Checksum": 1289961384,
+      "FirstFrame": 3510,
+      "Frames": 30,
+      "SHA256": "d375b5918955f1ae6c906f054de2fd561483357bc7df3da76a859734df7dccb4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0118.rvf",
+      "Bytes": 37083,
+      "Checksum": 3061337943,
+      "FirstFrame": 3540,
+      "Frames": 30,
+      "SHA256": "21e3c5b0a230987bd89698de4203bd6f8c81b26a0a970b1fcd9e26581586b224"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0119.rvf",
+      "Bytes": 36338,
+      "Checksum": 3140376463,
+      "FirstFrame": 3570,
+      "Frames": 30,
+      "SHA256": "c7feba675e3ae835cecb2dd25e611b6cca540e85bebb0c649ce273a92fe7cc16"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0120.rvf",
+      "Bytes": 28956,
+      "Checksum": 466968390,
+      "FirstFrame": 3600,
+      "Frames": 30,
+      "SHA256": "c37a264405d2c48ff0f69486c8505c43b15ba200b83d70e1eef4e5f4bda52bcc"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0121.rvf",
+      "Bytes": 36268,
+      "Checksum": 207299044,
+      "FirstFrame": 3630,
+      "Frames": 30,
+      "SHA256": "f4099108fab4cdce5ae4fb626070f7a047452e131cbe084f2e6442b1739a749e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0122.rvf",
+      "Bytes": 37466,
+      "Checksum": 2960556933,
+      "FirstFrame": 3660,
+      "Frames": 30,
+      "SHA256": "0b8bfd6c21f2889dcb3c73ca45cb960bf8f1493fd3fdedeb85cc5b65f26222e5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0123.rvf",
+      "Bytes": 31789,
+      "Checksum": 3524984247,
+      "FirstFrame": 3690,
+      "Frames": 30,
+      "SHA256": "040e778836e47267d20bd7a5b0b91c237bac95472c87fa4275a90c57fe7d0032"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0124.rvf",
+      "Bytes": 30944,
+      "Checksum": 2316563807,
+      "FirstFrame": 3720,
+      "Frames": 30,
+      "SHA256": "95ca2f3f4bc37fece7b0b56388bf8b96e6dfd1d931b55f3c9c0271f36a62744b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0125.rvf",
+      "Bytes": 37710,
+      "Checksum": 1100640659,
+      "FirstFrame": 3750,
+      "Frames": 30,
+      "SHA256": "029325d68b0351dba472f372d8142613255adcdfc29f56d8fe569f3ed5be6df3"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0126.rvf",
+      "Bytes": 36338,
+      "Checksum": 3395573602,
+      "FirstFrame": 3780,
+      "Frames": 30,
+      "SHA256": "8999d2bb7f9a626ded5ce843458223a4f6cfa2f2fe44535c9a20b3165f754095"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0127.rvf",
+      "Bytes": 29031,
+      "Checksum": 757825552,
+      "FirstFrame": 3810,
+      "Frames": 30,
+      "SHA256": "73a115f224458a2097055bb0beb7fae4797308deba547faaa8cf544cffe26fa8"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0128.rvf",
+      "Bytes": 36297,
+      "Checksum": 2928617340,
+      "FirstFrame": 3840,
+      "Frames": 30,
+      "SHA256": "6114e3ff90f68eb4c6ce12a5f39cb5427576c700290c94f40c9679cfbbf9c021"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0129.rvf",
+      "Bytes": 37466,
+      "Checksum": 4183130968,
+      "FirstFrame": 3870,
+      "Frames": 30,
+      "SHA256": "3ca036a6d395dd630c97bc17efa7eee02c6cd3ffc542695f708ded70c1c18244"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0130.rvf",
+      "Bytes": 31411,
+      "Checksum": 2994882298,
+      "FirstFrame": 3900,
+      "Frames": 30,
+      "SHA256": "b660c9e37807566fcbed55f56fc1eca9ba9a23356448a2298d97a636b99e2618"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0131.rvf",
+      "Bytes": 31168,
+      "Checksum": 3313653515,
+      "FirstFrame": 3930,
+      "Frames": 30,
+      "SHA256": "1ca6e777f3fea9aeb8e38407b7dc28034ae3267e4d7789e85248eb94b98f9940"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0132.rvf",
+      "Bytes": 37710,
+      "Checksum": 1603629414,
+      "FirstFrame": 3960,
+      "Frames": 30,
+      "SHA256": "c539649384d040a214ae4d2672589c6a5373cfe187dc560faac9816b0bba7a2a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0133.rvf",
+      "Bytes": 35517,
+      "Checksum": 3413560037,
+      "FirstFrame": 3990,
+      "Frames": 30,
+      "SHA256": "f820de2d7d06b25647843ee80f20a4939ae7b716b16804ff208a72fdaf4dc921"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0134.rvf",
+      "Bytes": 28929,
+      "Checksum": 3512879283,
+      "FirstFrame": 4020,
+      "Frames": 30,
+      "SHA256": "a45b3d29df0c3a0b8f00c156624420a9f6c3dc86c43b7223650f99a28be22791"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0135.rvf",
+      "Bytes": 36276,
+      "Checksum": 2636600675,
+      "FirstFrame": 4050,
+      "Frames": 30,
+      "SHA256": "6875ecc2a613fac3f65320d4ecca681fd176f7c6104fd7f1e134ada27cc23ad0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0136.rvf",
+      "Bytes": 36724,
+      "Checksum": 2753828702,
+      "FirstFrame": 4080,
+      "Frames": 30,
+      "SHA256": "def769a0cdabd124962b317dbc3fbfdfa9b7e3cafc82ea10a7bc2dc860b1bd78"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0137.rvf",
+      "Bytes": 31645,
+      "Checksum": 1724374183,
+      "FirstFrame": 4110,
+      "Frames": 30,
+      "SHA256": "3c08042f360899c893ef0564b2fd887518ca973e0eca8bb1dc0b6f0f5813ddee"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0138.rvf",
+      "Bytes": 30944,
+      "Checksum": 290190597,
+      "FirstFrame": 4140,
+      "Frames": 30,
+      "SHA256": "c0ff7658047ed0785fbc8f82dac43f3dbc843b8f89acf9e6e06ebac9e117876e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0139.rvf",
+      "Bytes": 37710,
+      "Checksum": 2106618169,
+      "FirstFrame": 4170,
+      "Frames": 30,
+      "SHA256": "b087f617023033668e3b452a6d4ebcdede916af31f58269a9a8e601e352c8e0d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0140.rvf",
+      "Bytes": 36299,
+      "Checksum": 2411736596,
+      "FirstFrame": 4200,
+      "Frames": 30,
+      "SHA256": "44683c7fd5c5a0d4de3b56add0cc5ce419586a57c5ecd7b9b51e33fcad392c70"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0141.rvf",
+      "Bytes": 29023,
+      "Checksum": 1902535504,
+      "FirstFrame": 4230,
+      "Frames": 30,
+      "SHA256": "092fcc5617069ee296de9effb66b5771df9d5673768fb9bbc8fa34a28aa9cdcd"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0142.rvf",
+      "Bytes": 36276,
+      "Checksum": 3074643254,
+      "FirstFrame": 4260,
+      "Frames": 30,
+      "SHA256": "c56c25409577ee345228a899449863b4f73dfce41bfd762d8021887530df604a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0143.rvf",
+      "Bytes": 37466,
+      "Checksum": 1131381757,
+      "FirstFrame": 4290,
+      "Frames": 30,
+      "SHA256": "ec99bddb037101a1820c9982fcb8b69e5a856ae6f2b98779f3f56aca6102d94b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0144.rvf",
+      "Bytes": 32288,
+      "Checksum": 2108162950,
+      "FirstFrame": 4320,
+      "Frames": 30,
+      "SHA256": "c29dbb7c5159b5d751633abab88cb9178d1a20629e4eabf5630605ae41f2fcb9"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0145.rvf",
+      "Bytes": 31168,
+      "Checksum": 862607280,
+      "FirstFrame": 4350,
+      "Frames": 30,
+      "SHA256": "b3501b9dae8a9da15a5ea5f7b3a7d281e697d35569b8e0f6ccc5291c59da491d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0146.rvf",
+      "Bytes": 37710,
+      "Checksum": 2609606924,
+      "FirstFrame": 4380,
+      "Frames": 30,
+      "SHA256": "0b08020d13d6aea1285e19a4d3f33ced1645ea7381e0f2486b0f95c9e226029c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0147.rvf",
+      "Bytes": 36338,
+      "Checksum": 4161165019,
+      "FirstFrame": 4410,
+      "Frames": 30,
+      "SHA256": "dc090e3822ebb6082c6ff0c5b29926f3939b30257bf53ef1bd0b93a7a43c2250"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0148.rvf",
+      "Bytes": 29453,
+      "Checksum": 3942861534,
+      "FirstFrame": 4440,
+      "Frames": 30,
+      "SHA256": "477392812a06beb1f13b9cbbb1d12644d4fc82ba7e05fe6792a6e525ab0fac63"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0149.rvf",
+      "Bytes": 36297,
+      "Checksum": 494020596,
+      "FirstFrame": 4470,
+      "Frames": 30,
+      "SHA256": "53b40a0fe100631a853ae621be3da63f1041ab9cf46545246019f825ba718f0e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0150.rvf",
+      "Bytes": 36724,
+      "Checksum": 987502340,
+      "FirstFrame": 4500,
+      "Frames": 30,
+      "SHA256": "a4bf87236bcdda7f9fac78e59840c1974a1fe40d9712d60e5fef952b5293a06b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0151.rvf",
+      "Bytes": 31645,
+      "Checksum": 137354572,
+      "FirstFrame": 4530,
+      "Frames": 30,
+      "SHA256": "f4cb56c9a27ee7b54284b94ca042b945183ddd8a3f001b8d5296fc288338b1f5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0152.rvf",
+      "Bytes": 31292,
+      "Checksum": 615948688,
+      "FirstFrame": 4560,
+      "Frames": 30,
+      "SHA256": "c5bae98b8cd6d7c44667738c5b19bad94e3d6a79bd5adba680d36c626af90204"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0153.rvf",
+      "Bytes": 37083,
+      "Checksum": 2924302197,
+      "FirstFrame": 4590,
+      "Frames": 30,
+      "SHA256": "31aff5125b15e508ea3dd2bc42c6410a37a1a4e13bc3a8bafcda188044dd5c81"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0154.rvf",
+      "Bytes": 36434,
+      "Checksum": 3028774574,
+      "FirstFrame": 4620,
+      "Frames": 30,
+      "SHA256": "58712f9bb1ce8b0af6a77909da74585fdd8a209cf19652b279153ce21b8c29a7"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0155.rvf",
+      "Bytes": 28929,
+      "Checksum": 1124812844,
+      "FirstFrame": 4650,
+      "Frames": 30,
+      "SHA256": "b84bc33dd3ad622dbfcedae7884070526e8956d2f0c88d47f791c7647847c1fb"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0156.rvf",
+      "Bytes": 36306,
+      "Checksum": 1787629496,
+      "FirstFrame": 4680,
+      "Frames": 30,
+      "SHA256": "c645651f87e22a97b06b22a5ff6a8287d632c518490ece503b9f4f360c01597f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0157.rvf",
+      "Bytes": 37466,
+      "Checksum": 3576529827,
+      "FirstFrame": 4710,
+      "Frames": 30,
+      "SHA256": "c5abcb4f581f4f147c4d4d1b5b9eeff3992e7fda50320942004d61cec3cf7d93"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0158.rvf",
+      "Bytes": 31645,
+      "Checksum": 1350819103,
+      "FirstFrame": 4740,
+      "Frames": 30,
+      "SHA256": "f9a18355eafcb7181a69444291cf52011b7bafeb00b0097be5995cebbf42710c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0159.rvf",
+      "Bytes": 30944,
+      "Checksum": 2991715709,
+      "FirstFrame": 4770,
+      "Frames": 30,
+      "SHA256": "8c75f0820d6a766b78abca4d994ac60e64c1ffc695126d4f8bf4ee482b2725c3"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0160.rvf",
+      "Bytes": 37710,
+      "Checksum": 2196337073,
+      "FirstFrame": 4800,
+      "Frames": 30,
+      "SHA256": "f444d7cc3eae27ec486c6eb6d5f7b8d5ccbb78bb3257cbdcae6fc44633d6da5f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0161.rvf",
+      "Bytes": 35517,
+      "Checksum": 1815202608,
+      "FirstFrame": 4830,
+      "Frames": 30,
+      "SHA256": "b04ee56be9959c42aa220831f01fc95443ef2ed5fdb1be96a95e6c483d9526e3"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0162.rvf",
+      "Bytes": 29426,
+      "Checksum": 3984536906,
+      "FirstFrame": 4860,
+      "Frames": 30,
+      "SHA256": "dca4e0906d7265dfc6cdb85d8e65d9916c340518240fc89740fe46ad2bcf7e9e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0163.rvf",
+      "Bytes": 36276,
+      "Checksum": 94786735,
+      "FirstFrame": 4890,
+      "Frames": 30,
+      "SHA256": "66bdf0078094cde33e89a84a3c5a7a288bb9b38d7d9d2f0c4f3c63062523c8fa"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0164.rvf",
+      "Bytes": 36628,
+      "Checksum": 1286149017,
+      "FirstFrame": 4920,
+      "Frames": 30,
+      "SHA256": "9574eb0dde8531c512fb00e685b34844b82470285dafbe411d7422537c1477e4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0165.rvf",
+      "Bytes": 31789,
+      "Checksum": 2356280744,
+      "FirstFrame": 4950,
+      "Frames": 30,
+      "SHA256": "452d0e98fd5c1da2b873cea21be72e0082bb8730435510cbaebe4816dced07d5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0166.rvf",
+      "Bytes": 31168,
+      "Checksum": 135223081,
+      "FirstFrame": 4980,
+      "Frames": 30,
+      "SHA256": "d6373e5f61ffb66949ab7f2d4133ac700bec7bfba2d3ca2a5186599c8fb7e1db"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0167.rvf",
+      "Bytes": 37710,
+      "Checksum": 2699325828,
+      "FirstFrame": 5010,
+      "Frames": 30,
+      "SHA256": "0ac1633aa87cb4bffe86cf0c57e944f09bdbb8620ec24dbd043af80dcc6ad4d6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0168.rvf",
+      "Bytes": 35517,
+      "Checksum": 197643011,
+      "FirstFrame": 5040,
+      "Frames": 30,
+      "SHA256": "9adc96ad2610dfdaf25f99d763b68e4d2b9c6a2449a31184e01a12177e536afa"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0169.rvf",
+      "Bytes": 29520,
+      "Checksum": 3561770728,
+      "FirstFrame": 5070,
+      "Frames": 30,
+      "SHA256": "2459f720f92da1a989940669f72d66b031598ac4ceaad34e9f3d1def373a14eb"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0170.rvf",
+      "Bytes": 36306,
+      "Checksum": 3368226909,
+      "FirstFrame": 5100,
+      "Frames": 30,
+      "SHA256": "e9c9153d8d6d4eee303ed050493e4851a2db88b018f8c4853133a06a46f7d1a2"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0171.rvf",
+      "Bytes": 37466,
+      "Checksum": 1727693641,
+      "FirstFrame": 5130,
+      "Frames": 30,
+      "SHA256": "931bcfe038ec12e2bff9744638f975728d922ac73aa72254a8c7aa26d527d19c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0172.rvf",
+      "Bytes": 31645,
+      "Checksum": 3777748165,
+      "FirstFrame": 5160,
+      "Frames": 30,
+      "SHA256": "e24eca0e829f6578a34976d08f83a8fcdbfa4782bcf3d0ab643f3342ee148022"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0173.rvf",
+      "Bytes": 31168,
+      "Checksum": 2755417852,
+      "FirstFrame": 5190,
+      "Frames": 30,
+      "SHA256": "9d5835961941a17dcd2522eea441649febe1821c2176c6e84e859114724a7e50"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0174.rvf",
+      "Bytes": 37710,
+      "Checksum": 3202314583,
+      "FirstFrame": 5220,
+      "Frames": 30,
+      "SHA256": "6be91d3a212288de67bffc320e1c2ff02b65797c41af1fb6a9082bfce6e18795"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0175.rvf",
+      "Bytes": 35652,
+      "Checksum": 1699875801,
+      "FirstFrame": 5250,
+      "Frames": 30,
+      "SHA256": "e2276d671bd6befea83ab3c96f762b7aa16ce24168996290ce892d40d2b45b11"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0176.rvf",
+      "Bytes": 29426,
+      "Checksum": 2323723504,
+      "FirstFrame": 5280,
+      "Frames": 30,
+      "SHA256": "90e2045e28d29e8f42ad865b777e0c13a76d4e120a43c4bcfe25322813dda3f3"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0177.rvf",
+      "Bytes": 35752,
+      "Checksum": 2975027510,
+      "FirstFrame": 5310,
+      "Frames": 30,
+      "SHA256": "59a67f5fe9666003ee71593d844eaa04bb4db15eed28b7660c9cc044d6f7f655"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0178.rvf",
+      "Bytes": 37370,
+      "Checksum": 852197897,
+      "FirstFrame": 5340,
+      "Frames": 30,
+      "SHA256": "4beac719cd192b995dfa259f3ef4d7978075ccc19f86a2611687cec26f579699"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0179.rvf",
+      "Bytes": 32432,
+      "Checksum": 2917803353,
+      "FirstFrame": 5370,
+      "Frames": 30,
+      "SHA256": "8026a49f0d38286ebee62443b8259c71222d7b648478a9279dae2fa70228a6e4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0180.rvf",
+      "Bytes": 31292,
+      "Checksum": 1045995740,
+      "FirstFrame": 5400,
+      "Frames": 30,
+      "SHA256": "72a8e80a9b791d269092202210be631370791bce41d8cf2ddffd3a1377d2102f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0181.rvf",
+      "Bytes": 37669,
+      "Checksum": 2009463924,
+      "FirstFrame": 5430,
+      "Frames": 30,
+      "SHA256": "181841673fe289e0ba07555c640ddca475623fe3e326c97988a4107afded9d08"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0182.rvf",
+      "Bytes": 35534,
+      "Checksum": 732814491,
+      "FirstFrame": 5460,
+      "Frames": 30,
+      "SHA256": "75e368326c6e07e01295a9bb251b49198eb798d566791e2d0a35cb2be6e3d774"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0183.rvf",
+      "Bytes": 29528,
+      "Checksum": 2896849652,
+      "FirstFrame": 5490,
+      "Frames": 30,
+      "SHA256": "e331c0f4ed1da4826fe4bafc5d6f84b9cd8c39b820680e0ea92557175cd6b233"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0184.rvf",
+      "Bytes": 36297,
+      "Checksum": 3105630226,
+      "FirstFrame": 5520,
+      "Frames": 30,
+      "SHA256": "a61b130714e3aec1acc1b03e2818a285feaa08229d79457d3029801083a408cb"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0185.rvf",
+      "Bytes": 36724,
+      "Checksum": 144643874,
+      "FirstFrame": 5550,
+      "Frames": 30,
+      "SHA256": "36ddad9b9eefcd6b845597cf681481a7a4dbd98ec88cf1417f45cf6af534a5d5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0186.rvf",
+      "Bytes": 32432,
+      "Checksum": 1810310444,
+      "FirstFrame": 5580,
+      "Frames": 30,
+      "SHA256": "3692b81533913f270f97e88b3b5b245684ffa4bd5f8b22893c258a0545b7a11c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0187.rvf",
+      "Bytes": 31168,
+      "Checksum": 304371617,
+      "FirstFrame": 5610,
+      "Frames": 30,
+      "SHA256": "4c85272df2a0575929536dfbc91f8b62e7150d55ad607a7b630c2774e4d8c9c6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0188.rvf",
+      "Bytes": 37710,
+      "Checksum": 4208292093,
+      "FirstFrame": 5640,
+      "Frames": 30,
+      "SHA256": "61cf1fe7397becf4407f9b22fb24bb890ec57cb9b5ca2ea55460c032e58db465"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0189.rvf",
+      "Bytes": 35399,
+      "Checksum": 719035003,
+      "FirstFrame": 5670,
+      "Frames": 30,
+      "SHA256": "b21781d5eb8e4f932531d4740e234488fa32936e0e1991ca1c242a1ae1371d1e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0190.rvf",
+      "Bytes": 29031,
+      "Checksum": 3303833466,
+      "FirstFrame": 5700,
+      "Frames": 30,
+      "SHA256": "5b486fe19175e1fd26a96216233ef60f99512dc67b2311f5b96218a76b60b8a0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0191.rvf",
+      "Bytes": 36268,
+      "Checksum": 1022501408,
+      "FirstFrame": 5730,
+      "Frames": 30,
+      "SHA256": "9456495cf1ce47439a193616b5f73a99095f9ac01271ec53796d6bd8afd8973d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0192.rvf",
+      "Bytes": 37466,
+      "Checksum": 4192502721,
+      "FirstFrame": 5760,
+      "Frames": 30,
+      "SHA256": "5def669cb54f30ce67186b5082d784331959d4edc857bc658a59873206ae4580"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0193.rvf",
+      "Bytes": 31645,
+      "Checksum": 3404193085,
+      "FirstFrame": 5790,
+      "Frames": 30,
+      "SHA256": "d734c0f7d757fe110cde53118517233859204b45ebea79e7d104bcb1780f8ab3"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0194.rvf",
+      "Bytes": 30944,
+      "Checksum": 3666867611,
+      "FirstFrame": 5820,
+      "Frames": 30,
+      "SHA256": "ae18a0fefa307b1425cb09ceab7112c4e579fe66123c7617db4f545692664c33"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0195.rvf",
+      "Bytes": 37710,
+      "Checksum": 3292033487,
+      "FirstFrame": 5850,
+      "Frames": 30,
+      "SHA256": "a2e72d71fa96bbccfa1e2407d1055ac0336317be01202ff1a7141de9408a822d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0196.rvf",
+      "Bytes": 35534,
+      "Checksum": 2553404736,
+      "FirstFrame": 5880,
+      "Frames": 30,
+      "SHA256": "3cae433a128423a89815681238dcce2ab202237f6f598e9e794ed7e42d60a04c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0197.rvf",
+      "Bytes": 29453,
+      "Checksum": 4160506530,
+      "FirstFrame": 5910,
+      "Frames": 30,
+      "SHA256": "1025818754cd6ef9313dd900935f2a6c0f1941a301afdb6529d1b46fbecd9284"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0198.rvf",
+      "Bytes": 36268,
+      "Checksum": 1484136947,
+      "FirstFrame": 5940,
+      "Frames": 30,
+      "SHA256": "657db33c18fcec986b691389511bcbea4d5b3f34595ed2067fe53d91f8cd19cb"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0199.rvf",
+      "Bytes": 37466,
+      "Checksum": 1121092500,
+      "FirstFrame": 5970,
+      "Frames": 30,
+      "SHA256": "29030538de8c343b82c95116b2f0a6e2d09072e814dbbbc89dfa305f19c37b85"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0200.rvf",
+      "Bytes": 31789,
+      "Checksum": 398785990,
+      "FirstFrame": 6000,
+      "Frames": 30,
+      "SHA256": "17397d2e24b86a5579824f9cf384cf4a0ad4ec1fc6672fbaef47517e9c6c61d2"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0201.rvf",
+      "Bytes": 31292,
+      "Checksum": 2190319956,
+      "FirstFrame": 6030,
+      "Frames": 30,
+      "SHA256": "f5f04cae99fbdbcebf2750336ef597a5f34d3ad134275fa1674792d20db0fdc0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0202.rvf",
+      "Bytes": 37710,
+      "Checksum": 3795022242,
+      "FirstFrame": 6060,
+      "Frames": 30,
+      "SHA256": "4960a431008b0ccd3c2d711ddaa7e0fa50c68cad7790ff8b971090ede149f9ba"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0203.rvf",
+      "Bytes": 35399,
+      "Checksum": 1079810848,
+      "FirstFrame": 6090,
+      "Frames": 30,
+      "SHA256": "60b9c86cf26b41a0542993085f7f264dea4003e1f0f6ec2d350331058799495d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0204.rvf",
+      "Bytes": 28956,
+      "Checksum": 1981636647,
+      "FirstFrame": 6120,
+      "Frames": 30,
+      "SHA256": "def3bc93cb70283342d743edf963d6eb5cf720a4fef29e74a7fda61a814366db"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0205.rvf",
+      "Bytes": 36297,
+      "Checksum": 4233963403,
+      "FirstFrame": 6150,
+      "Frames": 30,
+      "SHA256": "7e0e15a8725e4ffd39c4d3dd16dc44dfbfdcecbb2791f5684793f823241f1dd3"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0206.rvf",
+      "Bytes": 37370,
+      "Checksum": 2580971861,
+      "FirstFrame": 6180,
+      "Frames": 30,
+      "SHA256": "e29e3164e9f629107059cf2bc8930d5e75b37e6869edfc0ce8b343613703c389"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0207.rvf",
+      "Bytes": 32288,
+      "Checksum": 2694447856,
+      "FirstFrame": 6210,
+      "Frames": 30,
+      "SHA256": "3624c7f0986143a3b915a1486be2f47957907c8f94a3f52c390a5f8b2b8b3718"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0208.rvf",
+      "Bytes": 31168,
+      "Checksum": 3870971674,
+      "FirstFrame": 6240,
+      "Frames": 30,
+      "SHA256": "9b943a2185eb52acf967566d98954769b2e15273255003cad752d23d52165a3d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0209.rvf",
+      "Bytes": 37710,
+      "Checksum": 4026741,
+      "FirstFrame": 6270,
+      "Frames": 30,
+      "SHA256": "f6803d481711fde9a2be94e8af0db30c62302137ff8fb7e3028a702480ca2cb1"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0210.rvf",
+      "Bytes": 36338,
+      "Checksum": 702437188,
+      "FirstFrame": 6300,
+      "Frames": 30,
+      "SHA256": "15f3bad232083d67ff36889b237adc4f27633e530ef5bb9a1f80b91bd05d0fba"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0211.rvf",
+      "Bytes": 29031,
+      "Checksum": 3842867186,
+      "FirstFrame": 6330,
+      "Frames": 30,
+      "SHA256": "afe2de22a8a7ad33eb093e75b2ef9fa8bec55a918f57f22ed7d3fec699b429f0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0212.rvf",
+      "Bytes": 36268,
+      "Checksum": 2653823640,
+      "FirstFrame": 6360,
+      "Frames": 30,
+      "SHA256": "771c02c16d4f6c89147310aaad618cc4139bdc488297755a0119b8b864341ea7"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0213.rvf",
+      "Bytes": 37466,
+      "Checksum": 2363327545,
+      "FirstFrame": 6390,
+      "Frames": 30,
+      "SHA256": "07d53f0ff98f8e7c59425bc7fc3e047056c912dbff379e40e989de3980c3aecb"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0214.rvf",
+      "Bytes": 32288,
+      "Checksum": 2011628227,
+      "FirstFrame": 6420,
+      "Frames": 30,
+      "SHA256": "54959568bb4cdfbb3e45dcab071357ed9a6ba0cc3d13b96c87d680228dace10f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0215.rvf",
+      "Bytes": 31292,
+      "Checksum": 2405343482,
+      "FirstFrame": 6450,
+      "Frames": 30,
+      "SHA256": "0c5b26999c0007087668857d630f71aa8bb31958891e466b4d8c531201065bdd"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0216.rvf",
+      "Bytes": 37710,
+      "Checksum": 507015496,
+      "FirstFrame": 6480,
+      "Frames": 30,
+      "SHA256": "c1262427c5c533acc8a205a22ab4e4a854b050b727e40c834a7799e37fcb0106"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0217.rvf",
+      "Bytes": 36434,
+      "Checksum": 230649623,
+      "FirstFrame": 6510,
+      "Frames": 30,
+      "SHA256": "df78960ae7668e42cc9f1de73bfc0f54b1a5ce794039468e5e95b97c80b29750"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0218.rvf",
+      "Bytes": 29023,
+      "Checksum": 351232863,
+      "FirstFrame": 6540,
+      "Frames": 30,
+      "SHA256": "6e80e0e6f231d2a82ac7926ab1415d63129a64780ae633d5bfd6cdfba91c36ed"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0219.rvf",
+      "Bytes": 36306,
+      "Checksum": 2402684961,
+      "FirstFrame": 6570,
+      "Frames": 30,
+      "SHA256": "635d048d5b9204f3be9b39d91cf9a4638c8ff7c3f45c647a48250a811fb24588"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0220.rvf",
+      "Bytes": 37466,
+      "Checksum": 3585901580,
+      "FirstFrame": 6600,
+      "Frames": 30,
+      "SHA256": "9e3e16ff0d18c118668252f8e3f53cd0f710f888e2efdfb82ea4781cdb3274c5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0221.rvf",
+      "Bytes": 32432,
+      "Checksum": 1117005130,
+      "FirstFrame": 6630,
+      "Frames": 30,
+      "SHA256": "34f0eeb5c728cf946e6bf46e78c994886aa296d3a42f4c413b3f118d1332519e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0222.rvf",
+      "Bytes": 31292,
+      "Checksum": 365863117,
+      "FirstFrame": 6660,
+      "Frames": 30,
+      "SHA256": "828cc0c0b729e91585b21606b1512c9538ea4e0a79f7da3b12a4c4ac50d0c684"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0223.rvf",
+      "Bytes": 37710,
+      "Checksum": 1010004251,
+      "FirstFrame": 6690,
+      "Frames": 30,
+      "SHA256": "50ebbd47be1682d1adcc72a4bdeea1ef649be98066fd429b85e23d2d5b200505"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0224.rvf",
+      "Bytes": 36434,
+      "Checksum": 202731242,
+      "FirstFrame": 6720,
+      "Frames": 30,
+      "SHA256": "6ca022a70cc669fd6f5f160683cf5f128d1c2676a2edb9ad86bb05ce26e4a992"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0225.rvf",
+      "Bytes": 29520,
+      "Checksum": 2408337023,
+      "FirstFrame": 6750,
+      "Frames": 30,
+      "SHA256": "b435531af6984202ed2c22e38f96cb866e32ca109c4e3cfeb6ca8f2acc394c62"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0226.rvf",
+      "Bytes": 36306,
+      "Checksum": 2752253940,
+      "FirstFrame": 6780,
+      "Frames": 30,
+      "SHA256": "9df41652ddcba67470317bcf8e5e3d638b4d4163f0806ef53d230ae30bea69ff"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0227.rvf",
+      "Bytes": 36724,
+      "Checksum": 2712606483,
+      "FirstFrame": 6810,
+      "Frames": 30,
+      "SHA256": "d171838b8e85e6bdbc8dfc1a80cf59e4167c1059609ae5ceff25b1a9c681abd4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0228.rvf",
+      "Bytes": 32432,
+      "Checksum": 9512221,
+      "FirstFrame": 6840,
+      "Frames": 30,
+      "SHA256": "4269cdf0916e6197b7bd2b569d6ac4509d86742d7de470bf2be4432fe3c82d65"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0229.rvf",
+      "Bytes": 31292,
+      "Checksum": 1295163807,
+      "FirstFrame": 6870,
+      "Frames": 30,
+      "SHA256": "ed7f24d79d80aacde02445a06a83b3ae26a24ab7f0bf1618747c514970401c6e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0230.rvf",
+      "Bytes": 37710,
+      "Checksum": 93745645,
+      "FirstFrame": 6900,
+      "Frames": 30,
+      "SHA256": "edc0b9de91c19bde4d98da76cb4c66acf8e446ba530527db290c1ec094279212"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0231.rvf",
+      "Bytes": 36434,
+      "Checksum": 174812861,
+      "FirstFrame": 6930,
+      "Frames": 30,
+      "SHA256": "61b112879231d5e9cc0826c824deaa71e37d49fc1911b8d32cfa790728f1a94c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0232.rvf",
+      "Bytes": 29520,
+      "Checksum": 1300713042,
+      "FirstFrame": 6960,
+      "Frames": 30,
+      "SHA256": "4d01faffa811ace55107d2c693617c3b8805a6b562b7fd365142993ac4da480b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0233.rvf",
+      "Bytes": 36306,
+      "Checksum": 3101822919,
+      "FirstFrame": 6990,
+      "Frames": 30,
+      "SHA256": "07fb2a61a29675047a4f771047de1be4d487f18ae1b00b41c30354cb4b49a7ba"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0234.rvf",
+      "Bytes": 36724,
+      "Checksum": 1829443302,
+      "FirstFrame": 7020,
+      "Frames": 30,
+      "SHA256": "6e942939a93a516a19e344f0f010fce24cacc82bd6f02ed2c68279798b8af021"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0235.rvf",
+      "Bytes": 32432,
+      "Checksum": 3196003568,
+      "FirstFrame": 7050,
+      "Frames": 30,
+      "SHA256": "dcb02c23ed09ae4d1dc4e9728f8b2e2fc1f9ad20b5a9402723c66f29b5476947"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0236.rvf",
+      "Bytes": 31292,
+      "Checksum": 3549667698,
+      "FirstFrame": 7080,
+      "Frames": 30,
+      "SHA256": "1e1ecac2e5710d95cc67d4530f2aa910628197e24ee16bb60290136e2d752a0c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0237.rvf",
+      "Bytes": 37710,
+      "Checksum": 596734400,
+      "FirstFrame": 7110,
+      "Frames": 30,
+      "SHA256": "2d9298c0bb628b2f5aaa68e398e85dc6613a3cefdf4601bfb6e32829768b8e3b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0238.rvf",
+      "Bytes": 35652,
+      "Checksum": 2108558402,
+      "FirstFrame": 7140,
+      "Frames": 30,
+      "SHA256": "3fbd17f86530ab1c614a5a78db27ba5361e6951aa778793a3b9e42a9c13088c5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0239.rvf",
+      "Bytes": 29520,
+      "Checksum": 193089061,
+      "FirstFrame": 7170,
+      "Frames": 30,
+      "SHA256": "fd40a69651182ded85fb20fee95f334d4d7a5d46055b0321a65cbb05de7d38a2"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0240.rvf",
+      "Bytes": 36306,
+      "Checksum": 3451391898,
+      "FirstFrame": 7200,
+      "Frames": 30,
+      "SHA256": "fbdfbf5e04c4d9e4a6df1a6a2d32a56c745c7a54175c3b33e9d4ab2645b95387"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0241.rvf",
+      "Bytes": 37370,
+      "Checksum": 3008201075,
+      "FirstFrame": 7230,
+      "Frames": 30,
+      "SHA256": "d5c80fa4764b1d7c1085b1d0c13e2a6b1d67e097de3f5ea39675d25e5e425a2c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0242.rvf",
+      "Bytes": 31789,
+      "Checksum": 3524066743,
+      "FirstFrame": 7260,
+      "Frames": 30,
+      "SHA256": "7c1af650f0fb0eabf0ad3f55ae5e6c60a463bf1b9718c0e2c5273d4cdc0723b4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0243.rvf",
+      "Bytes": 31292,
+      "Checksum": 1510187333,
+      "FirstFrame": 7290,
+      "Frames": 30,
+      "SHA256": "a438df5debf8098c54bc2b059bbc6286ffdd0c1143b35b2d0a72678e625fd37b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0244.rvf",
+      "Bytes": 37710,
+      "Checksum": 1099723155,
+      "FirstFrame": 7320,
+      "Frames": 30,
+      "SHA256": "1b2d1c6abd202bbb7ce949bd1fcc925f738dd236ba1e9fa97c41c56d8e25f9d9"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0245.rvf",
+      "Bytes": 36434,
+      "Checksum": 3139530594,
+      "FirstFrame": 7350,
+      "Frames": 30,
+      "SHA256": "52c7405a87d824ab36fe1ecee88dcc2308a6e29581d312d65543a2273c106dae"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0246.rvf",
+      "Bytes": 29023,
+      "Checksum": 1185440682,
+      "FirstFrame": 7380,
+      "Frames": 30,
+      "SHA256": "6dd75808756a27aa5bca603135d72b255854055e6853748eac24cd008f46df8c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0247.rvf",
+      "Bytes": 36306,
+      "Checksum": 388436076,
+      "FirstFrame": 7410,
+      "Frames": 30,
+      "SHA256": "9756e16dd796481c89f92ca047bda33900f88931d96eadc34f41c37216e72934"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0248.rvf",
+      "Bytes": 37466,
+      "Checksum": 4182213464,
+      "FirstFrame": 7440,
+      "Frames": 30,
+      "SHA256": "abbb0c97969361a86584fa7d087ff0f991dcd1efe4ef45d4dac29d031fc84be6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0249.rvf",
+      "Bytes": 32432,
+      "Checksum": 981017750,
+      "FirstFrame": 7470,
+      "Frames": 30,
+      "SHA256": "d790592cb8cecb3255593795ad6d3f3c8f3802565dc6c84b32baa1591e46bcf6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0250.rvf",
+      "Bytes": 31292,
+      "Checksum": 3764691224,
+      "FirstFrame": 7500,
+      "Frames": 30,
+      "SHA256": "3a4b13100c701e5d7837475696f1e15e845ec8f3b986f4975986b408b2941566"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0251.rvf",
+      "Bytes": 37710,
+      "Checksum": 1602711910,
+      "FirstFrame": 7530,
+      "Frames": 30,
+      "SHA256": "bd6b9ace9fb1cd7912d3cd39ccb36aff12005a9e8e44cbd79ee98c3f08e7ed30"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0252.rvf",
+      "Bytes": 36338,
+      "Checksum": 3649853237,
+      "FirstFrame": 7560,
+      "Frames": 30,
+      "SHA256": "b67bbd8dad3383972344b64d6f6856831027e3f15e7d7f85e061c6e29fc305a1"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0253.rvf",
+      "Bytes": 29528,
+      "Checksum": 2973199152,
+      "FirstFrame": 7590,
+      "Frames": 30,
+      "SHA256": "c5e12bdf61ef8c5b14c7b12a0e9e340753b84674a0341d4c525534c867a1bb06"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0254.rvf",
+      "Bytes": 36297,
+      "Checksum": 4034865230,
+      "FirstFrame": 7620,
+      "Frames": 30,
+      "SHA256": "28598beae1c7b011f58c1af72adfe35005ed66556f2f58d12e79084a08af9d45"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0255.rvf",
+      "Bytes": 37466,
+      "Checksum": 4201874474,
+      "FirstFrame": 7650,
+      "Frames": 30,
+      "SHA256": "2178db6207906e8bffaa90e741060952a7d2fedf58e7d0747c99d8d902e7524f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0256.rvf",
+      "Bytes": 32432,
+      "Checksum": 4167509097,
+      "FirstFrame": 7680,
+      "Frames": 30,
+      "SHA256": "f4dcec3edcfd3bfd065064cddaabeaa8b1b28f3793d2b6f634f34061425026cd"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0257.rvf",
+      "Bytes": 31292,
+      "Checksum": 1725210859,
+      "FirstFrame": 7710,
+      "Frames": 30,
+      "SHA256": "1d55aa89f66fd0a4fd5ae097eed7dc9c02b442b33aad001800d45b4f41ab821b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0258.rvf",
+      "Bytes": 37710,
+      "Checksum": 2105700665,
+      "FirstFrame": 7740,
+      "Frames": 30,
+      "SHA256": "2679dee632a390adede3e7860214f19c3d8f9354bd2f64b3e394da87972dd9f6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0259.rvf",
+      "Bytes": 35534,
+      "Checksum": 1288101034,
+      "FirstFrame": 7770,
+      "Frames": 30,
+      "SHA256": "f6e20a750477478b2d72cb5237df24d0d81546b65512021a02aadd29acebb5aa"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0260.rvf",
+      "Bytes": 29528,
+      "Checksum": 1841982211,
+      "FirstFrame": 7800,
+      "Frames": 30,
+      "SHA256": "5bc3373ee411fa4ab6458272f51afb6610ed8ddf960070d934fc2dbf2a828309"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0261.rvf",
+      "Bytes": 36297,
+      "Checksum": 116992033,
+      "FirstFrame": 7830,
+      "Frames": 30,
+      "SHA256": "0300a244a5f11c6a8d0ef3838c591b4a61269708419659925db5c6dffad3ee5e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0262.rvf",
+      "Bytes": 37466,
+      "Checksum": 1130464253,
+      "FirstFrame": 7860,
+      "Frames": 30,
+      "SHA256": "d913c3e47b7241c71674dca5c36c20c028a6ecfb651604b10b29888cb8708fea"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0263.rvf",
+      "Bytes": 32432,
+      "Checksum": 3610191163,
+      "FirstFrame": 7890,
+      "Frames": 30,
+      "SHA256": "0abcaa165e731983f40d123fa8c427feeb00a90d5c41398546784cc4e52743e4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0264.rvf",
+      "Bytes": 31292,
+      "Checksum": 2654511549,
+      "FirstFrame": 7920,
+      "Frames": 30,
+      "SHA256": "62e8903509245af9d091c609916ef01987e862d91d6ec07a2af25b49bd65c14f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0265.rvf",
+      "Bytes": 37710,
+      "Checksum": 2608689420,
+      "FirstFrame": 7950,
+      "Frames": 30,
+      "SHA256": "16cd41b27faea6bbd9e28cd5a09a81dd016797109873007fe1c16a365d5194eb"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0266.rvf",
+      "Bytes": 36338,
+      "Checksum": 4160247515,
+      "FirstFrame": 7980,
+      "Frames": 30,
+      "SHA256": "62e13985af7550ec05ef3b45b5d89d577ea84e29255e12b02f569a25c850b940"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0267.rvf",
+      "Bytes": 29453,
+      "Checksum": 3941944030,
+      "FirstFrame": 8010,
+      "Frames": 30,
+      "SHA256": "614a63b73c818a4fb60402d72612d591c6f6c58d40e87593293688fcab45fbad"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0268.rvf",
+      "Bytes": 36268,
+      "Checksum": 2299339311,
+      "FirstFrame": 8040,
+      "Frames": 30,
+      "SHA256": "fd497f88e677decfc21e3b28bc4009d6ee37f69a87410f4501e104c9c2de7f3f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0269.rvf",
+      "Bytes": 37466,
+      "Checksum": 2353038288,
+      "FirstFrame": 8070,
+      "Frames": 30,
+      "SHA256": "85f9a435a94dd2e933b5642e037fdbfa7e87a8205e9e906bf3166a54c7ce5a71"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0270.rvf",
+      "Bytes": 32432,
+      "Checksum": 2502698254,
+      "FirstFrame": 8100,
+      "Frames": 30,
+      "SHA256": "64e9267c23d26d43a13fe2d86e94dc29dd5164274979149574df19d0cf85a12d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0271.rvf",
+      "Bytes": 31292,
+      "Checksum": 615031184,
+      "FirstFrame": 8130,
+      "Frames": 30,
+      "SHA256": "80a76099b25db94f487ed491d236da037410fe96cc25923d3033e4047d5594cf"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0272.rvf",
+      "Bytes": 37710,
+      "Checksum": 1692430814,
+      "FirstFrame": 8160,
+      "Frames": 30,
+      "SHA256": "13216997320acf1d55a9c44e41df58f97d676611d791e77f82740e31c9d72aac"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0273.rvf",
+      "Bytes": 36338,
+      "Checksum": 1537693613,
+      "FirstFrame": 8190,
+      "Frames": 30,
+      "SHA256": "c763beae0e05eef4658ac69e1ea0c87cfa5d5df014716b40955fbc94d7b845d4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0274.rvf",
+      "Bytes": 29528,
+      "Checksum": 3873532585,
+      "FirstFrame": 8220,
+      "Frames": 30,
+      "SHA256": "b533b9fcf6ad13d5b54f28210e08092b2a67cc8cb3caa5479d11bca2dadbed49"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0275.rvf",
+      "Bytes": 36268,
+      "Checksum": 2760974850,
+      "FirstFrame": 8250,
+      "Frames": 30,
+      "SHA256": "aa90d2b0349b814243a5e24942678ffa7243ab2c8c47b45ba34df180fda3d6cc"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0276.rvf",
+      "Bytes": 37466,
+      "Checksum": 3575612323,
+      "FirstFrame": 8280,
+      "Frames": 30,
+      "SHA256": "de07f3a34ab91d6f19374f61207a892d0d36efca562ef4833889cf2ea206b27c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0277.rvf",
+      "Bytes": 31789,
+      "Checksum": 1566571989,
+      "FirstFrame": 8310,
+      "Frames": 30,
+      "SHA256": "6dc30b722831531d3a139d91dd276cf452aaa31aa1f83094e8ea0dac9d8766b8"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0278.rvf",
+      "Bytes": 31292,
+      "Checksum": 2869535075,
+      "FirstFrame": 8340,
+      "Frames": 30,
+      "SHA256": "7e02247cadec41238bb1d1daae22f24e4e2d72e670483c1e51a1965a7c4b40e8"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0279.rvf",
+      "Bytes": 37710,
+      "Checksum": 2195419569,
+      "FirstFrame": 8370,
+      "Frames": 30,
+      "SHA256": "8e525a99f2466fc382945221c9286f29d94afa2947c67823b6a8fec920bbe856"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0280.rvf",
+      "Bytes": 36338,
+      "Checksum": 1792890752,
+      "FirstFrame": 8400,
+      "Frames": 30,
+      "SHA256": "420d6d7338b877ded0eb25250e4096dd38884a58f90711d2f80c4ca1cb570d2f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0281.rvf",
+      "Bytes": 29031,
+      "Checksum": 1964933166,
+      "FirstFrame": 8430,
+      "Frames": 30,
+      "SHA256": "aa9619c4c37122736a8132f2534c2815fe80370445b7ef75035869203b128c8b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0282.rvf",
+      "Bytes": 36297,
+      "Checksum": 1245325210,
+      "FirstFrame": 8460,
+      "Frames": 30,
+      "SHA256": "8623f72ac4d36bee1224269705a99e4087489858f92587f5500007997b668bbf"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0283.rvf",
+      "Bytes": 37466,
+      "Checksum": 504202102,
+      "FirstFrame": 8490,
+      "Frames": 30,
+      "SHA256": "3900832acd1482cdee81968a2cb61327e676f75f79f899b7db96870e2915d08a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0284.rvf",
+      "Bytes": 32432,
+      "Checksum": 287712436,
+      "FirstFrame": 8520,
+      "Frames": 30,
+      "SHA256": "edb5895fcc645b020505c06ef1c743ea51dd05aba77c8c39e046f1ab78d2bbc6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0285.rvf",
+      "Bytes": 31168,
+      "Checksum": 134305577,
+      "FirstFrame": 8550,
+      "Frames": 30,
+      "SHA256": "0cafdf045cfd06c22a3d36c9d19de33c33c08d9e2c8000418abc3f7db41ce18e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0286.rvf",
+      "Bytes": 37083,
+      "Checksum": 3333574427,
+      "FirstFrame": 8580,
+      "Frames": 30,
+      "SHA256": "dacf9ffdc689ea83c34bd2c5928308a82178eff4c0684056e9a1d38dbf440e7a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0287.rvf",
+      "Bytes": 36434,
+      "Checksum": 1698590547,
+      "FirstFrame": 8610,
+      "Frames": 30,
+      "SHA256": "10bd9f71a8f6211413d790618acf104e15681e9729447120132f240e62c2a3b7"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0288.rvf",
+      "Bytes": 29023,
+      "Checksum": 2735825819,
+      "FirstFrame": 8640,
+      "Frames": 30,
+      "SHA256": "e531f814a250d7948111b45511bd1c2b43926b4c48ec69ca22020653ce6a1ae1"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0289.rvf",
+      "Bytes": 36306,
+      "Checksum": 3367309405,
+      "FirstFrame": 8670,
+      "Frames": 30,
+      "SHA256": "13ac0eec3e0e7da145e281af6f593b346c71bded397d0db801bea2c94845eb47"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0290.rvf",
+      "Bytes": 37466,
+      "Checksum": 523863112,
+      "FirstFrame": 8700,
+      "Frames": 30,
+      "SHA256": "2ea386bc892c0871127127fb01fe1d1fb786be7bd980958e444d27e5754d88ea"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0291.rvf",
+      "Bytes": 32432,
+      "Checksum": 3474203783,
+      "FirstFrame": 8730,
+      "Frames": 30,
+      "SHA256": "0cb310ecc434a1ea0003cd374fe35017973c28a0c1d45ece6df10c423c95b4df"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0292.rvf",
+      "Bytes": 31168,
+      "Checksum": 2754500348,
+      "FirstFrame": 8760,
+      "Frames": 30,
+      "SHA256": "5895b0995c7d40a2f622a57bb7c86cbf9c8e04c9061c2f8b93336d71e6002bd9"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0293.rvf",
+      "Bytes": 37710,
+      "Checksum": 3201397079,
+      "FirstFrame": 8790,
+      "Frames": 30,
+      "SHA256": "907dc8e6342018172f262044b80d286b37b84e72af48591795e8cee7318bdc23"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0294.rvf",
+      "Bytes": 35652,
+      "Checksum": 1698958297,
+      "FirstFrame": 8820,
+      "Frames": 30,
+      "SHA256": "4ddfa50321e5010bc99e1946e7b781350e854a9e1546e4f031a67b101b5e08e2"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0295.rvf",
+      "Bytes": 29426,
+      "Checksum": 2322806000,
+      "FirstFrame": 8850,
+      "Frames": 30,
+      "SHA256": "161d9363eaccfb8fbed1ba4485cd7443c6f0fb3cd85c501bc15619ecd402ff73"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0296.rvf",
+      "Bytes": 36306,
+      "Checksum": 3716878384,
+      "FirstFrame": 8880,
+      "Frames": 30,
+      "SHA256": "75846a28bef5bf9b7fc0874e356f377f905ae252a669b7e8aeaabfe2b1a35804"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0297.rvf",
+      "Bytes": 36724,
+      "Checksum": 1026889551,
+      "FirstFrame": 8910,
+      "Frames": 30,
+      "SHA256": "d469fa908e62838c77874f44f2f6ddf2c75a21551a1e6c3423318a34a44eb26b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0298.rvf",
+      "Bytes": 31789,
+      "Checksum": 2325478989,
+      "FirstFrame": 8940,
+      "Frames": 30,
+      "SHA256": "25a7c1fb80657f1e163d5e6298c90ec8155b182043a827aaa7640dc76f76ac99"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0299.rvf",
+      "Bytes": 31168,
+      "Checksum": 1080710863,
+      "FirstFrame": 8970,
+      "Frames": 30,
+      "SHA256": "b477a1ab44e13377645e1852263c61a693e7b6febb875bad5dc9bca027346a81"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0300.rvf",
+      "Bytes": 37669,
+      "Checksum": 2008546420,
+      "FirstFrame": 9000,
+      "Frames": 30,
+      "SHA256": "164ade9f6e6023d19f53794a9512e3b42e15066244b452447bd9890ee3977e81"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0301.rvf",
+      "Bytes": 35534,
+      "Checksum": 731896987,
+      "FirstFrame": 9030,
+      "Frames": 30,
+      "SHA256": "8f0f05a179e095afb56d77c44d1870e45b90dfd80bdeaaeb831373da8a5acfa0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0302.rvf",
+      "Bytes": 29031,
+      "Checksum": 2968420263,
+      "FirstFrame": 9060,
+      "Frames": 30,
+      "SHA256": "f87fdd5654f858fc6fef576d21ba307a333d6770a8c6bb83db5ca2fdd941ecc0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0303.rvf",
+      "Bytes": 36268,
+      "Checksum": 559948365,
+      "FirstFrame": 9090,
+      "Frames": 30,
+      "SHA256": "7e4eb535d7a58d9ab258b9c8df2deb3e0228cb61368947b00e0931af0b7a480f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0304.rvf",
+      "Bytes": 36724,
+      "Checksum": 143726370,
+      "FirstFrame": 9120,
+      "Frames": 30,
+      "SHA256": "db2b37525c50baf61c62f3ad846595eca42c1886b7b85127a9206dd10fa8a4fd"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0305.rvf",
+      "Bytes": 31789,
+      "Checksum": 3114270240,
+      "FirstFrame": 9150,
+      "Frames": 30,
+      "SHA256": "f30fb2ebc7abdb031985423224542870746cb4483e214f98aea86c01f7761d5e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0306.rvf",
+      "Bytes": 30944,
+      "Checksum": 385152456,
+      "FirstFrame": 9180,
+      "Frames": 30,
+      "SHA256": "0e78997961796089f34491e81030a2c70c3936985ff69cc1402ade4d5c836ece"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0307.rvf",
+      "Bytes": 37710,
+      "Checksum": 2788127228,
+      "FirstFrame": 9210,
+      "Frames": 30,
+      "SHA256": "91411d79b7f4f4eb87c64876f4029ce63adfa76d5234e468719ef91a32105a38"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0308.rvf",
+      "Bytes": 36299,
+      "Checksum": 1472802264,
+      "FirstFrame": 9240,
+      "Frames": 30,
+      "SHA256": "6a97339bfc3a0d71e563e0750eff03fc6d184f97b9bafd7901ddf147d1f8eaf5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0309.rvf",
+      "Bytes": 29520,
+      "Checksum": 237981281,
+      "FirstFrame": 9270,
+      "Frames": 30,
+      "SHA256": "1d024126d74cbacf3d1ef816f9d57d87c35614866a8f79b017e2bba943404538"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0310.rvf",
+      "Bytes": 36276,
+      "Checksum": 2226148602,
+      "FirstFrame": 9300,
+      "Frames": 30,
+      "SHA256": "722bf86c1a62acd28581c252361583799c1c41b6252c4aba0b78f2f28853b436"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0311.rvf",
+      "Bytes": 37466,
+      "Checksum": 4191585217,
+      "FirstFrame": 9330,
+      "Frames": 30,
+      "SHA256": "6af76b4087e55eb932589554a0bcab4ffc4866c2f74fd262554e2b348665746b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0312.rvf",
+      "Bytes": 31645,
+      "Checksum": 3403275581,
+      "FirstFrame": 9360,
+      "Frames": 30,
+      "SHA256": "f824e023e2eda5006e36143c43a00d4c57a31f8731bbdb922778bc327c8393ca"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0313.rvf",
+      "Bytes": 31068,
+      "Checksum": 1748058039,
+      "FirstFrame": 9390,
+      "Frames": 30,
+      "SHA256": "bc0dac3d16de0dbd73f6c7626897a462a3e2eb8070580cbd62485dd211f1b32b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0314.rvf",
+      "Bytes": 37083,
+      "Checksum": 844451686,
+      "FirstFrame": 9420,
+      "Frames": 30,
+      "SHA256": "283e2a0d95a1a0b2c85916935a622ebf46fd1ad029b0998ce725abb5c7c0b827"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0315.rvf",
+      "Bytes": 35517,
+      "Checksum": 2892352334,
+      "FirstFrame": 9450,
+      "Frames": 30,
+      "SHA256": "7223fec206b8a9c00f25884101c6e1f137777081f23dabdb6834cb2f6695f829"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0316.rvf",
+      "Bytes": 28929,
+      "Checksum": 2766686237,
+      "FirstFrame": 9480,
+      "Frames": 30,
+      "SHA256": "6ca7284dd15c5fb8d68f3990f321f63c06e376741b94d9a4e6ab215925173d4c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0317.rvf",
+      "Bytes": 36276,
+      "Checksum": 2664191181,
+      "FirstFrame": 9510,
+      "Frames": 30,
+      "SHA256": "009e1cf5d7d33afef2d5ecee3475e31cffc491c9576564df27c996afe9b5ffc5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0318.rvf",
+      "Bytes": 37466,
+      "Checksum": 1120174996,
+      "FirstFrame": 9540,
+      "Frames": 30,
+      "SHA256": "bc58f686362ab369ca692cd9e95af65000fa82bb2d05a5b8de949faad50c4c7e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0319.rvf",
+      "Bytes": 32288,
+      "Checksum": 3376349981,
+      "FirstFrame": 9570,
+      "Frames": 30,
+      "SHA256": "aaa9faf8bf0b2d97d62786195fb4236af2be0dbcc466769e5061b1c894a75271"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0320.rvf",
+      "Bytes": 31292,
+      "Checksum": 2189402452,
+      "FirstFrame": 9600,
+      "Frames": 30,
+      "SHA256": "9c61d7d3cfcfe0e0d36276b0414ddfdc2e9b756af82c8dfb59d8dba258de6e2d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0321.rvf",
+      "Bytes": 37083,
+      "Checksum": 3196538681,
+      "FirstFrame": 9630,
+      "Frames": 30,
+      "SHA256": "396b38d5109dda983e497f5b49dd77fd1f6fe530f708728fcfb7702928c02bef"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0322.rvf",
+      "Bytes": 36338,
+      "Checksum": 446322545,
+      "FirstFrame": 9660,
+      "Frames": 30,
+      "SHA256": "805d1903628df72f026a9b3f07a51f73dc4d6e7cdad97156a537ff2d5e68e49a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0323.rvf",
+      "Bytes": 29528,
+      "Checksum": 3049548652,
+      "FirstFrame": 9690,
+      "Frames": 30,
+      "SHA256": "1c8c4426c4f3c76367593aa8ff9afe2861037573e8ac096b01e80e827a2d838d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0324.rvf",
+      "Bytes": 36268,
+      "Checksum": 2191270597,
+      "FirstFrame": 9720,
+      "Frames": 30,
+      "SHA256": "62df5300fafc6220c8f71bbee5dab5f271b4f21cc2d0cee68919146f84ef1825"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0325.rvf",
+      "Bytes": 36724,
+      "Checksum": 1788221083,
+      "FirstFrame": 9750,
+      "Frames": 30,
+      "SHA256": "2ba2f74439f54504fbc56dbcb84740c5f181252acb4b2d5c356b713d81330ad4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0326.rvf",
+      "Bytes": 31645,
+      "Checksum": 1536220387,
+      "FirstFrame": 9780,
+      "Frames": 30,
+      "SHA256": "96e1328215c030cb4f83409c67c1e110283faf74e32f0450f15c8f4b59e090c5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0327.rvf",
+      "Bytes": 31068,
+      "Checksum": 3284287325,
+      "FirstFrame": 9810,
+      "Frames": 30,
+      "SHA256": "276a40ef1449a7028890aa7838a611469c630a97a5d976b0041863c14fb9e95f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0328.rvf",
+      "Bytes": 37710,
+      "Checksum": 3109237,
+      "FirstFrame": 9840,
+      "Frames": 30,
+      "SHA256": "3a2aa034c1cfa0b20325ceaf25ab4895023ab82ea91723fe6bab4e0699df106f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0329.rvf",
+      "Bytes": 35399,
+      "Checksum": 4103314163,
+      "FirstFrame": 9870,
+      "Frames": 30,
+      "SHA256": "3dd6c110ec26c624340b533ff256894c14434499c943152f7f558ac6df60aa0d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0330.rvf",
+      "Bytes": 29453,
+      "Checksum": 339430215,
+      "FirstFrame": 9900,
+      "Frames": 30,
+      "SHA256": "04cb16ce269927de8ec13871f52741b2c812d98c3c708846580dccdd982ee0a3"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0331.rvf",
+      "Bytes": 36268,
+      "Checksum": 2652906136,
+      "FirstFrame": 9930,
+      "Frames": 30,
+      "SHA256": "b6fadf8294908daa08dcae7e579f1bd80b8bc46eb479821b97fd3851b20ae570"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0332.rvf",
+      "Bytes": 36724,
+      "Checksum": 184031085,
+      "FirstFrame": 9960,
+      "Frames": 30,
+      "SHA256": "0bf7f8572f14fe4fd28f8bebdd96d950b7cdd175a6f4394f57db9d6bc4c3ca25"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0333.rvf",
+      "Bytes": 31645,
+      "Checksum": 2749684918,
+      "FirstFrame": 9990,
+      "Frames": 30,
+      "SHA256": "e45bbab1023bd240d1cec3a7d8d4cb48f6b2cde45704c6ca98e0a3216876452e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0334.rvf",
+      "Bytes": 30944,
+      "Checksum": 626390292,
+      "FirstFrame": 10020,
+      "Frames": 30,
+      "SHA256": "b43baf7c2250bd162c6ea94293910fe3d08af03eeda732b4d6878595d2d85eb8"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0335.rvf",
+      "Bytes": 37710,
+      "Checksum": 506097992,
+      "FirstFrame": 10050,
+      "Frames": 30,
+      "SHA256": "3827b899cad1e7ed66c86f8cf8bf94bcf90212111e20ba3baa5423460cf41531"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0336.rvf",
+      "Bytes": 36338,
+      "Checksum": 956716823,
+      "FirstFrame": 10080,
+      "Frames": 30,
+      "SHA256": "a3e14d7cd1d540f6ffa0f4961a559ea6f2aa27720286a4446d7f91006cf23b2f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0337.rvf",
+      "Bytes": 28956,
+      "Checksum": 3092078541,
+      "FirstFrame": 10110,
+      "Frames": 30,
+      "SHA256": "862afc904ead23c8f7b938dcf3a175f340f08b1bf5a0dc1487fc2684ec1b0698"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0338.rvf",
+      "Bytes": 36268,
+      "Checksum": 3114541675,
+      "FirstFrame": 10140,
+      "Frames": 30,
+      "SHA256": "fcf56b0fc4d1bb6de88e1f6c5b5414beb0fc84cc633e96fc7004bc2a05a08904"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0339.rvf",
+      "Bytes": 36724,
+      "Checksum": 3594852160,
+      "FirstFrame": 10170,
+      "Frames": 30,
+      "SHA256": "960ec33f2269002d4352e8ae42f42cab205726d662470fd1622415a6d0c18194"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0340.rvf",
+      "Bytes": 32288,
+      "Checksum": 3765568405,
+      "FirstFrame": 10200,
+      "Frames": 30,
+      "SHA256": "cf4335931564477f6c8bdbdf9976b6fb566b57b1baf0a6134313eeed9f4bfe0b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0341.rvf",
+      "Bytes": 31068,
+      "Checksum": 4045881346,
+      "FirstFrame": 10230,
+      "Frames": 30,
+      "SHA256": "b81ccc6c2c18c70d635c2f163936b253fdaed66d137e3d5b6043705c60bcf91e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0342.rvf",
+      "Bytes": 37710,
+      "Checksum": 1009086747,
+      "FirstFrame": 10260,
+      "Frames": 30,
+      "SHA256": "0bf29dbf065a209c07157008d82fa3d01ec5502a6b946d57986c4ca4de09e157"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0343.rvf",
+      "Bytes": 35399,
+      "Checksum": 1564187289,
+      "FirstFrame": 10290,
+      "Frames": 30,
+      "SHA256": "21279c975c5f0d92c9fa0da444032d1c81e6f3030c8453e3f4fbf36a073c0502"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0344.rvf",
+      "Bytes": 29528,
+      "Checksum": 3949882085,
+      "FirstFrame": 10320,
+      "Frames": 30,
+      "SHA256": "13243a71ec5f2b81b7450a4589e78cb39c5a0be980bc188f7b2927a4367d7743"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0345.rvf",
+      "Bytes": 36297,
+      "Checksum": 1798449155,
+      "FirstFrame": 10350,
+      "Frames": 30,
+      "SHA256": "3a0ce99dd0022c48e6d573b0c0f908daadf52721472d9d149725054dc499d4ed"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0346.rvf",
+      "Bytes": 37466,
+      "Checksum": 513573855,
+      "FirstFrame": 10380,
+      "Frames": 30,
+      "SHA256": "4212b16ced59c0a5261d5100065cae0b499c192401265240a76bba1bf4e1e287"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0347.rvf",
+      "Bytes": 32432,
+      "Checksum": 8594717,
+      "FirstFrame": 10410,
+      "Frames": 30,
+      "SHA256": "47a37cfc1be3a374ffefefd9b9e1d25c878d2099a4befbabe7ba9409658d3bd7"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0348.rvf",
+      "Bytes": 30944,
+      "Checksum": 47117753,
+      "FirstFrame": 10440,
+      "Frames": 30,
+      "SHA256": "e64da0484fb1f44360de95c50e1d6b9338eae9488a8f1b402ee93306cb07b40c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0349.rvf",
+      "Bytes": 37083,
+      "Checksum": 707415940,
+      "FirstFrame": 10470,
+      "Frames": 30,
+      "SHA256": "88f4ec62c385f830ab1e52ee8ee26e7a49f75b30258bd21209578b56e20f1529"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0350.rvf",
+      "Bytes": 35652,
+      "Checksum": 1289358192,
+      "FirstFrame": 10500,
+      "Frames": 30,
+      "SHA256": "7f5bd739adc2581a967a32cb5c55f6004a0891819a85e1eac4a4f29ed7497650"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0351.rvf",
+      "Bytes": 29426,
+      "Checksum": 1816212615,
+      "FirstFrame": 10530,
+      "Frames": 30,
+      "SHA256": "c5cb5719dae1134ef96539f9c7100df1ef6f34bc6668e410d814bdb25b7b4ca0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0352.rvf",
+      "Bytes": 36306,
+      "Checksum": 3100905415,
+      "FirstFrame": 10560,
+      "Frames": 30,
+      "SHA256": "8dd19b038c79941a4b45db03faf829241ca2d9f0e1f3512980a9f6f1061d4778"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0353.rvf",
+      "Bytes": 37466,
+      "Checksum": 1736147890,
+      "FirstFrame": 10590,
+      "Frames": 30,
+      "SHA256": "bd0d264a73ce3f15e349f1f417eff3107cc42defea7d9b652696a85885f49c66"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0354.rvf",
+      "Bytes": 32432,
+      "Checksum": 3195086064,
+      "FirstFrame": 10620,
+      "Frames": 30,
+      "SHA256": "e44b2bdb418e412fa3b5b11d07216d3e381778408a108f93b83df60f5efd8bd3"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0355.rvf",
+      "Bytes": 31168,
+      "Checksum": 2365413221,
+      "FirstFrame": 10650,
+      "Frames": 30,
+      "SHA256": "ac8989ecab733dfb641bd1e08b6b66b4a99428741d9d641428190c246bcbd414"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0356.rvf",
+      "Bytes": 37710,
+      "Checksum": 595816896,
+      "FirstFrame": 10680,
+      "Frames": 30,
+      "SHA256": "8e228cd6d8ace5e87d4afe63678638c84f4ba0f1aa8d16b16bead55a6809d4ea"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0357.rvf",
+      "Bytes": 36338,
+      "Checksum": 3138541455,
+      "FirstFrame": 10710,
+      "Frames": 30,
+      "SHA256": "b9701000509cbc690f4f18aa724f0e53da58cc2dfd904fa516fa030a1cbbd006"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0358.rvf",
+      "Bytes": 29528,
+      "Checksum": 940731274,
+      "FirstFrame": 10740,
+      "Frames": 30,
+      "SHA256": "671576510bc40798a6c1e4832222206a440a11d76550c1b10d92b190d473ca46"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0359.rvf",
+      "Bytes": 36297,
+      "Checksum": 2550671273,
+      "FirstFrame": 10770,
+      "Frames": 30,
+      "SHA256": "a5225aaf2ee76c26b2ce91e55d127292db89932deb0634753e27cebea9bde2e1"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0360.rvf",
+      "Bytes": 37466,
+      "Checksum": 2958721925,
+      "FirstFrame": 10800,
+      "Frames": 30,
+      "SHA256": "86a19f61df36b922ee817c59fbd6e4da6a04388a7009a3b5ca00b6167eb10765"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0361.rvf",
+      "Bytes": 32432,
+      "Checksum": 2087593155,
+      "FirstFrame": 10830,
+      "Frames": 30,
+      "SHA256": "29076e351c6a984840d7fd602f76f85771fd7b764a6b88769835c85a605b9a5a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0362.rvf",
+      "Bytes": 31292,
+      "Checksum": 1509269829,
+      "FirstFrame": 10860,
+      "Frames": 30,
+      "SHA256": "2ecf8e05d05cace28d794e8f45c2c73dba2daa634dd256d7b076ee10844e4256"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0363.rvf",
+      "Bytes": 37710,
+      "Checksum": 1098805651,
+      "FirstFrame": 10890,
+      "Frames": 30,
+      "SHA256": "1eb1c7c8883d2a1663341a04bbd89fe19d843833d5d939418312f87f75fcf28f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0364.rvf",
+      "Bytes": 36338,
+      "Checksum": 3393738594,
+      "FirstFrame": 10920,
+      "Frames": 30,
+      "SHA256": "5a34d4603c92025a3397c6525cf0a9f74b43e11b0438044e764d4408d0761b81"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0365.rvf",
+      "Bytes": 29528,
+      "Checksum": 4103498589,
+      "FirstFrame": 10950,
+      "Frames": 30,
+      "SHA256": "e5c00cf0fd7240d71ee086bad62fbd70c54639c402578b998eba142d38c46b8a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0366.rvf",
+      "Bytes": 36297,
+      "Checksum": 3657836667,
+      "FirstFrame": 10980,
+      "Frames": 30,
+      "SHA256": "f42b650bb7c3c33fd92307d4abd5c5d23d3c0946c7950c2c3f315ae904400948"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0367.rvf",
+      "Bytes": 37466,
+      "Checksum": 4181295960,
+      "FirstFrame": 11010,
+      "Frames": 30,
+      "SHA256": "bafbc7ab1da8e45c6a3acae264f4c1ce21957ba788cca8528dfd1f6b5ddf4f58"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0368.rvf",
+      "Bytes": 32288,
+      "Checksum": 1034289889,
+      "FirstFrame": 11040,
+      "Frames": 30,
+      "SHA256": "b69191ce45601cdb48e15017cf1e6311c2094de754290e1aa09e85f855f67d39"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0369.rvf",
+      "Bytes": 31292,
+      "Checksum": 3763773720,
+      "FirstFrame": 11070,
+      "Frames": 30,
+      "SHA256": "643d4ceea1e3b003eea5da1c237f3d5504ea1a5c8ed8971af905917013627328"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0370.rvf",
+      "Bytes": 37710,
+      "Checksum": 1601794406,
+      "FirstFrame": 11100,
+      "Frames": 30,
+      "SHA256": "2f92c0e920843e2679709dd342a3890d57d5f181b959550f722401b355c6a7af"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0371.rvf",
+      "Bytes": 35534,
+      "Checksum": 2954878167,
+      "FirstFrame": 11130,
+      "Frames": 30,
+      "SHA256": "862b9743772f8aab5f04b8d256c6cfa7657bb872caa4dc37c7d06eeadb2ecf76"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0372.rvf",
+      "Bytes": 29528,
+      "Checksum": 2972281648,
+      "FirstFrame": 11160,
+      "Frames": 30,
+      "SHA256": "43bba64c234261d9a3063265ea3698e94a1ab534a64386fc5883984383e29d60"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0373.rvf",
+      "Bytes": 36297,
+      "Checksum": 4033947726,
+      "FirstFrame": 11190,
+      "Frames": 30,
+      "SHA256": "42a3d38491d61ca16be8e7fc846aa8e83c3870fc23f4155763a6f6aa8166c5e1"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0374.rvf",
+      "Bytes": 37466,
+      "Checksum": 4200956970,
+      "FirstFrame": 11220,
+      "Frames": 30,
+      "SHA256": "7663d2ea601da403c62b0aadd6e854b017a4d053ff7cf74e80745a12d8e32076"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0375.rvf",
+      "Bytes": 32432,
+      "Checksum": 422782312,
+      "FirstFrame": 11250,
+      "Frames": 30,
+      "SHA256": "069f9b01734d4dda4c82be132cc963029964ea534cbe95344e925ad86f44b7db"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0376.rvf",
+      "Bytes": 31292,
+      "Checksum": 1724293355,
+      "FirstFrame": 11280,
+      "Frames": 30,
+      "SHA256": "9583c7fc1ef301414a8566997cdb2770f7534632cf32750687fad6b4c2d56df8"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0377.rvf",
+      "Bytes": 37710,
+      "Checksum": 2104783161,
+      "FirstFrame": 11310,
+      "Frames": 30,
+      "SHA256": "27b3dc1d156797caae4f2f04dfeeb42b1ae4e29366dc95982562a49ea1786e5e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0378.rvf",
+      "Bytes": 36434,
+      "Checksum": 3082776328,
+      "FirstFrame": 11340,
+      "Frames": 30,
+      "SHA256": "cfc85b1c180ce223c0f60d4415672bf187871c5cafcfdca70a748fc436f3720e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0379.rvf",
+      "Bytes": 29426,
+      "Checksum": 337261778,
+      "FirstFrame": 11370,
+      "Frames": 30,
+      "SHA256": "fc0b8cd7d183d625d527fabde7013b9735e9c03b49f9019085d16a59e103e094"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0380.rvf",
+      "Bytes": 36306,
+      "Checksum": 1086656530,
+      "FirstFrame": 11400,
+      "Frames": 30,
+      "SHA256": "27aa8ce4ebefa2d7dd350c617a094c3927cec5ad634d50d852d20f637a8c4c87"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0381.rvf",
+      "Bytes": 37466,
+      "Checksum": 1129546749,
+      "FirstFrame": 11430,
+      "Frames": 30,
+      "SHA256": "83a67c7c8bbaa3bc679091fda830a458da1a12c31a70b961abed8faad727f785"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0382.rvf",
+      "Bytes": 32432,
+      "Checksum": 3609273659,
+      "FirstFrame": 11460,
+      "Frames": 30,
+      "SHA256": "5f1e1d6b980e95c87aed3571b86a99f08d6e91a67a5a3fc0f55cc3ddea7b51cb"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0383.rvf",
+      "Bytes": 31292,
+      "Checksum": 2653594045,
+      "FirstFrame": 11490,
+      "Frames": 30,
+      "SHA256": "49215a1f9de39d7b7038969d2a8715306546471489c443fb7f90ee7778fe6a1d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0384.rvf",
+      "Bytes": 37710,
+      "Checksum": 2607771916,
+      "FirstFrame": 11520,
+      "Frames": 30,
+      "SHA256": "2162324f19619ad1a8f6bb4431df24a007ba7342f6af8b0d3bc41733b294f41c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0385.rvf",
+      "Bytes": 36338,
+      "Checksum": 4159330011,
+      "FirstFrame": 11550,
+      "Frames": 30,
+      "SHA256": "97ffdeb165b752517920cff403e6f2264ff0eca1443015ee5ca0d83afdb0974f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0386.rvf",
+      "Bytes": 29031,
+      "Checksum": 1759477641,
+      "FirstFrame": 11580,
+      "Frames": 30,
+      "SHA256": "639e6278a503f63febfe14ffb0db9c1035eb2aeb3002cb13d0bc2a72c0f8a971"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0387.rvf",
+      "Bytes": 36297,
+      "Checksum": 492185588,
+      "FirstFrame": 11610,
+      "Frames": 30,
+      "SHA256": "21294e20277c2cf3e6e6c98a1b9c940c66eb05f83dcabdbddba4327d0510cacc"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0388.rvf",
+      "Bytes": 37466,
+      "Checksum": 2352120784,
+      "FirstFrame": 11640,
+      "Frames": 30,
+      "SHA256": "94a44e4cd871d73dac4bef85c7d8468638fca2259e6688346ad5e367f888e03e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0389.rvf",
+      "Bytes": 32288,
+      "Checksum": 1423508313,
+      "FirstFrame": 11670,
+      "Frames": 30,
+      "SHA256": "7290120776e30245f0275dab6ddc97e2161c3fe32bdb89871e51f1b931c8455e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0390.rvf",
+      "Bytes": 31292,
+      "Checksum": 614113680,
+      "FirstFrame": 11700,
+      "Frames": 30,
+      "SHA256": "93b195f86fe4a84d6f4400bba01fb2c5a002ab1b948736dd855b6d295be17e72"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0391.rvf",
+      "Bytes": 37710,
+      "Checksum": 1691513310,
+      "FirstFrame": 11730,
+      "Frames": 30,
+      "SHA256": "a642f2ea024f38881c9ef51e01a3bac1ed4ebdbd5d19edc8221f0047688ff5f2"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0392.rvf",
+      "Bytes": 35652,
+      "Checksum": 3451128928,
+      "FirstFrame": 11760,
+      "Frames": 30,
+      "SHA256": "24e61532edc379221a6ba8c3f2515f283d8df808e4d2302b19dbd5f56e2bfe8b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0393.rvf",
+      "Bytes": 29426,
+      "Checksum": 2970432632,
+      "FirstFrame": 11790,
+      "Frames": 30,
+      "SHA256": "5d44b039aace599f8ce615fafa9c3eaa0edc0b881b33f2c7f009fef8b12f3a39"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0394.rvf",
+      "Bytes": 36306,
+      "Checksum": 1785794488,
+      "FirstFrame": 11820,
+      "Frames": 30,
+      "SHA256": "7b95f8fee6a94d850adac635d45eea0263368410e38d30d3107ceef5d380beb8"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0395.rvf",
+      "Bytes": 37466,
+      "Checksum": 3574694819,
+      "FirstFrame": 11850,
+      "Frames": 30,
+      "SHA256": "a29734203d29ddd05f0537bdb6a7e399c5367e4a85478325d4485ca103951b5d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0396.rvf",
+      "Bytes": 32288,
+      "Checksum": 740688684,
+      "FirstFrame": 11880,
+      "Frames": 30,
+      "SHA256": "e8221787a7d62b88fbb3aa9f0fe5dcee6580ac75c5b1152966205c5c1388531c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0397.rvf",
+      "Bytes": 31068,
+      "Checksum": 828194713,
+      "FirstFrame": 11910,
+      "Frames": 30,
+      "SHA256": "108647cd887df9d994aa8798b98aff617a7c148d1c0dc2a0830ec42d9c7ceee6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0398.rvf",
+      "Bytes": 37710,
+      "Checksum": 2194502065,
+      "FirstFrame": 11940,
+      "Frames": 30,
+      "SHA256": "5c82840d3da6316567b46cc4604cd9c853dbf82bc3c4782fd5f888621a75a790"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0399.rvf",
+      "Bytes": 36434,
+      "Checksum": 1725591424,
+      "FirstFrame": 11970,
+      "Frames": 30,
+      "SHA256": "6c8450efcc92316c97006956516cb3bbd885e86f06135bc30d93624bd2725da0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0400.rvf",
+      "Bytes": 29023,
+      "Checksum": 2376819656,
+      "FirstFrame": 12000,
+      "Frames": 30,
+      "SHA256": "0a5ebe91d637071961ac35e5af1be37378d80c9abec4c8b3fed8c42498a2a793"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0401.rvf",
+      "Bytes": 36306,
+      "Checksum": 3016822922,
+      "FirstFrame": 12030,
+      "Frames": 30,
+      "SHA256": "28bdb2d7abb353c62a15cf3065aa7d36ddd46d79787063932182207aacfeaa13"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0402.rvf",
+      "Bytes": 37466,
+      "Checksum": 503284598,
+      "FirstFrame": 12060,
+      "Frames": 30,
+      "SHA256": "abcdafd35e235713a68b7c2d85cb659f66a994edc59fe500da9887a8aacc0c16"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0403.rvf",
+      "Bytes": 32432,
+      "Checksum": 286794932,
+      "FirstFrame": 12090,
+      "Frames": 30,
+      "SHA256": "90ed4ee9ad9e133344828c239e9ee732af9c48b39933019a56cd388667200999"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0404.rvf",
+      "Bytes": 30944,
+      "Checksum": 1976694096,
+      "FirstFrame": 12120,
+      "Frames": 30,
+      "SHA256": "8359b8c59b3d1b5158f054bd1ef85dbeb03033aadb1e1c36db15d83292cc9bdf"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0405.rvf",
+      "Bytes": 37710,
+      "Checksum": 2697490820,
+      "FirstFrame": 12150,
+      "Frames": 30,
+      "SHA256": "3b80e40d48a7825b43f815e13b7ca5c8753325516b4de4e9bdf48e54107d6e88"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0406.rvf",
+      "Bytes": 36299,
+      "Checksum": 361246303,
+      "FirstFrame": 12180,
+      "Frames": 30,
+      "SHA256": "1c014974c60b95e86f1fa809470c2e79efb954a2bfa75025442afb1ed3b423ae"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0407.rvf",
+      "Bytes": 29520,
+      "Checksum": 3559935720,
+      "FirstFrame": 12210,
+      "Frames": 30,
+      "SHA256": "c40d22afcd1b80722a500bf54a75d6e9b976ac44001216a10843dcd7de8f50cf"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0408.rvf",
+      "Bytes": 36276,
+      "Checksum": 911103361,
+      "FirstFrame": 12240,
+      "Frames": 30,
+      "SHA256": "5c3b51788ecb6ef96a033dbe8b7d5c92afbb4fe646fd207b9467dba2cc79d8cd"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0409.rvf",
+      "Bytes": 36724,
+      "Checksum": 1909135228,
+      "FirstFrame": 12270,
+      "Frames": 30,
+      "SHA256": "f50ff00db00d0b2ab65837c757c9adab8bd7222d11ef4bb4e092d86cfb21c329"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0410.rvf",
+      "Bytes": 32288,
+      "Checksum": 3669033682,
+      "FirstFrame": 12300,
+      "Frames": 30,
+      "SHA256": "b296c156075646cad73379e2f43d1951fb869a89fbd56cef68f3fcd5e77d3f6b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0411.rvf",
+      "Bytes": 31292,
+      "Checksum": 3083641097,
+      "FirstFrame": 12330,
+      "Frames": 30,
+      "SHA256": "f7bae0484e1f4c51dce4351404e2b35aa9d31ed1e1157212afd500590cc9a06a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0412.rvf",
+      "Bytes": 37710,
+      "Checksum": 3200479575,
+      "FirstFrame": 12360,
+      "Frames": 30,
+      "SHA256": "60c66b648ab6b8aeb90483ec7f3fa5bf28474fa114efa31aa4fd440f28d23e19"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0413.rvf",
+      "Bytes": 35399,
+      "Checksum": 3256326869,
+      "FirstFrame": 12390,
+      "Frames": 30,
+      "SHA256": "a0460e1852d2fc989495ee3a50d36707836d1598cfd2298dbc204af6d98034ab"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0414.rvf",
+      "Bytes": 28956,
+      "Checksum": 1474912220,
+      "FirstFrame": 12420,
+      "Frames": 30,
+      "SHA256": "b6a81f7ef7581bdbf7efdae324d69de1433b6aabf45b13df72e06e4f21c4eec5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0415.rvf",
+      "Bytes": 36297,
+      "Checksum": 2727684159,
+      "FirstFrame": 12450,
+      "Frames": 30,
+      "SHA256": "c1e5fe820c02f0da4da531faf9385dacef9b5f598a4c1305abf764737dbfae29"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0416.rvf",
+      "Bytes": 37466,
+      "Checksum": 1745519643,
+      "FirstFrame": 12480,
+      "Frames": 30,
+      "SHA256": "dd4fa432c4a225c866a282747d8b2c9f456ce3f47eef64b580dccf05e7be12b6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0417.rvf",
+      "Bytes": 31789,
+      "Checksum": 2324561485,
+      "FirstFrame": 12510,
+      "Frames": 30,
+      "SHA256": "b81c96ed5e9289c75de689f459d3a4cbc0e435c4da2ef3afcfe190e753c5d836"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0418.rvf",
+      "Bytes": 31292,
+      "Checksum": 4012941787,
+      "FirstFrame": 12540,
+      "Frames": 30,
+      "SHA256": "26a8fad0fbf8e679e2fca2576223f69a223044700e023eb358d2270e9fa77c62"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0419.rvf",
+      "Bytes": 37710,
+      "Checksum": 3703468330,
+      "FirstFrame": 12570,
+      "Frames": 30,
+      "SHA256": "875eecdef0583a8ca0a7485f4f4e171a4b95593d6e8e3a5da25647874678baa4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0420.rvf",
+      "Bytes": 36338,
+      "Checksum": 2557564665,
+      "FirstFrame": 12600,
+      "Frames": 30,
+      "SHA256": "9003bf15115b675e670ff66f0af559e9d95d6fe81ffcf8e77ecbf4c22dfb4a86"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0421.rvf",
+      "Bytes": 29528,
+      "Checksum": 2895014644,
+      "FirstFrame": 12630,
+      "Frames": 30,
+      "SHA256": "15dfbd6d9d20786c25e6e450768e3565f30eea6f8ab4a4ee42b0cf9067166658"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0422.rvf",
+      "Bytes": 36297,
+      "Checksum": 3103795218,
+      "FirstFrame": 12660,
+      "Frames": 30,
+      "SHA256": "71ce769ab5c15318fc5d99412dd6b3def2f959b0301cd4700a414c47b96369e1"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0423.rvf",
+      "Bytes": 37466,
+      "Checksum": 2968093678,
+      "FirstFrame": 12690,
+      "Frames": 30,
+      "SHA256": "7fb29dbcdccd9f4ed55ee9b98d7d5e2672a46b842fb8465f02e8656c3d3b7ec1"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0424.rvf",
+      "Bytes": 32432,
+      "Checksum": 1808475436,
+      "FirstFrame": 12720,
+      "Frames": 30,
+      "SHA256": "a40f12edc38b54b12422725b9d11c85b7b1391b6f9eed929f256ce8482f80752"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0425.rvf",
+      "Bytes": 31292,
+      "Checksum": 1973461422,
+      "FirstFrame": 12750,
+      "Frames": 30,
+      "SHA256": "4e6e4d72bfe6c76b6a0ed9874e2177cf083118867e47e7854f40dba3b2f57263"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0426.rvf",
+      "Bytes": 37710,
+      "Checksum": 2787209724,
+      "FirstFrame": 12780,
+      "Frames": 30,
+      "SHA256": "fe057dc5f7e14e5967e9cd106b7bf903dbc02a113eb51507b607169394eebe64"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0427.rvf",
+      "Bytes": 36434,
+      "Checksum": 1613917900,
+      "FirstFrame": 12810,
+      "Frames": 30,
+      "SHA256": "bc833b53e2b9298153e74ea28706effc0cfb19185d5a47d305e0f05ac0446084"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0428.rvf",
+      "Bytes": 29023,
+      "Checksum": 3809174292,
+      "FirstFrame": 12840,
+      "Frames": 30,
+      "SHA256": "bc5bdc5848384f1d2a6afe787973ee752c418a20ad7c63405593c66f7037e470"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0429.rvf",
+      "Bytes": 36306,
+      "Checksum": 121114582,
+      "FirstFrame": 12870,
+      "Frames": 30,
+      "SHA256": "5911de956869829251b2a4248859c0082ec56852dfd307c3b07a265488c816a0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0430.rvf",
+      "Bytes": 37466,
+      "Checksum": 4190667713,
+      "FirstFrame": 12900,
+      "Frames": 30,
+      "SHA256": "f3a8be7c1e750df0c6ec52359a4cf87d90aeed4ec26a92768e6ebdf087a9c62b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0431.rvf",
+      "Bytes": 32288,
+      "Checksum": 4058252106,
+      "FirstFrame": 12930,
+      "Frames": 30,
+      "SHA256": "b70929b0e97767093397d8156ac214180da5d214a98898f7b3bc8b9c73a0e3d0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0432.rvf",
+      "Bytes": 31068,
+      "Checksum": 1747140535,
+      "FirstFrame": 12960,
+      "Frames": 30,
+      "SHA256": "25d080ada321f4171a997e5f761ec7fc201846d1a5cf4e7f23ac041ab06cbd82"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0433.rvf",
+      "Bytes": 37669,
+      "Checksum": 1151008025,
+      "FirstFrame": 12990,
+      "Frames": 30,
+      "SHA256": "5a41ce0a7cc365c28a5acb7c441822c15ae0fc69a5b2a09ce90d29d0ede6f05e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0434.rvf",
+      "Bytes": 35652,
+      "Checksum": 2778926161,
+      "FirstFrame": 13020,
+      "Frames": 30,
+      "SHA256": "4eb1fcd438805c56cb7b5de8502264e19a5213329aaadaf6c4ecd1a8ec17e7e9"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0435.rvf",
+      "Bytes": 29023,
+      "Checksum": 3569116134,
+      "FirstFrame": 13050,
+      "Frames": 30,
+      "SHA256": "fd87d85dfca0e0667721c4ee96e3ad5c5e82ca658bad330e3e910177ef647a3f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0436.rvf",
+      "Bytes": 36306,
+      "Checksum": 470683561,
+      "FirstFrame": 13080,
+      "Frames": 30,
+      "SHA256": "7c4bc56fa3eed924f0b340734399d1a42affd7b35b6f5af4ee27f0fb88cd0c18"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0437.rvf",
+      "Bytes": 37370,
+      "Checksum": 1073447298,
+      "FirstFrame": 13110,
+      "Frames": 30,
+      "SHA256": "37e095bce09f157f9c89f2c5bbc3f35f7701ca684f5708fbba5661fdcdc7d577"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0438.rvf",
+      "Bytes": 31789,
+      "Checksum": 396950982,
+      "FirstFrame": 13140,
+      "Frames": 30,
+      "SHA256": "704ac12ad179a1cf1dc72db6f8f550335662aefcb1d2784d8195658143044d9c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0439.rvf",
+      "Bytes": 31168,
+      "Checksum": 1248941895,
+      "FirstFrame": 13170,
+      "Frames": 30,
+      "SHA256": "c36e35cf9d5d7a7948ead8829042280bf3eb2495c7e36ca314d9f7c565906c2a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0440.rvf",
+      "Bytes": 37710,
+      "Checksum": 3793187234,
+      "FirstFrame": 13200,
+      "Frames": 30,
+      "SHA256": "68033fe0d4a7ddd7f9bcc80587a94906d3b3dad5190ceee269628610dea706e1"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0441.rvf",
+      "Bytes": 35652,
+      "Checksum": 763235364,
+      "FirstFrame": 13230,
+      "Frames": 30,
+      "SHA256": "f5bb28fb8932964c8ced9c9c7d14514c31eea06f697231dc203c59872c9bebb4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0442.rvf",
+      "Bytes": 29520,
+      "Checksum": 1435389702,
+      "FirstFrame": 13260,
+      "Frames": 30,
+      "SHA256": "6f6032befe1088e88c973942391ff7f9d88d98a6f42e8752fc8133542fc524e9"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0443.rvf",
+      "Bytes": 36306,
+      "Checksum": 1701711995,
+      "FirstFrame": 13290,
+      "Frames": 30,
+      "SHA256": "321442f70986946e460056ec61cc66905d1fe81b45e58f9027c61571517f59bd"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0444.rvf",
+      "Bytes": 37466,
+      "Checksum": 2341831527,
+      "FirstFrame": 13320,
+      "Frames": 30,
+      "SHA256": "952f6a9545d2076040b9f64194703003720ba962fc30d2eac619cc19644f79d3"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0445.rvf",
+      "Bytes": 32432,
+      "Checksum": 2779980965,
+      "FirstFrame": 13350,
+      "Frames": 30,
+      "SHA256": "65bf49d80e5b80dc28af0f67db948a8657a719726819258e26a3f884fa2c7af6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0446.rvf",
+      "Bytes": 31168,
+      "Checksum": 3869136666,
+      "FirstFrame": 13380,
+      "Frames": 30,
+      "SHA256": "43f24b62ffb90392adb98363451adb6150193a6a245dbf01ce70008ef7c7b9f3"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0447.rvf",
+      "Bytes": 37710,
+      "Checksum": 2191733,
+      "FirstFrame": 13410,
+      "Frames": 30,
+      "SHA256": "3bfdd4a2e459d86c5179d33f1dcd0b41d5ae49e9047a50911052ac5a0c2d97b0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0448.rvf",
+      "Bytes": 36338,
+      "Checksum": 700602180,
+      "FirstFrame": 13440,
+      "Frames": 30,
+      "SHA256": "8d8335ca66e2081daf9d40fd71e49f92ad07bc7d97a874b628bf3a782fcf6b7b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0449.rvf",
+      "Bytes": 29528,
+      "Checksum": 1917414207,
+      "FirstFrame": 13470,
+      "Frames": 30,
+      "SHA256": "3e3ac255547fef3658c92d1a92b4945cecb3170b23b8b20cbb8ae17a7fb6b30a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0450.rvf",
+      "Bytes": 36297,
+      "Checksum": 1045309533,
+      "FirstFrame": 13500,
+      "Frames": 30,
+      "SHA256": "0a1ae95808557af0a10878d88df487ddcea964a9e0b3c0eca2de897a6fbf649e"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0451.rvf",
+      "Bytes": 37466,
+      "Checksum": 2361492537,
+      "FirstFrame": 13530,
+      "Frames": 30,
+      "SHA256": "566474c00824746eac3c6c7c31e9d8211d051671866df0a674ee12b37cba9119"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0452.rvf",
+      "Bytes": 32432,
+      "Checksum": 2222663031,
+      "FirstFrame": 13560,
+      "Frames": 30,
+      "SHA256": "f47e06f8c6c98bfc4c5e1576cb9e22c987f7c989b5f7afc5533b9d7b6b130d1b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0453.rvf",
+      "Bytes": 31292,
+      "Checksum": 2403508474,
+      "FirstFrame": 13590,
+      "Frames": 30,
+      "SHA256": "7c7e7e7ff8fbc3d5c471983eab45f780ed4ac323e3450c23a2b899c4b258df98"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0454.rvf",
+      "Bytes": 37083,
+      "Checksum": 3605810911,
+      "FirstFrame": 13620,
+      "Frames": 30,
+      "SHA256": "8c25b7ee4020a66341c0c11fb1b65842b28ba07cef9a4bc1b68c05ca5ef17062"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0455.rvf",
+      "Bytes": 36203,
+      "Checksum": 874648868,
+      "FirstFrame": 13650,
+      "Frames": 30,
+      "SHA256": "a7c8fa1086625a49a2e3d71934f426e0db9fc7ba65a51b79eea204cb4528e59b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0456.rvf",
+      "Bytes": 29031,
+      "Checksum": 4175527877,
+      "FirstFrame": 13680,
+      "Frames": 30,
+      "SHA256": "a91e7042be052ed6ea4c62b47185ffd9861792e8d159b1bab7be93bc575ae636"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0457.rvf",
+      "Bytes": 36297,
+      "Checksum": 1421420592,
+      "FirstFrame": 13710,
+      "Frames": 30,
+      "SHA256": "f048ad4d3bd924403116e9a3fb8ea1abf05d4b3da4f2b216c891e42401592c39"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0458.rvf",
+      "Bytes": 37466,
+      "Checksum": 3584066572,
+      "FirstFrame": 13740,
+      "Frames": 30,
+      "SHA256": "a2cd1773c4ffc9a82c269868e5368c20aa517c6fd2eb3a6da644847ce33db425"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0459.rvf",
+      "Bytes": 32288,
+      "Checksum": 3764650901,
+      "FirstFrame": 13770,
+      "Frames": 30,
+      "SHA256": "8192844db5ee91cd4b8938d7d5cf23f4c37c2ac78786204ea610469c52f33355"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0460.rvf",
+      "Bytes": 31292,
+      "Checksum": 3332809164,
+      "FirstFrame": 13800,
+      "Frames": 30,
+      "SHA256": "602dbbe6444ca24eec5342fbb08f85907a939f97d520fde99237686034b5ed41"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0461.rvf",
+      "Bytes": 37710,
+      "Checksum": 1008169243,
+      "FirstFrame": 13830,
+      "Frames": 30,
+      "SHA256": "1c77c51e8f7d94a195a99e090b9269cb63a5480344cf0c3cc38d2bfbbb052c29"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0462.rvf",
+      "Bytes": 36434,
+      "Checksum": 200896234,
+      "FirstFrame": 13860,
+      "Frames": 30,
+      "SHA256": "0a9daa87cfed8843bd0edce422332e50d7cd628b95f5107433f127f7976545de"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0463.rvf",
+      "Bytes": 29023,
+      "Checksum": 707486514,
+      "FirstFrame": 13890,
+      "Frames": 30,
+      "SHA256": "de28698de889d199668e1984d9a777cc57128f821b1dceb641de453f40aac43d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0464.rvf",
+      "Bytes": 36306,
+      "Checksum": 2750418932,
+      "FirstFrame": 13920,
+      "Frames": 30,
+      "SHA256": "11593150acfe61d1f4e5c244429caddfb4a2b80882b8aa848ea35e9698324b9c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0465.rvf",
+      "Bytes": 37466,
+      "Checksum": 512656351,
+      "FirstFrame": 13950,
+      "Frames": 30,
+      "SHA256": "b0a49cc79c88f0fc876296008891802c4a2031b2c184942ba674909348ed6388"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0466.rvf",
+      "Bytes": 32432,
+      "Checksum": 7677213,
+      "FirstFrame": 13980,
+      "Frames": 30,
+      "SHA256": "e264d52e362facd8b0e1d0cb4665715b7599727c2566b969cc9a038dae83b9dd"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0467.rvf",
+      "Bytes": 31292,
+      "Checksum": 1293328799,
+      "FirstFrame": 14010,
+      "Frames": 30,
+      "SHA256": "ef1c0106d3a827a1f28308a601bc028e719a46cad0a6abc3ccbf780ad2456caf"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0468.rvf",
+      "Bytes": 37710,
+      "Checksum": 91910637,
+      "FirstFrame": 14040,
+      "Frames": 30,
+      "SHA256": "645eda9d3fb7ba84668e2730fb4e0c654eaef26f030d4a287c62ef55d8e3b76c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0469.rvf",
+      "Bytes": 36434,
+      "Checksum": 3193532348,
+      "FirstFrame": 14070,
+      "Frames": 30,
+      "SHA256": "b8d7e3add8fb8a8139cf1fb43db5fb383cf8f65f4f6f654f82eea9584e8ecfe4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0470.rvf",
+      "Bytes": 29023,
+      "Checksum": 1065575173,
+      "FirstFrame": 14100,
+      "Frames": 30,
+      "SHA256": "7a4bf3e11de8764cdfe64e3d1a9701587f1dbb9d19c85a1dc62219eb013c9d4a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0471.rvf",
+      "Bytes": 36306,
+      "Checksum": 3099987911,
+      "FirstFrame": 14130,
+      "Frames": 30,
+      "SHA256": "e0d34d68a23fde6f430e2aed80a1e62278417704e748d6dcbfc726b224226edb"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0472.rvf",
+      "Bytes": 37466,
+      "Checksum": 1735230386,
+      "FirstFrame": 14160,
+      "Frames": 30,
+      "SHA256": "c571b98e571934d342bff6f66f6331367abbd8ec2267ac81eded18bd0b89bf0f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0473.rvf",
+      "Bytes": 32288,
+      "Checksum": 2399011643,
+      "FirstFrame": 14190,
+      "Frames": 30,
+      "SHA256": "345c2bd0b800f2e68d2e458e9d16a6bd7b4a9abcf34d7ae72a8fdb0b2f6eec0a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0474.rvf",
+      "Bytes": 31168,
+      "Checksum": 2364495717,
+      "FirstFrame": 14220,
+      "Frames": 30,
+      "SHA256": "67400ca92be7f91de92950132f5cec60c85d0493fb3e0945d974edba95c83b08"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0475.rvf",
+      "Bytes": 37710,
+      "Checksum": 594899392,
+      "FirstFrame": 14250,
+      "Frames": 30,
+      "SHA256": "c83a23c4b899fbd6ef42a6e1c08bbb473b6b77b6a3b2e2256321366490b11d25"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0476.rvf",
+      "Bytes": 36299,
+      "Checksum": 1298345627,
+      "FirstFrame": 14280,
+      "Frames": 30,
+      "SHA256": "71a69a22c500ed9d5d17ec8d445755c8874bc49d57932724e7ac68df08fd0093"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0477.rvf",
+      "Bytes": 29023,
+      "Checksum": 825517015,
+      "FirstFrame": 14310,
+      "Frames": 30,
+      "SHA256": "2d215c9f03d0f741cfcc95982bf0e3eebebad416f0013470b0b664de8e65d88d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0478.rvf",
+      "Bytes": 36306,
+      "Checksum": 3449556890,
+      "FirstFrame": 14340,
+      "Frames": 30,
+      "SHA256": "65915552e2454907cddbd2b8eeabc12fd2816ccba3216780561f153f0e1577dc"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0479.rvf",
+      "Bytes": 36724,
+      "Checksum": 944445113,
+      "FirstFrame": 14370,
+      "Frames": 30,
+      "SHA256": "fccae214d22d7daa7d46feac6d1d3da75faa7991562c9265dfd37678de492f7c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0480.rvf",
+      "Bytes": 32432,
+      "Checksum": 2086675651,
+      "FirstFrame": 14400,
+      "Frames": 30,
+      "SHA256": "c4b60e5dfbdd8d5124e1177412d38a9df002239a9c1a3f7c450823efd7ae9c1a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0481.rvf",
+      "Bytes": 31068,
+      "Checksum": 4202315643,
+      "FirstFrame": 14430,
+      "Frames": 30,
+      "SHA256": "ef25d5a0f60d143dfc04698631ffefd28721a8f3748fc71ee436bcdd81b54706"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0482.rvf",
+      "Bytes": 37710,
+      "Checksum": 1097888147,
+      "FirstFrame": 14460,
+      "Frames": 30,
+      "SHA256": "bac21eaff70af4f86ed663b30c8eb9dea2adc4053025c867b8a450e5d46cf0c0"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0483.rvf",
+      "Bytes": 36434,
+      "Checksum": 3137695586,
+      "FirstFrame": 14490,
+      "Frames": 30,
+      "SHA256": "8f161f57726d105ac08e0de369293bd24f2e39bf36fe5477a725172f59cbf871"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0484.rvf",
+      "Bytes": 29426,
+      "Checksum": 1997157676,
+      "FirstFrame": 14520,
+      "Frames": 30,
+      "SHA256": "10d108170d4fc2477a510dd3516a7c320f5d9797eabfdedcf97fb44452fabfc8"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0485.rvf",
+      "Bytes": 36306,
+      "Checksum": 386601068,
+      "FirstFrame": 14550,
+      "Frames": 30,
+      "SHA256": "84e43b372d4117b9ba58e92a0692bbca7e23ee62787dd2cd4e2dbcaa998869ff"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0486.rvf",
+      "Bytes": 37466,
+      "Checksum": 2977465431,
+      "FirstFrame": 14580,
+      "Frames": 30,
+      "SHA256": "7468337643f8646db500731d1c41089f52d64d46cdbaabff46257768cc912bdd"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0487.rvf",
+      "Bytes": 31789,
+      "Checksum": 17038730,
+      "FirstFrame": 14610,
+      "Frames": 30,
+      "SHA256": "f6ae10dd7a592827c96c3f7603d3b13eb54c2fd812fab133fa435bad3759ab67"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0488.rvf",
+      "Bytes": 31068,
+      "Checksum": 2823438158,
+      "FirstFrame": 14640,
+      "Frames": 30,
+      "SHA256": "3c3ad5645596504770e9df1fac899a9eea20b0ddd71a4faf0df690a86d1a9ac2"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0489.rvf",
+      "Bytes": 37710,
+      "Checksum": 1600876902,
+      "FirstFrame": 14670,
+      "Frames": 30,
+      "SHA256": "1743d5e1ccd67cc70402104b734553606a5ac4d11d86feb0f84c7f85a5f3e3db"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0490.rvf",
+      "Bytes": 35399,
+      "Checksum": 3678903012,
+      "FirstFrame": 14700,
+      "Frames": 30,
+      "SHA256": "3529cd816fa11ded004d03c00d8c1affdcd85f8d72c4de631c98077968c39abc"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0491.rvf",
+      "Bytes": 29528,
+      "Checksum": 2971364144,
+      "FirstFrame": 14730,
+      "Frames": 30,
+      "SHA256": "f3be4b6600cd0f201329e7993b181732979f122e53d726922d4a9a21565a5cc5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0492.rvf",
+      "Bytes": 36297,
+      "Checksum": 4033030222,
+      "FirstFrame": 14760,
+      "Frames": 30,
+      "SHA256": "a141127bc3503c4d17c7c520da80a5ec9b8507883dd1475388ba0a9abb9d6251"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0493.rvf",
+      "Bytes": 36724,
+      "Checksum": 2751076190,
+      "FirstFrame": 14790,
+      "Frames": 30,
+      "SHA256": "f2ddb51704b4a8fc36ab8ce61f62b3634b4d20fbf2f68f9e98f46ba8bff6cb7b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0494.rvf",
+      "Bytes": 31789,
+      "Checksum": 3492347484,
+      "FirstFrame": 14820,
+      "Frames": 30,
+      "SHA256": "4999e3f3b0ee8692380a1b3d3546f36c8180bd33904349542458fd42dacc51c6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0495.rvf",
+      "Bytes": 31292,
+      "Checksum": 1723375851,
+      "FirstFrame": 14850,
+      "Frames": 30,
+      "SHA256": "df05f3d64222d5fefe80b57019b774a3821f585dfdc6caa358894f02c1d3d284"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0496.rvf",
+      "Bytes": 37710,
+      "Checksum": 2103865657,
+      "FirstFrame": 14880,
+      "Frames": 30,
+      "SHA256": "cc9a5e7f8e4636b8ad6b564f585203c94c0021bd0407ebe751e252a442166d41"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0497.rvf",
+      "Bytes": 35652,
+      "Checksum": 353635259,
+      "FirstFrame": 14910,
+      "Frames": 30,
+      "SHA256": "95ec14b847e72ed72003d8fc527bca7274d59962a71fc19184b7ba7098067f82"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0498.rvf",
+      "Bytes": 29023,
+      "Checksum": 1899782992,
+      "FirstFrame": 14940,
+      "Frames": 30,
+      "SHA256": "1f31c9e53fe221a08b778ce99f57b800e171dbea1ec4906eaa34bf719f075178"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0499.rvf",
+      "Bytes": 36306,
+      "Checksum": 1085739026,
+      "FirstFrame": 14970,
+      "Frames": 30,
+      "SHA256": "e96aa82e4aeec8eb352dae105bcb8b1ab924059711e3aa2163f4d3a15d598db1"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0500.rvf",
+      "Bytes": 37466,
+      "Checksum": 1128629245,
+      "FirstFrame": 15000,
+      "Frames": 30,
+      "SHA256": "31038441d0e39cc00601f5229dfd0e5b8599f254783f98aef8af22d91a5f4f70"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0501.rvf",
+      "Bytes": 32432,
+      "Checksum": 3608356155,
+      "FirstFrame": 15030,
+      "Frames": 30,
+      "SHA256": "44f89cf73b2344477519b0ac1b0da0dec4eef2e3be098e952ef1f3b4af116595"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0502.rvf",
+      "Bytes": 31168,
+      "Checksum": 859854768,
+      "FirstFrame": 15060,
+      "Frames": 30,
+      "SHA256": "f48a661aec49195fc779f297e1f64f12015452bf29c9b7535a90d4eb643a4718"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0503.rvf",
+      "Bytes": 37710,
+      "Checksum": 1187607051,
+      "FirstFrame": 15090,
+      "Frames": 30,
+      "SHA256": "f8a666d07ce8e6635b468a9ed512b2c76b8accf006160153c589c26946143cd6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0504.rvf",
+      "Bytes": 36299,
+      "Checksum": 2779196903,
+      "FirstFrame": 15120,
+      "Frames": 30,
+      "SHA256": "6e434f45ee88086cb94b97d545fd4e6444fdeb4ad5219562ec65544e2593e2c7"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0505.rvf",
+      "Bytes": 29426,
+      "Checksum": 3799921829,
+      "FirstFrame": 15150,
+      "Frames": 30,
+      "SHA256": "b11ec8c5e0e6162d8ba8203a42a7c3fbc2bde459d149dcce9c531a4c559feab5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0506.rvf",
+      "Bytes": 36276,
+      "Checksum": 3509933321,
+      "FirstFrame": 15180,
+      "Frames": 30,
+      "SHA256": "ce58245416ec3641b3c6a5aa236a8ac427814be4d2142a485845728bee5e4c51"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0507.rvf",
+      "Bytes": 37466,
+      "Checksum": 2351203280,
+      "FirstFrame": 15210,
+      "Frames": 30,
+      "SHA256": "67e51fc2b03d5bda4e698005ed5e117a87e18693db08b97c0fe4777fc26c9f29"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0508.rvf",
+      "Bytes": 31789,
+      "Checksum": 775945730,
+      "FirstFrame": 15240,
+      "Frames": 30,
+      "SHA256": "c21c536df3c4df684cb4fc689d5e2a2fbb835001e0cf16e6b8ba83931e32f01f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0509.rvf",
+      "Bytes": 31168,
+      "Checksum": 3480049539,
+      "FirstFrame": 15270,
+      "Frames": 30,
+      "SHA256": "2ea223698d91473519df73b42a00d170c8cf096f24d3494905b196304a2a7ceb"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0510.rvf",
+      "Bytes": 37710,
+      "Checksum": 1690595806,
+      "FirstFrame": 15300,
+      "Frames": 30,
+      "SHA256": "ddf0a4d699c58e5829adbdefd1f6ff9a106309aab6791101538d32bac6fa4caa"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0511.rvf",
+      "Bytes": 36434,
+      "Checksum": 1752592301,
+      "FirstFrame": 15330,
+      "Frames": 30,
+      "SHA256": "495ede512d0fced82da061e35a609a84105fa4b4b4f8d89ac5aebde8d06bb1b5"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0512.rvf",
+      "Bytes": 29520,
+      "Checksum": 2360692291,
+      "FirstFrame": 15360,
+      "Frames": 30,
+      "SHA256": "d3637f239abfb37ca141f1fa3f14c95791494024ecaf46dd78bed98335815784"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0513.rvf",
+      "Bytes": 36306,
+      "Checksum": 1784876984,
+      "FirstFrame": 15390,
+      "Frames": 30,
+      "SHA256": "a983a13e7bc86d63cb28ee5decb4ff2a69f52d13be66f60de856e817b2ee2b6c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0514.rvf",
+      "Bytes": 37466,
+      "Checksum": 3573777315,
+      "FirstFrame": 15420,
+      "Frames": 30,
+      "SHA256": "33a1fb20c44b2f8117427e74c6d5ab0de87bcd80b0ed97374d951e2dcc9bab3a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0515.rvf",
+      "Bytes": 32432,
+      "Checksum": 1393370337,
+      "FirstFrame": 15450,
+      "Frames": 30,
+      "SHA256": "517fddf1499bcbc170c7dbe2e25dc79c92ea8f8a767a6b6f4d61222b1914e37b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0516.rvf",
+      "Bytes": 31292,
+      "Checksum": 2867700067,
+      "FirstFrame": 15480,
+      "Frames": 30,
+      "SHA256": "5c55eeacd6f7ca02a57b78401ae774c88a2002bc52bf0d38aa146451d770424f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0517.rvf",
+      "Bytes": 37710,
+      "Checksum": 2193584561,
+      "FirstFrame": 15510,
+      "Frames": 30,
+      "SHA256": "a6568f5d8d9ae3b74dd59f99d26e22320555fa0993f98d1dba71f92929b91aff"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0518.rvf",
+      "Bytes": 35652,
+      "Checksum": 1434520627,
+      "FirstFrame": 15540,
+      "Frames": 30,
+      "SHA256": "231da47fe1e67a2c554145a0ddf570c4838b1cd2fd952fe68dd0dc94595d368a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0519.rvf",
+      "Bytes": 29023,
+      "Checksum": 2375902152,
+      "FirstFrame": 15570,
+      "Frames": 30,
+      "SHA256": "0b2b39194afee146f23dcbdb2e2d761e39c88f147d6762bff41c02e14c1a0233"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0520.rvf",
+      "Bytes": 36276,
+      "Checksum": 472143278,
+      "FirstFrame": 15600,
+      "Frames": 30,
+      "SHA256": "99795e22d1d2e3600a9a03bcff3078f0d2bf8d61017152c09c56f890c0120c6a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0521.rvf",
+      "Bytes": 36724,
+      "Checksum": 3512407722,
+      "FirstFrame": 15630,
+      "Frames": 30,
+      "SHA256": "4fd338d8c32c9e61e1663a5e5fa83af36e9739b1986ba48a0f0866bafb74fc31"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0522.rvf",
+      "Bytes": 31789,
+      "Checksum": 2353528232,
+      "FirstFrame": 15660,
+      "Frames": 30,
+      "SHA256": "93a9ccd43177354fde29889493994ee13d53e6f3bd159adfb43bf8b514055288"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0523.rvf",
+      "Bytes": 31068,
+      "Checksum": 3742383980,
+      "FirstFrame": 15690,
+      "Frames": 30,
+      "SHA256": "4de8467d29cdf84588072cdb201141041a0db1bf62d5b74997c582c337d8203a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0524.rvf",
+      "Bytes": 37710,
+      "Checksum": 2696573316,
+      "FirstFrame": 15720,
+      "Frames": 30,
+      "SHA256": "e81eb409bc30e86467bbccbbeb394986bd5fc1dbd00ab5794b5d84741c983087"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0525.rvf",
+      "Bytes": 36338,
+      "Checksum": 2046252883,
+      "FirstFrame": 15750,
+      "Frames": 30,
+      "SHA256": "49cc175a59021be680b0e938d98d37efce551c036cf92d1f9cb633bed1b5de06"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0526.rvf",
+      "Bytes": 29031,
+      "Checksum": 2297593857,
+      "FirstFrame": 15780,
+      "Frames": 30,
+      "SHA256": "21be4005be186de10e0cfcf77efcd4dccaa5df918b0a950a7b5c8f36daf65c39"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0527.rvf",
+      "Bytes": 36297,
+      "Checksum": 2350655596,
+      "FirstFrame": 15810,
+      "Frames": 30,
+      "SHA256": "916181130d6005809612f07f698a52d4fd3b6850774af1f1e9b204ed00fd27b1"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0528.rvf",
+      "Bytes": 37466,
+      "Checksum": 522028104,
+      "FirstFrame": 15840,
+      "Frames": 30,
+      "SHA256": "305fff84c2ba86b86d81cd5f06ad4670ca3556af13f96d731e2a7805e9f219d1"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0529.rvf",
+      "Bytes": 31645,
+      "Checksum": 4055031236,
+      "FirstFrame": 15870,
+      "Frames": 30,
+      "SHA256": "ef167506740622510d0480448e5f2a2eff19ae3d23ecc17b399689f134d0c1d2"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0530.rvf",
+      "Bytes": 30944,
+      "Checksum": 962589987,
+      "FirstFrame": 15900,
+      "Frames": 30,
+      "SHA256": "de8e4fe4b6de8e6aa6dcc2135291c23cd1c6c552762a707f818d29f5e16379f4"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0531.rvf",
+      "Bytes": 37710,
+      "Checksum": 3199562071,
+      "FirstFrame": 15930,
+      "Frames": 30,
+      "SHA256": "b5b712a0746dfa95ff3f97bbe257786799dbf430f96f054aa4fec3b26710bfb8"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0532.rvf",
+      "Bytes": 36434,
+      "Checksum": 1668837158,
+      "FirstFrame": 15960,
+      "Frames": 30,
+      "SHA256": "8d9bbae6597256fdc654b21e398a4793315e579abbde67ec8380649cacdeed5d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0533.rvf",
+      "Bytes": 29520,
+      "Checksum": 2451394235,
+      "FirstFrame": 15990,
+      "Frames": 30,
+      "SHA256": "1da459a7b49f09b9ce64af18d38501c89b37fac48da625fedb276492d18926ce"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0534.rvf",
+      "Bytes": 36306,
+      "Checksum": 3715043376,
+      "FirstFrame": 16020,
+      "Frames": 30,
+      "SHA256": "a1b37d4590aa6806444f16ea7a406afab5723ef13340cae24ff596d2ec3d11aa"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0535.rvf",
+      "Bytes": 37466,
+      "Checksum": 1744602139,
+      "FirstFrame": 16050,
+      "Frames": 30,
+      "SHA256": "68bfcdc49b26769ea0073df400e4ef003a8e99d31f1ea031e42c6f6668b60a1a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0536.rvf",
+      "Bytes": 32432,
+      "Checksum": 2915050841,
+      "FirstFrame": 16080,
+      "Frames": 30,
+      "SHA256": "b3df60d870cc231a29280223141363f99e97f8918b546dffa78737491794955c"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0537.rvf",
+      "Bytes": 31068,
+      "Checksum": 209993745,
+      "FirstFrame": 16110,
+      "Frames": 30,
+      "SHA256": "26a26e5a89bbda24a08214c2caf89855a350f235f183abb0a26b8a8997a14f23"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0538.rvf",
+      "Bytes": 37083,
+      "Checksum": 3741929153,
+      "FirstFrame": 16140,
+      "Frames": 30,
+      "SHA256": "2b205dafeba1eafd0057b846bbe44ccb862d6d59e6384c8fa37aae4b7ec2f83f"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0539.rvf",
+      "Bytes": 35534,
+      "Checksum": 730061979,
+      "FirstFrame": 16170,
+      "Frames": 30,
+      "SHA256": "67594d8a07a95257d9fc4672d44486eb5dd4daa0538e4ba171b5b50a9e1e39b6"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0540.rvf",
+      "Bytes": 29528,
+      "Checksum": 2894097140,
+      "FirstFrame": 16200,
+      "Frames": 30,
+      "SHA256": "af4b58fce309df69c1d7e8f9e26cd78fc2b978b1a5c26037b049d63bf681a54b"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0541.rvf",
+      "Bytes": 35773,
+      "Checksum": 3240371188,
+      "FirstFrame": 16230,
+      "Frames": 30,
+      "SHA256": "d9c6b1e603d7b8b2e5eee1fc2d8c207c2eebdf730b5e815b9a22c8753a3d5ee3"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0542.rvf",
+      "Bytes": 37466,
+      "Checksum": 2967176174,
+      "FirstFrame": 16260,
+      "Frames": 30,
+      "SHA256": "10e2e4cdad3c950e78079d39259c322fa5a3ce6ebee82156f44f18b465bedc64"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0543.rvf",
+      "Bytes": 32288,
+      "Checksum": 446169975,
+      "FirstFrame": 16290,
+      "Frames": 30,
+      "SHA256": "0273a8f49f04ff5142fcfbf43b4e6a45997829aaddac3fcb6546074e153bfb45"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0544.rvf",
+      "Bytes": 31292,
+      "Checksum": 1972543918,
+      "FirstFrame": 16320,
+      "Frames": 30,
+      "SHA256": "f14c5f9841131268fcc234e8c691fa2e238206939793cb91ced71b80a759db2d"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0545.rvf",
+      "Bytes": 37710,
+      "Checksum": 2786292220,
+      "FirstFrame": 16350,
+      "Frames": 30,
+      "SHA256": "4ffa2e1fe9a3e99ee0f631cca0c932ba50b3cad7dbbeed44bdca88dd78f09e16"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0546.rvf",
+      "Bytes": 36434,
+      "Checksum": 339570635,
+      "FirstFrame": 16380,
+      "Frames": 30,
+      "SHA256": "5c467513e4acd83177de4d3e1f24b8e41a0c3fbc01988e710b037891fa490fc7"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0547.rvf",
+      "Bytes": 29520,
+      "Checksum": 236146273,
+      "FirstFrame": 16410,
+      "Frames": 30,
+      "SHA256": "0dca82392d262d818aeb711f14634be3498fbae8f7e440875a081f4a349baace"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0548.rvf",
+      "Bytes": 25913,
+      "Checksum": 2716972638,
+      "FirstFrame": 16440,
+      "Frames": 30,
+      "SHA256": "659b6ebc3037bf33cbac760ecc9e716071a85f257e8d51821dc015a3036e5d29"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0549.rvf",
+      "Bytes": 17947,
+      "Checksum": 734462101,
+      "FirstFrame": 16470,
+      "Frames": 30,
+      "SHA256": "58a9783c5be89b8019d7ad2919fbc4c7503f675c551481a8027e92a1c976e83a"
+    },
+    {
+      "File": "Mommy_GF_Cuddles_SnapYT_App_0550.rvf",
+      "Bytes": 145990,
+      "Checksum": 3517259458,
+      "FirstFrame": 16500,
+      "Frames": 17,
+      "SHA256": "21288d532948e4b22f34c438616a05e2212c39e41c366554e95814b57351a3e1"
+    }
+  ]
+}
