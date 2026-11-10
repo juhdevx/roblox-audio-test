@@ -1,0 +1,5008 @@
+{
+  "Name": "T7E3",
+  "Frames": 85409,
+  "FPS": 60,
+  "Voices": 128,
+  "SegmentFrames": 120,
+  "Segments": 712,
+  "Duration": 1423.476125,
+  "SampleRate": 24000,
+  "BaseSampleAssetId": 9040512197,
+  "BaseFrequency": 440,
+  "Encoding": 3,
+  "NoiseBands": 12,
+  "Files": [
+    {
+      "file": "T7E3_000.spc",
+      "bytes": 128688,
+      "checksum": 2978634722,
+      "frames": 120,
+      "first": 0
+    },
+    {
+      "file": "T7E3_001.spc",
+      "bytes": 128688,
+      "checksum": 2696689377,
+      "frames": 120,
+      "first": 120
+    },
+    {
+      "file": "T7E3_002.spc",
+      "bytes": 128688,
+      "checksum": 715622390,
+      "frames": 120,
+      "first": 240
+    },
+    {
+      "file": "T7E3_003.spc",
+      "bytes": 128688,
+      "checksum": 2561758332,
+      "frames": 120,
+      "first": 360
+    },
+    {
+      "file": "T7E3_004.spc",
+      "bytes": 128688,
+      "checksum": 1435114358,
+      "frames": 120,
+      "first": 480
+    },
+    {
+      "file": "T7E3_005.spc",
+      "bytes": 128688,
+      "checksum": 1524450805,
+      "frames": 120,
+      "first": 600
+    },
+    {
+      "file": "T7E3_006.spc",
+      "bytes": 128688,
+      "checksum": 2736368154,
+      "frames": 120,
+      "first": 720
+    },
+    {
+      "file": "T7E3_007.spc",
+      "bytes": 128688,
+      "checksum": 2035598428,
+      "frames": 120,
+      "first": 840
+    },
+    {
+      "file": "T7E3_008.spc",
+      "bytes": 128688,
+      "checksum": 1383449327,
+      "frames": 120,
+      "first": 960
+    },
+    {
+      "file": "T7E3_009.spc",
+      "bytes": 128688,
+      "checksum": 1390338614,
+      "frames": 120,
+      "first": 1080
+    },
+    {
+      "file": "T7E3_010.spc",
+      "bytes": 128688,
+      "checksum": 40948645,
+      "frames": 120,
+      "first": 1200
+    },
+    {
+      "file": "T7E3_011.spc",
+      "bytes": 128688,
+      "checksum": 2427331201,
+      "frames": 120,
+      "first": 1320
+    },
+    {
+      "file": "T7E3_012.spc",
+      "bytes": 128688,
+      "checksum": 147000959,
+      "frames": 120,
+      "first": 1440
+    },
+    {
+      "file": "T7E3_013.spc",
+      "bytes": 128688,
+      "checksum": 2284374979,
+      "frames": 120,
+      "first": 1560
+    },
+    {
+      "file": "T7E3_014.spc",
+      "bytes": 128688,
+      "checksum": 108863271,
+      "frames": 120,
+      "first": 1680
+    },
+    {
+      "file": "T7E3_015.spc",
+      "bytes": 128688,
+      "checksum": 258858425,
+      "frames": 120,
+      "first": 1800
+    },
+    {
+      "file": "T7E3_016.spc",
+      "bytes": 128688,
+      "checksum": 3798553190,
+      "frames": 120,
+      "first": 1920
+    },
+    {
+      "file": "T7E3_017.spc",
+      "bytes": 128688,
+      "checksum": 2789455921,
+      "frames": 120,
+      "first": 2040
+    },
+    {
+      "file": "T7E3_018.spc",
+      "bytes": 128688,
+      "checksum": 285501384,
+      "frames": 120,
+      "first": 2160
+    },
+    {
+      "file": "T7E3_019.spc",
+      "bytes": 128688,
+      "checksum": 3595754113,
+      "frames": 120,
+      "first": 2280
+    },
+    {
+      "file": "T7E3_020.spc",
+      "bytes": 128688,
+      "checksum": 66706535,
+      "frames": 120,
+      "first": 2400
+    },
+    {
+      "file": "T7E3_021.spc",
+      "bytes": 128688,
+      "checksum": 428034907,
+      "frames": 120,
+      "first": 2520
+    },
+    {
+      "file": "T7E3_022.spc",
+      "bytes": 128688,
+      "checksum": 218738916,
+      "frames": 120,
+      "first": 2640
+    },
+    {
+      "file": "T7E3_023.spc",
+      "bytes": 128688,
+      "checksum": 1032211580,
+      "frames": 120,
+      "first": 2760
+    },
+    {
+      "file": "T7E3_024.spc",
+      "bytes": 128688,
+      "checksum": 3740286529,
+      "frames": 120,
+      "first": 2880
+    },
+    {
+      "file": "T7E3_025.spc",
+      "bytes": 128688,
+      "checksum": 355319960,
+      "frames": 120,
+      "first": 3000
+    },
+    {
+      "file": "T7E3_026.spc",
+      "bytes": 128688,
+      "checksum": 3281358156,
+      "frames": 120,
+      "first": 3120
+    },
+    {
+      "file": "T7E3_027.spc",
+      "bytes": 128688,
+      "checksum": 1075937269,
+      "frames": 120,
+      "first": 3240
+    },
+    {
+      "file": "T7E3_028.spc",
+      "bytes": 128688,
+      "checksum": 2024120263,
+      "frames": 120,
+      "first": 3360
+    },
+    {
+      "file": "T7E3_029.spc",
+      "bytes": 128688,
+      "checksum": 3343032862,
+      "frames": 120,
+      "first": 3480
+    },
+    {
+      "file": "T7E3_030.spc",
+      "bytes": 128688,
+      "checksum": 1069157357,
+      "frames": 120,
+      "first": 3600
+    },
+    {
+      "file": "T7E3_031.spc",
+      "bytes": 128688,
+      "checksum": 1066454448,
+      "frames": 120,
+      "first": 3720
+    },
+    {
+      "file": "T7E3_032.spc",
+      "bytes": 128688,
+      "checksum": 974705809,
+      "frames": 120,
+      "first": 3840
+    },
+    {
+      "file": "T7E3_033.spc",
+      "bytes": 128688,
+      "checksum": 1731864043,
+      "frames": 120,
+      "first": 3960
+    },
+    {
+      "file": "T7E3_034.spc",
+      "bytes": 128688,
+      "checksum": 169447480,
+      "frames": 120,
+      "first": 4080
+    },
+    {
+      "file": "T7E3_035.spc",
+      "bytes": 128688,
+      "checksum": 3231581057,
+      "frames": 120,
+      "first": 4200
+    },
+    {
+      "file": "T7E3_036.spc",
+      "bytes": 128688,
+      "checksum": 3352835385,
+      "frames": 120,
+      "first": 4320
+    },
+    {
+      "file": "T7E3_037.spc",
+      "bytes": 128688,
+      "checksum": 37224904,
+      "frames": 120,
+      "first": 4440
+    },
+    {
+      "file": "T7E3_038.spc",
+      "bytes": 128688,
+      "checksum": 1255910105,
+      "frames": 120,
+      "first": 4560
+    },
+    {
+      "file": "T7E3_039.spc",
+      "bytes": 128688,
+      "checksum": 3264337389,
+      "frames": 120,
+      "first": 4680
+    },
+    {
+      "file": "T7E3_040.spc",
+      "bytes": 128688,
+      "checksum": 2057612338,
+      "frames": 120,
+      "first": 4800
+    },
+    {
+      "file": "T7E3_041.spc",
+      "bytes": 128688,
+      "checksum": 2139564899,
+      "frames": 120,
+      "first": 4920
+    },
+    {
+      "file": "T7E3_042.spc",
+      "bytes": 128688,
+      "checksum": 999261611,
+      "frames": 120,
+      "first": 5040
+    },
+    {
+      "file": "T7E3_043.spc",
+      "bytes": 128688,
+      "checksum": 3410672324,
+      "frames": 120,
+      "first": 5160
+    },
+    {
+      "file": "T7E3_044.spc",
+      "bytes": 128688,
+      "checksum": 3442857544,
+      "frames": 120,
+      "first": 5280
+    },
+    {
+      "file": "T7E3_045.spc",
+      "bytes": 128688,
+      "checksum": 2672727016,
+      "frames": 120,
+      "first": 5400
+    },
+    {
+      "file": "T7E3_046.spc",
+      "bytes": 128688,
+      "checksum": 3494342605,
+      "frames": 120,
+      "first": 5520
+    },
+    {
+      "file": "T7E3_047.spc",
+      "bytes": 128688,
+      "checksum": 1130088443,
+      "frames": 120,
+      "first": 5640
+    },
+    {
+      "file": "T7E3_048.spc",
+      "bytes": 128688,
+      "checksum": 1841175222,
+      "frames": 120,
+      "first": 5760
+    },
+    {
+      "file": "T7E3_049.spc",
+      "bytes": 128688,
+      "checksum": 1901316679,
+      "frames": 120,
+      "first": 5880
+    },
+    {
+      "file": "T7E3_050.spc",
+      "bytes": 128688,
+      "checksum": 3760840800,
+      "frames": 120,
+      "first": 6000
+    },
+    {
+      "file": "T7E3_051.spc",
+      "bytes": 128688,
+      "checksum": 2357019875,
+      "frames": 120,
+      "first": 6120
+    },
+    {
+      "file": "T7E3_052.spc",
+      "bytes": 128688,
+      "checksum": 1100150174,
+      "frames": 120,
+      "first": 6240
+    },
+    {
+      "file": "T7E3_053.spc",
+      "bytes": 128688,
+      "checksum": 1210214917,
+      "frames": 120,
+      "first": 6360
+    },
+    {
+      "file": "T7E3_054.spc",
+      "bytes": 128688,
+      "checksum": 3953984950,
+      "frames": 120,
+      "first": 6480
+    },
+    {
+      "file": "T7E3_055.spc",
+      "bytes": 128688,
+      "checksum": 2269447950,
+      "frames": 120,
+      "first": 6600
+    },
+    {
+      "file": "T7E3_056.spc",
+      "bytes": 128688,
+      "checksum": 1214655291,
+      "frames": 120,
+      "first": 6720
+    },
+    {
+      "file": "T7E3_057.spc",
+      "bytes": 128688,
+      "checksum": 2581614832,
+      "frames": 120,
+      "first": 6840
+    },
+    {
+      "file": "T7E3_058.spc",
+      "bytes": 128688,
+      "checksum": 3976646240,
+      "frames": 120,
+      "first": 6960
+    },
+    {
+      "file": "T7E3_059.spc",
+      "bytes": 128688,
+      "checksum": 1776904497,
+      "frames": 120,
+      "first": 7080
+    },
+    {
+      "file": "T7E3_060.spc",
+      "bytes": 128688,
+      "checksum": 1480464714,
+      "frames": 120,
+      "first": 7200
+    },
+    {
+      "file": "T7E3_061.spc",
+      "bytes": 128688,
+      "checksum": 1906582582,
+      "frames": 120,
+      "first": 7320
+    },
+    {
+      "file": "T7E3_062.spc",
+      "bytes": 128688,
+      "checksum": 3797851416,
+      "frames": 120,
+      "first": 7440
+    },
+    {
+      "file": "T7E3_063.spc",
+      "bytes": 128688,
+      "checksum": 1483036269,
+      "frames": 120,
+      "first": 7560
+    },
+    {
+      "file": "T7E3_064.spc",
+      "bytes": 128688,
+      "checksum": 2502648511,
+      "frames": 120,
+      "first": 7680
+    },
+    {
+      "file": "T7E3_065.spc",
+      "bytes": 128688,
+      "checksum": 1639020345,
+      "frames": 120,
+      "first": 7800
+    },
+    {
+      "file": "T7E3_066.spc",
+      "bytes": 128688,
+      "checksum": 2587497001,
+      "frames": 120,
+      "first": 7920
+    },
+    {
+      "file": "T7E3_067.spc",
+      "bytes": 128688,
+      "checksum": 3495113992,
+      "frames": 120,
+      "first": 8040
+    },
+    {
+      "file": "T7E3_068.spc",
+      "bytes": 128688,
+      "checksum": 3961808651,
+      "frames": 120,
+      "first": 8160
+    },
+    {
+      "file": "T7E3_069.spc",
+      "bytes": 128688,
+      "checksum": 2966861068,
+      "frames": 120,
+      "first": 8280
+    },
+    {
+      "file": "T7E3_070.spc",
+      "bytes": 128688,
+      "checksum": 1828227208,
+      "frames": 120,
+      "first": 8400
+    },
+    {
+      "file": "T7E3_071.spc",
+      "bytes": 128688,
+      "checksum": 1745558606,
+      "frames": 120,
+      "first": 8520
+    },
+    {
+      "file": "T7E3_072.spc",
+      "bytes": 128688,
+      "checksum": 3884597838,
+      "frames": 120,
+      "first": 8640
+    },
+    {
+      "file": "T7E3_073.spc",
+      "bytes": 128688,
+      "checksum": 4148853016,
+      "frames": 120,
+      "first": 8760
+    },
+    {
+      "file": "T7E3_074.spc",
+      "bytes": 128688,
+      "checksum": 840501224,
+      "frames": 120,
+      "first": 8880
+    },
+    {
+      "file": "T7E3_075.spc",
+      "bytes": 128688,
+      "checksum": 474078994,
+      "frames": 120,
+      "first": 9000
+    },
+    {
+      "file": "T7E3_076.spc",
+      "bytes": 128688,
+      "checksum": 1484481071,
+      "frames": 120,
+      "first": 9120
+    },
+    {
+      "file": "T7E3_077.spc",
+      "bytes": 128688,
+      "checksum": 3645053610,
+      "frames": 120,
+      "first": 9240
+    },
+    {
+      "file": "T7E3_078.spc",
+      "bytes": 128688,
+      "checksum": 201314831,
+      "frames": 120,
+      "first": 9360
+    },
+    {
+      "file": "T7E3_079.spc",
+      "bytes": 128688,
+      "checksum": 302180363,
+      "frames": 120,
+      "first": 9480
+    },
+    {
+      "file": "T7E3_080.spc",
+      "bytes": 128688,
+      "checksum": 3798507034,
+      "frames": 120,
+      "first": 9600
+    },
+    {
+      "file": "T7E3_081.spc",
+      "bytes": 128688,
+      "checksum": 2349442967,
+      "frames": 120,
+      "first": 9720
+    },
+    {
+      "file": "T7E3_082.spc",
+      "bytes": 128688,
+      "checksum": 876535241,
+      "frames": 120,
+      "first": 9840
+    },
+    {
+      "file": "T7E3_083.spc",
+      "bytes": 128688,
+      "checksum": 2580354564,
+      "frames": 120,
+      "first": 9960
+    },
+    {
+      "file": "T7E3_084.spc",
+      "bytes": 128688,
+      "checksum": 3638019815,
+      "frames": 120,
+      "first": 10080
+    },
+    {
+      "file": "T7E3_085.spc",
+      "bytes": 128688,
+      "checksum": 2894656343,
+      "frames": 120,
+      "first": 10200
+    },
+    {
+      "file": "T7E3_086.spc",
+      "bytes": 128688,
+      "checksum": 2455853148,
+      "frames": 120,
+      "first": 10320
+    },
+    {
+      "file": "T7E3_087.spc",
+      "bytes": 128688,
+      "checksum": 4057584735,
+      "frames": 120,
+      "first": 10440
+    },
+    {
+      "file": "T7E3_088.spc",
+      "bytes": 128688,
+      "checksum": 3096914741,
+      "frames": 120,
+      "first": 10560
+    },
+    {
+      "file": "T7E3_089.spc",
+      "bytes": 128688,
+      "checksum": 1199705490,
+      "frames": 120,
+      "first": 10680
+    },
+    {
+      "file": "T7E3_090.spc",
+      "bytes": 128688,
+      "checksum": 2832947455,
+      "frames": 120,
+      "first": 10800
+    },
+    {
+      "file": "T7E3_091.spc",
+      "bytes": 128688,
+      "checksum": 1980316476,
+      "frames": 120,
+      "first": 10920
+    },
+    {
+      "file": "T7E3_092.spc",
+      "bytes": 128688,
+      "checksum": 2410595893,
+      "frames": 120,
+      "first": 11040
+    },
+    {
+      "file": "T7E3_093.spc",
+      "bytes": 128688,
+      "checksum": 2073726397,
+      "frames": 120,
+      "first": 11160
+    },
+    {
+      "file": "T7E3_094.spc",
+      "bytes": 128688,
+      "checksum": 2989545035,
+      "frames": 120,
+      "first": 11280
+    },
+    {
+      "file": "T7E3_095.spc",
+      "bytes": 128688,
+      "checksum": 748866395,
+      "frames": 120,
+      "first": 11400
+    },
+    {
+      "file": "T7E3_096.spc",
+      "bytes": 128688,
+      "checksum": 3147387846,
+      "frames": 120,
+      "first": 11520
+    },
+    {
+      "file": "T7E3_097.spc",
+      "bytes": 128688,
+      "checksum": 2476642467,
+      "frames": 120,
+      "first": 11640
+    },
+    {
+      "file": "T7E3_098.spc",
+      "bytes": 128688,
+      "checksum": 939192074,
+      "frames": 120,
+      "first": 11760
+    },
+    {
+      "file": "T7E3_099.spc",
+      "bytes": 128688,
+      "checksum": 2869254491,
+      "frames": 120,
+      "first": 11880
+    },
+    {
+      "file": "T7E3_100.spc",
+      "bytes": 128688,
+      "checksum": 3946018722,
+      "frames": 120,
+      "first": 12000
+    },
+    {
+      "file": "T7E3_101.spc",
+      "bytes": 128688,
+      "checksum": 1803357417,
+      "frames": 120,
+      "first": 12120
+    },
+    {
+      "file": "T7E3_102.spc",
+      "bytes": 128688,
+      "checksum": 4095086265,
+      "frames": 120,
+      "first": 12240
+    },
+    {
+      "file": "T7E3_103.spc",
+      "bytes": 128688,
+      "checksum": 21004315,
+      "frames": 120,
+      "first": 12360
+    },
+    {
+      "file": "T7E3_104.spc",
+      "bytes": 128688,
+      "checksum": 2217945290,
+      "frames": 120,
+      "first": 12480
+    },
+    {
+      "file": "T7E3_105.spc",
+      "bytes": 128688,
+      "checksum": 3520229744,
+      "frames": 120,
+      "first": 12600
+    },
+    {
+      "file": "T7E3_106.spc",
+      "bytes": 128688,
+      "checksum": 818694605,
+      "frames": 120,
+      "first": 12720
+    },
+    {
+      "file": "T7E3_107.spc",
+      "bytes": 128688,
+      "checksum": 1124282800,
+      "frames": 120,
+      "first": 12840
+    },
+    {
+      "file": "T7E3_108.spc",
+      "bytes": 128688,
+      "checksum": 1337687746,
+      "frames": 120,
+      "first": 12960
+    },
+    {
+      "file": "T7E3_109.spc",
+      "bytes": 128688,
+      "checksum": 997947113,
+      "frames": 120,
+      "first": 13080
+    },
+    {
+      "file": "T7E3_110.spc",
+      "bytes": 128688,
+      "checksum": 2929320599,
+      "frames": 120,
+      "first": 13200
+    },
+    {
+      "file": "T7E3_111.spc",
+      "bytes": 128688,
+      "checksum": 566474320,
+      "frames": 120,
+      "first": 13320
+    },
+    {
+      "file": "T7E3_112.spc",
+      "bytes": 128688,
+      "checksum": 1462034444,
+      "frames": 120,
+      "first": 13440
+    },
+    {
+      "file": "T7E3_113.spc",
+      "bytes": 128688,
+      "checksum": 1341599302,
+      "frames": 120,
+      "first": 13560
+    },
+    {
+      "file": "T7E3_114.spc",
+      "bytes": 128688,
+      "checksum": 1698324930,
+      "frames": 120,
+      "first": 13680
+    },
+    {
+      "file": "T7E3_115.spc",
+      "bytes": 128688,
+      "checksum": 2757694699,
+      "frames": 120,
+      "first": 13800
+    },
+    {
+      "file": "T7E3_116.spc",
+      "bytes": 128688,
+      "checksum": 1756110059,
+      "frames": 120,
+      "first": 13920
+    },
+    {
+      "file": "T7E3_117.spc",
+      "bytes": 128688,
+      "checksum": 2509080565,
+      "frames": 120,
+      "first": 14040
+    },
+    {
+      "file": "T7E3_118.spc",
+      "bytes": 128688,
+      "checksum": 3748090321,
+      "frames": 120,
+      "first": 14160
+    },
+    {
+      "file": "T7E3_119.spc",
+      "bytes": 128688,
+      "checksum": 2929773794,
+      "frames": 120,
+      "first": 14280
+    },
+    {
+      "file": "T7E3_120.spc",
+      "bytes": 128688,
+      "checksum": 73079197,
+      "frames": 120,
+      "first": 14400
+    },
+    {
+      "file": "T7E3_121.spc",
+      "bytes": 128688,
+      "checksum": 2131880497,
+      "frames": 120,
+      "first": 14520
+    },
+    {
+      "file": "T7E3_122.spc",
+      "bytes": 128688,
+      "checksum": 3181521606,
+      "frames": 120,
+      "first": 14640
+    },
+    {
+      "file": "T7E3_123.spc",
+      "bytes": 128688,
+      "checksum": 1624867987,
+      "frames": 120,
+      "first": 14760
+    },
+    {
+      "file": "T7E3_124.spc",
+      "bytes": 128688,
+      "checksum": 532020106,
+      "frames": 120,
+      "first": 14880
+    },
+    {
+      "file": "T7E3_125.spc",
+      "bytes": 128688,
+      "checksum": 2244512310,
+      "frames": 120,
+      "first": 15000
+    },
+    {
+      "file": "T7E3_126.spc",
+      "bytes": 128688,
+      "checksum": 1697244911,
+      "frames": 120,
+      "first": 15120
+    },
+    {
+      "file": "T7E3_127.spc",
+      "bytes": 128688,
+      "checksum": 2284848905,
+      "frames": 120,
+      "first": 15240
+    },
+    {
+      "file": "T7E3_128.spc",
+      "bytes": 128688,
+      "checksum": 429896562,
+      "frames": 120,
+      "first": 15360
+    },
+    {
+      "file": "T7E3_129.spc",
+      "bytes": 128688,
+      "checksum": 2503264277,
+      "frames": 120,
+      "first": 15480
+    },
+    {
+      "file": "T7E3_130.spc",
+      "bytes": 128688,
+      "checksum": 1329018511,
+      "frames": 120,
+      "first": 15600
+    },
+    {
+      "file": "T7E3_131.spc",
+      "bytes": 128688,
+      "checksum": 3614692635,
+      "frames": 120,
+      "first": 15720
+    },
+    {
+      "file": "T7E3_132.spc",
+      "bytes": 128688,
+      "checksum": 258028387,
+      "frames": 120,
+      "first": 15840
+    },
+    {
+      "file": "T7E3_133.spc",
+      "bytes": 128688,
+      "checksum": 2116113643,
+      "frames": 120,
+      "first": 15960
+    },
+    {
+      "file": "T7E3_134.spc",
+      "bytes": 128688,
+      "checksum": 732750446,
+      "frames": 120,
+      "first": 16080
+    },
+    {
+      "file": "T7E3_135.spc",
+      "bytes": 128688,
+      "checksum": 1677959281,
+      "frames": 120,
+      "first": 16200
+    },
+    {
+      "file": "T7E3_136.spc",
+      "bytes": 128688,
+      "checksum": 509380270,
+      "frames": 120,
+      "first": 16320
+    },
+    {
+      "file": "T7E3_137.spc",
+      "bytes": 128688,
+      "checksum": 718211773,
+      "frames": 120,
+      "first": 16440
+    },
+    {
+      "file": "T7E3_138.spc",
+      "bytes": 128688,
+      "checksum": 1004762415,
+      "frames": 120,
+      "first": 16560
+    },
+    {
+      "file": "T7E3_139.spc",
+      "bytes": 128688,
+      "checksum": 3519933307,
+      "frames": 120,
+      "first": 16680
+    },
+    {
+      "file": "T7E3_140.spc",
+      "bytes": 128688,
+      "checksum": 4112200068,
+      "frames": 120,
+      "first": 16800
+    },
+    {
+      "file": "T7E3_141.spc",
+      "bytes": 128688,
+      "checksum": 600173463,
+      "frames": 120,
+      "first": 16920
+    },
+    {
+      "file": "T7E3_142.spc",
+      "bytes": 128688,
+      "checksum": 4271823110,
+      "frames": 120,
+      "first": 17040
+    },
+    {
+      "file": "T7E3_143.spc",
+      "bytes": 128688,
+      "checksum": 2825895815,
+      "frames": 120,
+      "first": 17160
+    },
+    {
+      "file": "T7E3_144.spc",
+      "bytes": 128688,
+      "checksum": 2982531321,
+      "frames": 120,
+      "first": 17280
+    },
+    {
+      "file": "T7E3_145.spc",
+      "bytes": 128688,
+      "checksum": 1226473814,
+      "frames": 120,
+      "first": 17400
+    },
+    {
+      "file": "T7E3_146.spc",
+      "bytes": 128688,
+      "checksum": 222348186,
+      "frames": 120,
+      "first": 17520
+    },
+    {
+      "file": "T7E3_147.spc",
+      "bytes": 128688,
+      "checksum": 3133276224,
+      "frames": 120,
+      "first": 17640
+    },
+    {
+      "file": "T7E3_148.spc",
+      "bytes": 128688,
+      "checksum": 3257797461,
+      "frames": 120,
+      "first": 17760
+    },
+    {
+      "file": "T7E3_149.spc",
+      "bytes": 128688,
+      "checksum": 2443156094,
+      "frames": 120,
+      "first": 17880
+    },
+    {
+      "file": "T7E3_150.spc",
+      "bytes": 128688,
+      "checksum": 1929798780,
+      "frames": 120,
+      "first": 18000
+    },
+    {
+      "file": "T7E3_151.spc",
+      "bytes": 128688,
+      "checksum": 2446494334,
+      "frames": 120,
+      "first": 18120
+    },
+    {
+      "file": "T7E3_152.spc",
+      "bytes": 128688,
+      "checksum": 3878535542,
+      "frames": 120,
+      "first": 18240
+    },
+    {
+      "file": "T7E3_153.spc",
+      "bytes": 128688,
+      "checksum": 825753981,
+      "frames": 120,
+      "first": 18360
+    },
+    {
+      "file": "T7E3_154.spc",
+      "bytes": 128688,
+      "checksum": 4002633810,
+      "frames": 120,
+      "first": 18480
+    },
+    {
+      "file": "T7E3_155.spc",
+      "bytes": 128688,
+      "checksum": 2875357950,
+      "frames": 120,
+      "first": 18600
+    },
+    {
+      "file": "T7E3_156.spc",
+      "bytes": 128688,
+      "checksum": 3461288032,
+      "frames": 120,
+      "first": 18720
+    },
+    {
+      "file": "T7E3_157.spc",
+      "bytes": 128688,
+      "checksum": 1002385160,
+      "frames": 120,
+      "first": 18840
+    },
+    {
+      "file": "T7E3_158.spc",
+      "bytes": 128688,
+      "checksum": 2453381649,
+      "frames": 120,
+      "first": 18960
+    },
+    {
+      "file": "T7E3_159.spc",
+      "bytes": 128688,
+      "checksum": 1965225207,
+      "frames": 120,
+      "first": 19080
+    },
+    {
+      "file": "T7E3_160.spc",
+      "bytes": 128688,
+      "checksum": 1715162899,
+      "frames": 120,
+      "first": 19200
+    },
+    {
+      "file": "T7E3_161.spc",
+      "bytes": 128688,
+      "checksum": 89835238,
+      "frames": 120,
+      "first": 19320
+    },
+    {
+      "file": "T7E3_162.spc",
+      "bytes": 128688,
+      "checksum": 529917640,
+      "frames": 120,
+      "first": 19440
+    },
+    {
+      "file": "T7E3_163.spc",
+      "bytes": 128688,
+      "checksum": 4230369270,
+      "frames": 120,
+      "first": 19560
+    },
+    {
+      "file": "T7E3_164.spc",
+      "bytes": 128688,
+      "checksum": 4148771638,
+      "frames": 120,
+      "first": 19680
+    },
+    {
+      "file": "T7E3_165.spc",
+      "bytes": 128688,
+      "checksum": 3580789392,
+      "frames": 120,
+      "first": 19800
+    },
+    {
+      "file": "T7E3_166.spc",
+      "bytes": 128688,
+      "checksum": 3513092282,
+      "frames": 120,
+      "first": 19920
+    },
+    {
+      "file": "T7E3_167.spc",
+      "bytes": 128688,
+      "checksum": 2075984567,
+      "frames": 120,
+      "first": 20040
+    },
+    {
+      "file": "T7E3_168.spc",
+      "bytes": 128688,
+      "checksum": 2111484022,
+      "frames": 120,
+      "first": 20160
+    },
+    {
+      "file": "T7E3_169.spc",
+      "bytes": 128688,
+      "checksum": 3408415401,
+      "frames": 120,
+      "first": 20280
+    },
+    {
+      "file": "T7E3_170.spc",
+      "bytes": 128688,
+      "checksum": 3113646905,
+      "frames": 120,
+      "first": 20400
+    },
+    {
+      "file": "T7E3_171.spc",
+      "bytes": 128688,
+      "checksum": 1722317595,
+      "frames": 120,
+      "first": 20520
+    },
+    {
+      "file": "T7E3_172.spc",
+      "bytes": 128688,
+      "checksum": 2613322104,
+      "frames": 120,
+      "first": 20640
+    },
+    {
+      "file": "T7E3_173.spc",
+      "bytes": 128688,
+      "checksum": 3530178135,
+      "frames": 120,
+      "first": 20760
+    },
+    {
+      "file": "T7E3_174.spc",
+      "bytes": 128688,
+      "checksum": 439941104,
+      "frames": 120,
+      "first": 20880
+    },
+    {
+      "file": "T7E3_175.spc",
+      "bytes": 128688,
+      "checksum": 2813491120,
+      "frames": 120,
+      "first": 21000
+    },
+    {
+      "file": "T7E3_176.spc",
+      "bytes": 128688,
+      "checksum": 2915498927,
+      "frames": 120,
+      "first": 21120
+    },
+    {
+      "file": "T7E3_177.spc",
+      "bytes": 128688,
+      "checksum": 2307549866,
+      "frames": 120,
+      "first": 21240
+    },
+    {
+      "file": "T7E3_178.spc",
+      "bytes": 128688,
+      "checksum": 4147776085,
+      "frames": 120,
+      "first": 21360
+    },
+    {
+      "file": "T7E3_179.spc",
+      "bytes": 128688,
+      "checksum": 4122762873,
+      "frames": 120,
+      "first": 21480
+    },
+    {
+      "file": "T7E3_180.spc",
+      "bytes": 128688,
+      "checksum": 1911568701,
+      "frames": 120,
+      "first": 21600
+    },
+    {
+      "file": "T7E3_181.spc",
+      "bytes": 128688,
+      "checksum": 283581336,
+      "frames": 120,
+      "first": 21720
+    },
+    {
+      "file": "T7E3_182.spc",
+      "bytes": 128688,
+      "checksum": 3034227422,
+      "frames": 120,
+      "first": 21840
+    },
+    {
+      "file": "T7E3_183.spc",
+      "bytes": 128688,
+      "checksum": 1894164248,
+      "frames": 120,
+      "first": 21960
+    },
+    {
+      "file": "T7E3_184.spc",
+      "bytes": 128688,
+      "checksum": 2511096343,
+      "frames": 120,
+      "first": 22080
+    },
+    {
+      "file": "T7E3_185.spc",
+      "bytes": 128688,
+      "checksum": 539833159,
+      "frames": 120,
+      "first": 22200
+    },
+    {
+      "file": "T7E3_186.spc",
+      "bytes": 128688,
+      "checksum": 80777017,
+      "frames": 120,
+      "first": 22320
+    },
+    {
+      "file": "T7E3_187.spc",
+      "bytes": 128688,
+      "checksum": 3692817244,
+      "frames": 120,
+      "first": 22440
+    },
+    {
+      "file": "T7E3_188.spc",
+      "bytes": 128688,
+      "checksum": 1575736714,
+      "frames": 120,
+      "first": 22560
+    },
+    {
+      "file": "T7E3_189.spc",
+      "bytes": 128688,
+      "checksum": 2611785996,
+      "frames": 120,
+      "first": 22680
+    },
+    {
+      "file": "T7E3_190.spc",
+      "bytes": 128688,
+      "checksum": 2062361155,
+      "frames": 120,
+      "first": 22800
+    },
+    {
+      "file": "T7E3_191.spc",
+      "bytes": 128688,
+      "checksum": 1395591393,
+      "frames": 120,
+      "first": 22920
+    },
+    {
+      "file": "T7E3_192.spc",
+      "bytes": 128688,
+      "checksum": 172145294,
+      "frames": 120,
+      "first": 23040
+    },
+    {
+      "file": "T7E3_193.spc",
+      "bytes": 128688,
+      "checksum": 2179958646,
+      "frames": 120,
+      "first": 23160
+    },
+    {
+      "file": "T7E3_194.spc",
+      "bytes": 128688,
+      "checksum": 1814595191,
+      "frames": 120,
+      "first": 23280
+    },
+    {
+      "file": "T7E3_195.spc",
+      "bytes": 128688,
+      "checksum": 2626929604,
+      "frames": 120,
+      "first": 23400
+    },
+    {
+      "file": "T7E3_196.spc",
+      "bytes": 128688,
+      "checksum": 215766807,
+      "frames": 120,
+      "first": 23520
+    },
+    {
+      "file": "T7E3_197.spc",
+      "bytes": 128688,
+      "checksum": 1114805211,
+      "frames": 120,
+      "first": 23640
+    },
+    {
+      "file": "T7E3_198.spc",
+      "bytes": 128688,
+      "checksum": 3724695643,
+      "frames": 120,
+      "first": 23760
+    },
+    {
+      "file": "T7E3_199.spc",
+      "bytes": 128688,
+      "checksum": 685976744,
+      "frames": 120,
+      "first": 23880
+    },
+    {
+      "file": "T7E3_200.spc",
+      "bytes": 128688,
+      "checksum": 949533919,
+      "frames": 120,
+      "first": 24000
+    },
+    {
+      "file": "T7E3_201.spc",
+      "bytes": 128688,
+      "checksum": 1591816930,
+      "frames": 120,
+      "first": 24120
+    },
+    {
+      "file": "T7E3_202.spc",
+      "bytes": 128688,
+      "checksum": 3645503929,
+      "frames": 120,
+      "first": 24240
+    },
+    {
+      "file": "T7E3_203.spc",
+      "bytes": 128688,
+      "checksum": 1576121245,
+      "frames": 120,
+      "first": 24360
+    },
+    {
+      "file": "T7E3_204.spc",
+      "bytes": 128688,
+      "checksum": 364549172,
+      "frames": 120,
+      "first": 24480
+    },
+    {
+      "file": "T7E3_205.spc",
+      "bytes": 128688,
+      "checksum": 2759668847,
+      "frames": 120,
+      "first": 24600
+    },
+    {
+      "file": "T7E3_206.spc",
+      "bytes": 128688,
+      "checksum": 1652284307,
+      "frames": 120,
+      "first": 24720
+    },
+    {
+      "file": "T7E3_207.spc",
+      "bytes": 128688,
+      "checksum": 2607032342,
+      "frames": 120,
+      "first": 24840
+    },
+    {
+      "file": "T7E3_208.spc",
+      "bytes": 128688,
+      "checksum": 1664767178,
+      "frames": 120,
+      "first": 24960
+    },
+    {
+      "file": "T7E3_209.spc",
+      "bytes": 128688,
+      "checksum": 4206417179,
+      "frames": 120,
+      "first": 25080
+    },
+    {
+      "file": "T7E3_210.spc",
+      "bytes": 128688,
+      "checksum": 1535406722,
+      "frames": 120,
+      "first": 25200
+    },
+    {
+      "file": "T7E3_211.spc",
+      "bytes": 128688,
+      "checksum": 4088079001,
+      "frames": 120,
+      "first": 25320
+    },
+    {
+      "file": "T7E3_212.spc",
+      "bytes": 128688,
+      "checksum": 604012241,
+      "frames": 120,
+      "first": 25440
+    },
+    {
+      "file": "T7E3_213.spc",
+      "bytes": 128688,
+      "checksum": 1057817664,
+      "frames": 120,
+      "first": 25560
+    },
+    {
+      "file": "T7E3_214.spc",
+      "bytes": 128688,
+      "checksum": 1125918959,
+      "frames": 120,
+      "first": 25680
+    },
+    {
+      "file": "T7E3_215.spc",
+      "bytes": 128688,
+      "checksum": 3014126543,
+      "frames": 120,
+      "first": 25800
+    },
+    {
+      "file": "T7E3_216.spc",
+      "bytes": 128688,
+      "checksum": 2529335345,
+      "frames": 120,
+      "first": 25920
+    },
+    {
+      "file": "T7E3_217.spc",
+      "bytes": 128688,
+      "checksum": 525017844,
+      "frames": 120,
+      "first": 26040
+    },
+    {
+      "file": "T7E3_218.spc",
+      "bytes": 128688,
+      "checksum": 2700902992,
+      "frames": 120,
+      "first": 26160
+    },
+    {
+      "file": "T7E3_219.spc",
+      "bytes": 128688,
+      "checksum": 1046856083,
+      "frames": 120,
+      "first": 26280
+    },
+    {
+      "file": "T7E3_220.spc",
+      "bytes": 128688,
+      "checksum": 2311706160,
+      "frames": 120,
+      "first": 26400
+    },
+    {
+      "file": "T7E3_221.spc",
+      "bytes": 128688,
+      "checksum": 4278224396,
+      "frames": 120,
+      "first": 26520
+    },
+    {
+      "file": "T7E3_222.spc",
+      "bytes": 128688,
+      "checksum": 2572437152,
+      "frames": 120,
+      "first": 26640
+    },
+    {
+      "file": "T7E3_223.spc",
+      "bytes": 128688,
+      "checksum": 4117081524,
+      "frames": 120,
+      "first": 26760
+    },
+    {
+      "file": "T7E3_224.spc",
+      "bytes": 128688,
+      "checksum": 3684792386,
+      "frames": 120,
+      "first": 26880
+    },
+    {
+      "file": "T7E3_225.spc",
+      "bytes": 128688,
+      "checksum": 3332669181,
+      "frames": 120,
+      "first": 27000
+    },
+    {
+      "file": "T7E3_226.spc",
+      "bytes": 128688,
+      "checksum": 2468480538,
+      "frames": 120,
+      "first": 27120
+    },
+    {
+      "file": "T7E3_227.spc",
+      "bytes": 128688,
+      "checksum": 1115983824,
+      "frames": 120,
+      "first": 27240
+    },
+    {
+      "file": "T7E3_228.spc",
+      "bytes": 128688,
+      "checksum": 3387699109,
+      "frames": 120,
+      "first": 27360
+    },
+    {
+      "file": "T7E3_229.spc",
+      "bytes": 128688,
+      "checksum": 580987761,
+      "frames": 120,
+      "first": 27480
+    },
+    {
+      "file": "T7E3_230.spc",
+      "bytes": 128688,
+      "checksum": 1135499448,
+      "frames": 120,
+      "first": 27600
+    },
+    {
+      "file": "T7E3_231.spc",
+      "bytes": 128688,
+      "checksum": 2361921397,
+      "frames": 120,
+      "first": 27720
+    },
+    {
+      "file": "T7E3_232.spc",
+      "bytes": 128688,
+      "checksum": 3896985794,
+      "frames": 120,
+      "first": 27840
+    },
+    {
+      "file": "T7E3_233.spc",
+      "bytes": 128688,
+      "checksum": 1754402857,
+      "frames": 120,
+      "first": 27960
+    },
+    {
+      "file": "T7E3_234.spc",
+      "bytes": 128688,
+      "checksum": 3574329243,
+      "frames": 120,
+      "first": 28080
+    },
+    {
+      "file": "T7E3_235.spc",
+      "bytes": 128688,
+      "checksum": 101686333,
+      "frames": 120,
+      "first": 28200
+    },
+    {
+      "file": "T7E3_236.spc",
+      "bytes": 128688,
+      "checksum": 3573073146,
+      "frames": 120,
+      "first": 28320
+    },
+    {
+      "file": "T7E3_237.spc",
+      "bytes": 128688,
+      "checksum": 1372313514,
+      "frames": 120,
+      "first": 28440
+    },
+    {
+      "file": "T7E3_238.spc",
+      "bytes": 128688,
+      "checksum": 4135843501,
+      "frames": 120,
+      "first": 28560
+    },
+    {
+      "file": "T7E3_239.spc",
+      "bytes": 128688,
+      "checksum": 2843034737,
+      "frames": 120,
+      "first": 28680
+    },
+    {
+      "file": "T7E3_240.spc",
+      "bytes": 128688,
+      "checksum": 929616247,
+      "frames": 120,
+      "first": 28800
+    },
+    {
+      "file": "T7E3_241.spc",
+      "bytes": 128688,
+      "checksum": 3113815577,
+      "frames": 120,
+      "first": 28920
+    },
+    {
+      "file": "T7E3_242.spc",
+      "bytes": 128688,
+      "checksum": 3759013794,
+      "frames": 120,
+      "first": 29040
+    },
+    {
+      "file": "T7E3_243.spc",
+      "bytes": 128688,
+      "checksum": 3202692965,
+      "frames": 120,
+      "first": 29160
+    },
+    {
+      "file": "T7E3_244.spc",
+      "bytes": 128688,
+      "checksum": 1268013456,
+      "frames": 120,
+      "first": 29280
+    },
+    {
+      "file": "T7E3_245.spc",
+      "bytes": 128688,
+      "checksum": 1398473887,
+      "frames": 120,
+      "first": 29400
+    },
+    {
+      "file": "T7E3_246.spc",
+      "bytes": 128688,
+      "checksum": 3191533160,
+      "frames": 120,
+      "first": 29520
+    },
+    {
+      "file": "T7E3_247.spc",
+      "bytes": 128688,
+      "checksum": 1465660282,
+      "frames": 120,
+      "first": 29640
+    },
+    {
+      "file": "T7E3_248.spc",
+      "bytes": 128688,
+      "checksum": 714534240,
+      "frames": 120,
+      "first": 29760
+    },
+    {
+      "file": "T7E3_249.spc",
+      "bytes": 128688,
+      "checksum": 1533103270,
+      "frames": 120,
+      "first": 29880
+    },
+    {
+      "file": "T7E3_250.spc",
+      "bytes": 128688,
+      "checksum": 3305429815,
+      "frames": 120,
+      "first": 30000
+    },
+    {
+      "file": "T7E3_251.spc",
+      "bytes": 128688,
+      "checksum": 3153571424,
+      "frames": 120,
+      "first": 30120
+    },
+    {
+      "file": "T7E3_252.spc",
+      "bytes": 128688,
+      "checksum": 3424037554,
+      "frames": 120,
+      "first": 30240
+    },
+    {
+      "file": "T7E3_253.spc",
+      "bytes": 128688,
+      "checksum": 2224728356,
+      "frames": 120,
+      "first": 30360
+    },
+    {
+      "file": "T7E3_254.spc",
+      "bytes": 128688,
+      "checksum": 78667833,
+      "frames": 120,
+      "first": 30480
+    },
+    {
+      "file": "T7E3_255.spc",
+      "bytes": 128688,
+      "checksum": 43418899,
+      "frames": 120,
+      "first": 30600
+    },
+    {
+      "file": "T7E3_256.spc",
+      "bytes": 128688,
+      "checksum": 742792689,
+      "frames": 120,
+      "first": 30720
+    },
+    {
+      "file": "T7E3_257.spc",
+      "bytes": 128688,
+      "checksum": 3724466348,
+      "frames": 120,
+      "first": 30840
+    },
+    {
+      "file": "T7E3_258.spc",
+      "bytes": 128688,
+      "checksum": 2555858095,
+      "frames": 120,
+      "first": 30960
+    },
+    {
+      "file": "T7E3_259.spc",
+      "bytes": 128688,
+      "checksum": 3843874290,
+      "frames": 120,
+      "first": 31080
+    },
+    {
+      "file": "T7E3_260.spc",
+      "bytes": 128688,
+      "checksum": 3879613186,
+      "frames": 120,
+      "first": 31200
+    },
+    {
+      "file": "T7E3_261.spc",
+      "bytes": 128688,
+      "checksum": 3421842246,
+      "frames": 120,
+      "first": 31320
+    },
+    {
+      "file": "T7E3_262.spc",
+      "bytes": 128688,
+      "checksum": 1716456787,
+      "frames": 120,
+      "first": 31440
+    },
+    {
+      "file": "T7E3_263.spc",
+      "bytes": 128688,
+      "checksum": 3815339763,
+      "frames": 120,
+      "first": 31560
+    },
+    {
+      "file": "T7E3_264.spc",
+      "bytes": 128688,
+      "checksum": 3249473000,
+      "frames": 120,
+      "first": 31680
+    },
+    {
+      "file": "T7E3_265.spc",
+      "bytes": 128688,
+      "checksum": 3887650671,
+      "frames": 120,
+      "first": 31800
+    },
+    {
+      "file": "T7E3_266.spc",
+      "bytes": 128688,
+      "checksum": 232518997,
+      "frames": 120,
+      "first": 31920
+    },
+    {
+      "file": "T7E3_267.spc",
+      "bytes": 128688,
+      "checksum": 3243893697,
+      "frames": 120,
+      "first": 32040
+    },
+    {
+      "file": "T7E3_268.spc",
+      "bytes": 128688,
+      "checksum": 2231001799,
+      "frames": 120,
+      "first": 32160
+    },
+    {
+      "file": "T7E3_269.spc",
+      "bytes": 128688,
+      "checksum": 1481874443,
+      "frames": 120,
+      "first": 32280
+    },
+    {
+      "file": "T7E3_270.spc",
+      "bytes": 128688,
+      "checksum": 662022566,
+      "frames": 120,
+      "first": 32400
+    },
+    {
+      "file": "T7E3_271.spc",
+      "bytes": 128688,
+      "checksum": 1039107998,
+      "frames": 120,
+      "first": 32520
+    },
+    {
+      "file": "T7E3_272.spc",
+      "bytes": 128688,
+      "checksum": 1898144292,
+      "frames": 120,
+      "first": 32640
+    },
+    {
+      "file": "T7E3_273.spc",
+      "bytes": 128688,
+      "checksum": 4025837804,
+      "frames": 120,
+      "first": 32760
+    },
+    {
+      "file": "T7E3_274.spc",
+      "bytes": 128688,
+      "checksum": 3399646518,
+      "frames": 120,
+      "first": 32880
+    },
+    {
+      "file": "T7E3_275.spc",
+      "bytes": 128688,
+      "checksum": 711272319,
+      "frames": 120,
+      "first": 33000
+    },
+    {
+      "file": "T7E3_276.spc",
+      "bytes": 128688,
+      "checksum": 2859428608,
+      "frames": 120,
+      "first": 33120
+    },
+    {
+      "file": "T7E3_277.spc",
+      "bytes": 128688,
+      "checksum": 3076252972,
+      "frames": 120,
+      "first": 33240
+    },
+    {
+      "file": "T7E3_278.spc",
+      "bytes": 128688,
+      "checksum": 3327743412,
+      "frames": 120,
+      "first": 33360
+    },
+    {
+      "file": "T7E3_279.spc",
+      "bytes": 128688,
+      "checksum": 1421786130,
+      "frames": 120,
+      "first": 33480
+    },
+    {
+      "file": "T7E3_280.spc",
+      "bytes": 128688,
+      "checksum": 3595316978,
+      "frames": 120,
+      "first": 33600
+    },
+    {
+      "file": "T7E3_281.spc",
+      "bytes": 128688,
+      "checksum": 347696733,
+      "frames": 120,
+      "first": 33720
+    },
+    {
+      "file": "T7E3_282.spc",
+      "bytes": 128688,
+      "checksum": 3677526265,
+      "frames": 120,
+      "first": 33840
+    },
+    {
+      "file": "T7E3_283.spc",
+      "bytes": 128688,
+      "checksum": 2124236500,
+      "frames": 120,
+      "first": 33960
+    },
+    {
+      "file": "T7E3_284.spc",
+      "bytes": 128688,
+      "checksum": 2403772283,
+      "frames": 120,
+      "first": 34080
+    },
+    {
+      "file": "T7E3_285.spc",
+      "bytes": 128688,
+      "checksum": 283687750,
+      "frames": 120,
+      "first": 34200
+    },
+    {
+      "file": "T7E3_286.spc",
+      "bytes": 128688,
+      "checksum": 2045074442,
+      "frames": 120,
+      "first": 34320
+    },
+    {
+      "file": "T7E3_287.spc",
+      "bytes": 128688,
+      "checksum": 3438883975,
+      "frames": 120,
+      "first": 34440
+    },
+    {
+      "file": "T7E3_288.spc",
+      "bytes": 128688,
+      "checksum": 2132796941,
+      "frames": 120,
+      "first": 34560
+    },
+    {
+      "file": "T7E3_289.spc",
+      "bytes": 128688,
+      "checksum": 2190393628,
+      "frames": 120,
+      "first": 34680
+    },
+    {
+      "file": "T7E3_290.spc",
+      "bytes": 128688,
+      "checksum": 3170381869,
+      "frames": 120,
+      "first": 34800
+    },
+    {
+      "file": "T7E3_291.spc",
+      "bytes": 128688,
+      "checksum": 3965571687,
+      "frames": 120,
+      "first": 34920
+    },
+    {
+      "file": "T7E3_292.spc",
+      "bytes": 128688,
+      "checksum": 73715615,
+      "frames": 120,
+      "first": 35040
+    },
+    {
+      "file": "T7E3_293.spc",
+      "bytes": 128688,
+      "checksum": 312461849,
+      "frames": 120,
+      "first": 35160
+    },
+    {
+      "file": "T7E3_294.spc",
+      "bytes": 128688,
+      "checksum": 612822845,
+      "frames": 120,
+      "first": 35280
+    },
+    {
+      "file": "T7E3_295.spc",
+      "bytes": 128688,
+      "checksum": 1919991811,
+      "frames": 120,
+      "first": 35400
+    },
+    {
+      "file": "T7E3_296.spc",
+      "bytes": 128688,
+      "checksum": 3051342069,
+      "frames": 120,
+      "first": 35520
+    },
+    {
+      "file": "T7E3_297.spc",
+      "bytes": 128688,
+      "checksum": 290791977,
+      "frames": 120,
+      "first": 35640
+    },
+    {
+      "file": "T7E3_298.spc",
+      "bytes": 128688,
+      "checksum": 1770745214,
+      "frames": 120,
+      "first": 35760
+    },
+    {
+      "file": "T7E3_299.spc",
+      "bytes": 128688,
+      "checksum": 2606849205,
+      "frames": 120,
+      "first": 35880
+    },
+    {
+      "file": "T7E3_300.spc",
+      "bytes": 128688,
+      "checksum": 4192970917,
+      "frames": 120,
+      "first": 36000
+    },
+    {
+      "file": "T7E3_301.spc",
+      "bytes": 128688,
+      "checksum": 3604854506,
+      "frames": 120,
+      "first": 36120
+    },
+    {
+      "file": "T7E3_302.spc",
+      "bytes": 128688,
+      "checksum": 1713096876,
+      "frames": 120,
+      "first": 36240
+    },
+    {
+      "file": "T7E3_303.spc",
+      "bytes": 128688,
+      "checksum": 1806212434,
+      "frames": 120,
+      "first": 36360
+    },
+    {
+      "file": "T7E3_304.spc",
+      "bytes": 128688,
+      "checksum": 109651368,
+      "frames": 120,
+      "first": 36480
+    },
+    {
+      "file": "T7E3_305.spc",
+      "bytes": 128688,
+      "checksum": 3997606912,
+      "frames": 120,
+      "first": 36600
+    },
+    {
+      "file": "T7E3_306.spc",
+      "bytes": 128688,
+      "checksum": 1507718519,
+      "frames": 120,
+      "first": 36720
+    },
+    {
+      "file": "T7E3_307.spc",
+      "bytes": 128688,
+      "checksum": 3340204053,
+      "frames": 120,
+      "first": 36840
+    },
+    {
+      "file": "T7E3_308.spc",
+      "bytes": 128688,
+      "checksum": 680275989,
+      "frames": 120,
+      "first": 36960
+    },
+    {
+      "file": "T7E3_309.spc",
+      "bytes": 128688,
+      "checksum": 869613493,
+      "frames": 120,
+      "first": 37080
+    },
+    {
+      "file": "T7E3_310.spc",
+      "bytes": 128688,
+      "checksum": 545896951,
+      "frames": 120,
+      "first": 37200
+    },
+    {
+      "file": "T7E3_311.spc",
+      "bytes": 128688,
+      "checksum": 1587333179,
+      "frames": 120,
+      "first": 37320
+    },
+    {
+      "file": "T7E3_312.spc",
+      "bytes": 128688,
+      "checksum": 3807124435,
+      "frames": 120,
+      "first": 37440
+    },
+    {
+      "file": "T7E3_313.spc",
+      "bytes": 128688,
+      "checksum": 1353287396,
+      "frames": 120,
+      "first": 37560
+    },
+    {
+      "file": "T7E3_314.spc",
+      "bytes": 128688,
+      "checksum": 1930776110,
+      "frames": 120,
+      "first": 37680
+    },
+    {
+      "file": "T7E3_315.spc",
+      "bytes": 128688,
+      "checksum": 1833284641,
+      "frames": 120,
+      "first": 37800
+    },
+    {
+      "file": "T7E3_316.spc",
+      "bytes": 128688,
+      "checksum": 4048318579,
+      "frames": 120,
+      "first": 37920
+    },
+    {
+      "file": "T7E3_317.spc",
+      "bytes": 128688,
+      "checksum": 3732854342,
+      "frames": 120,
+      "first": 38040
+    },
+    {
+      "file": "T7E3_318.spc",
+      "bytes": 128688,
+      "checksum": 1323840506,
+      "frames": 120,
+      "first": 38160
+    },
+    {
+      "file": "T7E3_319.spc",
+      "bytes": 128688,
+      "checksum": 3188531335,
+      "frames": 120,
+      "first": 38280
+    },
+    {
+      "file": "T7E3_320.spc",
+      "bytes": 128688,
+      "checksum": 2267151310,
+      "frames": 120,
+      "first": 38400
+    },
+    {
+      "file": "T7E3_321.spc",
+      "bytes": 128688,
+      "checksum": 7131369,
+      "frames": 120,
+      "first": 38520
+    },
+    {
+      "file": "T7E3_322.spc",
+      "bytes": 128688,
+      "checksum": 1546511545,
+      "frames": 120,
+      "first": 38640
+    },
+    {
+      "file": "T7E3_323.spc",
+      "bytes": 128688,
+      "checksum": 4051676722,
+      "frames": 120,
+      "first": 38760
+    },
+    {
+      "file": "T7E3_324.spc",
+      "bytes": 128688,
+      "checksum": 1757213888,
+      "frames": 120,
+      "first": 38880
+    },
+    {
+      "file": "T7E3_325.spc",
+      "bytes": 128688,
+      "checksum": 1243699004,
+      "frames": 120,
+      "first": 39000
+    },
+    {
+      "file": "T7E3_326.spc",
+      "bytes": 128688,
+      "checksum": 4049185705,
+      "frames": 120,
+      "first": 39120
+    },
+    {
+      "file": "T7E3_327.spc",
+      "bytes": 128688,
+      "checksum": 3195943223,
+      "frames": 120,
+      "first": 39240
+    },
+    {
+      "file": "T7E3_328.spc",
+      "bytes": 128688,
+      "checksum": 1695697823,
+      "frames": 120,
+      "first": 39360
+    },
+    {
+      "file": "T7E3_329.spc",
+      "bytes": 128688,
+      "checksum": 1592249513,
+      "frames": 120,
+      "first": 39480
+    },
+    {
+      "file": "T7E3_330.spc",
+      "bytes": 128688,
+      "checksum": 388869119,
+      "frames": 120,
+      "first": 39600
+    },
+    {
+      "file": "T7E3_331.spc",
+      "bytes": 128688,
+      "checksum": 4001572213,
+      "frames": 120,
+      "first": 39720
+    },
+    {
+      "file": "T7E3_332.spc",
+      "bytes": 128688,
+      "checksum": 92715612,
+      "frames": 120,
+      "first": 39840
+    },
+    {
+      "file": "T7E3_333.spc",
+      "bytes": 128688,
+      "checksum": 623081404,
+      "frames": 120,
+      "first": 39960
+    },
+    {
+      "file": "T7E3_334.spc",
+      "bytes": 128688,
+      "checksum": 3824726058,
+      "frames": 120,
+      "first": 40080
+    },
+    {
+      "file": "T7E3_335.spc",
+      "bytes": 128688,
+      "checksum": 3467159798,
+      "frames": 120,
+      "first": 40200
+    },
+    {
+      "file": "T7E3_336.spc",
+      "bytes": 128688,
+      "checksum": 3426820297,
+      "frames": 120,
+      "first": 40320
+    },
+    {
+      "file": "T7E3_337.spc",
+      "bytes": 128688,
+      "checksum": 164022483,
+      "frames": 120,
+      "first": 40440
+    },
+    {
+      "file": "T7E3_338.spc",
+      "bytes": 128688,
+      "checksum": 4056057151,
+      "frames": 120,
+      "first": 40560
+    },
+    {
+      "file": "T7E3_339.spc",
+      "bytes": 128688,
+      "checksum": 3483985923,
+      "frames": 120,
+      "first": 40680
+    },
+    {
+      "file": "T7E3_340.spc",
+      "bytes": 128688,
+      "checksum": 2949892605,
+      "frames": 120,
+      "first": 40800
+    },
+    {
+      "file": "T7E3_341.spc",
+      "bytes": 128688,
+      "checksum": 1007791752,
+      "frames": 120,
+      "first": 40920
+    },
+    {
+      "file": "T7E3_342.spc",
+      "bytes": 128688,
+      "checksum": 3077437754,
+      "frames": 120,
+      "first": 41040
+    },
+    {
+      "file": "T7E3_343.spc",
+      "bytes": 128688,
+      "checksum": 4244403043,
+      "frames": 120,
+      "first": 41160
+    },
+    {
+      "file": "T7E3_344.spc",
+      "bytes": 128688,
+      "checksum": 4255687838,
+      "frames": 120,
+      "first": 41280
+    },
+    {
+      "file": "T7E3_345.spc",
+      "bytes": 128688,
+      "checksum": 1218059062,
+      "frames": 120,
+      "first": 41400
+    },
+    {
+      "file": "T7E3_346.spc",
+      "bytes": 128688,
+      "checksum": 2225669071,
+      "frames": 120,
+      "first": 41520
+    },
+    {
+      "file": "T7E3_347.spc",
+      "bytes": 128688,
+      "checksum": 4212096836,
+      "frames": 120,
+      "first": 41640
+    },
+    {
+      "file": "T7E3_348.spc",
+      "bytes": 128688,
+      "checksum": 3964157098,
+      "frames": 120,
+      "first": 41760
+    },
+    {
+      "file": "T7E3_349.spc",
+      "bytes": 128688,
+      "checksum": 1962296875,
+      "frames": 120,
+      "first": 41880
+    },
+    {
+      "file": "T7E3_350.spc",
+      "bytes": 128688,
+      "checksum": 1519306023,
+      "frames": 120,
+      "first": 42000
+    },
+    {
+      "file": "T7E3_351.spc",
+      "bytes": 128688,
+      "checksum": 607215834,
+      "frames": 120,
+      "first": 42120
+    },
+    {
+      "file": "T7E3_352.spc",
+      "bytes": 128688,
+      "checksum": 384791324,
+      "frames": 120,
+      "first": 42240
+    },
+    {
+      "file": "T7E3_353.spc",
+      "bytes": 128688,
+      "checksum": 432429370,
+      "frames": 120,
+      "first": 42360
+    },
+    {
+      "file": "T7E3_354.spc",
+      "bytes": 128688,
+      "checksum": 187954128,
+      "frames": 120,
+      "first": 42480
+    },
+    {
+      "file": "T7E3_355.spc",
+      "bytes": 128688,
+      "checksum": 3503933931,
+      "frames": 120,
+      "first": 42600
+    },
+    {
+      "file": "T7E3_356.spc",
+      "bytes": 128688,
+      "checksum": 843031156,
+      "frames": 120,
+      "first": 42720
+    },
+    {
+      "file": "T7E3_357.spc",
+      "bytes": 128688,
+      "checksum": 3674196827,
+      "frames": 120,
+      "first": 42840
+    },
+    {
+      "file": "T7E3_358.spc",
+      "bytes": 128688,
+      "checksum": 2405633381,
+      "frames": 120,
+      "first": 42960
+    },
+    {
+      "file": "T7E3_359.spc",
+      "bytes": 128688,
+      "checksum": 2363995282,
+      "frames": 120,
+      "first": 43080
+    },
+    {
+      "file": "T7E3_360.spc",
+      "bytes": 128688,
+      "checksum": 543861587,
+      "frames": 120,
+      "first": 43200
+    },
+    {
+      "file": "T7E3_361.spc",
+      "bytes": 128688,
+      "checksum": 1265617574,
+      "frames": 120,
+      "first": 43320
+    },
+    {
+      "file": "T7E3_362.spc",
+      "bytes": 128688,
+      "checksum": 3250292468,
+      "frames": 120,
+      "first": 43440
+    },
+    {
+      "file": "T7E3_363.spc",
+      "bytes": 128688,
+      "checksum": 2079131561,
+      "frames": 120,
+      "first": 43560
+    },
+    {
+      "file": "T7E3_364.spc",
+      "bytes": 128688,
+      "checksum": 105266522,
+      "frames": 120,
+      "first": 43680
+    },
+    {
+      "file": "T7E3_365.spc",
+      "bytes": 128688,
+      "checksum": 4222528783,
+      "frames": 120,
+      "first": 43800
+    },
+    {
+      "file": "T7E3_366.spc",
+      "bytes": 128688,
+      "checksum": 780401142,
+      "frames": 120,
+      "first": 43920
+    },
+    {
+      "file": "T7E3_367.spc",
+      "bytes": 128688,
+      "checksum": 1005592324,
+      "frames": 120,
+      "first": 44040
+    },
+    {
+      "file": "T7E3_368.spc",
+      "bytes": 128688,
+      "checksum": 3380406466,
+      "frames": 120,
+      "first": 44160
+    },
+    {
+      "file": "T7E3_369.spc",
+      "bytes": 128688,
+      "checksum": 4227693716,
+      "frames": 120,
+      "first": 44280
+    },
+    {
+      "file": "T7E3_370.spc",
+      "bytes": 128688,
+      "checksum": 1302518821,
+      "frames": 120,
+      "first": 44400
+    },
+    {
+      "file": "T7E3_371.spc",
+      "bytes": 128688,
+      "checksum": 73967947,
+      "frames": 120,
+      "first": 44520
+    },
+    {
+      "file": "T7E3_372.spc",
+      "bytes": 128688,
+      "checksum": 1500796555,
+      "frames": 120,
+      "first": 44640
+    },
+    {
+      "file": "T7E3_373.spc",
+      "bytes": 128688,
+      "checksum": 154901413,
+      "frames": 120,
+      "first": 44760
+    },
+    {
+      "file": "T7E3_374.spc",
+      "bytes": 128688,
+      "checksum": 1862334084,
+      "frames": 120,
+      "first": 44880
+    },
+    {
+      "file": "T7E3_375.spc",
+      "bytes": 128688,
+      "checksum": 2710144884,
+      "frames": 120,
+      "first": 45000
+    },
+    {
+      "file": "T7E3_376.spc",
+      "bytes": 128688,
+      "checksum": 300324410,
+      "frames": 120,
+      "first": 45120
+    },
+    {
+      "file": "T7E3_377.spc",
+      "bytes": 128688,
+      "checksum": 1952732616,
+      "frames": 120,
+      "first": 45240
+    },
+    {
+      "file": "T7E3_378.spc",
+      "bytes": 128688,
+      "checksum": 1758939558,
+      "frames": 120,
+      "first": 45360
+    },
+    {
+      "file": "T7E3_379.spc",
+      "bytes": 128688,
+      "checksum": 3500593077,
+      "frames": 120,
+      "first": 45480
+    },
+    {
+      "file": "T7E3_380.spc",
+      "bytes": 128688,
+      "checksum": 910865214,
+      "frames": 120,
+      "first": 45600
+    },
+    {
+      "file": "T7E3_381.spc",
+      "bytes": 128688,
+      "checksum": 3751209922,
+      "frames": 120,
+      "first": 45720
+    },
+    {
+      "file": "T7E3_382.spc",
+      "bytes": 128688,
+      "checksum": 618423911,
+      "frames": 120,
+      "first": 45840
+    },
+    {
+      "file": "T7E3_383.spc",
+      "bytes": 128688,
+      "checksum": 1262350510,
+      "frames": 120,
+      "first": 45960
+    },
+    {
+      "file": "T7E3_384.spc",
+      "bytes": 128688,
+      "checksum": 4076306642,
+      "frames": 120,
+      "first": 46080
+    },
+    {
+      "file": "T7E3_385.spc",
+      "bytes": 128688,
+      "checksum": 695510709,
+      "frames": 120,
+      "first": 46200
+    },
+    {
+      "file": "T7E3_386.spc",
+      "bytes": 128688,
+      "checksum": 2423012885,
+      "frames": 120,
+      "first": 46320
+    },
+    {
+      "file": "T7E3_387.spc",
+      "bytes": 128688,
+      "checksum": 731751703,
+      "frames": 120,
+      "first": 46440
+    },
+    {
+      "file": "T7E3_388.spc",
+      "bytes": 128688,
+      "checksum": 2617321875,
+      "frames": 120,
+      "first": 46560
+    },
+    {
+      "file": "T7E3_389.spc",
+      "bytes": 128688,
+      "checksum": 1804444920,
+      "frames": 120,
+      "first": 46680
+    },
+    {
+      "file": "T7E3_390.spc",
+      "bytes": 128688,
+      "checksum": 2314786638,
+      "frames": 120,
+      "first": 46800
+    },
+    {
+      "file": "T7E3_391.spc",
+      "bytes": 128688,
+      "checksum": 523151112,
+      "frames": 120,
+      "first": 46920
+    },
+    {
+      "file": "T7E3_392.spc",
+      "bytes": 128688,
+      "checksum": 1062829989,
+      "frames": 120,
+      "first": 47040
+    },
+    {
+      "file": "T7E3_393.spc",
+      "bytes": 128688,
+      "checksum": 4165854234,
+      "frames": 120,
+      "first": 47160
+    },
+    {
+      "file": "T7E3_394.spc",
+      "bytes": 128688,
+      "checksum": 20199190,
+      "frames": 120,
+      "first": 47280
+    },
+    {
+      "file": "T7E3_395.spc",
+      "bytes": 128688,
+      "checksum": 82154171,
+      "frames": 120,
+      "first": 47400
+    },
+    {
+      "file": "T7E3_396.spc",
+      "bytes": 128688,
+      "checksum": 2884973494,
+      "frames": 120,
+      "first": 47520
+    },
+    {
+      "file": "T7E3_397.spc",
+      "bytes": 128688,
+      "checksum": 4183272130,
+      "frames": 120,
+      "first": 47640
+    },
+    {
+      "file": "T7E3_398.spc",
+      "bytes": 128688,
+      "checksum": 2852812413,
+      "frames": 120,
+      "first": 47760
+    },
+    {
+      "file": "T7E3_399.spc",
+      "bytes": 128688,
+      "checksum": 2419483933,
+      "frames": 120,
+      "first": 47880
+    },
+    {
+      "file": "T7E3_400.spc",
+      "bytes": 128688,
+      "checksum": 4234205445,
+      "frames": 120,
+      "first": 48000
+    },
+    {
+      "file": "T7E3_401.spc",
+      "bytes": 128688,
+      "checksum": 1675022644,
+      "frames": 120,
+      "first": 48120
+    },
+    {
+      "file": "T7E3_402.spc",
+      "bytes": 128688,
+      "checksum": 4198022276,
+      "frames": 120,
+      "first": 48240
+    },
+    {
+      "file": "T7E3_403.spc",
+      "bytes": 128688,
+      "checksum": 2797449730,
+      "frames": 120,
+      "first": 48360
+    },
+    {
+      "file": "T7E3_404.spc",
+      "bytes": 128688,
+      "checksum": 765181914,
+      "frames": 120,
+      "first": 48480
+    },
+    {
+      "file": "T7E3_405.spc",
+      "bytes": 128688,
+      "checksum": 3363670189,
+      "frames": 120,
+      "first": 48600
+    },
+    {
+      "file": "T7E3_406.spc",
+      "bytes": 128688,
+      "checksum": 1811011319,
+      "frames": 120,
+      "first": 48720
+    },
+    {
+      "file": "T7E3_407.spc",
+      "bytes": 128688,
+      "checksum": 1865173896,
+      "frames": 120,
+      "first": 48840
+    },
+    {
+      "file": "T7E3_408.spc",
+      "bytes": 128688,
+      "checksum": 3516043461,
+      "frames": 120,
+      "first": 48960
+    },
+    {
+      "file": "T7E3_409.spc",
+      "bytes": 128688,
+      "checksum": 2776716661,
+      "frames": 120,
+      "first": 49080
+    },
+    {
+      "file": "T7E3_410.spc",
+      "bytes": 128688,
+      "checksum": 385280567,
+      "frames": 120,
+      "first": 49200
+    },
+    {
+      "file": "T7E3_411.spc",
+      "bytes": 128688,
+      "checksum": 3641628180,
+      "frames": 120,
+      "first": 49320
+    },
+    {
+      "file": "T7E3_412.spc",
+      "bytes": 128688,
+      "checksum": 3657619628,
+      "frames": 120,
+      "first": 49440
+    },
+    {
+      "file": "T7E3_413.spc",
+      "bytes": 128688,
+      "checksum": 3725749972,
+      "frames": 120,
+      "first": 49560
+    },
+    {
+      "file": "T7E3_414.spc",
+      "bytes": 128688,
+      "checksum": 4228838604,
+      "frames": 120,
+      "first": 49680
+    },
+    {
+      "file": "T7E3_415.spc",
+      "bytes": 128688,
+      "checksum": 3017082554,
+      "frames": 120,
+      "first": 49800
+    },
+    {
+      "file": "T7E3_416.spc",
+      "bytes": 128688,
+      "checksum": 2679681659,
+      "frames": 120,
+      "first": 49920
+    },
+    {
+      "file": "T7E3_417.spc",
+      "bytes": 128688,
+      "checksum": 1272957284,
+      "frames": 120,
+      "first": 50040
+    },
+    {
+      "file": "T7E3_418.spc",
+      "bytes": 128688,
+      "checksum": 3948713613,
+      "frames": 120,
+      "first": 50160
+    },
+    {
+      "file": "T7E3_419.spc",
+      "bytes": 128688,
+      "checksum": 1982812336,
+      "frames": 120,
+      "first": 50280
+    },
+    {
+      "file": "T7E3_420.spc",
+      "bytes": 128688,
+      "checksum": 355780119,
+      "frames": 120,
+      "first": 50400
+    },
+    {
+      "file": "T7E3_421.spc",
+      "bytes": 128688,
+      "checksum": 1262441902,
+      "frames": 120,
+      "first": 50520
+    },
+    {
+      "file": "T7E3_422.spc",
+      "bytes": 128688,
+      "checksum": 175358044,
+      "frames": 120,
+      "first": 50640
+    },
+    {
+      "file": "T7E3_423.spc",
+      "bytes": 128688,
+      "checksum": 409109945,
+      "frames": 120,
+      "first": 50760
+    },
+    {
+      "file": "T7E3_424.spc",
+      "bytes": 128688,
+      "checksum": 1707980039,
+      "frames": 120,
+      "first": 50880
+    },
+    {
+      "file": "T7E3_425.spc",
+      "bytes": 128688,
+      "checksum": 1417293333,
+      "frames": 120,
+      "first": 51000
+    },
+    {
+      "file": "T7E3_426.spc",
+      "bytes": 128688,
+      "checksum": 186070898,
+      "frames": 120,
+      "first": 51120
+    },
+    {
+      "file": "T7E3_427.spc",
+      "bytes": 128688,
+      "checksum": 464062524,
+      "frames": 120,
+      "first": 51240
+    },
+    {
+      "file": "T7E3_428.spc",
+      "bytes": 128688,
+      "checksum": 1490890129,
+      "frames": 120,
+      "first": 51360
+    },
+    {
+      "file": "T7E3_429.spc",
+      "bytes": 128688,
+      "checksum": 1158318242,
+      "frames": 120,
+      "first": 51480
+    },
+    {
+      "file": "T7E3_430.spc",
+      "bytes": 128688,
+      "checksum": 3579169136,
+      "frames": 120,
+      "first": 51600
+    },
+    {
+      "file": "T7E3_431.spc",
+      "bytes": 128688,
+      "checksum": 3125172583,
+      "frames": 120,
+      "first": 51720
+    },
+    {
+      "file": "T7E3_432.spc",
+      "bytes": 128688,
+      "checksum": 4117032947,
+      "frames": 120,
+      "first": 51840
+    },
+    {
+      "file": "T7E3_433.spc",
+      "bytes": 128688,
+      "checksum": 82925408,
+      "frames": 120,
+      "first": 51960
+    },
+    {
+      "file": "T7E3_434.spc",
+      "bytes": 128688,
+      "checksum": 3730314036,
+      "frames": 120,
+      "first": 52080
+    },
+    {
+      "file": "T7E3_435.spc",
+      "bytes": 128688,
+      "checksum": 3119638647,
+      "frames": 120,
+      "first": 52200
+    },
+    {
+      "file": "T7E3_436.spc",
+      "bytes": 128688,
+      "checksum": 1427220990,
+      "frames": 120,
+      "first": 52320
+    },
+    {
+      "file": "T7E3_437.spc",
+      "bytes": 128688,
+      "checksum": 2465336231,
+      "frames": 120,
+      "first": 52440
+    },
+    {
+      "file": "T7E3_438.spc",
+      "bytes": 128688,
+      "checksum": 1604542279,
+      "frames": 120,
+      "first": 52560
+    },
+    {
+      "file": "T7E3_439.spc",
+      "bytes": 128688,
+      "checksum": 1608703456,
+      "frames": 120,
+      "first": 52680
+    },
+    {
+      "file": "T7E3_440.spc",
+      "bytes": 128688,
+      "checksum": 238406082,
+      "frames": 120,
+      "first": 52800
+    },
+    {
+      "file": "T7E3_441.spc",
+      "bytes": 128688,
+      "checksum": 1043723385,
+      "frames": 120,
+      "first": 52920
+    },
+    {
+      "file": "T7E3_442.spc",
+      "bytes": 128688,
+      "checksum": 872002883,
+      "frames": 120,
+      "first": 53040
+    },
+    {
+      "file": "T7E3_443.spc",
+      "bytes": 128688,
+      "checksum": 140154782,
+      "frames": 120,
+      "first": 53160
+    },
+    {
+      "file": "T7E3_444.spc",
+      "bytes": 128688,
+      "checksum": 410581783,
+      "frames": 120,
+      "first": 53280
+    },
+    {
+      "file": "T7E3_445.spc",
+      "bytes": 128688,
+      "checksum": 928248008,
+      "frames": 120,
+      "first": 53400
+    },
+    {
+      "file": "T7E3_446.spc",
+      "bytes": 128688,
+      "checksum": 4087076902,
+      "frames": 120,
+      "first": 53520
+    },
+    {
+      "file": "T7E3_447.spc",
+      "bytes": 128688,
+      "checksum": 1992050042,
+      "frames": 120,
+      "first": 53640
+    },
+    {
+      "file": "T7E3_448.spc",
+      "bytes": 128688,
+      "checksum": 976272977,
+      "frames": 120,
+      "first": 53760
+    },
+    {
+      "file": "T7E3_449.spc",
+      "bytes": 128688,
+      "checksum": 2719750401,
+      "frames": 120,
+      "first": 53880
+    },
+    {
+      "file": "T7E3_450.spc",
+      "bytes": 128688,
+      "checksum": 1678720651,
+      "frames": 120,
+      "first": 54000
+    },
+    {
+      "file": "T7E3_451.spc",
+      "bytes": 128688,
+      "checksum": 2532707968,
+      "frames": 120,
+      "first": 54120
+    },
+    {
+      "file": "T7E3_452.spc",
+      "bytes": 128688,
+      "checksum": 708977669,
+      "frames": 120,
+      "first": 54240
+    },
+    {
+      "file": "T7E3_453.spc",
+      "bytes": 128688,
+      "checksum": 4105830190,
+      "frames": 120,
+      "first": 54360
+    },
+    {
+      "file": "T7E3_454.spc",
+      "bytes": 128688,
+      "checksum": 258237490,
+      "frames": 120,
+      "first": 54480
+    },
+    {
+      "file": "T7E3_455.spc",
+      "bytes": 128688,
+      "checksum": 1440014062,
+      "frames": 120,
+      "first": 54600
+    },
+    {
+      "file": "T7E3_456.spc",
+      "bytes": 128688,
+      "checksum": 1681659949,
+      "frames": 120,
+      "first": 54720
+    },
+    {
+      "file": "T7E3_457.spc",
+      "bytes": 128688,
+      "checksum": 3081329753,
+      "frames": 120,
+      "first": 54840
+    },
+    {
+      "file": "T7E3_458.spc",
+      "bytes": 128688,
+      "checksum": 510581043,
+      "frames": 120,
+      "first": 54960
+    },
+    {
+      "file": "T7E3_459.spc",
+      "bytes": 128688,
+      "checksum": 772712560,
+      "frames": 120,
+      "first": 55080
+    },
+    {
+      "file": "T7E3_460.spc",
+      "bytes": 128688,
+      "checksum": 1892745595,
+      "frames": 120,
+      "first": 55200
+    },
+    {
+      "file": "T7E3_461.spc",
+      "bytes": 128688,
+      "checksum": 1611849233,
+      "frames": 120,
+      "first": 55320
+    },
+    {
+      "file": "T7E3_462.spc",
+      "bytes": 128688,
+      "checksum": 3596692215,
+      "frames": 120,
+      "first": 55440
+    },
+    {
+      "file": "T7E3_463.spc",
+      "bytes": 128688,
+      "checksum": 4229878910,
+      "frames": 120,
+      "first": 55560
+    },
+    {
+      "file": "T7E3_464.spc",
+      "bytes": 128688,
+      "checksum": 1513633006,
+      "frames": 120,
+      "first": 55680
+    },
+    {
+      "file": "T7E3_465.spc",
+      "bytes": 128688,
+      "checksum": 3216347159,
+      "frames": 120,
+      "first": 55800
+    },
+    {
+      "file": "T7E3_466.spc",
+      "bytes": 128688,
+      "checksum": 2666233902,
+      "frames": 120,
+      "first": 55920
+    },
+    {
+      "file": "T7E3_467.spc",
+      "bytes": 128688,
+      "checksum": 35281774,
+      "frames": 120,
+      "first": 56040
+    },
+    {
+      "file": "T7E3_468.spc",
+      "bytes": 128688,
+      "checksum": 4124168505,
+      "frames": 120,
+      "first": 56160
+    },
+    {
+      "file": "T7E3_469.spc",
+      "bytes": 128688,
+      "checksum": 2735839312,
+      "frames": 120,
+      "first": 56280
+    },
+    {
+      "file": "T7E3_470.spc",
+      "bytes": 128688,
+      "checksum": 3408474654,
+      "frames": 120,
+      "first": 56400
+    },
+    {
+      "file": "T7E3_471.spc",
+      "bytes": 128688,
+      "checksum": 483706822,
+      "frames": 120,
+      "first": 56520
+    },
+    {
+      "file": "T7E3_472.spc",
+      "bytes": 128688,
+      "checksum": 2049482698,
+      "frames": 120,
+      "first": 56640
+    },
+    {
+      "file": "T7E3_473.spc",
+      "bytes": 128688,
+      "checksum": 2650930959,
+      "frames": 120,
+      "first": 56760
+    },
+    {
+      "file": "T7E3_474.spc",
+      "bytes": 128688,
+      "checksum": 640690660,
+      "frames": 120,
+      "first": 56880
+    },
+    {
+      "file": "T7E3_475.spc",
+      "bytes": 128688,
+      "checksum": 2555546130,
+      "frames": 120,
+      "first": 57000
+    },
+    {
+      "file": "T7E3_476.spc",
+      "bytes": 128688,
+      "checksum": 773863306,
+      "frames": 120,
+      "first": 57120
+    },
+    {
+      "file": "T7E3_477.spc",
+      "bytes": 128688,
+      "checksum": 3440232700,
+      "frames": 120,
+      "first": 57240
+    },
+    {
+      "file": "T7E3_478.spc",
+      "bytes": 128688,
+      "checksum": 1338993077,
+      "frames": 120,
+      "first": 57360
+    },
+    {
+      "file": "T7E3_479.spc",
+      "bytes": 128688,
+      "checksum": 3012423791,
+      "frames": 120,
+      "first": 57480
+    },
+    {
+      "file": "T7E3_480.spc",
+      "bytes": 128688,
+      "checksum": 266930845,
+      "frames": 120,
+      "first": 57600
+    },
+    {
+      "file": "T7E3_481.spc",
+      "bytes": 128688,
+      "checksum": 1813320860,
+      "frames": 120,
+      "first": 57720
+    },
+    {
+      "file": "T7E3_482.spc",
+      "bytes": 128688,
+      "checksum": 4085802826,
+      "frames": 120,
+      "first": 57840
+    },
+    {
+      "file": "T7E3_483.spc",
+      "bytes": 128688,
+      "checksum": 2557815392,
+      "frames": 120,
+      "first": 57960
+    },
+    {
+      "file": "T7E3_484.spc",
+      "bytes": 128688,
+      "checksum": 380239023,
+      "frames": 120,
+      "first": 58080
+    },
+    {
+      "file": "T7E3_485.spc",
+      "bytes": 128688,
+      "checksum": 887129257,
+      "frames": 120,
+      "first": 58200
+    },
+    {
+      "file": "T7E3_486.spc",
+      "bytes": 128688,
+      "checksum": 875930748,
+      "frames": 120,
+      "first": 58320
+    },
+    {
+      "file": "T7E3_487.spc",
+      "bytes": 128688,
+      "checksum": 4063711263,
+      "frames": 120,
+      "first": 58440
+    },
+    {
+      "file": "T7E3_488.spc",
+      "bytes": 128688,
+      "checksum": 4071212955,
+      "frames": 120,
+      "first": 58560
+    },
+    {
+      "file": "T7E3_489.spc",
+      "bytes": 128688,
+      "checksum": 144231520,
+      "frames": 120,
+      "first": 58680
+    },
+    {
+      "file": "T7E3_490.spc",
+      "bytes": 128688,
+      "checksum": 762924458,
+      "frames": 120,
+      "first": 58800
+    },
+    {
+      "file": "T7E3_491.spc",
+      "bytes": 128688,
+      "checksum": 3144541109,
+      "frames": 120,
+      "first": 58920
+    },
+    {
+      "file": "T7E3_492.spc",
+      "bytes": 128688,
+      "checksum": 2212937059,
+      "frames": 120,
+      "first": 59040
+    },
+    {
+      "file": "T7E3_493.spc",
+      "bytes": 128688,
+      "checksum": 1806637462,
+      "frames": 120,
+      "first": 59160
+    },
+    {
+      "file": "T7E3_494.spc",
+      "bytes": 128688,
+      "checksum": 2713363038,
+      "frames": 120,
+      "first": 59280
+    },
+    {
+      "file": "T7E3_495.spc",
+      "bytes": 128688,
+      "checksum": 1726332680,
+      "frames": 120,
+      "first": 59400
+    },
+    {
+      "file": "T7E3_496.spc",
+      "bytes": 128688,
+      "checksum": 940615370,
+      "frames": 120,
+      "first": 59520
+    },
+    {
+      "file": "T7E3_497.spc",
+      "bytes": 128688,
+      "checksum": 2428464460,
+      "frames": 120,
+      "first": 59640
+    },
+    {
+      "file": "T7E3_498.spc",
+      "bytes": 128688,
+      "checksum": 2242448815,
+      "frames": 120,
+      "first": 59760
+    },
+    {
+      "file": "T7E3_499.spc",
+      "bytes": 128688,
+      "checksum": 1654237432,
+      "frames": 120,
+      "first": 59880
+    },
+    {
+      "file": "T7E3_500.spc",
+      "bytes": 128688,
+      "checksum": 3351239521,
+      "frames": 120,
+      "first": 60000
+    },
+    {
+      "file": "T7E3_501.spc",
+      "bytes": 128688,
+      "checksum": 2715349454,
+      "frames": 120,
+      "first": 60120
+    },
+    {
+      "file": "T7E3_502.spc",
+      "bytes": 128688,
+      "checksum": 1517639967,
+      "frames": 120,
+      "first": 60240
+    },
+    {
+      "file": "T7E3_503.spc",
+      "bytes": 128688,
+      "checksum": 1768896760,
+      "frames": 120,
+      "first": 60360
+    },
+    {
+      "file": "T7E3_504.spc",
+      "bytes": 128688,
+      "checksum": 1368845633,
+      "frames": 120,
+      "first": 60480
+    },
+    {
+      "file": "T7E3_505.spc",
+      "bytes": 128688,
+      "checksum": 2289097510,
+      "frames": 120,
+      "first": 60600
+    },
+    {
+      "file": "T7E3_506.spc",
+      "bytes": 128688,
+      "checksum": 2789604047,
+      "frames": 120,
+      "first": 60720
+    },
+    {
+      "file": "T7E3_507.spc",
+      "bytes": 128688,
+      "checksum": 1676092563,
+      "frames": 120,
+      "first": 60840
+    },
+    {
+      "file": "T7E3_508.spc",
+      "bytes": 128688,
+      "checksum": 3721478418,
+      "frames": 120,
+      "first": 60960
+    },
+    {
+      "file": "T7E3_509.spc",
+      "bytes": 128688,
+      "checksum": 92510151,
+      "frames": 120,
+      "first": 61080
+    },
+    {
+      "file": "T7E3_510.spc",
+      "bytes": 128688,
+      "checksum": 4145041660,
+      "frames": 120,
+      "first": 61200
+    },
+    {
+      "file": "T7E3_511.spc",
+      "bytes": 128688,
+      "checksum": 1820401681,
+      "frames": 120,
+      "first": 61320
+    },
+    {
+      "file": "T7E3_512.spc",
+      "bytes": 128688,
+      "checksum": 3676124917,
+      "frames": 120,
+      "first": 61440
+    },
+    {
+      "file": "T7E3_513.spc",
+      "bytes": 128688,
+      "checksum": 1401687350,
+      "frames": 120,
+      "first": 61560
+    },
+    {
+      "file": "T7E3_514.spc",
+      "bytes": 128688,
+      "checksum": 1852800028,
+      "frames": 120,
+      "first": 61680
+    },
+    {
+      "file": "T7E3_515.spc",
+      "bytes": 128688,
+      "checksum": 326994453,
+      "frames": 120,
+      "first": 61800
+    },
+    {
+      "file": "T7E3_516.spc",
+      "bytes": 128688,
+      "checksum": 155092751,
+      "frames": 120,
+      "first": 61920
+    },
+    {
+      "file": "T7E3_517.spc",
+      "bytes": 128688,
+      "checksum": 536626762,
+      "frames": 120,
+      "first": 62040
+    },
+    {
+      "file": "T7E3_518.spc",
+      "bytes": 128688,
+      "checksum": 1113389043,
+      "frames": 120,
+      "first": 62160
+    },
+    {
+      "file": "T7E3_519.spc",
+      "bytes": 128688,
+      "checksum": 263223552,
+      "frames": 120,
+      "first": 62280
+    },
+    {
+      "file": "T7E3_520.spc",
+      "bytes": 128688,
+      "checksum": 1047320967,
+      "frames": 120,
+      "first": 62400
+    },
+    {
+      "file": "T7E3_521.spc",
+      "bytes": 128688,
+      "checksum": 716322914,
+      "frames": 120,
+      "first": 62520
+    },
+    {
+      "file": "T7E3_522.spc",
+      "bytes": 128688,
+      "checksum": 3233879574,
+      "frames": 120,
+      "first": 62640
+    },
+    {
+      "file": "T7E3_523.spc",
+      "bytes": 128688,
+      "checksum": 3651471523,
+      "frames": 120,
+      "first": 62760
+    },
+    {
+      "file": "T7E3_524.spc",
+      "bytes": 128688,
+      "checksum": 3349280108,
+      "frames": 120,
+      "first": 62880
+    },
+    {
+      "file": "T7E3_525.spc",
+      "bytes": 128688,
+      "checksum": 2069577343,
+      "frames": 120,
+      "first": 63000
+    },
+    {
+      "file": "T7E3_526.spc",
+      "bytes": 128688,
+      "checksum": 692708469,
+      "frames": 120,
+      "first": 63120
+    },
+    {
+      "file": "T7E3_527.spc",
+      "bytes": 128688,
+      "checksum": 3271324443,
+      "frames": 120,
+      "first": 63240
+    },
+    {
+      "file": "T7E3_528.spc",
+      "bytes": 128688,
+      "checksum": 1088051615,
+      "frames": 120,
+      "first": 63360
+    },
+    {
+      "file": "T7E3_529.spc",
+      "bytes": 128688,
+      "checksum": 3643180057,
+      "frames": 120,
+      "first": 63480
+    },
+    {
+      "file": "T7E3_530.spc",
+      "bytes": 128688,
+      "checksum": 226044744,
+      "frames": 120,
+      "first": 63600
+    },
+    {
+      "file": "T7E3_531.spc",
+      "bytes": 128688,
+      "checksum": 1856853525,
+      "frames": 120,
+      "first": 63720
+    },
+    {
+      "file": "T7E3_532.spc",
+      "bytes": 128688,
+      "checksum": 2141419435,
+      "frames": 120,
+      "first": 63840
+    },
+    {
+      "file": "T7E3_533.spc",
+      "bytes": 128688,
+      "checksum": 1841638830,
+      "frames": 120,
+      "first": 63960
+    },
+    {
+      "file": "T7E3_534.spc",
+      "bytes": 128688,
+      "checksum": 3777025863,
+      "frames": 120,
+      "first": 64080
+    },
+    {
+      "file": "T7E3_535.spc",
+      "bytes": 128688,
+      "checksum": 2085616078,
+      "frames": 120,
+      "first": 64200
+    },
+    {
+      "file": "T7E3_536.spc",
+      "bytes": 128688,
+      "checksum": 1830981426,
+      "frames": 120,
+      "first": 64320
+    },
+    {
+      "file": "T7E3_537.spc",
+      "bytes": 128688,
+      "checksum": 4043823591,
+      "frames": 120,
+      "first": 64440
+    },
+    {
+      "file": "T7E3_538.spc",
+      "bytes": 128688,
+      "checksum": 2349022284,
+      "frames": 120,
+      "first": 64560
+    },
+    {
+      "file": "T7E3_539.spc",
+      "bytes": 128688,
+      "checksum": 475624553,
+      "frames": 120,
+      "first": 64680
+    },
+    {
+      "file": "T7E3_540.spc",
+      "bytes": 128688,
+      "checksum": 2952785275,
+      "frames": 120,
+      "first": 64800
+    },
+    {
+      "file": "T7E3_541.spc",
+      "bytes": 128688,
+      "checksum": 1876775275,
+      "frames": 120,
+      "first": 64920
+    },
+    {
+      "file": "T7E3_542.spc",
+      "bytes": 128688,
+      "checksum": 1783007526,
+      "frames": 120,
+      "first": 65040
+    },
+    {
+      "file": "T7E3_543.spc",
+      "bytes": 128688,
+      "checksum": 2084763263,
+      "frames": 120,
+      "first": 65160
+    },
+    {
+      "file": "T7E3_544.spc",
+      "bytes": 128688,
+      "checksum": 2341696523,
+      "frames": 120,
+      "first": 65280
+    },
+    {
+      "file": "T7E3_545.spc",
+      "bytes": 128688,
+      "checksum": 2558707946,
+      "frames": 120,
+      "first": 65400
+    },
+    {
+      "file": "T7E3_546.spc",
+      "bytes": 128688,
+      "checksum": 4176636897,
+      "frames": 120,
+      "first": 65520
+    },
+    {
+      "file": "T7E3_547.spc",
+      "bytes": 128688,
+      "checksum": 2762160318,
+      "frames": 120,
+      "first": 65640
+    },
+    {
+      "file": "T7E3_548.spc",
+      "bytes": 128688,
+      "checksum": 1215815267,
+      "frames": 120,
+      "first": 65760
+    },
+    {
+      "file": "T7E3_549.spc",
+      "bytes": 128688,
+      "checksum": 821399216,
+      "frames": 120,
+      "first": 65880
+    },
+    {
+      "file": "T7E3_550.spc",
+      "bytes": 128688,
+      "checksum": 3963992004,
+      "frames": 120,
+      "first": 66000
+    },
+    {
+      "file": "T7E3_551.spc",
+      "bytes": 128688,
+      "checksum": 2620615883,
+      "frames": 120,
+      "first": 66120
+    },
+    {
+      "file": "T7E3_552.spc",
+      "bytes": 128688,
+      "checksum": 2687851871,
+      "frames": 120,
+      "first": 66240
+    },
+    {
+      "file": "T7E3_553.spc",
+      "bytes": 128688,
+      "checksum": 769779677,
+      "frames": 120,
+      "first": 66360
+    },
+    {
+      "file": "T7E3_554.spc",
+      "bytes": 128688,
+      "checksum": 2937110965,
+      "frames": 120,
+      "first": 66480
+    },
+    {
+      "file": "T7E3_555.spc",
+      "bytes": 128688,
+      "checksum": 1924542851,
+      "frames": 120,
+      "first": 66600
+    },
+    {
+      "file": "T7E3_556.spc",
+      "bytes": 128688,
+      "checksum": 2327546518,
+      "frames": 120,
+      "first": 66720
+    },
+    {
+      "file": "T7E3_557.spc",
+      "bytes": 128688,
+      "checksum": 1285520223,
+      "frames": 120,
+      "first": 66840
+    },
+    {
+      "file": "T7E3_558.spc",
+      "bytes": 128688,
+      "checksum": 1790102362,
+      "frames": 120,
+      "first": 66960
+    },
+    {
+      "file": "T7E3_559.spc",
+      "bytes": 128688,
+      "checksum": 1566523473,
+      "frames": 120,
+      "first": 67080
+    },
+    {
+      "file": "T7E3_560.spc",
+      "bytes": 128688,
+      "checksum": 4180274013,
+      "frames": 120,
+      "first": 67200
+    },
+    {
+      "file": "T7E3_561.spc",
+      "bytes": 128688,
+      "checksum": 1483944299,
+      "frames": 120,
+      "first": 67320
+    },
+    {
+      "file": "T7E3_562.spc",
+      "bytes": 128688,
+      "checksum": 1156257948,
+      "frames": 120,
+      "first": 67440
+    },
+    {
+      "file": "T7E3_563.spc",
+      "bytes": 128688,
+      "checksum": 3755121831,
+      "frames": 120,
+      "first": 67560
+    },
+    {
+      "file": "T7E3_564.spc",
+      "bytes": 128688,
+      "checksum": 464307554,
+      "frames": 120,
+      "first": 67680
+    },
+    {
+      "file": "T7E3_565.spc",
+      "bytes": 128688,
+      "checksum": 1395563619,
+      "frames": 120,
+      "first": 67800
+    },
+    {
+      "file": "T7E3_566.spc",
+      "bytes": 128688,
+      "checksum": 270201063,
+      "frames": 120,
+      "first": 67920
+    },
+    {
+      "file": "T7E3_567.spc",
+      "bytes": 128688,
+      "checksum": 1295480065,
+      "frames": 120,
+      "first": 68040
+    },
+    {
+      "file": "T7E3_568.spc",
+      "bytes": 128688,
+      "checksum": 1819189911,
+      "frames": 120,
+      "first": 68160
+    },
+    {
+      "file": "T7E3_569.spc",
+      "bytes": 128688,
+      "checksum": 925847027,
+      "frames": 120,
+      "first": 68280
+    },
+    {
+      "file": "T7E3_570.spc",
+      "bytes": 128688,
+      "checksum": 1543468525,
+      "frames": 120,
+      "first": 68400
+    },
+    {
+      "file": "T7E3_571.spc",
+      "bytes": 128688,
+      "checksum": 2602746679,
+      "frames": 120,
+      "first": 68520
+    },
+    {
+      "file": "T7E3_572.spc",
+      "bytes": 128688,
+      "checksum": 4112224686,
+      "frames": 120,
+      "first": 68640
+    },
+    {
+      "file": "T7E3_573.spc",
+      "bytes": 128688,
+      "checksum": 2492381934,
+      "frames": 120,
+      "first": 68760
+    },
+    {
+      "file": "T7E3_574.spc",
+      "bytes": 128688,
+      "checksum": 3225813699,
+      "frames": 120,
+      "first": 68880
+    },
+    {
+      "file": "T7E3_575.spc",
+      "bytes": 128688,
+      "checksum": 1233479535,
+      "frames": 120,
+      "first": 69000
+    },
+    {
+      "file": "T7E3_576.spc",
+      "bytes": 128688,
+      "checksum": 2868734014,
+      "frames": 120,
+      "first": 69120
+    },
+    {
+      "file": "T7E3_577.spc",
+      "bytes": 128688,
+      "checksum": 2253694811,
+      "frames": 120,
+      "first": 69240
+    },
+    {
+      "file": "T7E3_578.spc",
+      "bytes": 128688,
+      "checksum": 1980894534,
+      "frames": 120,
+      "first": 69360
+    },
+    {
+      "file": "T7E3_579.spc",
+      "bytes": 128688,
+      "checksum": 698350936,
+      "frames": 120,
+      "first": 69480
+    },
+    {
+      "file": "T7E3_580.spc",
+      "bytes": 128688,
+      "checksum": 1611131153,
+      "frames": 120,
+      "first": 69600
+    },
+    {
+      "file": "T7E3_581.spc",
+      "bytes": 128688,
+      "checksum": 590593567,
+      "frames": 120,
+      "first": 69720
+    },
+    {
+      "file": "T7E3_582.spc",
+      "bytes": 128688,
+      "checksum": 3151200048,
+      "frames": 120,
+      "first": 69840
+    },
+    {
+      "file": "T7E3_583.spc",
+      "bytes": 128688,
+      "checksum": 2307460954,
+      "frames": 120,
+      "first": 69960
+    },
+    {
+      "file": "T7E3_584.spc",
+      "bytes": 128688,
+      "checksum": 3507649168,
+      "frames": 120,
+      "first": 70080
+    },
+    {
+      "file": "T7E3_585.spc",
+      "bytes": 128688,
+      "checksum": 3779755668,
+      "frames": 120,
+      "first": 70200
+    },
+    {
+      "file": "T7E3_586.spc",
+      "bytes": 128688,
+      "checksum": 356858591,
+      "frames": 120,
+      "first": 70320
+    },
+    {
+      "file": "T7E3_587.spc",
+      "bytes": 128688,
+      "checksum": 1785001695,
+      "frames": 120,
+      "first": 70440
+    },
+    {
+      "file": "T7E3_588.spc",
+      "bytes": 128688,
+      "checksum": 1420951106,
+      "frames": 120,
+      "first": 70560
+    },
+    {
+      "file": "T7E3_589.spc",
+      "bytes": 128688,
+      "checksum": 2905361154,
+      "frames": 120,
+      "first": 70680
+    },
+    {
+      "file": "T7E3_590.spc",
+      "bytes": 128688,
+      "checksum": 3954959721,
+      "frames": 120,
+      "first": 70800
+    },
+    {
+      "file": "T7E3_591.spc",
+      "bytes": 128688,
+      "checksum": 3241865400,
+      "frames": 120,
+      "first": 70920
+    },
+    {
+      "file": "T7E3_592.spc",
+      "bytes": 128688,
+      "checksum": 645305821,
+      "frames": 120,
+      "first": 71040
+    },
+    {
+      "file": "T7E3_593.spc",
+      "bytes": 128688,
+      "checksum": 3640600737,
+      "frames": 120,
+      "first": 71160
+    },
+    {
+      "file": "T7E3_594.spc",
+      "bytes": 128688,
+      "checksum": 3082283556,
+      "frames": 120,
+      "first": 71280
+    },
+    {
+      "file": "T7E3_595.spc",
+      "bytes": 128688,
+      "checksum": 1495208077,
+      "frames": 120,
+      "first": 71400
+    },
+    {
+      "file": "T7E3_596.spc",
+      "bytes": 128688,
+      "checksum": 467364020,
+      "frames": 120,
+      "first": 71520
+    },
+    {
+      "file": "T7E3_597.spc",
+      "bytes": 128688,
+      "checksum": 1223694716,
+      "frames": 120,
+      "first": 71640
+    },
+    {
+      "file": "T7E3_598.spc",
+      "bytes": 128688,
+      "checksum": 868048048,
+      "frames": 120,
+      "first": 71760
+    },
+    {
+      "file": "T7E3_599.spc",
+      "bytes": 128688,
+      "checksum": 808893148,
+      "frames": 120,
+      "first": 71880
+    },
+    {
+      "file": "T7E3_600.spc",
+      "bytes": 128688,
+      "checksum": 1451061707,
+      "frames": 120,
+      "first": 72000
+    },
+    {
+      "file": "T7E3_601.spc",
+      "bytes": 128688,
+      "checksum": 471221993,
+      "frames": 120,
+      "first": 72120
+    },
+    {
+      "file": "T7E3_602.spc",
+      "bytes": 128688,
+      "checksum": 2207044727,
+      "frames": 120,
+      "first": 72240
+    },
+    {
+      "file": "T7E3_603.spc",
+      "bytes": 128688,
+      "checksum": 2300347419,
+      "frames": 120,
+      "first": 72360
+    },
+    {
+      "file": "T7E3_604.spc",
+      "bytes": 128688,
+      "checksum": 2624335592,
+      "frames": 120,
+      "first": 72480
+    },
+    {
+      "file": "T7E3_605.spc",
+      "bytes": 128688,
+      "checksum": 1892890289,
+      "frames": 120,
+      "first": 72600
+    },
+    {
+      "file": "T7E3_606.spc",
+      "bytes": 128688,
+      "checksum": 3718716076,
+      "frames": 120,
+      "first": 72720
+    },
+    {
+      "file": "T7E3_607.spc",
+      "bytes": 128688,
+      "checksum": 1275603257,
+      "frames": 120,
+      "first": 72840
+    },
+    {
+      "file": "T7E3_608.spc",
+      "bytes": 128688,
+      "checksum": 2907177007,
+      "frames": 120,
+      "first": 72960
+    },
+    {
+      "file": "T7E3_609.spc",
+      "bytes": 128688,
+      "checksum": 713128861,
+      "frames": 120,
+      "first": 73080
+    },
+    {
+      "file": "T7E3_610.spc",
+      "bytes": 128688,
+      "checksum": 49777254,
+      "frames": 120,
+      "first": 73200
+    },
+    {
+      "file": "T7E3_611.spc",
+      "bytes": 128688,
+      "checksum": 3704960898,
+      "frames": 120,
+      "first": 73320
+    },
+    {
+      "file": "T7E3_612.spc",
+      "bytes": 128688,
+      "checksum": 249093112,
+      "frames": 120,
+      "first": 73440
+    },
+    {
+      "file": "T7E3_613.spc",
+      "bytes": 128688,
+      "checksum": 1533757900,
+      "frames": 120,
+      "first": 73560
+    },
+    {
+      "file": "T7E3_614.spc",
+      "bytes": 128688,
+      "checksum": 1751407542,
+      "frames": 120,
+      "first": 73680
+    },
+    {
+      "file": "T7E3_615.spc",
+      "bytes": 128688,
+      "checksum": 3551458272,
+      "frames": 120,
+      "first": 73800
+    },
+    {
+      "file": "T7E3_616.spc",
+      "bytes": 128688,
+      "checksum": 2674071631,
+      "frames": 120,
+      "first": 73920
+    },
+    {
+      "file": "T7E3_617.spc",
+      "bytes": 128688,
+      "checksum": 2500931205,
+      "frames": 120,
+      "first": 74040
+    },
+    {
+      "file": "T7E3_618.spc",
+      "bytes": 128688,
+      "checksum": 2961440818,
+      "frames": 120,
+      "first": 74160
+    },
+    {
+      "file": "T7E3_619.spc",
+      "bytes": 128688,
+      "checksum": 677034398,
+      "frames": 120,
+      "first": 74280
+    },
+    {
+      "file": "T7E3_620.spc",
+      "bytes": 128688,
+      "checksum": 3946516906,
+      "frames": 120,
+      "first": 74400
+    },
+    {
+      "file": "T7E3_621.spc",
+      "bytes": 128688,
+      "checksum": 2133841025,
+      "frames": 120,
+      "first": 74520
+    },
+    {
+      "file": "T7E3_622.spc",
+      "bytes": 128688,
+      "checksum": 1743852629,
+      "frames": 120,
+      "first": 74640
+    },
+    {
+      "file": "T7E3_623.spc",
+      "bytes": 128688,
+      "checksum": 2405860073,
+      "frames": 120,
+      "first": 74760
+    },
+    {
+      "file": "T7E3_624.spc",
+      "bytes": 128688,
+      "checksum": 1650540305,
+      "frames": 120,
+      "first": 74880
+    },
+    {
+      "file": "T7E3_625.spc",
+      "bytes": 128688,
+      "checksum": 328700063,
+      "frames": 120,
+      "first": 75000
+    },
+    {
+      "file": "T7E3_626.spc",
+      "bytes": 128688,
+      "checksum": 2789784059,
+      "frames": 120,
+      "first": 75120
+    },
+    {
+      "file": "T7E3_627.spc",
+      "bytes": 128688,
+      "checksum": 1395847915,
+      "frames": 120,
+      "first": 75240
+    },
+    {
+      "file": "T7E3_628.spc",
+      "bytes": 128688,
+      "checksum": 3271091541,
+      "frames": 120,
+      "first": 75360
+    },
+    {
+      "file": "T7E3_629.spc",
+      "bytes": 128688,
+      "checksum": 1279836064,
+      "frames": 120,
+      "first": 75480
+    },
+    {
+      "file": "T7E3_630.spc",
+      "bytes": 128688,
+      "checksum": 2402369649,
+      "frames": 120,
+      "first": 75600
+    },
+    {
+      "file": "T7E3_631.spc",
+      "bytes": 128688,
+      "checksum": 1603713944,
+      "frames": 120,
+      "first": 75720
+    },
+    {
+      "file": "T7E3_632.spc",
+      "bytes": 128688,
+      "checksum": 1018854982,
+      "frames": 120,
+      "first": 75840
+    },
+    {
+      "file": "T7E3_633.spc",
+      "bytes": 128688,
+      "checksum": 3181362584,
+      "frames": 120,
+      "first": 75960
+    },
+    {
+      "file": "T7E3_634.spc",
+      "bytes": 128688,
+      "checksum": 1485390433,
+      "frames": 120,
+      "first": 76080
+    },
+    {
+      "file": "T7E3_635.spc",
+      "bytes": 128688,
+      "checksum": 1026050616,
+      "frames": 120,
+      "first": 76200
+    },
+    {
+      "file": "T7E3_636.spc",
+      "bytes": 128688,
+      "checksum": 3034335366,
+      "frames": 120,
+      "first": 76320
+    },
+    {
+      "file": "T7E3_637.spc",
+      "bytes": 128688,
+      "checksum": 483762985,
+      "frames": 120,
+      "first": 76440
+    },
+    {
+      "file": "T7E3_638.spc",
+      "bytes": 128688,
+      "checksum": 3729425685,
+      "frames": 120,
+      "first": 76560
+    },
+    {
+      "file": "T7E3_639.spc",
+      "bytes": 128688,
+      "checksum": 3491432305,
+      "frames": 120,
+      "first": 76680
+    },
+    {
+      "file": "T7E3_640.spc",
+      "bytes": 128688,
+      "checksum": 798312155,
+      "frames": 120,
+      "first": 76800
+    },
+    {
+      "file": "T7E3_641.spc",
+      "bytes": 128688,
+      "checksum": 1442429097,
+      "frames": 120,
+      "first": 76920
+    },
+    {
+      "file": "T7E3_642.spc",
+      "bytes": 128688,
+      "checksum": 2725177100,
+      "frames": 120,
+      "first": 77040
+    },
+    {
+      "file": "T7E3_643.spc",
+      "bytes": 128688,
+      "checksum": 2519308259,
+      "frames": 120,
+      "first": 77160
+    },
+    {
+      "file": "T7E3_644.spc",
+      "bytes": 128688,
+      "checksum": 3058651717,
+      "frames": 120,
+      "first": 77280
+    },
+    {
+      "file": "T7E3_645.spc",
+      "bytes": 128688,
+      "checksum": 2383988843,
+      "frames": 120,
+      "first": 77400
+    },
+    {
+      "file": "T7E3_646.spc",
+      "bytes": 128688,
+      "checksum": 2973825428,
+      "frames": 120,
+      "first": 77520
+    },
+    {
+      "file": "T7E3_647.spc",
+      "bytes": 128688,
+      "checksum": 2301913147,
+      "frames": 120,
+      "first": 77640
+    },
+    {
+      "file": "T7E3_648.spc",
+      "bytes": 128688,
+      "checksum": 3506521636,
+      "frames": 120,
+      "first": 77760
+    },
+    {
+      "file": "T7E3_649.spc",
+      "bytes": 128688,
+      "checksum": 852482383,
+      "frames": 120,
+      "first": 77880
+    },
+    {
+      "file": "T7E3_650.spc",
+      "bytes": 128688,
+      "checksum": 263895675,
+      "frames": 120,
+      "first": 78000
+    },
+    {
+      "file": "T7E3_651.spc",
+      "bytes": 128688,
+      "checksum": 2396202446,
+      "frames": 120,
+      "first": 78120
+    },
+    {
+      "file": "T7E3_652.spc",
+      "bytes": 128688,
+      "checksum": 2108079854,
+      "frames": 120,
+      "first": 78240
+    },
+    {
+      "file": "T7E3_653.spc",
+      "bytes": 128688,
+      "checksum": 3770815380,
+      "frames": 120,
+      "first": 78360
+    },
+    {
+      "file": "T7E3_654.spc",
+      "bytes": 128688,
+      "checksum": 865209896,
+      "frames": 120,
+      "first": 78480
+    },
+    {
+      "file": "T7E3_655.spc",
+      "bytes": 128688,
+      "checksum": 781506266,
+      "frames": 120,
+      "first": 78600
+    },
+    {
+      "file": "T7E3_656.spc",
+      "bytes": 128688,
+      "checksum": 61454731,
+      "frames": 120,
+      "first": 78720
+    },
+    {
+      "file": "T7E3_657.spc",
+      "bytes": 128688,
+      "checksum": 2682544161,
+      "frames": 120,
+      "first": 78840
+    },
+    {
+      "file": "T7E3_658.spc",
+      "bytes": 128688,
+      "checksum": 3959237794,
+      "frames": 120,
+      "first": 78960
+    },
+    {
+      "file": "T7E3_659.spc",
+      "bytes": 128688,
+      "checksum": 431230594,
+      "frames": 120,
+      "first": 79080
+    },
+    {
+      "file": "T7E3_660.spc",
+      "bytes": 128688,
+      "checksum": 1726462921,
+      "frames": 120,
+      "first": 79200
+    },
+    {
+      "file": "T7E3_661.spc",
+      "bytes": 128688,
+      "checksum": 226622046,
+      "frames": 120,
+      "first": 79320
+    },
+    {
+      "file": "T7E3_662.spc",
+      "bytes": 128688,
+      "checksum": 1526601346,
+      "frames": 120,
+      "first": 79440
+    },
+    {
+      "file": "T7E3_663.spc",
+      "bytes": 128688,
+      "checksum": 3425210451,
+      "frames": 120,
+      "first": 79560
+    },
+    {
+      "file": "T7E3_664.spc",
+      "bytes": 128688,
+      "checksum": 1323038117,
+      "frames": 120,
+      "first": 79680
+    },
+    {
+      "file": "T7E3_665.spc",
+      "bytes": 128688,
+      "checksum": 1723928197,
+      "frames": 120,
+      "first": 79800
+    },
+    {
+      "file": "T7E3_666.spc",
+      "bytes": 128688,
+      "checksum": 1724433642,
+      "frames": 120,
+      "first": 79920
+    },
+    {
+      "file": "T7E3_667.spc",
+      "bytes": 128688,
+      "checksum": 318700749,
+      "frames": 120,
+      "first": 80040
+    },
+    {
+      "file": "T7E3_668.spc",
+      "bytes": 128688,
+      "checksum": 270499992,
+      "frames": 120,
+      "first": 80160
+    },
+    {
+      "file": "T7E3_669.spc",
+      "bytes": 128688,
+      "checksum": 3968473586,
+      "frames": 120,
+      "first": 80280
+    },
+    {
+      "file": "T7E3_670.spc",
+      "bytes": 128688,
+      "checksum": 3355986314,
+      "frames": 120,
+      "first": 80400
+    },
+    {
+      "file": "T7E3_671.spc",
+      "bytes": 128688,
+      "checksum": 3187333862,
+      "frames": 120,
+      "first": 80520
+    },
+    {
+      "file": "T7E3_672.spc",
+      "bytes": 128688,
+      "checksum": 20639145,
+      "frames": 120,
+      "first": 80640
+    },
+    {
+      "file": "T7E3_673.spc",
+      "bytes": 128688,
+      "checksum": 3657127028,
+      "frames": 120,
+      "first": 80760
+    },
+    {
+      "file": "T7E3_674.spc",
+      "bytes": 128688,
+      "checksum": 425109419,
+      "frames": 120,
+      "first": 80880
+    },
+    {
+      "file": "T7E3_675.spc",
+      "bytes": 128688,
+      "checksum": 2516763251,
+      "frames": 120,
+      "first": 81000
+    },
+    {
+      "file": "T7E3_676.spc",
+      "bytes": 128688,
+      "checksum": 522453861,
+      "frames": 120,
+      "first": 81120
+    },
+    {
+      "file": "T7E3_677.spc",
+      "bytes": 128688,
+      "checksum": 2282383597,
+      "frames": 120,
+      "first": 81240
+    },
+    {
+      "file": "T7E3_678.spc",
+      "bytes": 128688,
+      "checksum": 3812476044,
+      "frames": 120,
+      "first": 81360
+    },
+    {
+      "file": "T7E3_679.spc",
+      "bytes": 128688,
+      "checksum": 1589782754,
+      "frames": 120,
+      "first": 81480
+    },
+    {
+      "file": "T7E3_680.spc",
+      "bytes": 128688,
+      "checksum": 2425319878,
+      "frames": 120,
+      "first": 81600
+    },
+    {
+      "file": "T7E3_681.spc",
+      "bytes": 128688,
+      "checksum": 3753804261,
+      "frames": 120,
+      "first": 81720
+    },
+    {
+      "file": "T7E3_682.spc",
+      "bytes": 128688,
+      "checksum": 573337779,
+      "frames": 120,
+      "first": 81840
+    },
+    {
+      "file": "T7E3_683.spc",
+      "bytes": 128688,
+      "checksum": 1807676922,
+      "frames": 120,
+      "first": 81960
+    },
+    {
+      "file": "T7E3_684.spc",
+      "bytes": 128688,
+      "checksum": 1237857603,
+      "frames": 120,
+      "first": 82080
+    },
+    {
+      "file": "T7E3_685.spc",
+      "bytes": 128688,
+      "checksum": 1956026452,
+      "frames": 120,
+      "first": 82200
+    },
+    {
+      "file": "T7E3_686.spc",
+      "bytes": 128688,
+      "checksum": 3024473505,
+      "frames": 120,
+      "first": 82320
+    },
+    {
+      "file": "T7E3_687.spc",
+      "bytes": 128688,
+      "checksum": 2565155773,
+      "frames": 120,
+      "first": 82440
+    },
+    {
+      "file": "T7E3_688.spc",
+      "bytes": 128688,
+      "checksum": 3801232343,
+      "frames": 120,
+      "first": 82560
+    },
+    {
+      "file": "T7E3_689.spc",
+      "bytes": 128688,
+      "checksum": 1682757514,
+      "frames": 120,
+      "first": 82680
+    },
+    {
+      "file": "T7E3_690.spc",
+      "bytes": 128688,
+      "checksum": 260216869,
+      "frames": 120,
+      "first": 82800
+    },
+    {
+      "file": "T7E3_691.spc",
+      "bytes": 128688,
+      "checksum": 1187488121,
+      "frames": 120,
+      "first": 82920
+    },
+    {
+      "file": "T7E3_692.spc",
+      "bytes": 128688,
+      "checksum": 3197413122,
+      "frames": 120,
+      "first": 83040
+    },
+    {
+      "file": "T7E3_693.spc",
+      "bytes": 128688,
+      "checksum": 3153537865,
+      "frames": 120,
+      "first": 83160
+    },
+    {
+      "file": "T7E3_694.spc",
+      "bytes": 128688,
+      "checksum": 2502805207,
+      "frames": 120,
+      "first": 83280
+    },
+    {
+      "file": "T7E3_695.spc",
+      "bytes": 128688,
+      "checksum": 593947730,
+      "frames": 120,
+      "first": 83400
+    },
+    {
+      "file": "T7E3_696.spc",
+      "bytes": 128688,
+      "checksum": 1173284104,
+      "frames": 120,
+      "first": 83520
+    },
+    {
+      "file": "T7E3_697.spc",
+      "bytes": 128688,
+      "checksum": 1495309384,
+      "frames": 120,
+      "first": 83640
+    },
+    {
+      "file": "T7E3_698.spc",
+      "bytes": 128688,
+      "checksum": 1827706373,
+      "frames": 120,
+      "first": 83760
+    },
+    {
+      "file": "T7E3_699.spc",
+      "bytes": 128688,
+      "checksum": 2035342988,
+      "frames": 120,
+      "first": 83880
+    },
+    {
+      "file": "T7E3_700.spc",
+      "bytes": 128688,
+      "checksum": 3056341938,
+      "frames": 120,
+      "first": 84000
+    },
+    {
+      "file": "T7E3_701.spc",
+      "bytes": 128688,
+      "checksum": 3910664501,
+      "frames": 120,
+      "first": 84120
+    },
+    {
+      "file": "T7E3_702.spc",
+      "bytes": 128688,
+      "checksum": 3768881127,
+      "frames": 120,
+      "first": 84240
+    },
+    {
+      "file": "T7E3_703.spc",
+      "bytes": 128688,
+      "checksum": 2103059160,
+      "frames": 120,
+      "first": 84360
+    },
+    {
+      "file": "T7E3_704.spc",
+      "bytes": 128688,
+      "checksum": 872762495,
+      "frames": 120,
+      "first": 84480
+    },
+    {
+      "file": "T7E3_705.spc",
+      "bytes": 128688,
+      "checksum": 3748376321,
+      "frames": 120,
+      "first": 84600
+    },
+    {
+      "file": "T7E3_706.spc",
+      "bytes": 128688,
+      "checksum": 4182609230,
+      "frames": 120,
+      "first": 84720
+    },
+    {
+      "file": "T7E3_707.spc",
+      "bytes": 128688,
+      "checksum": 2674656795,
+      "frames": 120,
+      "first": 84840
+    },
+    {
+      "file": "T7E3_708.spc",
+      "bytes": 128688,
+      "checksum": 2726835167,
+      "frames": 120,
+      "first": 84960
+    },
+    {
+      "file": "T7E3_709.spc",
+      "bytes": 128688,
+      "checksum": 180279090,
+      "frames": 120,
+      "first": 85080
+    },
+    {
+      "file": "T7E3_710.spc",
+      "bytes": 128688,
+      "checksum": 240149907,
+      "frames": 120,
+      "first": 85200
+    },
+    {
+      "file": "T7E3_711.spc",
+      "bytes": 95456,
+      "checksum": 4101655428,
+      "frames": 89,
+      "first": 85320
+    }
+  ],
+  "Analysis": "source-fit-v1",
+  "MixGain": 1.15144934,
+  "SourceRms": 0.0629239776,
+  "ModelRms": 0.0546476303,
+  "MixAnalysis": "SPC_ENERGY_V1",
+  "AudioProfile": "fidelity",
+  "PayloadBytesPerSecond": 64320,
+  "SourceSHA256": "2b2ec6103a508543dd581e6030bb2d005938e0be0862ff7f4309c5a49a118f8e"
+}

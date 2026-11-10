@@ -1,0 +1,5746 @@
+{
+  "Format": "RVF2",
+  "Encoding": 2,
+  "Id": "T7E3",
+  "AudioTrack": "T7E3",
+  "Width": 422,
+  "Height": 237,
+  "FPS": 24,
+  "Frames": 34164,
+  "Duration": 1423.4761,
+  "SegmentFrames": 48,
+  "Segments": 712,
+  "ColorBits": [
+    6,
+    6,
+    6
+  ],
+  "Layout": "YCbCr420",
+  "Compression": "Zstd",
+  "Bytes": 673562619,
+  "BytesPerSecond": 473181.5441088192,
+  "PeakSegmentBytes": 2782440,
+  "PSNR": 37.43300182836142,
+  "PSNRReference": "Source resized to 422x237; excludes downscaling loss",
+  "ModeCounts": [
+    6936,
+    24631,
+    2597
+  ],
+  "SecondsToEncode": 381.65599999999995,
+  "DecoderFixture": [
+    {
+      "Frame": 0,
+      "RGBAAdler32": 443871537,
+      "RGBABytes": 400056
+    },
+    {
+      "Frame": 24,
+      "RGBAAdler32": 3114847304,
+      "RGBABytes": 400056
+    },
+    {
+      "Frame": 47,
+      "RGBAAdler32": 3740876717,
+      "RGBABytes": 400056
+    }
+  ],
+  "Files": [
+    {
+      "File": "T7E3_0000.rvf",
+      "Bytes": 454349,
+      "Checksum": 2693630113,
+      "FirstFrame": 0,
+      "Frames": 48,
+      "SHA256": "d2dce63c6df56c112195d984b876a6a840f48cf5d58e81cc3cfe184066b34c37"
+    },
+    {
+      "File": "T7E3_0001.rvf",
+      "Bytes": 521667,
+      "Checksum": 412482582,
+      "FirstFrame": 48,
+      "Frames": 48,
+      "SHA256": "be0573787e47a1468a0d15f74079bc6e30b8fb8b94adc8f038bd540aa89f147e"
+    },
+    {
+      "File": "T7E3_0002.rvf",
+      "Bytes": 1307395,
+      "Checksum": 3543222987,
+      "FirstFrame": 96,
+      "Frames": 48,
+      "SHA256": "d33a16697b68132d5a6813ccbf808a5abc116c58c0f6fc060978208ac55cfc13"
+    },
+    {
+      "File": "T7E3_0003.rvf",
+      "Bytes": 668204,
+      "Checksum": 1595355588,
+      "FirstFrame": 144,
+      "Frames": 48,
+      "SHA256": "83ee39200ae09a6d639ff2e9745c96b2ca5173217bb8e3f7ab4bafc12b2124a7"
+    },
+    {
+      "File": "T7E3_0004.rvf",
+      "Bytes": 1068856,
+      "Checksum": 2319849623,
+      "FirstFrame": 192,
+      "Frames": 48,
+      "SHA256": "a135f06c7771ccccebd2838926967fea0268bbe30cb1ae50d2f1188a284d8c9c"
+    },
+    {
+      "File": "T7E3_0005.rvf",
+      "Bytes": 262987,
+      "Checksum": 3981591910,
+      "FirstFrame": 240,
+      "Frames": 48,
+      "SHA256": "4a48f4bfa8da4daf36fabf5be77b7cc0aee4236e8e7584ccc253fc43f731e389"
+    },
+    {
+      "File": "T7E3_0006.rvf",
+      "Bytes": 514535,
+      "Checksum": 3197776951,
+      "FirstFrame": 288,
+      "Frames": 48,
+      "SHA256": "288b6d5d3cd565a7beba8e792656fec4c2734c429dbe08a282e836db497dc95e"
+    },
+    {
+      "File": "T7E3_0007.rvf",
+      "Bytes": 544349,
+      "Checksum": 3248653,
+      "FirstFrame": 336,
+      "Frames": 48,
+      "SHA256": "fe3b845d433c24fda210e0a6456f4031efe2e8b5e19e533b8488d13e38cfe1dc"
+    },
+    {
+      "File": "T7E3_0008.rvf",
+      "Bytes": 661876,
+      "Checksum": 945519922,
+      "FirstFrame": 384,
+      "Frames": 48,
+      "SHA256": "30aa9b131e06284f026ea96fdf7cab4179cd2f5b1f6c7cbc04a90bb4bdee1bc9"
+    },
+    {
+      "File": "T7E3_0009.rvf",
+      "Bytes": 779086,
+      "Checksum": 584183786,
+      "FirstFrame": 432,
+      "Frames": 48,
+      "SHA256": "2b5f85db6dc41fab4f2e2039db22907ec22ad14bf484de81287f6bcbf3046ca4"
+    },
+    {
+      "File": "T7E3_0010.rvf",
+      "Bytes": 838880,
+      "Checksum": 1593810666,
+      "FirstFrame": 480,
+      "Frames": 48,
+      "SHA256": "067f2c78f1f889a9c8ad1e51aea93fb65a3dbad2b2a9d4f253b2ddf693b7598f"
+    },
+    {
+      "File": "T7E3_0011.rvf",
+      "Bytes": 743226,
+      "Checksum": 2731220668,
+      "FirstFrame": 528,
+      "Frames": 48,
+      "SHA256": "b5768f4d892385a5f15a72b13c14b358568cda172c42c49299ee45e6e440eb2e"
+    },
+    {
+      "File": "T7E3_0012.rvf",
+      "Bytes": 756110,
+      "Checksum": 3902767405,
+      "FirstFrame": 576,
+      "Frames": 48,
+      "SHA256": "73033972d3fa0a69fcac7705a42e23854b1c47709f81ad4574512273b23ec97c"
+    },
+    {
+      "File": "T7E3_0013.rvf",
+      "Bytes": 687278,
+      "Checksum": 3889431409,
+      "FirstFrame": 624,
+      "Frames": 48,
+      "SHA256": "738eb283dd643630e0323a70989c6e33d505ab89d1ec3988b65c2e9d72df2f34"
+    },
+    {
+      "File": "T7E3_0014.rvf",
+      "Bytes": 1036344,
+      "Checksum": 3364694413,
+      "FirstFrame": 672,
+      "Frames": 48,
+      "SHA256": "b970f1d6824dfa83aefb8fe94da360369119c13450881fbb2c71f07b92e49d8e"
+    },
+    {
+      "File": "T7E3_0015.rvf",
+      "Bytes": 1168922,
+      "Checksum": 4162566366,
+      "FirstFrame": 720,
+      "Frames": 48,
+      "SHA256": "0b9407899227b4bdcc770fb6b5a1917006e33101995e92c0ff480139e5954475"
+    },
+    {
+      "File": "T7E3_0016.rvf",
+      "Bytes": 934857,
+      "Checksum": 4098060526,
+      "FirstFrame": 768,
+      "Frames": 48,
+      "SHA256": "17d04591ba3e29c634ccb097fb576422582ea0981c5e32411be487b1965277de"
+    },
+    {
+      "File": "T7E3_0017.rvf",
+      "Bytes": 1404235,
+      "Checksum": 424530794,
+      "FirstFrame": 816,
+      "Frames": 48,
+      "SHA256": "f96210b53c519c92d180306510c90a80c612c405a7c5d2e73ebb51772072f871"
+    },
+    {
+      "File": "T7E3_0018.rvf",
+      "Bytes": 1397239,
+      "Checksum": 4055707926,
+      "FirstFrame": 864,
+      "Frames": 48,
+      "SHA256": "a9482c9018d39e94daa8a56afe59fabb8228b216f34964c2e5f17d9b54857377"
+    },
+    {
+      "File": "T7E3_0019.rvf",
+      "Bytes": 1375438,
+      "Checksum": 4042342313,
+      "FirstFrame": 912,
+      "Frames": 48,
+      "SHA256": "1bc889e7f7503cd6613cf7ef547837f1ca1fa77baec83f811b5bccacbbff3b89"
+    },
+    {
+      "File": "T7E3_0020.rvf",
+      "Bytes": 1328906,
+      "Checksum": 688049528,
+      "FirstFrame": 960,
+      "Frames": 48,
+      "SHA256": "fb4f21ed6730b2bbe39178ab5c8f700d9c3d80cd324423a6604f0d3961d7ad37"
+    },
+    {
+      "File": "T7E3_0021.rvf",
+      "Bytes": 941164,
+      "Checksum": 2772287872,
+      "FirstFrame": 1008,
+      "Frames": 48,
+      "SHA256": "af24732a0de115eb8cfe76fa5e1c95e2a7a9deef14cff4fa4d01b97a49eb8317"
+    },
+    {
+      "File": "T7E3_0022.rvf",
+      "Bytes": 1372666,
+      "Checksum": 2326925935,
+      "FirstFrame": 1056,
+      "Frames": 48,
+      "SHA256": "5798a7c0dbef0a3922f243be1f72c384d2d7f66dc88808212d001db167f4aff2"
+    },
+    {
+      "File": "T7E3_0023.rvf",
+      "Bytes": 747689,
+      "Checksum": 1585605874,
+      "FirstFrame": 1104,
+      "Frames": 48,
+      "SHA256": "94426fe488a7680c9eb8dfb37c2f22aa1fccbe4f7db8333ce5c93bd940c0535b"
+    },
+    {
+      "File": "T7E3_0024.rvf",
+      "Bytes": 958105,
+      "Checksum": 51314964,
+      "FirstFrame": 1152,
+      "Frames": 48,
+      "SHA256": "2faaa643c4bd1387d5b915d10bbf9ebb6dc777f2d4ee76347ef6ba8fd6a4cd67"
+    },
+    {
+      "File": "T7E3_0025.rvf",
+      "Bytes": 1061508,
+      "Checksum": 983437758,
+      "FirstFrame": 1200,
+      "Frames": 48,
+      "SHA256": "2947822d26890a06b65e5a15a9220182f93bfa6a3623aff792009291bbb2b93f"
+    },
+    {
+      "File": "T7E3_0026.rvf",
+      "Bytes": 570188,
+      "Checksum": 743030614,
+      "FirstFrame": 1248,
+      "Frames": 48,
+      "SHA256": "39a0e81398d2d3b9275814b92ef35663eed23c6a13ca3cd4e8ad41b790836b7a"
+    },
+    {
+      "File": "T7E3_0027.rvf",
+      "Bytes": 755114,
+      "Checksum": 1652123569,
+      "FirstFrame": 1296,
+      "Frames": 48,
+      "SHA256": "055713aa336f6a1d21112604dbfae6d3400538b8808c1d69d91960b9891ae3cb"
+    },
+    {
+      "File": "T7E3_0028.rvf",
+      "Bytes": 1193832,
+      "Checksum": 4225103163,
+      "FirstFrame": 1344,
+      "Frames": 48,
+      "SHA256": "469a80ea07636d7d1da181573e5982526c0767e3c2c39cc9b44f5bb83da22af7"
+    },
+    {
+      "File": "T7E3_0029.rvf",
+      "Bytes": 914569,
+      "Checksum": 4044040466,
+      "FirstFrame": 1392,
+      "Frames": 48,
+      "SHA256": "5640a93c5c3d3e4ea8934fed72ba0781a8adb69b720c0715881cc839f1d73cb3"
+    },
+    {
+      "File": "T7E3_0030.rvf",
+      "Bytes": 1229692,
+      "Checksum": 1034206582,
+      "FirstFrame": 1440,
+      "Frames": 48,
+      "SHA256": "ed9184aa83c21dd6e6f8064549c649d1e1e5a3c52827846fc1101d7d16aa0276"
+    },
+    {
+      "File": "T7E3_0031.rvf",
+      "Bytes": 725386,
+      "Checksum": 1462057201,
+      "FirstFrame": 1488,
+      "Frames": 48,
+      "SHA256": "3d58d6210623c895d1e1d581f38191488c62d0f9f087ec801ba084ffee0dd158"
+    },
+    {
+      "File": "T7E3_0032.rvf",
+      "Bytes": 808483,
+      "Checksum": 710315940,
+      "FirstFrame": 1536,
+      "Frames": 48,
+      "SHA256": "ba7e12d513b146ac7b563c869f3d8314d59968de65f085ff3c73ef8b9e37cf98"
+    },
+    {
+      "File": "T7E3_0033.rvf",
+      "Bytes": 920380,
+      "Checksum": 664757957,
+      "FirstFrame": 1584,
+      "Frames": 48,
+      "SHA256": "039c0e1aa8d823ee8c6e81d2be64fa6798db4a0009cd7c2504577dcb079d93b2"
+    },
+    {
+      "File": "T7E3_0034.rvf",
+      "Bytes": 1897336,
+      "Checksum": 1308850223,
+      "FirstFrame": 1632,
+      "Frames": 48,
+      "SHA256": "40397f09fedf59ff3fabd8fafb52b12be9cd1b5b7c1f881b4bc20d30c9cdb28c"
+    },
+    {
+      "File": "T7E3_0035.rvf",
+      "Bytes": 1599224,
+      "Checksum": 2022032876,
+      "FirstFrame": 1680,
+      "Frames": 48,
+      "SHA256": "b82c86044b3eacd4cb580bccec7c4831d4c061fd4019976abd28b2a364ae1016"
+    },
+    {
+      "File": "T7E3_0036.rvf",
+      "Bytes": 1733028,
+      "Checksum": 584672014,
+      "FirstFrame": 1728,
+      "Frames": 48,
+      "SHA256": "9d950c50e986df41500adc059a5a6026617f5e2c0a082fbf87d1405324e86c9e"
+    },
+    {
+      "File": "T7E3_0037.rvf",
+      "Bytes": 1918215,
+      "Checksum": 1558060634,
+      "FirstFrame": 1776,
+      "Frames": 48,
+      "SHA256": "2f2ad2f57598e234e53ba58f8f09ed4dd34af0ce62e0e3ab43d69355d95b0da7"
+    },
+    {
+      "File": "T7E3_0038.rvf",
+      "Bytes": 1153427,
+      "Checksum": 3667165504,
+      "FirstFrame": 1824,
+      "Frames": 48,
+      "SHA256": "864a70d018592133763115a3b3a4541506d173068ef1904c99ecac9f23d430cb"
+    },
+    {
+      "File": "T7E3_0039.rvf",
+      "Bytes": 997189,
+      "Checksum": 2318418937,
+      "FirstFrame": 1872,
+      "Frames": 48,
+      "SHA256": "66384f38027dc65560e0ba7e168ef71d98789ad04a5fd306d9e2e184a76e701f"
+    },
+    {
+      "File": "T7E3_0040.rvf",
+      "Bytes": 1539061,
+      "Checksum": 2859068260,
+      "FirstFrame": 1920,
+      "Frames": 48,
+      "SHA256": "8aa85b244b296c3a77df496eb098197c1996f1cac40494a54a2335c398005e06"
+    },
+    {
+      "File": "T7E3_0041.rvf",
+      "Bytes": 1570096,
+      "Checksum": 2435779944,
+      "FirstFrame": 1968,
+      "Frames": 48,
+      "SHA256": "16b6af41b171edcf865e4f75f015bd5cc1ce45733f37b5c509f3cca7d6e9fe13"
+    },
+    {
+      "File": "T7E3_0042.rvf",
+      "Bytes": 1121792,
+      "Checksum": 2986344066,
+      "FirstFrame": 2016,
+      "Frames": 48,
+      "SHA256": "917e9df40a89c2b0dc2bc0321cb019ce33d42d63537d1a267e2365e37d2b41fa"
+    },
+    {
+      "File": "T7E3_0043.rvf",
+      "Bytes": 2096406,
+      "Checksum": 3867510478,
+      "FirstFrame": 2064,
+      "Frames": 48,
+      "SHA256": "d42329c8fe18afe8c3f55c27e4ef1a6d0b03ca585fd49890dfb758e4bc26612f"
+    },
+    {
+      "File": "T7E3_0044.rvf",
+      "Bytes": 2782440,
+      "Checksum": 164095284,
+      "FirstFrame": 2112,
+      "Frames": 48,
+      "SHA256": "193fbb58755435e83e0aae7d8082a1053cd2232e3bc616e2d7cf505e854d166f"
+    },
+    {
+      "File": "T7E3_0045.rvf",
+      "Bytes": 2136780,
+      "Checksum": 3636252641,
+      "FirstFrame": 2160,
+      "Frames": 48,
+      "SHA256": "ba617a2751cbaec18ad58fd53b7eceab64a676cec91defb86321facb22fc286b"
+    },
+    {
+      "File": "T7E3_0046.rvf",
+      "Bytes": 1678196,
+      "Checksum": 676234109,
+      "FirstFrame": 2208,
+      "Frames": 48,
+      "SHA256": "b2cbb347f87dd49f064b0005b39e3c1db89bbd22b9fd31501b324708be783309"
+    },
+    {
+      "File": "T7E3_0047.rvf",
+      "Bytes": 1011484,
+      "Checksum": 3080846688,
+      "FirstFrame": 2256,
+      "Frames": 48,
+      "SHA256": "72dbea842fac16b8e281d1c8e6b77903f40b8b5be21e9cc3f5e6748bc05f63e4"
+    },
+    {
+      "File": "T7E3_0048.rvf",
+      "Bytes": 1131465,
+      "Checksum": 3032653535,
+      "FirstFrame": 2304,
+      "Frames": 48,
+      "SHA256": "9ceaca23d9599b9947407fd83d8d65fd6738e3a8a126a3ff47e5444645302d98"
+    },
+    {
+      "File": "T7E3_0049.rvf",
+      "Bytes": 1155243,
+      "Checksum": 1701753365,
+      "FirstFrame": 2352,
+      "Frames": 48,
+      "SHA256": "24eeb83258d39bae558ebc48ea25e8eb3921dd4b2a2c98529fbf98e361a88319"
+    },
+    {
+      "File": "T7E3_0050.rvf",
+      "Bytes": 1220737,
+      "Checksum": 3913602803,
+      "FirstFrame": 2400,
+      "Frames": 48,
+      "SHA256": "fa7d4502e3147e15768e46de0b2c4d5683d0a04617ae31788b5bb37b59f6c163"
+    },
+    {
+      "File": "T7E3_0051.rvf",
+      "Bytes": 652557,
+      "Checksum": 3962856684,
+      "FirstFrame": 2448,
+      "Frames": 48,
+      "SHA256": "0f84399cce688990cc4e934746296a2e9ccb2248f3a54d82f7c180ef0f95a830"
+    },
+    {
+      "File": "T7E3_0052.rvf",
+      "Bytes": 961768,
+      "Checksum": 2531501847,
+      "FirstFrame": 2496,
+      "Frames": 48,
+      "SHA256": "459f448b6381d6f2f9e5b5ce6f9841fe372e56dc4b688fd82e884c5a582f6936"
+    },
+    {
+      "File": "T7E3_0053.rvf",
+      "Bytes": 761449,
+      "Checksum": 2838165231,
+      "FirstFrame": 2544,
+      "Frames": 48,
+      "SHA256": "f60fca102a8af1ff2eacbcc8b5bb82aa07e700389e313ccb864a48d6dd4d24dd"
+    },
+    {
+      "File": "T7E3_0054.rvf",
+      "Bytes": 661902,
+      "Checksum": 992455160,
+      "FirstFrame": 2592,
+      "Frames": 48,
+      "SHA256": "59978f55a6e4f47f520bae71484ddde583abb5dafbdf64e31d2f53c64e333284"
+    },
+    {
+      "File": "T7E3_0055.rvf",
+      "Bytes": 768277,
+      "Checksum": 241433433,
+      "FirstFrame": 2640,
+      "Frames": 48,
+      "SHA256": "b4655e5ea4dceec9c9d0e62d3b87c9603142a01da9a9513db1c5c767a28ede99"
+    },
+    {
+      "File": "T7E3_0056.rvf",
+      "Bytes": 817392,
+      "Checksum": 4050545650,
+      "FirstFrame": 2688,
+      "Frames": 48,
+      "SHA256": "706dacf4852c1cd65d3f78a58f1fa23ad9144c6e4f7887f8337236dbc6d33bc5"
+    },
+    {
+      "File": "T7E3_0057.rvf",
+      "Bytes": 1214663,
+      "Checksum": 155626985,
+      "FirstFrame": 2736,
+      "Frames": 48,
+      "SHA256": "25959cf365d4f9edab188a38d3c91e5fe58ed8c8e58d2f837cc225989534a412"
+    },
+    {
+      "File": "T7E3_0058.rvf",
+      "Bytes": 1123242,
+      "Checksum": 3147511128,
+      "FirstFrame": 2784,
+      "Frames": 48,
+      "SHA256": "d0036cc07239d23e17e5c32af7edd992ecea33937a53dafb1efadf0ce78557c1"
+    },
+    {
+      "File": "T7E3_0059.rvf",
+      "Bytes": 1168601,
+      "Checksum": 2921419905,
+      "FirstFrame": 2832,
+      "Frames": 48,
+      "SHA256": "6b79eb5315b6cdab93beae7757d4f1258091b908927c068fc04227d67a7ef8fd"
+    },
+    {
+      "File": "T7E3_0060.rvf",
+      "Bytes": 1938046,
+      "Checksum": 2255570374,
+      "FirstFrame": 2880,
+      "Frames": 48,
+      "SHA256": "ed234563e23452897eb1e6760af8957c711fb1279588c5bc83dbc2adb74f3b4b"
+    },
+    {
+      "File": "T7E3_0061.rvf",
+      "Bytes": 1564518,
+      "Checksum": 1067099042,
+      "FirstFrame": 2928,
+      "Frames": 48,
+      "SHA256": "f3ef3537ecc47c7a23abdfbf07e0b2a8dc9763b92aceb971212508df927d8927"
+    },
+    {
+      "File": "T7E3_0062.rvf",
+      "Bytes": 1034492,
+      "Checksum": 327637448,
+      "FirstFrame": 2976,
+      "Frames": 48,
+      "SHA256": "0254b1be0d92d35f4d327f4de91b8e18b47140645056edfed3fa2dc4547a3158"
+    },
+    {
+      "File": "T7E3_0063.rvf",
+      "Bytes": 807488,
+      "Checksum": 620731295,
+      "FirstFrame": 3024,
+      "Frames": 48,
+      "SHA256": "83f0b36a3db3190ceeef2fa90e9e08f01d506776bc6ad772dc6b1123a4f57858"
+    },
+    {
+      "File": "T7E3_0064.rvf",
+      "Bytes": 902636,
+      "Checksum": 3784844997,
+      "FirstFrame": 3072,
+      "Frames": 48,
+      "SHA256": "0b519308d5695cac78e9e10e717e6e7dc28924d22489c5af7b90484b6281c5cb"
+    },
+    {
+      "File": "T7E3_0065.rvf",
+      "Bytes": 1364714,
+      "Checksum": 3292788723,
+      "FirstFrame": 3120,
+      "Frames": 48,
+      "SHA256": "28032feb6e02260371ad60a9892b0a7a17172fc4443a9415d2477ced5a975730"
+    },
+    {
+      "File": "T7E3_0066.rvf",
+      "Bytes": 1132612,
+      "Checksum": 2647113157,
+      "FirstFrame": 3168,
+      "Frames": 48,
+      "SHA256": "71a49303c7d9eb6e33645e3d5b0c73c452c0aa9538f8c64e1dd68cc2a7838807"
+    },
+    {
+      "File": "T7E3_0067.rvf",
+      "Bytes": 696852,
+      "Checksum": 288427970,
+      "FirstFrame": 3216,
+      "Frames": 48,
+      "SHA256": "8d6dfcb6d8456a3e3de4b013baa0fc4e36bbd19379e42d8879cf028c37848d24"
+    },
+    {
+      "File": "T7E3_0068.rvf",
+      "Bytes": 747475,
+      "Checksum": 296076461,
+      "FirstFrame": 3264,
+      "Frames": 48,
+      "SHA256": "e1c9dcd57005d2d20680be509ae56ad52850e148d34646d66a8a7cc4ac5f4fd5"
+    },
+    {
+      "File": "T7E3_0069.rvf",
+      "Bytes": 1442230,
+      "Checksum": 2113450840,
+      "FirstFrame": 3312,
+      "Frames": 48,
+      "SHA256": "bed69f1ec98d14246127e303b2bd7d65d9585ef58c1a6370bf18fbe48c814a38"
+    },
+    {
+      "File": "T7E3_0070.rvf",
+      "Bytes": 906995,
+      "Checksum": 242700546,
+      "FirstFrame": 3360,
+      "Frames": 48,
+      "SHA256": "685430ed6c51296e78fe033fb877af11608b128c8d2233ff024c75999783f0ee"
+    },
+    {
+      "File": "T7E3_0071.rvf",
+      "Bytes": 866485,
+      "Checksum": 3981252746,
+      "FirstFrame": 3408,
+      "Frames": 48,
+      "SHA256": "965322bba567121c4f71e242684e513a12ce51b651120fc342235f473f11152b"
+    },
+    {
+      "File": "T7E3_0072.rvf",
+      "Bytes": 1448175,
+      "Checksum": 2985765099,
+      "FirstFrame": 3456,
+      "Frames": 48,
+      "SHA256": "ce8b02c192d0e9b66f2a49853e761d32e9bd864e5c9e1666de6d10f0a3e60f3f"
+    },
+    {
+      "File": "T7E3_0073.rvf",
+      "Bytes": 1914058,
+      "Checksum": 3516095596,
+      "FirstFrame": 3504,
+      "Frames": 48,
+      "SHA256": "0527698bb1a3f6652031f41722f29efc4ef643423022a0cfd85ab5f5e5cfde0f"
+    },
+    {
+      "File": "T7E3_0074.rvf",
+      "Bytes": 605755,
+      "Checksum": 3502431786,
+      "FirstFrame": 3552,
+      "Frames": 48,
+      "SHA256": "a995bdf2dc89597cf4b4b4e287c11fc764a4a28e58ea01f364a816b6434e7f44"
+    },
+    {
+      "File": "T7E3_0075.rvf",
+      "Bytes": 859669,
+      "Checksum": 2046738895,
+      "FirstFrame": 3600,
+      "Frames": 48,
+      "SHA256": "04ff5b7917b6caa3713656d164ec13ba0d9f5c2430fa294e1e096ef91cdbc2cc"
+    },
+    {
+      "File": "T7E3_0076.rvf",
+      "Bytes": 1176946,
+      "Checksum": 2863805500,
+      "FirstFrame": 3648,
+      "Frames": 48,
+      "SHA256": "4c82d0c7fcf9444aecb9174218bc198a1bfa10784d04e64ee3a93151f8615b7c"
+    },
+    {
+      "File": "T7E3_0077.rvf",
+      "Bytes": 1159332,
+      "Checksum": 1955281033,
+      "FirstFrame": 3696,
+      "Frames": 48,
+      "SHA256": "f243d3257242716e3f5d3f566cef1c8aabe360cf01af6687be3019c771810136"
+    },
+    {
+      "File": "T7E3_0078.rvf",
+      "Bytes": 1182334,
+      "Checksum": 1305951949,
+      "FirstFrame": 3744,
+      "Frames": 48,
+      "SHA256": "731070a74df22c4873d65981963bb0d52b6fe696439911bab2def683c0a6dfcd"
+    },
+    {
+      "File": "T7E3_0079.rvf",
+      "Bytes": 1140161,
+      "Checksum": 1709378183,
+      "FirstFrame": 3792,
+      "Frames": 48,
+      "SHA256": "991d9a2f3b5d1e42c84d6de3c0df077bcbb809948609d9d812c8a8eec41d6925"
+    },
+    {
+      "File": "T7E3_0080.rvf",
+      "Bytes": 952169,
+      "Checksum": 893551976,
+      "FirstFrame": 3840,
+      "Frames": 48,
+      "SHA256": "6431215b28a646d4539f544ba1c29aeead234129d3410041f34a4def5bfb5cfc"
+    },
+    {
+      "File": "T7E3_0081.rvf",
+      "Bytes": 929428,
+      "Checksum": 2756156169,
+      "FirstFrame": 3888,
+      "Frames": 48,
+      "SHA256": "e99ac8e9ca4a66b0cd803105bebff7271551e0ea57c2ed30dac3ba462cc8c479"
+    },
+    {
+      "File": "T7E3_0082.rvf",
+      "Bytes": 974736,
+      "Checksum": 3305749331,
+      "FirstFrame": 3936,
+      "Frames": 48,
+      "SHA256": "455643a0e6fb3453a006b751048777415298603016722d71cbe2432a9670568e"
+    },
+    {
+      "File": "T7E3_0083.rvf",
+      "Bytes": 635782,
+      "Checksum": 1592451993,
+      "FirstFrame": 3984,
+      "Frames": 48,
+      "SHA256": "df8939c7eaea82bf90b79cbbf43da7c0579482af247322c6edbb9a5159dd95d7"
+    },
+    {
+      "File": "T7E3_0084.rvf",
+      "Bytes": 393973,
+      "Checksum": 3933228511,
+      "FirstFrame": 4032,
+      "Frames": 48,
+      "SHA256": "858f6f1f7f6277cdce12838dd51541ffadc71ff3b37d45289a720fafddca7ecf"
+    },
+    {
+      "File": "T7E3_0085.rvf",
+      "Bytes": 661135,
+      "Checksum": 2820626612,
+      "FirstFrame": 4080,
+      "Frames": 48,
+      "SHA256": "48891e9df023a0dd42fd3eb35afec4a6537811da7e20e69236b9db4db7be7e3c"
+    },
+    {
+      "File": "T7E3_0086.rvf",
+      "Bytes": 827082,
+      "Checksum": 3998891913,
+      "FirstFrame": 4128,
+      "Frames": 48,
+      "SHA256": "93f089971f3aa2cf5ba44d57f3b035aa914deb88d2ced5b102d0c0b6640828cc"
+    },
+    {
+      "File": "T7E3_0087.rvf",
+      "Bytes": 774227,
+      "Checksum": 421699446,
+      "FirstFrame": 4176,
+      "Frames": 48,
+      "SHA256": "7f7ab23441451fbff1b5b0d9e6dd359fee1aa63599b8514d43d24b17e18e0a07"
+    },
+    {
+      "File": "T7E3_0088.rvf",
+      "Bytes": 1081949,
+      "Checksum": 1851649471,
+      "FirstFrame": 4224,
+      "Frames": 48,
+      "SHA256": "04a375684751277ef8143e24d4a5326f8ae665cdc198ae8a15e051d7031f46ad"
+    },
+    {
+      "File": "T7E3_0089.rvf",
+      "Bytes": 909813,
+      "Checksum": 540285214,
+      "FirstFrame": 4272,
+      "Frames": 48,
+      "SHA256": "6ee7a19616ec74265a14749e2879ec34885f25d2e1db2bd2741160913936da59"
+    },
+    {
+      "File": "T7E3_0090.rvf",
+      "Bytes": 767988,
+      "Checksum": 1565733942,
+      "FirstFrame": 4320,
+      "Frames": 48,
+      "SHA256": "d5fbe7ee74175e126e340730b4a1cd288fee118d47003dd0bbf31d5b34e61b9e"
+    },
+    {
+      "File": "T7E3_0091.rvf",
+      "Bytes": 884527,
+      "Checksum": 719173085,
+      "FirstFrame": 4368,
+      "Frames": 48,
+      "SHA256": "ed40a3625daec8caffd9879ea9eeae42783334800215b94e510cd04293b6fc4d"
+    },
+    {
+      "File": "T7E3_0092.rvf",
+      "Bytes": 510161,
+      "Checksum": 4085708241,
+      "FirstFrame": 4416,
+      "Frames": 48,
+      "SHA256": "412abf8f08d1175fb9ffd00e365015c909b39f07af170445076067feee4a9bcf"
+    },
+    {
+      "File": "T7E3_0093.rvf",
+      "Bytes": 632663,
+      "Checksum": 915636707,
+      "FirstFrame": 4464,
+      "Frames": 48,
+      "SHA256": "313e0faff123009e3c3a119327739d69d579216bd60f5c195ef4529f78298152"
+    },
+    {
+      "File": "T7E3_0094.rvf",
+      "Bytes": 536596,
+      "Checksum": 2167805325,
+      "FirstFrame": 4512,
+      "Frames": 48,
+      "SHA256": "cfbbf2284b3bab994bad7a5b2d214d6d5ce5f23fa62e89f293c368916496876b"
+    },
+    {
+      "File": "T7E3_0095.rvf",
+      "Bytes": 379959,
+      "Checksum": 2576422885,
+      "FirstFrame": 4560,
+      "Frames": 48,
+      "SHA256": "fdf13c09b8e5805353789d06bb8a3a5123a35e50d98beb7bc7ded2e31b64d8b8"
+    },
+    {
+      "File": "T7E3_0096.rvf",
+      "Bytes": 278304,
+      "Checksum": 614987608,
+      "FirstFrame": 4608,
+      "Frames": 48,
+      "SHA256": "f34f1064b42523331a509e7eb7e9b40e55eed7078f43bf98530e5a274223ef1e"
+    },
+    {
+      "File": "T7E3_0097.rvf",
+      "Bytes": 405698,
+      "Checksum": 2316524132,
+      "FirstFrame": 4656,
+      "Frames": 48,
+      "SHA256": "642354745b64e1fd6e190dfd3d61e023b78071fa8314c4c680b98c0648300ae8"
+    },
+    {
+      "File": "T7E3_0098.rvf",
+      "Bytes": 820055,
+      "Checksum": 3005412356,
+      "FirstFrame": 4704,
+      "Frames": 48,
+      "SHA256": "4f66d0e070dee1189553fa52c0cf1540922fa785d846a509a287a496ead6b80f"
+    },
+    {
+      "File": "T7E3_0099.rvf",
+      "Bytes": 902111,
+      "Checksum": 1702225815,
+      "FirstFrame": 4752,
+      "Frames": 48,
+      "SHA256": "09ab0e2b80ea0a5c3016098d48be13c074c9ea56a8956d606e7700650bfffb0a"
+    },
+    {
+      "File": "T7E3_0100.rvf",
+      "Bytes": 1195971,
+      "Checksum": 4230501575,
+      "FirstFrame": 4800,
+      "Frames": 48,
+      "SHA256": "03ba22b156da638a6b75ba0794900c2de7996ed988dc2fec13a92f4841335132"
+    },
+    {
+      "File": "T7E3_0101.rvf",
+      "Bytes": 1190613,
+      "Checksum": 1382326400,
+      "FirstFrame": 4848,
+      "Frames": 48,
+      "SHA256": "26f4d3fd9e7acb0f3f4081cb5213bed8024412937871dcf1ce940661411d0b28"
+    },
+    {
+      "File": "T7E3_0102.rvf",
+      "Bytes": 890385,
+      "Checksum": 1765463115,
+      "FirstFrame": 4896,
+      "Frames": 48,
+      "SHA256": "da91d2a5aac3999441a814a3071608c70ebe6309418804a00eada0bdc9ab81f9"
+    },
+    {
+      "File": "T7E3_0103.rvf",
+      "Bytes": 900198,
+      "Checksum": 651584264,
+      "FirstFrame": 4944,
+      "Frames": 48,
+      "SHA256": "90d60f218b74adae0103d25773084e19faadb6d5610afb18d22e6455a909a340"
+    },
+    {
+      "File": "T7E3_0104.rvf",
+      "Bytes": 721542,
+      "Checksum": 554721802,
+      "FirstFrame": 4992,
+      "Frames": 48,
+      "SHA256": "3037014c0591c23981c8faf34e60a65754300c139732f188a8c3592a0a53710b"
+    },
+    {
+      "File": "T7E3_0105.rvf",
+      "Bytes": 849839,
+      "Checksum": 615909127,
+      "FirstFrame": 5040,
+      "Frames": 48,
+      "SHA256": "0f1ad763cd9a7125e595442702b7d7a44521de94299d8887cf8cdd5d4199862d"
+    },
+    {
+      "File": "T7E3_0106.rvf",
+      "Bytes": 1187552,
+      "Checksum": 1525964271,
+      "FirstFrame": 5088,
+      "Frames": 48,
+      "SHA256": "b119255ee6da3551fbcf148517b7733ed58c79205bc7e8f6715cad7818d0f1e7"
+    },
+    {
+      "File": "T7E3_0107.rvf",
+      "Bytes": 1349211,
+      "Checksum": 2343641496,
+      "FirstFrame": 5136,
+      "Frames": 48,
+      "SHA256": "9955e53c5c00a5bf79ade47922de51e6e6450437ec35293739b3ad62a32f353d"
+    },
+    {
+      "File": "T7E3_0108.rvf",
+      "Bytes": 1018115,
+      "Checksum": 764749771,
+      "FirstFrame": 5184,
+      "Frames": 48,
+      "SHA256": "8fd3148e4f0a25196183175b6d7ad77c8454988c1940a19a054012aa8b1a61d6"
+    },
+    {
+      "File": "T7E3_0109.rvf",
+      "Bytes": 637575,
+      "Checksum": 189025324,
+      "FirstFrame": 5232,
+      "Frames": 48,
+      "SHA256": "aa69b359a56ed70774d232e15f334dfd78e6bbb0956f3b384f41a4a271d81321"
+    },
+    {
+      "File": "T7E3_0110.rvf",
+      "Bytes": 444240,
+      "Checksum": 3543459535,
+      "FirstFrame": 5280,
+      "Frames": 48,
+      "SHA256": "d5499575150c1f4e61292abed19eff139b15d0719d6b50fea27874015ae10f4c"
+    },
+    {
+      "File": "T7E3_0111.rvf",
+      "Bytes": 435531,
+      "Checksum": 1667393993,
+      "FirstFrame": 5328,
+      "Frames": 48,
+      "SHA256": "634e4d371b6d163877cf435b718358d731a1367ccfe8d3e03608b1b3b794123c"
+    },
+    {
+      "File": "T7E3_0112.rvf",
+      "Bytes": 492563,
+      "Checksum": 296414960,
+      "FirstFrame": 5376,
+      "Frames": 48,
+      "SHA256": "10aeb2df1be6bc062272bbd898c2fa9b6a99754ae852e034e43d030c7d47b10a"
+    },
+    {
+      "File": "T7E3_0113.rvf",
+      "Bytes": 533633,
+      "Checksum": 861970757,
+      "FirstFrame": 5424,
+      "Frames": 48,
+      "SHA256": "32dca878755fd0da709dad12e4015dbd8d192514cab0d4795e3c02323a880814"
+    },
+    {
+      "File": "T7E3_0114.rvf",
+      "Bytes": 507101,
+      "Checksum": 4248060665,
+      "FirstFrame": 5472,
+      "Frames": 48,
+      "SHA256": "345aff082c9790cb6655b68000eda43590baafbf5565366c29d0a7e7e29c4229"
+    },
+    {
+      "File": "T7E3_0115.rvf",
+      "Bytes": 708409,
+      "Checksum": 1923430345,
+      "FirstFrame": 5520,
+      "Frames": 48,
+      "SHA256": "8f0e13942f93fc7be4fc78760a8708558a3286c13406d22f7b0be645fad67f3e"
+    },
+    {
+      "File": "T7E3_0116.rvf",
+      "Bytes": 885761,
+      "Checksum": 2064808199,
+      "FirstFrame": 5568,
+      "Frames": 48,
+      "SHA256": "19e9720ab887819db3089d0d942879dbbf27805a0cb378f8c2c31816c62447d7"
+    },
+    {
+      "File": "T7E3_0117.rvf",
+      "Bytes": 733546,
+      "Checksum": 2669632488,
+      "FirstFrame": 5616,
+      "Frames": 48,
+      "SHA256": "0c0ebb16c31c94a82ad165cf735e5eeeb2c1ccf96a8cabc427cd37fe93ee3321"
+    },
+    {
+      "File": "T7E3_0118.rvf",
+      "Bytes": 716877,
+      "Checksum": 3879346131,
+      "FirstFrame": 5664,
+      "Frames": 48,
+      "SHA256": "45c44b37ca4f7941643ef9ed0e3df9feef622cb0e4c3500987f309977bfe7480"
+    },
+    {
+      "File": "T7E3_0119.rvf",
+      "Bytes": 770674,
+      "Checksum": 1664562685,
+      "FirstFrame": 5712,
+      "Frames": 48,
+      "SHA256": "34e9bfb5f9a8721142fe7f94a501af400371517baa1212886d63e6af123a436e"
+    },
+    {
+      "File": "T7E3_0120.rvf",
+      "Bytes": 881507,
+      "Checksum": 4008913916,
+      "FirstFrame": 5760,
+      "Frames": 48,
+      "SHA256": "5d470ffbd47e81b8a96052d20bbc5a1b45534f370f95eef9cd24f91901604b24"
+    },
+    {
+      "File": "T7E3_0121.rvf",
+      "Bytes": 658983,
+      "Checksum": 995508201,
+      "FirstFrame": 5808,
+      "Frames": 48,
+      "SHA256": "f8adc358f51455ccda355c9ab0020fb271be12f72d301e8d1d7e578be942dbc3"
+    },
+    {
+      "File": "T7E3_0122.rvf",
+      "Bytes": 419984,
+      "Checksum": 2541888820,
+      "FirstFrame": 5856,
+      "Frames": 48,
+      "SHA256": "8a83f53c0799170c94e15822e6b5cd9d767fa94fefee9981d1d18b6eb68e6b6b"
+    },
+    {
+      "File": "T7E3_0123.rvf",
+      "Bytes": 465257,
+      "Checksum": 849269168,
+      "FirstFrame": 5904,
+      "Frames": 48,
+      "SHA256": "4a6189b6b89f0aa8caa1c11f27da71540847a1a9c01702e95c9ef775bb4258e4"
+    },
+    {
+      "File": "T7E3_0124.rvf",
+      "Bytes": 616313,
+      "Checksum": 1147511458,
+      "FirstFrame": 5952,
+      "Frames": 48,
+      "SHA256": "6d506b73991444306549f5b6dd57833f31c7343b0763ac95fb0d8ec54a7b75cb"
+    },
+    {
+      "File": "T7E3_0125.rvf",
+      "Bytes": 592497,
+      "Checksum": 1351559447,
+      "FirstFrame": 6000,
+      "Frames": 48,
+      "SHA256": "9dce8a57b1c9e2672b186ff1479a255e949cd8f2b62e02d9c0916662e69f937a"
+    },
+    {
+      "File": "T7E3_0126.rvf",
+      "Bytes": 522808,
+      "Checksum": 3324636918,
+      "FirstFrame": 6048,
+      "Frames": 48,
+      "SHA256": "054f64fae7502a612f5c03e2f11ac80ce7218bf13e4f1625d74ec1fe9de936d0"
+    },
+    {
+      "File": "T7E3_0127.rvf",
+      "Bytes": 478498,
+      "Checksum": 2116697875,
+      "FirstFrame": 6096,
+      "Frames": 48,
+      "SHA256": "dee30e7316ad16bd185e08f58515ae3530d524f950c095a94b7038aee4410416"
+    },
+    {
+      "File": "T7E3_0128.rvf",
+      "Bytes": 507680,
+      "Checksum": 3072792957,
+      "FirstFrame": 6144,
+      "Frames": 48,
+      "SHA256": "d98f368b6c058cd482e4dad9a64f40154a898e6a33cf7125eb2b1e403a51f991"
+    },
+    {
+      "File": "T7E3_0129.rvf",
+      "Bytes": 458124,
+      "Checksum": 3288506579,
+      "FirstFrame": 6192,
+      "Frames": 48,
+      "SHA256": "1c2fdaabcefd28461ca1337bbec14a84a5f841cc78685bf81a22e8005f9d0c46"
+    },
+    {
+      "File": "T7E3_0130.rvf",
+      "Bytes": 720076,
+      "Checksum": 2531788789,
+      "FirstFrame": 6240,
+      "Frames": 48,
+      "SHA256": "921432f95c9c4fbec8621b5e085e8cc16452755f7922b6719c3ccfa113b22dc5"
+    },
+    {
+      "File": "T7E3_0131.rvf",
+      "Bytes": 676375,
+      "Checksum": 3984023247,
+      "FirstFrame": 6288,
+      "Frames": 48,
+      "SHA256": "1ea389044d0e94e7a089076c5bf5205a055ccbdefcee117546aefa9d25bc2216"
+    },
+    {
+      "File": "T7E3_0132.rvf",
+      "Bytes": 1085935,
+      "Checksum": 3321889986,
+      "FirstFrame": 6336,
+      "Frames": 48,
+      "SHA256": "a28d24c3ff7cdd31aaeed3f97f2b85f17422bcccb3b95f691d0342309b559c96"
+    },
+    {
+      "File": "T7E3_0133.rvf",
+      "Bytes": 847100,
+      "Checksum": 3652171056,
+      "FirstFrame": 6384,
+      "Frames": 48,
+      "SHA256": "7b9ab6704dbbd26e59e171f84da8934f3cff7edbb14b794285b315430144f094"
+    },
+    {
+      "File": "T7E3_0134.rvf",
+      "Bytes": 882729,
+      "Checksum": 2367367128,
+      "FirstFrame": 6432,
+      "Frames": 48,
+      "SHA256": "5d27a354b2ab39efacf0e48ece27c8da0cfdfdbee6859d07ec15143c4c4daf27"
+    },
+    {
+      "File": "T7E3_0135.rvf",
+      "Bytes": 1089530,
+      "Checksum": 3152392585,
+      "FirstFrame": 6480,
+      "Frames": 48,
+      "SHA256": "a04faf8bf5b619b52f2937aed5d737bae00a87265f201bb8d9aff0ccdac10fc1"
+    },
+    {
+      "File": "T7E3_0136.rvf",
+      "Bytes": 639860,
+      "Checksum": 3935607834,
+      "FirstFrame": 6528,
+      "Frames": 48,
+      "SHA256": "34619818af03448b9a74254a5efb191c9fc5ea2a052b433db57223f5c43067ea"
+    },
+    {
+      "File": "T7E3_0137.rvf",
+      "Bytes": 794759,
+      "Checksum": 3580746842,
+      "FirstFrame": 6576,
+      "Frames": 48,
+      "SHA256": "02f51b738d2daf63fd495ecfd89182d70c73ac226a7d02bc2b2c439feff3b7c5"
+    },
+    {
+      "File": "T7E3_0138.rvf",
+      "Bytes": 621629,
+      "Checksum": 3704026957,
+      "FirstFrame": 6624,
+      "Frames": 48,
+      "SHA256": "aed60354d9ba0b3b7d564471e3f94321358deacb4dbcc3e6a61b46cdba096577"
+    },
+    {
+      "File": "T7E3_0139.rvf",
+      "Bytes": 461370,
+      "Checksum": 1031660284,
+      "FirstFrame": 6672,
+      "Frames": 48,
+      "SHA256": "083447cca6652773dc9b26531a9da927175ceea18e200056809671bc96ed1cb4"
+    },
+    {
+      "File": "T7E3_0140.rvf",
+      "Bytes": 884440,
+      "Checksum": 495263409,
+      "FirstFrame": 6720,
+      "Frames": 48,
+      "SHA256": "e59fccf368adda8fd87c8668da7e47f5e5822ba177714f75d71bb9d6e719e73a"
+    },
+    {
+      "File": "T7E3_0141.rvf",
+      "Bytes": 746491,
+      "Checksum": 234420056,
+      "FirstFrame": 6768,
+      "Frames": 48,
+      "SHA256": "210ee3ada33062d7b7a8ddab154f8fb4836d85bb138e69683937e3d5d8905908"
+    },
+    {
+      "File": "T7E3_0142.rvf",
+      "Bytes": 520052,
+      "Checksum": 4019818997,
+      "FirstFrame": 6816,
+      "Frames": 48,
+      "SHA256": "2d7d8e38131dedbd171b1e30c4cea7b43c786fa70145d73c78fc85fea7756ee4"
+    },
+    {
+      "File": "T7E3_0143.rvf",
+      "Bytes": 513265,
+      "Checksum": 3541227514,
+      "FirstFrame": 6864,
+      "Frames": 48,
+      "SHA256": "e8c468332c05f3adc3e7c2c3b98f0ef49c3ad814b78bd606af0932a5951a5e63"
+    },
+    {
+      "File": "T7E3_0144.rvf",
+      "Bytes": 505806,
+      "Checksum": 3034213007,
+      "FirstFrame": 6912,
+      "Frames": 48,
+      "SHA256": "47e89358c51e8318c44ed8fed4b6f7c7808987d0f26a69f6905a144ff9f7affe"
+    },
+    {
+      "File": "T7E3_0145.rvf",
+      "Bytes": 942859,
+      "Checksum": 3830290857,
+      "FirstFrame": 6960,
+      "Frames": 48,
+      "SHA256": "3871971496069d755c5ee3eb20afd90a01c9523ff5a3516824c940448df40637"
+    },
+    {
+      "File": "T7E3_0146.rvf",
+      "Bytes": 1241772,
+      "Checksum": 1573308743,
+      "FirstFrame": 7008,
+      "Frames": 48,
+      "SHA256": "a1cff1f79ad0e4666c3ba2b29780a08b16dd73be56affbc18a327f5fdb49b7b1"
+    },
+    {
+      "File": "T7E3_0147.rvf",
+      "Bytes": 1133820,
+      "Checksum": 853669769,
+      "FirstFrame": 7056,
+      "Frames": 48,
+      "SHA256": "d50815024ed1dd27fe7195d99edf7b2c2de1250d13fa54372d1e8069973ac730"
+    },
+    {
+      "File": "T7E3_0148.rvf",
+      "Bytes": 810377,
+      "Checksum": 1563642499,
+      "FirstFrame": 7104,
+      "Frames": 48,
+      "SHA256": "8d58d8fb72c3c8e22938a23de89f1d78a8e3cecbb568cd07d0667611a1210cf0"
+    },
+    {
+      "File": "T7E3_0149.rvf",
+      "Bytes": 1496226,
+      "Checksum": 959893946,
+      "FirstFrame": 7152,
+      "Frames": 48,
+      "SHA256": "b1fc83434e9421d1410437bcac2c9fc1dabbdfd48827a3f5a6f71d5a69b6fd3d"
+    },
+    {
+      "File": "T7E3_0150.rvf",
+      "Bytes": 1925382,
+      "Checksum": 3862383934,
+      "FirstFrame": 7200,
+      "Frames": 48,
+      "SHA256": "480a1889f146d1f376f363ebcb7d2a44ae49cb78ac4d12492ac2bac5da7dcad7"
+    },
+    {
+      "File": "T7E3_0151.rvf",
+      "Bytes": 908701,
+      "Checksum": 1371939747,
+      "FirstFrame": 7248,
+      "Frames": 48,
+      "SHA256": "6cadb12f020c3e681807bfc174726d61140fb04bc385933510472b67872f6a1e"
+    },
+    {
+      "File": "T7E3_0152.rvf",
+      "Bytes": 512813,
+      "Checksum": 427177791,
+      "FirstFrame": 7296,
+      "Frames": 48,
+      "SHA256": "2ba9eb84ef44834f6f380f9bb26af0b6a3b8ca5dd7e2f4d99424a6be5cbf25ee"
+    },
+    {
+      "File": "T7E3_0153.rvf",
+      "Bytes": 761494,
+      "Checksum": 752987659,
+      "FirstFrame": 7344,
+      "Frames": 48,
+      "SHA256": "88a2b8ed1860ada3e007678a71a213d70bd0e34346f6c2d9ca014fb6145e3ad5"
+    },
+    {
+      "File": "T7E3_0154.rvf",
+      "Bytes": 786822,
+      "Checksum": 1890543203,
+      "FirstFrame": 7392,
+      "Frames": 48,
+      "SHA256": "d134714d3e78633ffe2f9398ef6fbb84dac85e3d49ee7f09f84727e615409049"
+    },
+    {
+      "File": "T7E3_0155.rvf",
+      "Bytes": 861917,
+      "Checksum": 1448580213,
+      "FirstFrame": 7440,
+      "Frames": 48,
+      "SHA256": "5c88bdde37d0b9b8a6ee62cff4594a91067859a28f692ce2e97e3cb9adfa1c7d"
+    },
+    {
+      "File": "T7E3_0156.rvf",
+      "Bytes": 938822,
+      "Checksum": 1328793370,
+      "FirstFrame": 7488,
+      "Frames": 48,
+      "SHA256": "57805180478322e7b0e143c8a17512abebf028f445dc61986371ea4a2a9d70b7"
+    },
+    {
+      "File": "T7E3_0157.rvf",
+      "Bytes": 765947,
+      "Checksum": 2428263368,
+      "FirstFrame": 7536,
+      "Frames": 48,
+      "SHA256": "589a24ed99969aba15bcac16afe6e8a7ea654882654d98e5c70866f7e5830de3"
+    },
+    {
+      "File": "T7E3_0158.rvf",
+      "Bytes": 698430,
+      "Checksum": 926183012,
+      "FirstFrame": 7584,
+      "Frames": 48,
+      "SHA256": "61adb74bfe7e1035d50b7b70addca7fc88ce0b5914f4b556a9a64f6a79b25516"
+    },
+    {
+      "File": "T7E3_0159.rvf",
+      "Bytes": 716548,
+      "Checksum": 2512492218,
+      "FirstFrame": 7632,
+      "Frames": 48,
+      "SHA256": "db0f4884f6d1d25cb67dfd6db76b422170dcf928192041aeaca7cfb03b2d18f2"
+    },
+    {
+      "File": "T7E3_0160.rvf",
+      "Bytes": 933053,
+      "Checksum": 1042145703,
+      "FirstFrame": 7680,
+      "Frames": 48,
+      "SHA256": "b884f51606a2774b88ac330685c3d4357d1e142d371f62c5a2e75ef781292d2b"
+    },
+    {
+      "File": "T7E3_0161.rvf",
+      "Bytes": 826533,
+      "Checksum": 330582886,
+      "FirstFrame": 7728,
+      "Frames": 48,
+      "SHA256": "9f411cabe679663a8fc937f4033cdb487003cb8e1a87b38ee645f2861408f963"
+    },
+    {
+      "File": "T7E3_0162.rvf",
+      "Bytes": 762789,
+      "Checksum": 3856726633,
+      "FirstFrame": 7776,
+      "Frames": 48,
+      "SHA256": "53375dab0a59d3a243bb40253f9f19472f4379920a392481eac969f8e4a09ba8"
+    },
+    {
+      "File": "T7E3_0163.rvf",
+      "Bytes": 740380,
+      "Checksum": 995965363,
+      "FirstFrame": 7824,
+      "Frames": 48,
+      "SHA256": "e33fe7d39d3bea7d38e9ed3c5212c6a91c6dd47eec5dbcf7a5454a1372fd6f63"
+    },
+    {
+      "File": "T7E3_0164.rvf",
+      "Bytes": 899863,
+      "Checksum": 2152943757,
+      "FirstFrame": 7872,
+      "Frames": 48,
+      "SHA256": "3642981b80d5a37dbefaf7fedc9131f65fef46b42e2ce25fa1c2ca142a99e799"
+    },
+    {
+      "File": "T7E3_0165.rvf",
+      "Bytes": 954277,
+      "Checksum": 1399863813,
+      "FirstFrame": 7920,
+      "Frames": 48,
+      "SHA256": "59585a53794f2c3d47a956e2ac6b29941f8da241cb72786254c8d908df8dd477"
+    },
+    {
+      "File": "T7E3_0166.rvf",
+      "Bytes": 858502,
+      "Checksum": 3993381426,
+      "FirstFrame": 7968,
+      "Frames": 48,
+      "SHA256": "b37afe526413977f848bd18eac2934e287734f181713ea8e22b76d8dec807456"
+    },
+    {
+      "File": "T7E3_0167.rvf",
+      "Bytes": 614451,
+      "Checksum": 2996519188,
+      "FirstFrame": 8016,
+      "Frames": 48,
+      "SHA256": "54ae8b0de6972a8cc2301fed46f712c90a65877d5c74ea96f204e007447066cb"
+    },
+    {
+      "File": "T7E3_0168.rvf",
+      "Bytes": 1869040,
+      "Checksum": 556163752,
+      "FirstFrame": 8064,
+      "Frames": 48,
+      "SHA256": "31369191c3de5d1df8d2e0643c6111da3fa2f9cd1bef3404cd77a0bab46f5d9b"
+    },
+    {
+      "File": "T7E3_0169.rvf",
+      "Bytes": 1609210,
+      "Checksum": 1351466295,
+      "FirstFrame": 8112,
+      "Frames": 48,
+      "SHA256": "609c2cb4565a3ee4daf681e8d2cab41c86102dd9ccae7995b2b8f62b97919fc6"
+    },
+    {
+      "File": "T7E3_0170.rvf",
+      "Bytes": 1229554,
+      "Checksum": 2587083602,
+      "FirstFrame": 8160,
+      "Frames": 48,
+      "SHA256": "c573e12689ab39bcf3db6943bff2f1b41495ce61f00a260b8f64fec666304b43"
+    },
+    {
+      "File": "T7E3_0171.rvf",
+      "Bytes": 1302796,
+      "Checksum": 4062137900,
+      "FirstFrame": 8208,
+      "Frames": 48,
+      "SHA256": "d15d567cd2fbca8879e27604a455aa38cfe4cf4b2b3fa0627b8ba0131687ee18"
+    },
+    {
+      "File": "T7E3_0172.rvf",
+      "Bytes": 1148491,
+      "Checksum": 2485347292,
+      "FirstFrame": 8256,
+      "Frames": 48,
+      "SHA256": "365a23ad3bed7de1d3cace284dfb77be9ed9e390768848376cbe5075abc3ccc4"
+    },
+    {
+      "File": "T7E3_0173.rvf",
+      "Bytes": 938912,
+      "Checksum": 1207881386,
+      "FirstFrame": 8304,
+      "Frames": 48,
+      "SHA256": "f121c424baab649181376a71083c72b2882f81e0d4cdaa3e135cd2f5c19acf76"
+    },
+    {
+      "File": "T7E3_0174.rvf",
+      "Bytes": 1128968,
+      "Checksum": 2105477887,
+      "FirstFrame": 8352,
+      "Frames": 48,
+      "SHA256": "0a9567d804fac4d6c76fe96f4e2796587f8fbede684596a35c3775ef2ef17b24"
+    },
+    {
+      "File": "T7E3_0175.rvf",
+      "Bytes": 1248454,
+      "Checksum": 2053944872,
+      "FirstFrame": 8400,
+      "Frames": 48,
+      "SHA256": "486cf39e801ccc21da0b167ea779def4afe50e943c4c300f96d298cfb583ffde"
+    },
+    {
+      "File": "T7E3_0176.rvf",
+      "Bytes": 1081275,
+      "Checksum": 2757778516,
+      "FirstFrame": 8448,
+      "Frames": 48,
+      "SHA256": "392d716c08c5ec014e5306c9889be8e4ef7fc58f29fd8d7bb5d8653800f78c13"
+    },
+    {
+      "File": "T7E3_0177.rvf",
+      "Bytes": 660495,
+      "Checksum": 1739643232,
+      "FirstFrame": 8496,
+      "Frames": 48,
+      "SHA256": "2af932d95eef823e20a245f990578b0a65f878c770668a6d8c154ee29d50a815"
+    },
+    {
+      "File": "T7E3_0178.rvf",
+      "Bytes": 640387,
+      "Checksum": 2919547989,
+      "FirstFrame": 8544,
+      "Frames": 48,
+      "SHA256": "04bd9c85ef2e8afc36579a07b0d689ab2316a48ecff9a11589dead7f4d90ef5c"
+    },
+    {
+      "File": "T7E3_0179.rvf",
+      "Bytes": 631279,
+      "Checksum": 837942331,
+      "FirstFrame": 8592,
+      "Frames": 48,
+      "SHA256": "0539bdfb847f2db9754b33e9838e339d6cf3b8907ad47200684bc072e5b55920"
+    },
+    {
+      "File": "T7E3_0180.rvf",
+      "Bytes": 599182,
+      "Checksum": 3211986825,
+      "FirstFrame": 8640,
+      "Frames": 48,
+      "SHA256": "d2f4946de25bd4e8dc77159afdf05fd2994a18c73c360ca845e14e169e0ddda9"
+    },
+    {
+      "File": "T7E3_0181.rvf",
+      "Bytes": 552877,
+      "Checksum": 2897195802,
+      "FirstFrame": 8688,
+      "Frames": 48,
+      "SHA256": "a96983e0c2310d169a025aca979d0ea8bbfe7a0718fd0fb0ff8ce8ece2a22ecd"
+    },
+    {
+      "File": "T7E3_0182.rvf",
+      "Bytes": 488251,
+      "Checksum": 243379562,
+      "FirstFrame": 8736,
+      "Frames": 48,
+      "SHA256": "97b2959f0c6443691a8bc766127e0f366a9d7bab0ee57192b62d94a5e6b05e29"
+    },
+    {
+      "File": "T7E3_0183.rvf",
+      "Bytes": 530646,
+      "Checksum": 4188046061,
+      "FirstFrame": 8784,
+      "Frames": 48,
+      "SHA256": "5894345cc50263560f1835229d39598f95d4baf85512fcbb5002f0d998301036"
+    },
+    {
+      "File": "T7E3_0184.rvf",
+      "Bytes": 679633,
+      "Checksum": 27305099,
+      "FirstFrame": 8832,
+      "Frames": 48,
+      "SHA256": "40fb3a62dc18b0a788ccf03b9e553ff35553c6f21774a1c0df3b41e74ee61157"
+    },
+    {
+      "File": "T7E3_0185.rvf",
+      "Bytes": 1021045,
+      "Checksum": 3211824687,
+      "FirstFrame": 8880,
+      "Frames": 48,
+      "SHA256": "410538e2c2c2d5e3b60b00121a20018b9b4db41860aea8dcc297d5434eac85aa"
+    },
+    {
+      "File": "T7E3_0186.rvf",
+      "Bytes": 584515,
+      "Checksum": 1741136886,
+      "FirstFrame": 8928,
+      "Frames": 48,
+      "SHA256": "961f727dde86f10bf73267d8de2b3f186fd803921fc1a3fcd8226da16ba60057"
+    },
+    {
+      "File": "T7E3_0187.rvf",
+      "Bytes": 615499,
+      "Checksum": 3778789698,
+      "FirstFrame": 8976,
+      "Frames": 48,
+      "SHA256": "09965ac3ae738cfcb0aaf368443b67a18481aece82ebbc56e514a26ff7e10349"
+    },
+    {
+      "File": "T7E3_0188.rvf",
+      "Bytes": 632615,
+      "Checksum": 2946475021,
+      "FirstFrame": 9024,
+      "Frames": 48,
+      "SHA256": "70339a332064f01c5033ee90773b9917b90818fc233d6bf4aa06dd80bd2a5851"
+    },
+    {
+      "File": "T7E3_0189.rvf",
+      "Bytes": 1144774,
+      "Checksum": 1112207134,
+      "FirstFrame": 9072,
+      "Frames": 48,
+      "SHA256": "33ea48e32380b76e17e9423c50ddc7cf0abc2e3b53db9a112d42e924624487b6"
+    },
+    {
+      "File": "T7E3_0190.rvf",
+      "Bytes": 867514,
+      "Checksum": 3105339990,
+      "FirstFrame": 9120,
+      "Frames": 48,
+      "SHA256": "b8b24865d4841118ebc8bab728e2417e5e1ddeeee29c5df26a940eb2cd6ee8dd"
+    },
+    {
+      "File": "T7E3_0191.rvf",
+      "Bytes": 693234,
+      "Checksum": 3515554062,
+      "FirstFrame": 9168,
+      "Frames": 48,
+      "SHA256": "d423dbcd0c37f1d893e4bb39f38c0c5473d9c1b27bdac8481fa0fefdd58ce96b"
+    },
+    {
+      "File": "T7E3_0192.rvf",
+      "Bytes": 867212,
+      "Checksum": 2596175878,
+      "FirstFrame": 9216,
+      "Frames": 48,
+      "SHA256": "0837880c6b3c87dcca766d31e5733b1db91ec4c84af2fe7a3bda200843fed52a"
+    },
+    {
+      "File": "T7E3_0193.rvf",
+      "Bytes": 615925,
+      "Checksum": 79712512,
+      "FirstFrame": 9264,
+      "Frames": 48,
+      "SHA256": "87067c3169fb1f3530093e1d5ef4310324441b5a009ab3d1c533b5fc8fbbf221"
+    },
+    {
+      "File": "T7E3_0194.rvf",
+      "Bytes": 614790,
+      "Checksum": 1988280657,
+      "FirstFrame": 9312,
+      "Frames": 48,
+      "SHA256": "dc247b1e2c7323ac8668396aaecb7f834801f9d73953103f9e97d861e0918ed7"
+    },
+    {
+      "File": "T7E3_0195.rvf",
+      "Bytes": 1029844,
+      "Checksum": 2869604496,
+      "FirstFrame": 9360,
+      "Frames": 48,
+      "SHA256": "1740212cb18781fdfbc298a8a259590c65664c737216b7bfb75b3d1521d7f569"
+    },
+    {
+      "File": "T7E3_0196.rvf",
+      "Bytes": 877539,
+      "Checksum": 2193507850,
+      "FirstFrame": 9408,
+      "Frames": 48,
+      "SHA256": "cb593920e296c3a08b8fb6fd6428b9acc5bc1c0ffc18915edb9a44b202076ae6"
+    },
+    {
+      "File": "T7E3_0197.rvf",
+      "Bytes": 802856,
+      "Checksum": 682950795,
+      "FirstFrame": 9456,
+      "Frames": 48,
+      "SHA256": "4b9e8af215989572b0b6b313c28b51ccb1d883dd7e4109c27d89aea1ac91f623"
+    },
+    {
+      "File": "T7E3_0198.rvf",
+      "Bytes": 796886,
+      "Checksum": 3993395141,
+      "FirstFrame": 9504,
+      "Frames": 48,
+      "SHA256": "be0e8558edadead04a66d68ddeb1ff45eca834cd87cf8da8c9bd2121520a8279"
+    },
+    {
+      "File": "T7E3_0199.rvf",
+      "Bytes": 706160,
+      "Checksum": 3453778562,
+      "FirstFrame": 9552,
+      "Frames": 48,
+      "SHA256": "96329399a087d43942bec9f676b8d06a1a0acbc5c5c009e3e0ec08b08050b1bf"
+    },
+    {
+      "File": "T7E3_0200.rvf",
+      "Bytes": 841542,
+      "Checksum": 925104589,
+      "FirstFrame": 9600,
+      "Frames": 48,
+      "SHA256": "0447eced09aee4177bd878461f74d77189393a7e3e870e27a642f037ef74bc97"
+    },
+    {
+      "File": "T7E3_0201.rvf",
+      "Bytes": 1123607,
+      "Checksum": 2841417655,
+      "FirstFrame": 9648,
+      "Frames": 48,
+      "SHA256": "53f342173a359e70f77d05d33fcdb877e40a695fffd50adf60bd86df5d3e8901"
+    },
+    {
+      "File": "T7E3_0202.rvf",
+      "Bytes": 1089078,
+      "Checksum": 3828547917,
+      "FirstFrame": 9696,
+      "Frames": 48,
+      "SHA256": "ac31a4fedfaf35ddbf48a781c844bb00ea1807eac9ab973b81e1fcc881add8ff"
+    },
+    {
+      "File": "T7E3_0203.rvf",
+      "Bytes": 792033,
+      "Checksum": 1830025910,
+      "FirstFrame": 9744,
+      "Frames": 48,
+      "SHA256": "1450f3097a702ff7f9a9b6a657931204a06dbdad77740b9269689599c0d3e644"
+    },
+    {
+      "File": "T7E3_0204.rvf",
+      "Bytes": 859479,
+      "Checksum": 2417071373,
+      "FirstFrame": 9792,
+      "Frames": 48,
+      "SHA256": "6d933e720559188bebcfaeab2a555eb8f74e477190256b88c4063108b1aa79c9"
+    },
+    {
+      "File": "T7E3_0205.rvf",
+      "Bytes": 854430,
+      "Checksum": 1764518036,
+      "FirstFrame": 9840,
+      "Frames": 48,
+      "SHA256": "a1f4550e66ba57055de520965499df903b26f8c2211aaf5881a603960c63c282"
+    },
+    {
+      "File": "T7E3_0206.rvf",
+      "Bytes": 901474,
+      "Checksum": 546297549,
+      "FirstFrame": 9888,
+      "Frames": 48,
+      "SHA256": "3f7008cd9c648b7eeff7b1bdff2d26869f5fc89c71970aa3e390ef357ef234cd"
+    },
+    {
+      "File": "T7E3_0207.rvf",
+      "Bytes": 570805,
+      "Checksum": 1864906761,
+      "FirstFrame": 9936,
+      "Frames": 48,
+      "SHA256": "dcde85cb9da1eab82152e49dafa7ec30da95fdb720ef5e8343ba9933ec81aec7"
+    },
+    {
+      "File": "T7E3_0208.rvf",
+      "Bytes": 574691,
+      "Checksum": 2409688950,
+      "FirstFrame": 9984,
+      "Frames": 48,
+      "SHA256": "97d372bd5d9e93e3d9e12e08e9da1dbbd0510790685483e9dc18f9bc0d694b55"
+    },
+    {
+      "File": "T7E3_0209.rvf",
+      "Bytes": 611634,
+      "Checksum": 599394939,
+      "FirstFrame": 10032,
+      "Frames": 48,
+      "SHA256": "e125177c88ed66aac0c3f31b49ab6df717036d02de93e48b883df3747a3be543"
+    },
+    {
+      "File": "T7E3_0210.rvf",
+      "Bytes": 829934,
+      "Checksum": 4058442821,
+      "FirstFrame": 10080,
+      "Frames": 48,
+      "SHA256": "a3903cc326508e843f044d66cfa1dc6b920a995faa467c6862a63c5a2b38a6b2"
+    },
+    {
+      "File": "T7E3_0211.rvf",
+      "Bytes": 728332,
+      "Checksum": 1523441720,
+      "FirstFrame": 10128,
+      "Frames": 48,
+      "SHA256": "03b71fe20474816d2e4cc62eb446fa25b635a720f15f4abb58d1e02951a4bf63"
+    },
+    {
+      "File": "T7E3_0212.rvf",
+      "Bytes": 986038,
+      "Checksum": 483982512,
+      "FirstFrame": 10176,
+      "Frames": 48,
+      "SHA256": "1ad8a4c455837d7b41c641c2b278eebfb20b165054963f77ca4a13fa3924353f"
+    },
+    {
+      "File": "T7E3_0213.rvf",
+      "Bytes": 583188,
+      "Checksum": 2324617803,
+      "FirstFrame": 10224,
+      "Frames": 48,
+      "SHA256": "c4b73a021bebc98f3ee73c11d1a014a336ef5a72aaea02e7d8bb16e8e1b469c1"
+    },
+    {
+      "File": "T7E3_0214.rvf",
+      "Bytes": 920007,
+      "Checksum": 940995200,
+      "FirstFrame": 10272,
+      "Frames": 48,
+      "SHA256": "2c9c1830c908eeee747b11da176ce259021745c9689953014d92abe97c233eca"
+    },
+    {
+      "File": "T7E3_0215.rvf",
+      "Bytes": 803741,
+      "Checksum": 3564859829,
+      "FirstFrame": 10320,
+      "Frames": 48,
+      "SHA256": "98e88a5beeeae7a2f380a644af82aec1006a38d7b868bd242625ed87afdbc1fd"
+    },
+    {
+      "File": "T7E3_0216.rvf",
+      "Bytes": 864836,
+      "Checksum": 493062419,
+      "FirstFrame": 10368,
+      "Frames": 48,
+      "SHA256": "5b71b61f1baeb09db07e2bc38020d1836d8fbe67314ae45ef77a90a888cfcc93"
+    },
+    {
+      "File": "T7E3_0217.rvf",
+      "Bytes": 754372,
+      "Checksum": 3846100784,
+      "FirstFrame": 10416,
+      "Frames": 48,
+      "SHA256": "b1801151708e821e5db6006fdb638666f8fe1f171a29ee61f557ea2c57c57b8a"
+    },
+    {
+      "File": "T7E3_0218.rvf",
+      "Bytes": 1064502,
+      "Checksum": 1021566028,
+      "FirstFrame": 10464,
+      "Frames": 48,
+      "SHA256": "fc6ebd74d3e09283ca8109e30731b0b46209136148e327540d7249d176a58f84"
+    },
+    {
+      "File": "T7E3_0219.rvf",
+      "Bytes": 1268753,
+      "Checksum": 1266281111,
+      "FirstFrame": 10512,
+      "Frames": 48,
+      "SHA256": "66cd34ae2885814b65de1a01351121c40b26361574cd53f336685a4947a06014"
+    },
+    {
+      "File": "T7E3_0220.rvf",
+      "Bytes": 805868,
+      "Checksum": 1510343352,
+      "FirstFrame": 10560,
+      "Frames": 48,
+      "SHA256": "2044670effe8a2e75fd54f3509198384325ec6ba8bef64fdd64b6658061b76a2"
+    },
+    {
+      "File": "T7E3_0221.rvf",
+      "Bytes": 556873,
+      "Checksum": 481654300,
+      "FirstFrame": 10608,
+      "Frames": 48,
+      "SHA256": "bc0025dc8413a00b7396f68d5052eb967e0fa80ff5c4fbd30bdfebdee92c6c12"
+    },
+    {
+      "File": "T7E3_0222.rvf",
+      "Bytes": 911862,
+      "Checksum": 4171852128,
+      "FirstFrame": 10656,
+      "Frames": 48,
+      "SHA256": "e1c0453601199f0cda6be948b70b27c061ab780ca6d60ead8a14ab5b85f76ff1"
+    },
+    {
+      "File": "T7E3_0223.rvf",
+      "Bytes": 735263,
+      "Checksum": 2412401846,
+      "FirstFrame": 10704,
+      "Frames": 48,
+      "SHA256": "206d53715dc6f735b4983ccd57f33599c81925c1c3b4ba8a957b91168894c81f"
+    },
+    {
+      "File": "T7E3_0224.rvf",
+      "Bytes": 726369,
+      "Checksum": 3840780993,
+      "FirstFrame": 10752,
+      "Frames": 48,
+      "SHA256": "f1a07ec92ea8d6133fe2c297b657c2eec868bf9b9db457b37ce0aa8982699b68"
+    },
+    {
+      "File": "T7E3_0225.rvf",
+      "Bytes": 824824,
+      "Checksum": 1901552430,
+      "FirstFrame": 10800,
+      "Frames": 48,
+      "SHA256": "aa3d396a666ed7b57c46ed389341382d31cc8f8915a58898b09c8020acbee7ab"
+    },
+    {
+      "File": "T7E3_0226.rvf",
+      "Bytes": 966168,
+      "Checksum": 3914026340,
+      "FirstFrame": 10848,
+      "Frames": 48,
+      "SHA256": "376098dfabc589883dba9802965ba44b343184212ad5cd78435bb233ef3731e9"
+    },
+    {
+      "File": "T7E3_0227.rvf",
+      "Bytes": 998997,
+      "Checksum": 2960918323,
+      "FirstFrame": 10896,
+      "Frames": 48,
+      "SHA256": "dbde026d56118c63aad862b9e8fc03322562002cdbd25d85011d557415a0c4d0"
+    },
+    {
+      "File": "T7E3_0228.rvf",
+      "Bytes": 1027938,
+      "Checksum": 365957019,
+      "FirstFrame": 10944,
+      "Frames": 48,
+      "SHA256": "c170d3ae5176d0077b7e22f8df2de78cf84fea431f14dfddc8aebd819dd14525"
+    },
+    {
+      "File": "T7E3_0229.rvf",
+      "Bytes": 987470,
+      "Checksum": 4215906740,
+      "FirstFrame": 10992,
+      "Frames": 48,
+      "SHA256": "ad9be1679f58605b9a12cbd84830c1bcee109b73463f401c22452cf5971ab527"
+    },
+    {
+      "File": "T7E3_0230.rvf",
+      "Bytes": 1083143,
+      "Checksum": 2568690459,
+      "FirstFrame": 11040,
+      "Frames": 48,
+      "SHA256": "ad7c652bc10f714b28f4199517515136e507717c9fc51ceffc815602ae06e83c"
+    },
+    {
+      "File": "T7E3_0231.rvf",
+      "Bytes": 934231,
+      "Checksum": 2341006299,
+      "FirstFrame": 11088,
+      "Frames": 48,
+      "SHA256": "70be68e9270b749b0aac39058c3e926ae8cfb9a55351c8d02b9bc2ee6db2a3d6"
+    },
+    {
+      "File": "T7E3_0232.rvf",
+      "Bytes": 844414,
+      "Checksum": 2529995171,
+      "FirstFrame": 11136,
+      "Frames": 48,
+      "SHA256": "7a7db1055dcc11db37e427b60139e9f5147b22279b74835b5ee64a99aaa3984a"
+    },
+    {
+      "File": "T7E3_0233.rvf",
+      "Bytes": 820220,
+      "Checksum": 3790619463,
+      "FirstFrame": 11184,
+      "Frames": 48,
+      "SHA256": "5f6b461ee3d39dd0691024604ff675c44809a869140379be37582da28b536f62"
+    },
+    {
+      "File": "T7E3_0234.rvf",
+      "Bytes": 826896,
+      "Checksum": 2311668652,
+      "FirstFrame": 11232,
+      "Frames": 48,
+      "SHA256": "b24202f10596bb9c973aae75fa4faeeb4f862f0027797341095a572a5b67c364"
+    },
+    {
+      "File": "T7E3_0235.rvf",
+      "Bytes": 763340,
+      "Checksum": 2458418462,
+      "FirstFrame": 11280,
+      "Frames": 48,
+      "SHA256": "7cefcf60a6e8547a8ee99862c3d0cec633446d141bc8f8cc04cb9f4fa2a46598"
+    },
+    {
+      "File": "T7E3_0236.rvf",
+      "Bytes": 902770,
+      "Checksum": 2457574886,
+      "FirstFrame": 11328,
+      "Frames": 48,
+      "SHA256": "37be7fe59f6c1e7609c6b1d84328323b1f3bc7392012308746ffd17194c124b7"
+    },
+    {
+      "File": "T7E3_0237.rvf",
+      "Bytes": 965484,
+      "Checksum": 392824391,
+      "FirstFrame": 11376,
+      "Frames": 48,
+      "SHA256": "709f86ab5edc0a037fdb5def2b678367ff9b05006ed27a4a00005fbe783e6de0"
+    },
+    {
+      "File": "T7E3_0238.rvf",
+      "Bytes": 415440,
+      "Checksum": 426186223,
+      "FirstFrame": 11424,
+      "Frames": 48,
+      "SHA256": "7a129d92047a6915a23efaec9377527ee7129eaea2eeb9e15798dd53eb95e63a"
+    },
+    {
+      "File": "T7E3_0239.rvf",
+      "Bytes": 833258,
+      "Checksum": 2554411889,
+      "FirstFrame": 11472,
+      "Frames": 48,
+      "SHA256": "fd4760f16d1eaf84c0503c57427aca7b855dd0fab280aa014fffd62ee16fdb37"
+    },
+    {
+      "File": "T7E3_0240.rvf",
+      "Bytes": 608716,
+      "Checksum": 1726369863,
+      "FirstFrame": 11520,
+      "Frames": 48,
+      "SHA256": "072cb7635511aab3934b1d0219d8d9766544e4b8eae9e3ec4aff218358987695"
+    },
+    {
+      "File": "T7E3_0241.rvf",
+      "Bytes": 561098,
+      "Checksum": 3016303732,
+      "FirstFrame": 11568,
+      "Frames": 48,
+      "SHA256": "835c01c47f7d32f8db09d0eafcee3717fa1138a33d77f90d2247ddf4a81b85aa"
+    },
+    {
+      "File": "T7E3_0242.rvf",
+      "Bytes": 1369806,
+      "Checksum": 895353055,
+      "FirstFrame": 11616,
+      "Frames": 48,
+      "SHA256": "81da1dd46cca6ca53443fb59e69efd1e4359bc35d8c599f7b95a472b9f759e7b"
+    },
+    {
+      "File": "T7E3_0243.rvf",
+      "Bytes": 1638845,
+      "Checksum": 3891770709,
+      "FirstFrame": 11664,
+      "Frames": 48,
+      "SHA256": "6f5b93c0c344b64bc8daa6ce4008c72fd6469a606a8b24e745aa46dacb0420bc"
+    },
+    {
+      "File": "T7E3_0244.rvf",
+      "Bytes": 1666314,
+      "Checksum": 4180538284,
+      "FirstFrame": 11712,
+      "Frames": 48,
+      "SHA256": "286230d9c0dcea529027559f995880612131c7d57fd7bcd3f652be2a5ec8523e"
+    },
+    {
+      "File": "T7E3_0245.rvf",
+      "Bytes": 1408691,
+      "Checksum": 3977197502,
+      "FirstFrame": 11760,
+      "Frames": 48,
+      "SHA256": "efbfb6e88b1ccba5d32d1001f960c82b7f2786f869c5a41041acb470fa785caf"
+    },
+    {
+      "File": "T7E3_0246.rvf",
+      "Bytes": 1508909,
+      "Checksum": 3219920374,
+      "FirstFrame": 11808,
+      "Frames": 48,
+      "SHA256": "8b1097d4c53c864b0346695d552dc2b4d88c5cfc669f11244a85763a8a4fd74d"
+    },
+    {
+      "File": "T7E3_0247.rvf",
+      "Bytes": 1811709,
+      "Checksum": 2330300747,
+      "FirstFrame": 11856,
+      "Frames": 48,
+      "SHA256": "65c8ec94448aff9126419c1145319a2bbf20baf92cf1b54658c17e510e2264e0"
+    },
+    {
+      "File": "T7E3_0248.rvf",
+      "Bytes": 684637,
+      "Checksum": 2727008340,
+      "FirstFrame": 11904,
+      "Frames": 48,
+      "SHA256": "04e2a0c76d7dd4826ddbec693b0a7a41b274b89e290c94344dd0f65542f9568d"
+    },
+    {
+      "File": "T7E3_0249.rvf",
+      "Bytes": 362670,
+      "Checksum": 2872952888,
+      "FirstFrame": 11952,
+      "Frames": 48,
+      "SHA256": "9426e27c2b1f17e77dae442e92689eee9a1b3fff7ea9b08ddf90645a3dbac685"
+    },
+    {
+      "File": "T7E3_0250.rvf",
+      "Bytes": 347805,
+      "Checksum": 465347261,
+      "FirstFrame": 12000,
+      "Frames": 48,
+      "SHA256": "26c2b4a59cec3cdeee822aac768479e271d0f11e84bce2df73410f923efffe0b"
+    },
+    {
+      "File": "T7E3_0251.rvf",
+      "Bytes": 442435,
+      "Checksum": 3928373415,
+      "FirstFrame": 12048,
+      "Frames": 48,
+      "SHA256": "e343d6800b55c97944cf825665c702c4dca4954df7a8c4e48751cc2f91ca30d2"
+    },
+    {
+      "File": "T7E3_0252.rvf",
+      "Bytes": 388566,
+      "Checksum": 348482102,
+      "FirstFrame": 12096,
+      "Frames": 48,
+      "SHA256": "a79f35ced25ffecb1f6412549cd0ad5d665e0715d05421f5d892259d5cfd1196"
+    },
+    {
+      "File": "T7E3_0253.rvf",
+      "Bytes": 641245,
+      "Checksum": 1407986040,
+      "FirstFrame": 12144,
+      "Frames": 48,
+      "SHA256": "74837b2878fb374953bb8bde37692b4fd0d5fbec8969bb3e2d133ec0aeaada6d"
+    },
+    {
+      "File": "T7E3_0254.rvf",
+      "Bytes": 1409402,
+      "Checksum": 3384418073,
+      "FirstFrame": 12192,
+      "Frames": 48,
+      "SHA256": "c8b16f2c6888718eff6c44ace4abfb2cb19b2713959dffb5cee1de8fc2481156"
+    },
+    {
+      "File": "T7E3_0255.rvf",
+      "Bytes": 784091,
+      "Checksum": 152249221,
+      "FirstFrame": 12240,
+      "Frames": 48,
+      "SHA256": "c7df47c54872838bd28cd06af37b67eaa5d128fd05e2afd111a45ff985d033d8"
+    },
+    {
+      "File": "T7E3_0256.rvf",
+      "Bytes": 557041,
+      "Checksum": 173885547,
+      "FirstFrame": 12288,
+      "Frames": 48,
+      "SHA256": "60ed4abc20b702aa11069afcb6e93e141042d4615304672be56005c8ebc77c49"
+    },
+    {
+      "File": "T7E3_0257.rvf",
+      "Bytes": 544847,
+      "Checksum": 2210310155,
+      "FirstFrame": 12336,
+      "Frames": 48,
+      "SHA256": "2a9de33b06bea7775790c50afda08f67398149a1cf8abadef5f6d030aa6065bf"
+    },
+    {
+      "File": "T7E3_0258.rvf",
+      "Bytes": 616296,
+      "Checksum": 4067776062,
+      "FirstFrame": 12384,
+      "Frames": 48,
+      "SHA256": "c8d590682fbf1483259827e8429367161663d2ae562e7862f8168bdaf3ce8f22"
+    },
+    {
+      "File": "T7E3_0259.rvf",
+      "Bytes": 681903,
+      "Checksum": 3967203580,
+      "FirstFrame": 12432,
+      "Frames": 48,
+      "SHA256": "27b614692cdab74ce57b2a959a344d50618895a5e2698c8a1eb39190385224cf"
+    },
+    {
+      "File": "T7E3_0260.rvf",
+      "Bytes": 756934,
+      "Checksum": 3777203125,
+      "FirstFrame": 12480,
+      "Frames": 48,
+      "SHA256": "ca53d3cc02b47878a2aff9f4accddcb26e56f91fdaed854a0b1709f2344111d5"
+    },
+    {
+      "File": "T7E3_0261.rvf",
+      "Bytes": 998206,
+      "Checksum": 2044199738,
+      "FirstFrame": 12528,
+      "Frames": 48,
+      "SHA256": "beed3f33498d9e2ae5fecfbcc459d1a4ac132f6a261f0e35221edadc3e429e8f"
+    },
+    {
+      "File": "T7E3_0262.rvf",
+      "Bytes": 573362,
+      "Checksum": 2921291259,
+      "FirstFrame": 12576,
+      "Frames": 48,
+      "SHA256": "b3c3d8349b449eb4a59d4b2c2e6f84c0b1d9da8c2adeb0c0ac0d81de56adf9f1"
+    },
+    {
+      "File": "T7E3_0263.rvf",
+      "Bytes": 623845,
+      "Checksum": 1783456437,
+      "FirstFrame": 12624,
+      "Frames": 48,
+      "SHA256": "95d4d7be60b96c0bcfdbf0228fac00e6ca9404740a03c2d8e3c05f0968ab75e3"
+    },
+    {
+      "File": "T7E3_0264.rvf",
+      "Bytes": 601359,
+      "Checksum": 2005802158,
+      "FirstFrame": 12672,
+      "Frames": 48,
+      "SHA256": "3018689b0181f3511a33c5f8b1a9c4143848651bb5c6604d45735402ffd07bf0"
+    },
+    {
+      "File": "T7E3_0265.rvf",
+      "Bytes": 650632,
+      "Checksum": 2841552159,
+      "FirstFrame": 12720,
+      "Frames": 48,
+      "SHA256": "c2137e7b09ffba2dbae45b057efb8a7b4f3fe37cbc868535d7f713d6cc7980c3"
+    },
+    {
+      "File": "T7E3_0266.rvf",
+      "Bytes": 885112,
+      "Checksum": 1782057627,
+      "FirstFrame": 12768,
+      "Frames": 48,
+      "SHA256": "ee638298f9f34f1b00b52a74ed8e8c92be333e93186ba9ceb75f61b40ad668bb"
+    },
+    {
+      "File": "T7E3_0267.rvf",
+      "Bytes": 425884,
+      "Checksum": 3906073161,
+      "FirstFrame": 12816,
+      "Frames": 48,
+      "SHA256": "70d3b1660a8559afe5319310df22cddc53aae590074afdb1dca2b5bc9f5e409c"
+    },
+    {
+      "File": "T7E3_0268.rvf",
+      "Bytes": 745100,
+      "Checksum": 3958485603,
+      "FirstFrame": 12864,
+      "Frames": 48,
+      "SHA256": "71de97cde2608fa160ff31a3ad55e649e2da06d21b66fe0fdd58bcfbf24d22c2"
+    },
+    {
+      "File": "T7E3_0269.rvf",
+      "Bytes": 714879,
+      "Checksum": 3415358307,
+      "FirstFrame": 12912,
+      "Frames": 48,
+      "SHA256": "a693d7e36a18d5d9562985f54ceed6e923591a5d7b751894420808c22642a978"
+    },
+    {
+      "File": "T7E3_0270.rvf",
+      "Bytes": 987589,
+      "Checksum": 1514191469,
+      "FirstFrame": 12960,
+      "Frames": 48,
+      "SHA256": "a3146247789ec19f35e7ddfe4b04bb015cb72433be9889a809e39ff21076263a"
+    },
+    {
+      "File": "T7E3_0271.rvf",
+      "Bytes": 815153,
+      "Checksum": 1693733418,
+      "FirstFrame": 13008,
+      "Frames": 48,
+      "SHA256": "194d8bd4ed1291e7fda3a8e086a576335cecbb49dd18cb90b2a54407cf8f3353"
+    },
+    {
+      "File": "T7E3_0272.rvf",
+      "Bytes": 527797,
+      "Checksum": 850366113,
+      "FirstFrame": 13056,
+      "Frames": 48,
+      "SHA256": "0cfad36117bce3eb322b258a8b855ae850d3dbc98c03dc5337c277788a648b76"
+    },
+    {
+      "File": "T7E3_0273.rvf",
+      "Bytes": 1368538,
+      "Checksum": 3461268322,
+      "FirstFrame": 13104,
+      "Frames": 48,
+      "SHA256": "b31f2045f5328ad6b9d6127c5b74facdbb0030d37719408dfd48392a0fd45e2f"
+    },
+    {
+      "File": "T7E3_0274.rvf",
+      "Bytes": 830618,
+      "Checksum": 1879780442,
+      "FirstFrame": 13152,
+      "Frames": 48,
+      "SHA256": "c475ccc878b429b1360ccd9efe264806fc44eaa139ff370ae44231fad6a23cf1"
+    },
+    {
+      "File": "T7E3_0275.rvf",
+      "Bytes": 906060,
+      "Checksum": 821735965,
+      "FirstFrame": 13200,
+      "Frames": 48,
+      "SHA256": "e767513ce63e9a6ea7bcb44e0a9a748abf85f496dbf6c4520556bf10c7c4cd59"
+    },
+    {
+      "File": "T7E3_0276.rvf",
+      "Bytes": 790987,
+      "Checksum": 162671209,
+      "FirstFrame": 13248,
+      "Frames": 48,
+      "SHA256": "094e540446c4adf3b77eb851404d2a3307637fb2f207df054da176fed46e8ea4"
+    },
+    {
+      "File": "T7E3_0277.rvf",
+      "Bytes": 1282379,
+      "Checksum": 160307537,
+      "FirstFrame": 13296,
+      "Frames": 48,
+      "SHA256": "0960fda5083804ade3858e032c0c082266ccc3535f826d00ca71a5d764b11e98"
+    },
+    {
+      "File": "T7E3_0278.rvf",
+      "Bytes": 1228451,
+      "Checksum": 2540084010,
+      "FirstFrame": 13344,
+      "Frames": 48,
+      "SHA256": "90cf6d5fce09815d4dafee8a91fd04f7f2ae60d3cc63cfed3333cc34710659d2"
+    },
+    {
+      "File": "T7E3_0279.rvf",
+      "Bytes": 661249,
+      "Checksum": 1608746799,
+      "FirstFrame": 13392,
+      "Frames": 48,
+      "SHA256": "84b50a7ab5f653753bbf66d9662c1ffa7547fa568ea24167e2da140522f7f845"
+    },
+    {
+      "File": "T7E3_0280.rvf",
+      "Bytes": 605504,
+      "Checksum": 1687306563,
+      "FirstFrame": 13440,
+      "Frames": 48,
+      "SHA256": "8656a07b741bcc7f9791b01ddb9d6dbe1f678a6da27f42c0549ee7ce386bba37"
+    },
+    {
+      "File": "T7E3_0281.rvf",
+      "Bytes": 956418,
+      "Checksum": 2693115029,
+      "FirstFrame": 13488,
+      "Frames": 48,
+      "SHA256": "32acaf27c397b8e156a5938aced820b4bfe286e17dcd3e77803edf089b77724a"
+    },
+    {
+      "File": "T7E3_0282.rvf",
+      "Bytes": 1033214,
+      "Checksum": 3017815735,
+      "FirstFrame": 13536,
+      "Frames": 48,
+      "SHA256": "9b3002c2c7d0376559a3f4d1d296249919f1963f3a211b90d111bbf811b76be0"
+    },
+    {
+      "File": "T7E3_0283.rvf",
+      "Bytes": 901937,
+      "Checksum": 2186373630,
+      "FirstFrame": 13584,
+      "Frames": 48,
+      "SHA256": "f03154949a8d66047d1e1a61416fc0217cace739089f006dc8ee243ed01bc6b1"
+    },
+    {
+      "File": "T7E3_0284.rvf",
+      "Bytes": 1070498,
+      "Checksum": 1751597921,
+      "FirstFrame": 13632,
+      "Frames": 48,
+      "SHA256": "879198968be42ed79f001336ad4b88fe4d680686896da0e3630399dafa326e2b"
+    },
+    {
+      "File": "T7E3_0285.rvf",
+      "Bytes": 625278,
+      "Checksum": 2699195469,
+      "FirstFrame": 13680,
+      "Frames": 48,
+      "SHA256": "cf5cb3173021354219ec418f9e454bc92d6bef38bd743e28dd1e1dfa9f225293"
+    },
+    {
+      "File": "T7E3_0286.rvf",
+      "Bytes": 576102,
+      "Checksum": 2907479450,
+      "FirstFrame": 13728,
+      "Frames": 48,
+      "SHA256": "261156dd96048ef506bba74239c0b6c0a0da48b006542e927b1d3375ca28eb03"
+    },
+    {
+      "File": "T7E3_0287.rvf",
+      "Bytes": 614764,
+      "Checksum": 2465957865,
+      "FirstFrame": 13776,
+      "Frames": 48,
+      "SHA256": "2e9df5bbbf7ff003e7a2598dfea253ea8265a3e9f3f770d4205c70410f9f1c87"
+    },
+    {
+      "File": "T7E3_0288.rvf",
+      "Bytes": 487773,
+      "Checksum": 2645740268,
+      "FirstFrame": 13824,
+      "Frames": 48,
+      "SHA256": "bd4067b69059888a0f6c9258de3ea097e064547c7c37d8807e8f28f21e407aef"
+    },
+    {
+      "File": "T7E3_0289.rvf",
+      "Bytes": 305700,
+      "Checksum": 3431686453,
+      "FirstFrame": 13872,
+      "Frames": 48,
+      "SHA256": "8d0378df8be7d04419a96d491fa3f1575d995d76c31eafe3e4845ec8d23a1cf0"
+    },
+    {
+      "File": "T7E3_0290.rvf",
+      "Bytes": 650492,
+      "Checksum": 2365860205,
+      "FirstFrame": 13920,
+      "Frames": 48,
+      "SHA256": "9e4b0c285eaa72697a767f38cc42f95f6760d18e62831772805ec52a80933182"
+    },
+    {
+      "File": "T7E3_0291.rvf",
+      "Bytes": 713860,
+      "Checksum": 3456471263,
+      "FirstFrame": 13968,
+      "Frames": 48,
+      "SHA256": "a87b03abfa41363d4835b877420ee20f947fe3f038bd3b4d3b2cc22021692749"
+    },
+    {
+      "File": "T7E3_0292.rvf",
+      "Bytes": 560204,
+      "Checksum": 96043361,
+      "FirstFrame": 14016,
+      "Frames": 48,
+      "SHA256": "8fb2c49907cad88b218313c8c250356cc58d48f56846138f44ea2c28c24f3d64"
+    },
+    {
+      "File": "T7E3_0293.rvf",
+      "Bytes": 726630,
+      "Checksum": 1608597155,
+      "FirstFrame": 14064,
+      "Frames": 48,
+      "SHA256": "2fb2db659c5f014bf54595d673bb500ccb98a0cd2f5eae4f7ae267c7051db119"
+    },
+    {
+      "File": "T7E3_0294.rvf",
+      "Bytes": 693144,
+      "Checksum": 3420945607,
+      "FirstFrame": 14112,
+      "Frames": 48,
+      "SHA256": "65dc498fa816af893c1ac2182abacecea0602553165a61b39410e7ee6a147535"
+    },
+    {
+      "File": "T7E3_0295.rvf",
+      "Bytes": 588724,
+      "Checksum": 902810176,
+      "FirstFrame": 14160,
+      "Frames": 48,
+      "SHA256": "10be6d9d1f787e4b4a814689b60b63aefe6ce466051dce9a13ddffa9ae8d1787"
+    },
+    {
+      "File": "T7E3_0296.rvf",
+      "Bytes": 975775,
+      "Checksum": 3443896282,
+      "FirstFrame": 14208,
+      "Frames": 48,
+      "SHA256": "67c3d1214bc4a029d090c5f7b13a359a0d38e84773aa699a2400feb5cbac8652"
+    },
+    {
+      "File": "T7E3_0297.rvf",
+      "Bytes": 910108,
+      "Checksum": 2589638638,
+      "FirstFrame": 14256,
+      "Frames": 48,
+      "SHA256": "b41ce0f42fb77ac0979ee930410ffd7f44689eec90a0bb965a2c4f6633bde73b"
+    },
+    {
+      "File": "T7E3_0298.rvf",
+      "Bytes": 901996,
+      "Checksum": 2987077109,
+      "FirstFrame": 14304,
+      "Frames": 48,
+      "SHA256": "99e1376369acd2f9cd2a1c1a854bde9d4bb694fb285e62ae56028e18d2c1ab75"
+    },
+    {
+      "File": "T7E3_0299.rvf",
+      "Bytes": 916884,
+      "Checksum": 2749890735,
+      "FirstFrame": 14352,
+      "Frames": 48,
+      "SHA256": "565c7dd20309d3b4c4696d095edb19825e91701991a00eed22fc20c0b53197a3"
+    },
+    {
+      "File": "T7E3_0300.rvf",
+      "Bytes": 884350,
+      "Checksum": 2566150616,
+      "FirstFrame": 14400,
+      "Frames": 48,
+      "SHA256": "89c24f519be081fe85473c77605e66ca930f41d9e035afbfc578970f9dca00bc"
+    },
+    {
+      "File": "T7E3_0301.rvf",
+      "Bytes": 987828,
+      "Checksum": 1615187266,
+      "FirstFrame": 14448,
+      "Frames": 48,
+      "SHA256": "f3ad8fce75e0c13f78c6bca8b4668e8cbd7623798960b4ac0321e93933d3681f"
+    },
+    {
+      "File": "T7E3_0302.rvf",
+      "Bytes": 553941,
+      "Checksum": 4103649756,
+      "FirstFrame": 14496,
+      "Frames": 48,
+      "SHA256": "c686d3dd9d6c74752c951e55f53d5ad2334bbbf1a852a8ab1d5997c216e1415b"
+    },
+    {
+      "File": "T7E3_0303.rvf",
+      "Bytes": 606523,
+      "Checksum": 2134141501,
+      "FirstFrame": 14544,
+      "Frames": 48,
+      "SHA256": "c668336e769512fa4037c58512ae7765479507d15903020c9ee2f78db9a1a94b"
+    },
+    {
+      "File": "T7E3_0304.rvf",
+      "Bytes": 730699,
+      "Checksum": 3767325146,
+      "FirstFrame": 14592,
+      "Frames": 48,
+      "SHA256": "063cc26aaa88cbd9f7c33d8ce55f45f928b8142cfa5ea1bc61f8faa9378b687e"
+    },
+    {
+      "File": "T7E3_0305.rvf",
+      "Bytes": 702133,
+      "Checksum": 2860280624,
+      "FirstFrame": 14640,
+      "Frames": 48,
+      "SHA256": "5f461af1027f0918841897d3ebbfed527d07badb7dff75da7bd561afd501257a"
+    },
+    {
+      "File": "T7E3_0306.rvf",
+      "Bytes": 655889,
+      "Checksum": 1339772747,
+      "FirstFrame": 14688,
+      "Frames": 48,
+      "SHA256": "8a252cba0364ef847fc02b66c1df9d9ad0ae14702216eca4579bfa7efac74cec"
+    },
+    {
+      "File": "T7E3_0307.rvf",
+      "Bytes": 496365,
+      "Checksum": 3149938284,
+      "FirstFrame": 14736,
+      "Frames": 48,
+      "SHA256": "d8afec045debee48c04df2a421d28e5da4167b7228e7ac398d15cbb331efbc77"
+    },
+    {
+      "File": "T7E3_0308.rvf",
+      "Bytes": 866751,
+      "Checksum": 2907398841,
+      "FirstFrame": 14784,
+      "Frames": 48,
+      "SHA256": "ae51a7bd07282cfa8a221a589bd7cb08eb1273ed61c70b4d976aa454f73d4e6f"
+    },
+    {
+      "File": "T7E3_0309.rvf",
+      "Bytes": 860155,
+      "Checksum": 2450134992,
+      "FirstFrame": 14832,
+      "Frames": 48,
+      "SHA256": "c9f69a8b2dd28af6deb30445f1699a2dc1a97216f7cbc41a789d04f1283121db"
+    },
+    {
+      "File": "T7E3_0310.rvf",
+      "Bytes": 957066,
+      "Checksum": 2115292428,
+      "FirstFrame": 14880,
+      "Frames": 48,
+      "SHA256": "036adf047a9f87c5e7b5239beeb9e2466db4a37a4c22479b4db86dff5308bf77"
+    },
+    {
+      "File": "T7E3_0311.rvf",
+      "Bytes": 377777,
+      "Checksum": 3094109508,
+      "FirstFrame": 14928,
+      "Frames": 48,
+      "SHA256": "a8516ddf6f88a4654bf9f42cc1f3cb1ef563887b2ffd59cab49fed8e568953e5"
+    },
+    {
+      "File": "T7E3_0312.rvf",
+      "Bytes": 411347,
+      "Checksum": 3621680925,
+      "FirstFrame": 14976,
+      "Frames": 48,
+      "SHA256": "8a2b9a6dbbdb66ef3716894058e04ab498b191f5f1fe28a7a1b6c9eace764394"
+    },
+    {
+      "File": "T7E3_0313.rvf",
+      "Bytes": 738405,
+      "Checksum": 4109261281,
+      "FirstFrame": 15024,
+      "Frames": 48,
+      "SHA256": "16274b538b1cf8c83fc0c3eb068bddacadc2cf7f1b86decb0afd16a70e0c8002"
+    },
+    {
+      "File": "T7E3_0314.rvf",
+      "Bytes": 865370,
+      "Checksum": 351559437,
+      "FirstFrame": 15072,
+      "Frames": 48,
+      "SHA256": "15b6c95fb021b903725ffdcbbd88c467fa0c9ac53f17f34bb2c202636a4c13f9"
+    },
+    {
+      "File": "T7E3_0315.rvf",
+      "Bytes": 929512,
+      "Checksum": 3318656534,
+      "FirstFrame": 15120,
+      "Frames": 48,
+      "SHA256": "7104a3e7c45a9b541de62e50836e9c9b431301095cc24ffd84e8deca87edc6e6"
+    },
+    {
+      "File": "T7E3_0316.rvf",
+      "Bytes": 919280,
+      "Checksum": 2714307438,
+      "FirstFrame": 15168,
+      "Frames": 48,
+      "SHA256": "506a247ed4af4b5989da67d9df2dfb69e8333a86af78e14a4b06294651f0a6cf"
+    },
+    {
+      "File": "T7E3_0317.rvf",
+      "Bytes": 894674,
+      "Checksum": 3259394240,
+      "FirstFrame": 15216,
+      "Frames": 48,
+      "SHA256": "5cf02a77a0811899f8ae6282328eea2f75bea9ff1a0052f4bdd8902f16f4858c"
+    },
+    {
+      "File": "T7E3_0318.rvf",
+      "Bytes": 906227,
+      "Checksum": 2135545292,
+      "FirstFrame": 15264,
+      "Frames": 48,
+      "SHA256": "dacf5ea6c05ea77dc73516f8a7a73d2b7db2fd46b4faaaf67e00f06d3bbb0d57"
+    },
+    {
+      "File": "T7E3_0319.rvf",
+      "Bytes": 904753,
+      "Checksum": 2948092010,
+      "FirstFrame": 15312,
+      "Frames": 48,
+      "SHA256": "2d0c42824d3789b4422dcdda9c7fad10a8e8f84537efcd69935ccdc4c0c1e766"
+    },
+    {
+      "File": "T7E3_0320.rvf",
+      "Bytes": 928132,
+      "Checksum": 1082672927,
+      "FirstFrame": 15360,
+      "Frames": 48,
+      "SHA256": "61c47c48622f4409775821fb369502e5c4ab210f87e6c723e8c0b8500cb0ca65"
+    },
+    {
+      "File": "T7E3_0321.rvf",
+      "Bytes": 964674,
+      "Checksum": 2645048371,
+      "FirstFrame": 15408,
+      "Frames": 48,
+      "SHA256": "e43d9dd083555f47fc959c034e82c350102a7539321c8ba78c9647b2db82b6f3"
+    },
+    {
+      "File": "T7E3_0322.rvf",
+      "Bytes": 858026,
+      "Checksum": 2697321229,
+      "FirstFrame": 15456,
+      "Frames": 48,
+      "SHA256": "eadce3dbb1736979ba80ac8e6626ce8f0ed381ea775845aae2d309e183f84c74"
+    },
+    {
+      "File": "T7E3_0323.rvf",
+      "Bytes": 1060479,
+      "Checksum": 1646319492,
+      "FirstFrame": 15504,
+      "Frames": 48,
+      "SHA256": "8c66fd7711593f84728af747744e4dd13cf2fbe204ea1044b85be86e04bbc6ca"
+    },
+    {
+      "File": "T7E3_0324.rvf",
+      "Bytes": 1091352,
+      "Checksum": 283904174,
+      "FirstFrame": 15552,
+      "Frames": 48,
+      "SHA256": "8d7d0f8ad70a03ef5017aaad07d2087d9a98f0f5eb7680884f4c4080afb2d553"
+    },
+    {
+      "File": "T7E3_0325.rvf",
+      "Bytes": 1157433,
+      "Checksum": 3827793335,
+      "FirstFrame": 15600,
+      "Frames": 48,
+      "SHA256": "839baf7ac41e252d857b346c85208b83542157719fee98634ddce20178f7c51d"
+    },
+    {
+      "File": "T7E3_0326.rvf",
+      "Bytes": 1018548,
+      "Checksum": 2261650523,
+      "FirstFrame": 15648,
+      "Frames": 48,
+      "SHA256": "0cb4569da352a5587f6e11b03ef0fdf0090661101852bebe74dad8da48ac6928"
+    },
+    {
+      "File": "T7E3_0327.rvf",
+      "Bytes": 977065,
+      "Checksum": 3216914574,
+      "FirstFrame": 15696,
+      "Frames": 48,
+      "SHA256": "07b629dd6fbdca8644dc6dfa07e84ac5974367d297d0c3bd7988260c2707a6aa"
+    },
+    {
+      "File": "T7E3_0328.rvf",
+      "Bytes": 817380,
+      "Checksum": 2699034527,
+      "FirstFrame": 15744,
+      "Frames": 48,
+      "SHA256": "de149578109eb14896e8a997a9eb9af952743d69bc91960496eda9cd4ef90f84"
+    },
+    {
+      "File": "T7E3_0329.rvf",
+      "Bytes": 817568,
+      "Checksum": 1271203405,
+      "FirstFrame": 15792,
+      "Frames": 48,
+      "SHA256": "05966b7bf2c2d0c852f83948184b0a5f8a3ed0741fa9d514b0c96b660fc1e0f2"
+    },
+    {
+      "File": "T7E3_0330.rvf",
+      "Bytes": 1450911,
+      "Checksum": 849184695,
+      "FirstFrame": 15840,
+      "Frames": 48,
+      "SHA256": "50ca0def1707bf0bbc5f50258c8777833979429ad35bbf8a539b6f9cb1b14306"
+    },
+    {
+      "File": "T7E3_0331.rvf",
+      "Bytes": 1188869,
+      "Checksum": 1404399090,
+      "FirstFrame": 15888,
+      "Frames": 48,
+      "SHA256": "d9bc953a1fc703019419af7a3eac262a02740b801ec1b6ec7b95243008815753"
+    },
+    {
+      "File": "T7E3_0332.rvf",
+      "Bytes": 1083416,
+      "Checksum": 3371842316,
+      "FirstFrame": 15936,
+      "Frames": 48,
+      "SHA256": "ad8b5c1ebcfa2aab3b15449c699df3b6c34c8bcfeb0a8988b4740be5322a5cd7"
+    },
+    {
+      "File": "T7E3_0333.rvf",
+      "Bytes": 986296,
+      "Checksum": 2929070192,
+      "FirstFrame": 15984,
+      "Frames": 48,
+      "SHA256": "486ad208176af28933028d10dfafe81f714e1ca7af26420a20cca7a6ea270ade"
+    },
+    {
+      "File": "T7E3_0334.rvf",
+      "Bytes": 877925,
+      "Checksum": 597786991,
+      "FirstFrame": 16032,
+      "Frames": 48,
+      "SHA256": "7662bb7b252d355548a3cb45a63fe3405d59dd8baa354bb3cd127b2221e5c164"
+    },
+    {
+      "File": "T7E3_0335.rvf",
+      "Bytes": 1081701,
+      "Checksum": 2620223501,
+      "FirstFrame": 16080,
+      "Frames": 48,
+      "SHA256": "c50bd64598a0be740e87a5923def6d2f0a903fd9b7cfaacc02506eb57220566a"
+    },
+    {
+      "File": "T7E3_0336.rvf",
+      "Bytes": 854831,
+      "Checksum": 1347972551,
+      "FirstFrame": 16128,
+      "Frames": 48,
+      "SHA256": "b1d8acc8ac324d86b0ac69e99ed620dbe169e52dc6b64c9cea0c4db8b29219f2"
+    },
+    {
+      "File": "T7E3_0337.rvf",
+      "Bytes": 1141767,
+      "Checksum": 2452171970,
+      "FirstFrame": 16176,
+      "Frames": 48,
+      "SHA256": "dc112754fe787c67092a595dd0ab05098a3ff522273b232b36100f5adefd2615"
+    },
+    {
+      "File": "T7E3_0338.rvf",
+      "Bytes": 1095796,
+      "Checksum": 4248160956,
+      "FirstFrame": 16224,
+      "Frames": 48,
+      "SHA256": "ce7a223632ac02fb08ae512ef9bcd8e5c6b166fbe5f2f09673f4a50fb1c70c60"
+    },
+    {
+      "File": "T7E3_0339.rvf",
+      "Bytes": 860973,
+      "Checksum": 1506832166,
+      "FirstFrame": 16272,
+      "Frames": 48,
+      "SHA256": "fb2c9d05d5e0b87e55f99e22460a1c21e3511518629feb996a1e3d0416b9b759"
+    },
+    {
+      "File": "T7E3_0340.rvf",
+      "Bytes": 1056027,
+      "Checksum": 1808420704,
+      "FirstFrame": 16320,
+      "Frames": 48,
+      "SHA256": "b6a00d4d3f794b1c7639bbcc236a8f6552d4d4324337abe50e6555c5f200ea90"
+    },
+    {
+      "File": "T7E3_0341.rvf",
+      "Bytes": 1209924,
+      "Checksum": 3063712023,
+      "FirstFrame": 16368,
+      "Frames": 48,
+      "SHA256": "285e158a042050ac98ad9951afeeab4428f0be5bd68a3b416df4c5ea8cce2e6e"
+    },
+    {
+      "File": "T7E3_0342.rvf",
+      "Bytes": 823373,
+      "Checksum": 3693105668,
+      "FirstFrame": 16416,
+      "Frames": 48,
+      "SHA256": "0d13d3de26f20fec4a0261296c0aef56a9f843a29e8aa47bc32fd44eded0e1ad"
+    },
+    {
+      "File": "T7E3_0343.rvf",
+      "Bytes": 646026,
+      "Checksum": 2342886670,
+      "FirstFrame": 16464,
+      "Frames": 48,
+      "SHA256": "de0501d8925fdae42ea6733f9177cac98cd4b889d8f98c11b3fa39b83a01f9fa"
+    },
+    {
+      "File": "T7E3_0344.rvf",
+      "Bytes": 904982,
+      "Checksum": 1550057343,
+      "FirstFrame": 16512,
+      "Frames": 48,
+      "SHA256": "59010831c62a59ae6e0500442a35cdd0d05410ef9f4ef85e8469fc7dcae44b48"
+    },
+    {
+      "File": "T7E3_0345.rvf",
+      "Bytes": 1259333,
+      "Checksum": 64711495,
+      "FirstFrame": 16560,
+      "Frames": 48,
+      "SHA256": "0c519ac4c9d813c7e9352c02a200331f5480aefe8588b36ea6e36c571e68d70b"
+    },
+    {
+      "File": "T7E3_0346.rvf",
+      "Bytes": 536447,
+      "Checksum": 1966064093,
+      "FirstFrame": 16608,
+      "Frames": 48,
+      "SHA256": "63de3d9a655eef8563e7e9ba17ce580fb6cae5add99ec03e27f23f1bf21267f4"
+    },
+    {
+      "File": "T7E3_0347.rvf",
+      "Bytes": 704685,
+      "Checksum": 777164716,
+      "FirstFrame": 16656,
+      "Frames": 48,
+      "SHA256": "3a4e31f19945f1c063ad85503c6f5087bf05fe397abe4c69e0e710bd8ee4ce0c"
+    },
+    {
+      "File": "T7E3_0348.rvf",
+      "Bytes": 611067,
+      "Checksum": 3554779253,
+      "FirstFrame": 16704,
+      "Frames": 48,
+      "SHA256": "9c6b419ca015b7fa5b43a2e9fcd28d88000fd17024fb6ba56356e4a52ea6ceaa"
+    },
+    {
+      "File": "T7E3_0349.rvf",
+      "Bytes": 624113,
+      "Checksum": 780379731,
+      "FirstFrame": 16752,
+      "Frames": 48,
+      "SHA256": "33796465165583c4b6714c9a187742e1c5db8433a928f3f2e4dd028e6b57aba1"
+    },
+    {
+      "File": "T7E3_0350.rvf",
+      "Bytes": 960039,
+      "Checksum": 2613432046,
+      "FirstFrame": 16800,
+      "Frames": 48,
+      "SHA256": "2680c1478e3440cfae5ae3fb94ff347e0c6bcff01d3775f1f2c509a6ca52d09c"
+    },
+    {
+      "File": "T7E3_0351.rvf",
+      "Bytes": 730196,
+      "Checksum": 10414145,
+      "FirstFrame": 16848,
+      "Frames": 48,
+      "SHA256": "a25337cdc9ae88a6392a24028b3fbb2ff62d552768808eed89931042d662c1af"
+    },
+    {
+      "File": "T7E3_0352.rvf",
+      "Bytes": 582806,
+      "Checksum": 1912086900,
+      "FirstFrame": 16896,
+      "Frames": 48,
+      "SHA256": "c7f8eb7cf01f0b1f81561c31cd72056ee43f4676847fa3839a6845af254d9cd1"
+    },
+    {
+      "File": "T7E3_0353.rvf",
+      "Bytes": 608920,
+      "Checksum": 3796396035,
+      "FirstFrame": 16944,
+      "Frames": 48,
+      "SHA256": "1d3a3b966a6d3f9d1814022d3bd1cbd29f0a3a665d5dd15af5dcafd4c3ec1d5a"
+    },
+    {
+      "File": "T7E3_0354.rvf",
+      "Bytes": 620441,
+      "Checksum": 3623202264,
+      "FirstFrame": 16992,
+      "Frames": 48,
+      "SHA256": "8effe7fafcbf6c82fdf3e38fae7dbe67755ee9e881e5ded0629d662394625b90"
+    },
+    {
+      "File": "T7E3_0355.rvf",
+      "Bytes": 691127,
+      "Checksum": 3919591235,
+      "FirstFrame": 17040,
+      "Frames": 48,
+      "SHA256": "534a9add73cc4ce6630cd2d51b673789445f8cd96042f69edfb0b36e06973e6d"
+    },
+    {
+      "File": "T7E3_0356.rvf",
+      "Bytes": 687063,
+      "Checksum": 2698253249,
+      "FirstFrame": 17088,
+      "Frames": 48,
+      "SHA256": "3042e81f2af4ee283710a58b7e8af19a46577e94ae991eabad4ef9cae5d1ef31"
+    },
+    {
+      "File": "T7E3_0357.rvf",
+      "Bytes": 556912,
+      "Checksum": 3126899193,
+      "FirstFrame": 17136,
+      "Frames": 48,
+      "SHA256": "3bb2d26a3d303d8fc356b9e2a952aa51a4b24479df4f2ddb590825fec0d2ff66"
+    },
+    {
+      "File": "T7E3_0358.rvf",
+      "Bytes": 622184,
+      "Checksum": 3490635686,
+      "FirstFrame": 17184,
+      "Frames": 48,
+      "SHA256": "8b538862f1cc6e54b39843cacd8a6ae2063104cefa4b73f6d753ff038190ca17"
+    },
+    {
+      "File": "T7E3_0359.rvf",
+      "Bytes": 384554,
+      "Checksum": 2502263437,
+      "FirstFrame": 17232,
+      "Frames": 48,
+      "SHA256": "9129be831bb72652bbc13acf9e6411cedfa69b800b296bfd4011bd85ab3ec13f"
+    },
+    {
+      "File": "T7E3_0360.rvf",
+      "Bytes": 777281,
+      "Checksum": 1934651873,
+      "FirstFrame": 17280,
+      "Frames": 48,
+      "SHA256": "a216bacafce33bb1e67a963fd6cee2edb7253c53d442e52ab8346cdc5414fb3d"
+    },
+    {
+      "File": "T7E3_0361.rvf",
+      "Bytes": 880101,
+      "Checksum": 120289987,
+      "FirstFrame": 17328,
+      "Frames": 48,
+      "SHA256": "197ce04c24a793d4f52a149268b745b10e06f866d515f48c67a46894c628d926"
+    },
+    {
+      "File": "T7E3_0362.rvf",
+      "Bytes": 514905,
+      "Checksum": 4250106033,
+      "FirstFrame": 17376,
+      "Frames": 48,
+      "SHA256": "d19278cfbc364a59a0128e7d0f5078f1d6f4f2ef95938eb16c8af32951eeafa8"
+    },
+    {
+      "File": "T7E3_0363.rvf",
+      "Bytes": 466029,
+      "Checksum": 1311286413,
+      "FirstFrame": 17424,
+      "Frames": 48,
+      "SHA256": "7bbb4551173455897c18598f24255d7206772eaa1ab4d8bf321c5c7933e1d4e9"
+    },
+    {
+      "File": "T7E3_0364.rvf",
+      "Bytes": 340533,
+      "Checksum": 3837133196,
+      "FirstFrame": 17472,
+      "Frames": 48,
+      "SHA256": "9436a32fe6c5b2d11a13355cdc1d5a9c3cdf51d809ec4f9feeea252e74593a18"
+    },
+    {
+      "File": "T7E3_0365.rvf",
+      "Bytes": 289498,
+      "Checksum": 1993431219,
+      "FirstFrame": 17520,
+      "Frames": 48,
+      "SHA256": "21e7638867ea6d9be16d5fd9e7463a6e7e2007b859eecd01a8c45060faaed201"
+    },
+    {
+      "File": "T7E3_0366.rvf",
+      "Bytes": 266658,
+      "Checksum": 2972145912,
+      "FirstFrame": 17568,
+      "Frames": 48,
+      "SHA256": "75766de7d203e0f1b489b4e2f88b3912e6fdafa53c39c2544c81e4d105638b9f"
+    },
+    {
+      "File": "T7E3_0367.rvf",
+      "Bytes": 327605,
+      "Checksum": 2919087308,
+      "FirstFrame": 17616,
+      "Frames": 48,
+      "SHA256": "c7d5fec6f699a86789f55a61acd0bd2a35fa137fc34704925fe4fbfc44e6577f"
+    },
+    {
+      "File": "T7E3_0368.rvf",
+      "Bytes": 804364,
+      "Checksum": 670081677,
+      "FirstFrame": 17664,
+      "Frames": 48,
+      "SHA256": "0a8e5bb9f462f350d48a0cd25a0237db5d41bed784deba40c60bd60438ab8380"
+    },
+    {
+      "File": "T7E3_0369.rvf",
+      "Bytes": 934087,
+      "Checksum": 280744534,
+      "FirstFrame": 17712,
+      "Frames": 48,
+      "SHA256": "6ae3ae413d22ecc8cb56e35b83bf8e93e77a7f334e2b3bbada165d5d7b532131"
+    },
+    {
+      "File": "T7E3_0370.rvf",
+      "Bytes": 672132,
+      "Checksum": 2798822840,
+      "FirstFrame": 17760,
+      "Frames": 48,
+      "SHA256": "5ca84688645ec198c935d9db1d96d4e7e08bb80218e7b7e86a0351e568c9fd5a"
+    },
+    {
+      "File": "T7E3_0371.rvf",
+      "Bytes": 804736,
+      "Checksum": 2326240274,
+      "FirstFrame": 17808,
+      "Frames": 48,
+      "SHA256": "59f26a2c40b94270a2da4b820ca49541635f159b568b94cdd5b81ec69451f9eb"
+    },
+    {
+      "File": "T7E3_0372.rvf",
+      "Bytes": 639392,
+      "Checksum": 1350555944,
+      "FirstFrame": 17856,
+      "Frames": 48,
+      "SHA256": "7967dd373c78d9879e905291f0a1ea00214e2df32ae3814760df971450e55644"
+    },
+    {
+      "File": "T7E3_0373.rvf",
+      "Bytes": 709805,
+      "Checksum": 2058183518,
+      "FirstFrame": 17904,
+      "Frames": 48,
+      "SHA256": "e8b9de760fd3679c74f26cd75ede4dfe5a71e5cf0366b2130a5b960d2d464846"
+    },
+    {
+      "File": "T7E3_0374.rvf",
+      "Bytes": 718395,
+      "Checksum": 1218393765,
+      "FirstFrame": 17952,
+      "Frames": 48,
+      "SHA256": "1795e999ab18dd44ae8aab5787777a65a81f0b5cf37ed2336e1f4bf5741db9f5"
+    },
+    {
+      "File": "T7E3_0375.rvf",
+      "Bytes": 729663,
+      "Checksum": 1463443639,
+      "FirstFrame": 18000,
+      "Frames": 48,
+      "SHA256": "1ee23b1a2b2e304e48d0d7c75807b58d0e95a69dca6f67d3fe065c0af211b0b7"
+    },
+    {
+      "File": "T7E3_0376.rvf",
+      "Bytes": 518318,
+      "Checksum": 665535441,
+      "FirstFrame": 18048,
+      "Frames": 48,
+      "SHA256": "bfdb01bfc4e80e7270f394252b84e5073d1d93bd3289ffd83e55e33aae2d7bf7"
+    },
+    {
+      "File": "T7E3_0377.rvf",
+      "Bytes": 573279,
+      "Checksum": 4232066245,
+      "FirstFrame": 18096,
+      "Frames": 48,
+      "SHA256": "8c6f77b80e81e45a0e1918ce963e4e05311bb7485edafaaa1b005fee679af49c"
+    },
+    {
+      "File": "T7E3_0378.rvf",
+      "Bytes": 475894,
+      "Checksum": 3445363016,
+      "FirstFrame": 18144,
+      "Frames": 48,
+      "SHA256": "42ca6a7e27119445a40d820b6972d8b5c0a57c225cdc50b93324fb8fe25fd891"
+    },
+    {
+      "File": "T7E3_0379.rvf",
+      "Bytes": 654444,
+      "Checksum": 3307328117,
+      "FirstFrame": 18192,
+      "Frames": 48,
+      "SHA256": "27ede39918f4098d4edf9e0658c4bc2848b855e24621422d87c16ed6f0125b0e"
+    },
+    {
+      "File": "T7E3_0380.rvf",
+      "Bytes": 601606,
+      "Checksum": 402109469,
+      "FirstFrame": 18240,
+      "Frames": 48,
+      "SHA256": "caf2cddf4c1e2803b1d3c30ea7084d5efd6b356cc403026685e7efced60f3709"
+    },
+    {
+      "File": "T7E3_0381.rvf",
+      "Bytes": 673782,
+      "Checksum": 3417585162,
+      "FirstFrame": 18288,
+      "Frames": 48,
+      "SHA256": "f8f38fbf1853179e9137481ae62a05f05fd52623cee939b46be699f474adbb1f"
+    },
+    {
+      "File": "T7E3_0382.rvf",
+      "Bytes": 607798,
+      "Checksum": 3138167437,
+      "FirstFrame": 18336,
+      "Frames": 48,
+      "SHA256": "d0ca530d98ac92cda263d984abb1e64f7e37212c9a07429396b60354a17fefe8"
+    },
+    {
+      "File": "T7E3_0383.rvf",
+      "Bytes": 740609,
+      "Checksum": 4222380311,
+      "FirstFrame": 18384,
+      "Frames": 48,
+      "SHA256": "23b61a528ae166f3f465bc9804ae857007c3d76de4f4c8a77042baf7a2e6a85e"
+    },
+    {
+      "File": "T7E3_0384.rvf",
+      "Bytes": 712620,
+      "Checksum": 739536106,
+      "FirstFrame": 18432,
+      "Frames": 48,
+      "SHA256": "1066d9a3d31ab5a245c01b0f6cf9a585296453c6a241ab16330de962630b7cf3"
+    },
+    {
+      "File": "T7E3_0385.rvf",
+      "Bytes": 656521,
+      "Checksum": 1833990466,
+      "FirstFrame": 18480,
+      "Frames": 48,
+      "SHA256": "47448265884256efffc01b565d2e5e909e14768ead1a75d668558dec8820a5e9"
+    },
+    {
+      "File": "T7E3_0386.rvf",
+      "Bytes": 549579,
+      "Checksum": 1566582388,
+      "FirstFrame": 18528,
+      "Frames": 48,
+      "SHA256": "3cbf094f2c5ab5cd61fb91255b29e64d8e63b5bfc5301d62d42ffd88a7ae3aaa"
+    },
+    {
+      "File": "T7E3_0387.rvf",
+      "Bytes": 584531,
+      "Checksum": 1314654855,
+      "FirstFrame": 18576,
+      "Frames": 48,
+      "SHA256": "420dd0d6d8261e849d41b6b6dfcb77d3d977b566ab0a0278bb5c3b1c14ddcd54"
+    },
+    {
+      "File": "T7E3_0388.rvf",
+      "Bytes": 612633,
+      "Checksum": 1094551824,
+      "FirstFrame": 18624,
+      "Frames": 48,
+      "SHA256": "2f0ecf71047dad65c73363d74e949e32662c8e40700e887ffefab838a86700fd"
+    },
+    {
+      "File": "T7E3_0389.rvf",
+      "Bytes": 571902,
+      "Checksum": 2166937356,
+      "FirstFrame": 18672,
+      "Frames": 48,
+      "SHA256": "b5ea63f19d2869cd7bf711b2ad3d0a8b6de5603aeba7007f864ab7e5e9084d65"
+    },
+    {
+      "File": "T7E3_0390.rvf",
+      "Bytes": 593885,
+      "Checksum": 263209514,
+      "FirstFrame": 18720,
+      "Frames": 48,
+      "SHA256": "379dd79b99efdbe1354841bf1cb812c05dc1685444a226c7bba04cd6598d7a0c"
+    },
+    {
+      "File": "T7E3_0391.rvf",
+      "Bytes": 601719,
+      "Checksum": 248797428,
+      "FirstFrame": 18768,
+      "Frames": 48,
+      "SHA256": "1c876dab5f8c0ef248e527a91562b13de659178888d5246556b4f2dceed86919"
+    },
+    {
+      "File": "T7E3_0392.rvf",
+      "Bytes": 556714,
+      "Checksum": 3729590084,
+      "FirstFrame": 18816,
+      "Frames": 48,
+      "SHA256": "f62f2bfc4e3018dd663c802073353091bf5f9b7c11f68f65ef5f69f96f54faf5"
+    },
+    {
+      "File": "T7E3_0393.rvf",
+      "Bytes": 638286,
+      "Checksum": 3740297179,
+      "FirstFrame": 18864,
+      "Frames": 48,
+      "SHA256": "2878f5db2a25939444d2fbc5d4582c96b4a8469f8cbf002a3c0acff01bda20b4"
+    },
+    {
+      "File": "T7E3_0394.rvf",
+      "Bytes": 695289,
+      "Checksum": 2106875011,
+      "FirstFrame": 18912,
+      "Frames": 48,
+      "SHA256": "0bf327d268109a0001662f15267468457363a30b7a5bf43494681cbc62d4cdc1"
+    },
+    {
+      "File": "T7E3_0395.rvf",
+      "Bytes": 650265,
+      "Checksum": 2618977634,
+      "FirstFrame": 18960,
+      "Frames": 48,
+      "SHA256": "3b6ae0b3e6f060bea6808eb51645ddc75da0b041ab64acb1f78692061bffae13"
+    },
+    {
+      "File": "T7E3_0396.rvf",
+      "Bytes": 605983,
+      "Checksum": 565176197,
+      "FirstFrame": 19008,
+      "Frames": 48,
+      "SHA256": "04bf02626673d50e7a4d832d0f38bccf81375b1dcbcd7a8655bf71764e5e15c0"
+    },
+    {
+      "File": "T7E3_0397.rvf",
+      "Bytes": 605638,
+      "Checksum": 1270647056,
+      "FirstFrame": 19056,
+      "Frames": 48,
+      "SHA256": "da33586417c3b2f4aa9b477edb82f4e5bfde1b796502b9de80a3bf3b8073a7e1"
+    },
+    {
+      "File": "T7E3_0398.rvf",
+      "Bytes": 790513,
+      "Checksum": 3352759922,
+      "FirstFrame": 19104,
+      "Frames": 48,
+      "SHA256": "8518d5b40977675ba40522e281c9510144d0c32d877f470d2d0496b2ba9b7af9"
+    },
+    {
+      "File": "T7E3_0399.rvf",
+      "Bytes": 1477871,
+      "Checksum": 2195114936,
+      "FirstFrame": 19152,
+      "Frames": 48,
+      "SHA256": "2d7f50d146b31a4450d7941497eb9d030bd20daf1c6efa989df74a618ae7adb6"
+    },
+    {
+      "File": "T7E3_0400.rvf",
+      "Bytes": 1211218,
+      "Checksum": 640280127,
+      "FirstFrame": 19200,
+      "Frames": 48,
+      "SHA256": "68f3ab1258c532175f89810ae134afc301c82c60f37843ffaf1bbfcba70a18e5"
+    },
+    {
+      "File": "T7E3_0401.rvf",
+      "Bytes": 839405,
+      "Checksum": 321294235,
+      "FirstFrame": 19248,
+      "Frames": 48,
+      "SHA256": "7675251fb9350fe2f2cff2b0e6ffb86498cb47fd33baf572d6df63f7f3a72a4b"
+    },
+    {
+      "File": "T7E3_0402.rvf",
+      "Bytes": 709478,
+      "Checksum": 342542143,
+      "FirstFrame": 19296,
+      "Frames": 48,
+      "SHA256": "c8ac37aa285325a9d6a46a952c33b4dcf83cdddf04bea906dffddaaa8e09bb46"
+    },
+    {
+      "File": "T7E3_0403.rvf",
+      "Bytes": 696202,
+      "Checksum": 3307392188,
+      "FirstFrame": 19344,
+      "Frames": 48,
+      "SHA256": "445643cffde418dc83933adf2e924770ef3a8aa8b7b5a54f4aba1a5983468501"
+    },
+    {
+      "File": "T7E3_0404.rvf",
+      "Bytes": 825676,
+      "Checksum": 600020941,
+      "FirstFrame": 19392,
+      "Frames": 48,
+      "SHA256": "5049f17816b8f60142a0550463a479325a15c96d95ab1c9dc817c8cc353a01af"
+    },
+    {
+      "File": "T7E3_0405.rvf",
+      "Bytes": 647793,
+      "Checksum": 3124537514,
+      "FirstFrame": 19440,
+      "Frames": 48,
+      "SHA256": "62399e1739f9c596c6f7c6a48d6e5a29129a53bbbe30bd0a04ff0503372a3080"
+    },
+    {
+      "File": "T7E3_0406.rvf",
+      "Bytes": 563892,
+      "Checksum": 754829869,
+      "FirstFrame": 19488,
+      "Frames": 48,
+      "SHA256": "e7d004bc6311fc6ef4ae55526925c4ef7885330a1581588a06d910b9cfdefc05"
+    },
+    {
+      "File": "T7E3_0407.rvf",
+      "Bytes": 819090,
+      "Checksum": 3606811036,
+      "FirstFrame": 19536,
+      "Frames": 48,
+      "SHA256": "17d4dd99a0741fc7d52d54258ed6adaa8dffcaccb7d1a43d0d69c9021f7dbc1e"
+    },
+    {
+      "File": "T7E3_0408.rvf",
+      "Bytes": 859077,
+      "Checksum": 2026941570,
+      "FirstFrame": 19584,
+      "Frames": 48,
+      "SHA256": "66710b841a66c53f7063a78286b6b3c7efcfbee3facdf2e5627faa9e7082c8c5"
+    },
+    {
+      "File": "T7E3_0409.rvf",
+      "Bytes": 704298,
+      "Checksum": 2149833254,
+      "FirstFrame": 19632,
+      "Frames": 48,
+      "SHA256": "80c7adc12f77aa8a914177dace8989b423e9e694f372aea00cbd905490911c90"
+    },
+    {
+      "File": "T7E3_0410.rvf",
+      "Bytes": 1007344,
+      "Checksum": 3254075258,
+      "FirstFrame": 19680,
+      "Frames": 48,
+      "SHA256": "33551f08c980fd2929e755c321908832f5e9212dc708d473fa75baeb0fbc35a4"
+    },
+    {
+      "File": "T7E3_0411.rvf",
+      "Bytes": 2056859,
+      "Checksum": 2768716487,
+      "FirstFrame": 19728,
+      "Frames": 48,
+      "SHA256": "549b706576107692c78a4549de81f57a9417a27c5fbcbcb3da381ff056547942"
+    },
+    {
+      "File": "T7E3_0412.rvf",
+      "Bytes": 868030,
+      "Checksum": 3553513116,
+      "FirstFrame": 19776,
+      "Frames": 48,
+      "SHA256": "11c480fb835b5415e7d3a974c719ba0a6a0bc15d19677ff17d94025f79fd5ad2"
+    },
+    {
+      "File": "T7E3_0413.rvf",
+      "Bytes": 610872,
+      "Checksum": 1615941291,
+      "FirstFrame": 19824,
+      "Frames": 48,
+      "SHA256": "736ead99437bd00731fb59b17b45a51a22a3af53f1fa4697050c8d876ae8c502"
+    },
+    {
+      "File": "T7E3_0414.rvf",
+      "Bytes": 1031823,
+      "Checksum": 3898803400,
+      "FirstFrame": 19872,
+      "Frames": 48,
+      "SHA256": "71fad71ffc65dd894d5972a1a1eae25bb91a88a825ed86dc710fa3592f649219"
+    },
+    {
+      "File": "T7E3_0415.rvf",
+      "Bytes": 725025,
+      "Checksum": 3564197737,
+      "FirstFrame": 19920,
+      "Frames": 48,
+      "SHA256": "da3f37c2e387c1f53a4881e11a5edd5a287d7b550474ed4d28efad9547d82fcb"
+    },
+    {
+      "File": "T7E3_0416.rvf",
+      "Bytes": 494671,
+      "Checksum": 3119504162,
+      "FirstFrame": 19968,
+      "Frames": 48,
+      "SHA256": "67e3bedf862718c9388412c2040139d6a4fcf57cc0e3d9573f170d922c4eda74"
+    },
+    {
+      "File": "T7E3_0417.rvf",
+      "Bytes": 485538,
+      "Checksum": 2362320830,
+      "FirstFrame": 20016,
+      "Frames": 48,
+      "SHA256": "8cba0bb5f1c7d731bc820f517dd5bb3a3b9a63d2d938b4dfc52cc7d937e1246c"
+    },
+    {
+      "File": "T7E3_0418.rvf",
+      "Bytes": 832828,
+      "Checksum": 3215941916,
+      "FirstFrame": 20064,
+      "Frames": 48,
+      "SHA256": "697e0843523b11cbf934cde2f80c1146dade2259af33bdcf74e7df7367402cc9"
+    },
+    {
+      "File": "T7E3_0419.rvf",
+      "Bytes": 738660,
+      "Checksum": 3200763362,
+      "FirstFrame": 20112,
+      "Frames": 48,
+      "SHA256": "71ca4991a426e20c45d6fbb6ffb33d8555cac5223c03812a7f8f10e48e801e6f"
+    },
+    {
+      "File": "T7E3_0420.rvf",
+      "Bytes": 633893,
+      "Checksum": 2354217216,
+      "FirstFrame": 20160,
+      "Frames": 48,
+      "SHA256": "cdc0beb0d28ac26f1be48df87a2f4ed0755aae6608aa96e2041005b802b454e0"
+    },
+    {
+      "File": "T7E3_0421.rvf",
+      "Bytes": 718420,
+      "Checksum": 593122918,
+      "FirstFrame": 20208,
+      "Frames": 48,
+      "SHA256": "d8fdd3995c9b48f8d76520555414bc9ea9f57e0281d8b4afd171dcb1e49ad77e"
+    },
+    {
+      "File": "T7E3_0422.rvf",
+      "Bytes": 1055727,
+      "Checksum": 2876991793,
+      "FirstFrame": 20256,
+      "Frames": 48,
+      "SHA256": "8568c81d95da71aad7f0c3e4fb458810ea7040156361e3e9f3bb7d2828acca33"
+    },
+    {
+      "File": "T7E3_0423.rvf",
+      "Bytes": 888617,
+      "Checksum": 3685144657,
+      "FirstFrame": 20304,
+      "Frames": 48,
+      "SHA256": "0db6e3b8fdf1acdb33d1a0a83c6c9dda5c2c05c34aa28b915152aee3eaeff225"
+    },
+    {
+      "File": "T7E3_0424.rvf",
+      "Bytes": 1235928,
+      "Checksum": 3080598838,
+      "FirstFrame": 20352,
+      "Frames": 48,
+      "SHA256": "1d2bc0c055f12b76c0d5eb9981e7c05eda86ed258508d05978283f7a0b59e966"
+    },
+    {
+      "File": "T7E3_0425.rvf",
+      "Bytes": 1111239,
+      "Checksum": 2208617820,
+      "FirstFrame": 20400,
+      "Frames": 48,
+      "SHA256": "2de862f4a29cac24accb6372cf90c99ae0b2b0a82de2d34c2977d586a008f823"
+    },
+    {
+      "File": "T7E3_0426.rvf",
+      "Bytes": 1012012,
+      "Checksum": 3346426972,
+      "FirstFrame": 20448,
+      "Frames": 48,
+      "SHA256": "0ea9c1d0409bc0c351ed661a2fa921707bcccb79bbc86d34e477ec3b1115ba53"
+    },
+    {
+      "File": "T7E3_0427.rvf",
+      "Bytes": 407465,
+      "Checksum": 300576137,
+      "FirstFrame": 20496,
+      "Frames": 48,
+      "SHA256": "d3cab98177829dc72d84e50b9d01bcdca130f5f3e1ef889c74740a22c01bb601"
+    },
+    {
+      "File": "T7E3_0428.rvf",
+      "Bytes": 761179,
+      "Checksum": 2415319906,
+      "FirstFrame": 20544,
+      "Frames": 48,
+      "SHA256": "6a4c666602d1b9d51a8aa3d1cfd3984a2ce27f3afeb73817f0e6a57a723df9a8"
+    },
+    {
+      "File": "T7E3_0429.rvf",
+      "Bytes": 1146829,
+      "Checksum": 1106082228,
+      "FirstFrame": 20592,
+      "Frames": 48,
+      "SHA256": "d34355cfbc84aa20313dd2e5c5425f773ebfb823c63c6424ceb5cb60eea216aa"
+    },
+    {
+      "File": "T7E3_0430.rvf",
+      "Bytes": 623741,
+      "Checksum": 2744401241,
+      "FirstFrame": 20640,
+      "Frames": 48,
+      "SHA256": "89d968444ebd0a4ed49cf6aa97cd3e1fbbf50d0c5eff6ce820fbf4e7be361ddf"
+    },
+    {
+      "File": "T7E3_0431.rvf",
+      "Bytes": 802721,
+      "Checksum": 3054428498,
+      "FirstFrame": 20688,
+      "Frames": 48,
+      "SHA256": "4093616c00592892b9bf6354b9797bc19699ceb10b632f82f8f90d6e08e78640"
+    },
+    {
+      "File": "T7E3_0432.rvf",
+      "Bytes": 1072562,
+      "Checksum": 3754708704,
+      "FirstFrame": 20736,
+      "Frames": 48,
+      "SHA256": "2449ad97cd2d7fae14dd860ca48a81507d707d4d2feb7bf9f3ff858f33172102"
+    },
+    {
+      "File": "T7E3_0433.rvf",
+      "Bytes": 903207,
+      "Checksum": 2481954443,
+      "FirstFrame": 20784,
+      "Frames": 48,
+      "SHA256": "39d88094b70b45985b14c002350b597a16a0d54e97b300bde8f6281c6e27c9c9"
+    },
+    {
+      "File": "T7E3_0434.rvf",
+      "Bytes": 1099631,
+      "Checksum": 2878660229,
+      "FirstFrame": 20832,
+      "Frames": 48,
+      "SHA256": "9baf609489be936d9002876963755b582a52ec1235bed780e909ccbcb461bbea"
+    },
+    {
+      "File": "T7E3_0435.rvf",
+      "Bytes": 613854,
+      "Checksum": 541812314,
+      "FirstFrame": 20880,
+      "Frames": 48,
+      "SHA256": "a05488c1647ac991c5c9230650e154e87fabc7a9729992b1701e852ecbb940a0"
+    },
+    {
+      "File": "T7E3_0436.rvf",
+      "Bytes": 860985,
+      "Checksum": 1972009630,
+      "FirstFrame": 20928,
+      "Frames": 48,
+      "SHA256": "3acea5e0a9d7d29c1743a97572e80ff1d84edd51ad0177f2a561029ee003090c"
+    },
+    {
+      "File": "T7E3_0437.rvf",
+      "Bytes": 1009581,
+      "Checksum": 4247157741,
+      "FirstFrame": 20976,
+      "Frames": 48,
+      "SHA256": "f61baeb2570a811ca689741ae07b2b77396fe50bc5e91b30cab02d66c8d37d07"
+    },
+    {
+      "File": "T7E3_0438.rvf",
+      "Bytes": 765931,
+      "Checksum": 2361624280,
+      "FirstFrame": 21024,
+      "Frames": 48,
+      "SHA256": "7df2c9faefd867183799183cf42ce4e9e53845d97e2a529a193f3b455acce116"
+    },
+    {
+      "File": "T7E3_0439.rvf",
+      "Bytes": 1297097,
+      "Checksum": 437752325,
+      "FirstFrame": 21072,
+      "Frames": 48,
+      "SHA256": "02201b272ae35362fea3295f221a0f8b9d65dc204f91cd35249f78729256466b"
+    },
+    {
+      "File": "T7E3_0440.rvf",
+      "Bytes": 1163280,
+      "Checksum": 2662532011,
+      "FirstFrame": 21120,
+      "Frames": 48,
+      "SHA256": "f6e63c580ded529e0d2012bf719b352bac10251f9026ab51b2dfc3e87e8d6812"
+    },
+    {
+      "File": "T7E3_0441.rvf",
+      "Bytes": 1506174,
+      "Checksum": 3734787165,
+      "FirstFrame": 21168,
+      "Frames": 48,
+      "SHA256": "fb9928cef473efc233cfd65713adc9f85e21a149aa5ef04bab95461e590c57e9"
+    },
+    {
+      "File": "T7E3_0442.rvf",
+      "Bytes": 2102355,
+      "Checksum": 1704383836,
+      "FirstFrame": 21216,
+      "Frames": 48,
+      "SHA256": "f68238ac4416b3d99e0e7e8c5b84fa71900ae866bb0dd470535fae1cdc333a35"
+    },
+    {
+      "File": "T7E3_0443.rvf",
+      "Bytes": 1369058,
+      "Checksum": 2445001230,
+      "FirstFrame": 21264,
+      "Frames": 48,
+      "SHA256": "32ebe0a11310b7198170b7208de6dbc58848ee79403e93a2d14f242a175f37ad"
+    },
+    {
+      "File": "T7E3_0444.rvf",
+      "Bytes": 2006149,
+      "Checksum": 1394413912,
+      "FirstFrame": 21312,
+      "Frames": 48,
+      "SHA256": "379388c99cafb8081772eb1c170067d5dc67d07d7f6b2559261fde93c815e689"
+    },
+    {
+      "File": "T7E3_0445.rvf",
+      "Bytes": 1631422,
+      "Checksum": 2439443962,
+      "FirstFrame": 21360,
+      "Frames": 48,
+      "SHA256": "f37076a9449e3190be7f4f7d2dc03fee3171b7fe26db991cc19f1d536cd22671"
+    },
+    {
+      "File": "T7E3_0446.rvf",
+      "Bytes": 2238587,
+      "Checksum": 647761683,
+      "FirstFrame": 21408,
+      "Frames": 48,
+      "SHA256": "3a96efc329948ef19b180cd8e8416dbd2804fa4f406d2da89b7e65d8a7f5fe8a"
+    },
+    {
+      "File": "T7E3_0447.rvf",
+      "Bytes": 1421471,
+      "Checksum": 4278408740,
+      "FirstFrame": 21456,
+      "Frames": 48,
+      "SHA256": "7b16d38552eec8e48322951b179204a7d2e7f37c05273467008187913dff1fc9"
+    },
+    {
+      "File": "T7E3_0448.rvf",
+      "Bytes": 2004505,
+      "Checksum": 2944641409,
+      "FirstFrame": 21504,
+      "Frames": 48,
+      "SHA256": "a4780faa2796e170f2fbb111d045755df94f35b2c6a0306addf6103cb5d74bd8"
+    },
+    {
+      "File": "T7E3_0449.rvf",
+      "Bytes": 2525469,
+      "Checksum": 2028231274,
+      "FirstFrame": 21552,
+      "Frames": 48,
+      "SHA256": "edfc8d8592386087f7c931c303245ffe92e415e69aeb1ea0075a39bea19a263f"
+    },
+    {
+      "File": "T7E3_0450.rvf",
+      "Bytes": 2744720,
+      "Checksum": 2901209202,
+      "FirstFrame": 21600,
+      "Frames": 48,
+      "SHA256": "3cafca8c01f209da2c47f6206f7eed00db34d9787e0248dec1d4f0d1b5f7e4c2"
+    },
+    {
+      "File": "T7E3_0451.rvf",
+      "Bytes": 2471496,
+      "Checksum": 2093409796,
+      "FirstFrame": 21648,
+      "Frames": 48,
+      "SHA256": "a367e13344004e23042e4cd1f13bb337ef63ba3c5111eb9400373d7cfbcb56db"
+    },
+    {
+      "File": "T7E3_0452.rvf",
+      "Bytes": 2452430,
+      "Checksum": 2045028837,
+      "FirstFrame": 21696,
+      "Frames": 48,
+      "SHA256": "ed443da1b559bb65e10de994072e8086849b95bb4a93ba8dc2ee7cb730f5fb29"
+    },
+    {
+      "File": "T7E3_0453.rvf",
+      "Bytes": 1307807,
+      "Checksum": 3550107223,
+      "FirstFrame": 21744,
+      "Frames": 48,
+      "SHA256": "3f7e0ecb94feb4bef6228f8df79c13e2c9ef0c25a451635a55442d9143a75e3f"
+    },
+    {
+      "File": "T7E3_0454.rvf",
+      "Bytes": 1419035,
+      "Checksum": 2089048072,
+      "FirstFrame": 21792,
+      "Frames": 48,
+      "SHA256": "8b60eda58d8dd15934815a7b7caee372b58f4662017d4f01477f922bae892988"
+    },
+    {
+      "File": "T7E3_0455.rvf",
+      "Bytes": 1625420,
+      "Checksum": 3448050757,
+      "FirstFrame": 21840,
+      "Frames": 48,
+      "SHA256": "618b3b3cbe02287bec2e6544f0f1e1ad0cc77bbdff66a06e05433ed2e3c6cf14"
+    },
+    {
+      "File": "T7E3_0456.rvf",
+      "Bytes": 1838622,
+      "Checksum": 2277075604,
+      "FirstFrame": 21888,
+      "Frames": 48,
+      "SHA256": "aae41382bd5c5f02b6e201bb3f21f65ff19a473c24a4a753836b3b83b4d6f56d"
+    },
+    {
+      "File": "T7E3_0457.rvf",
+      "Bytes": 1001749,
+      "Checksum": 2260171646,
+      "FirstFrame": 21936,
+      "Frames": 48,
+      "SHA256": "216e1c446b6c5db540e3138f6839c99316424e0b38f4e1d049e98831f622eeaf"
+    },
+    {
+      "File": "T7E3_0458.rvf",
+      "Bytes": 1161393,
+      "Checksum": 928901566,
+      "FirstFrame": 21984,
+      "Frames": 48,
+      "SHA256": "b4c7dd648c6af0a5e60907f19db11072ef0d88d452a4e23b91c4af41fe7c4be8"
+    },
+    {
+      "File": "T7E3_0459.rvf",
+      "Bytes": 1404279,
+      "Checksum": 946924759,
+      "FirstFrame": 22032,
+      "Frames": 48,
+      "SHA256": "0f31ff7bf588b93fdc2f3d414c5b781ca0bfa40decfef0d77a12417ee772fc8c"
+    },
+    {
+      "File": "T7E3_0460.rvf",
+      "Bytes": 1527605,
+      "Checksum": 3404070080,
+      "FirstFrame": 22080,
+      "Frames": 48,
+      "SHA256": "042bee5bf1d34b231c733c4071cd4fa8396b32029d95eb8692381e29f4a84436"
+    },
+    {
+      "File": "T7E3_0461.rvf",
+      "Bytes": 1443084,
+      "Checksum": 2316161500,
+      "FirstFrame": 22128,
+      "Frames": 48,
+      "SHA256": "a1d09d9e9bc93ddc6d185e6b58ac853666e5020e0efc7d773e1dd47f49f7894a"
+    },
+    {
+      "File": "T7E3_0462.rvf",
+      "Bytes": 1100925,
+      "Checksum": 3494528785,
+      "FirstFrame": 22176,
+      "Frames": 48,
+      "SHA256": "be7cbe9117664b246b3945411353aa64be61e6787db9c2da2b141310ce0aa16a"
+    },
+    {
+      "File": "T7E3_0463.rvf",
+      "Bytes": 945206,
+      "Checksum": 1595995080,
+      "FirstFrame": 22224,
+      "Frames": 48,
+      "SHA256": "670ce970eaaa295789adc6838a9fa5642c5d12a4874a881c808e03d9acdd5dcd"
+    },
+    {
+      "File": "T7E3_0464.rvf",
+      "Bytes": 434830,
+      "Checksum": 1283850391,
+      "FirstFrame": 22272,
+      "Frames": 48,
+      "SHA256": "45a0b4a8d396f164bfe3c6863136ed9e9f5ea9d01ee39123950e6b0fb536ee8c"
+    },
+    {
+      "File": "T7E3_0465.rvf",
+      "Bytes": 912846,
+      "Checksum": 1700869163,
+      "FirstFrame": 22320,
+      "Frames": 48,
+      "SHA256": "20af77bfd7b896a838b7076a6fbc8ade2b5b88b18c7e8496892caf40290924e0"
+    },
+    {
+      "File": "T7E3_0466.rvf",
+      "Bytes": 1283586,
+      "Checksum": 456773831,
+      "FirstFrame": 22368,
+      "Frames": 48,
+      "SHA256": "5560e091210c80e1b709b0b02669d7acfa6f19b29d1c28dd06f549b3c93cd1ed"
+    },
+    {
+      "File": "T7E3_0467.rvf",
+      "Bytes": 1151389,
+      "Checksum": 2981145671,
+      "FirstFrame": 22416,
+      "Frames": 48,
+      "SHA256": "fe901c6077d3ec408ecdaee1e35993406b495381c13d4a0b13889359f9c4f48b"
+    },
+    {
+      "File": "T7E3_0468.rvf",
+      "Bytes": 1150964,
+      "Checksum": 3165527643,
+      "FirstFrame": 22464,
+      "Frames": 48,
+      "SHA256": "242509a8e865f8f6d6f9d25d6f21d1555c578aa853f5b2d2e0eaec61bbcbe9b7"
+    },
+    {
+      "File": "T7E3_0469.rvf",
+      "Bytes": 980336,
+      "Checksum": 1183429561,
+      "FirstFrame": 22512,
+      "Frames": 48,
+      "SHA256": "b11b42f42bebf0d6fb13ed6374851bd0fe7caf64bbfb5d5c3aefe602f12889d2"
+    },
+    {
+      "File": "T7E3_0470.rvf",
+      "Bytes": 1816619,
+      "Checksum": 3591221957,
+      "FirstFrame": 22560,
+      "Frames": 48,
+      "SHA256": "60ffd52b304788d8a76d5c94c05a1ca9d0e04dc763def54b6077b8a9ffbc9cab"
+    },
+    {
+      "File": "T7E3_0471.rvf",
+      "Bytes": 1991447,
+      "Checksum": 3427880655,
+      "FirstFrame": 22608,
+      "Frames": 48,
+      "SHA256": "ea4d0efd81c3f8bdb39722d64b8374b16d642e26e35d5950326ac24d8db98bfc"
+    },
+    {
+      "File": "T7E3_0472.rvf",
+      "Bytes": 1880131,
+      "Checksum": 212751589,
+      "FirstFrame": 22656,
+      "Frames": 48,
+      "SHA256": "14e8180b66c9683306514f892371e15c300f5451e0a284bc4f17321319f5dfcb"
+    },
+    {
+      "File": "T7E3_0473.rvf",
+      "Bytes": 795826,
+      "Checksum": 197044125,
+      "FirstFrame": 22704,
+      "Frames": 48,
+      "SHA256": "44962801e4b4fc44e6e08e4b225cd701d2b4100a57a7cb3d1263b7480d336f49"
+    },
+    {
+      "File": "T7E3_0474.rvf",
+      "Bytes": 734492,
+      "Checksum": 684910473,
+      "FirstFrame": 22752,
+      "Frames": 48,
+      "SHA256": "c76b46417faf6479c8278ae5d5ae7ae1be2c46bdfb7931b709b6d8be34ec4251"
+    },
+    {
+      "File": "T7E3_0475.rvf",
+      "Bytes": 1223541,
+      "Checksum": 532393175,
+      "FirstFrame": 22800,
+      "Frames": 48,
+      "SHA256": "cddb9902228659b2f19d2062f8a8814948002746f30f6323ddbf299ce02d1254"
+    },
+    {
+      "File": "T7E3_0476.rvf",
+      "Bytes": 812746,
+      "Checksum": 4164604509,
+      "FirstFrame": 22848,
+      "Frames": 48,
+      "SHA256": "901269c1de596e69cb984118209a5b2ba4a637a1633d7b401c75ac7ec6b9d00e"
+    },
+    {
+      "File": "T7E3_0477.rvf",
+      "Bytes": 795621,
+      "Checksum": 2625096382,
+      "FirstFrame": 22896,
+      "Frames": 48,
+      "SHA256": "33cc2554276dc0124f9bc654debb4b1605c8d85655294b2057ce7848a57a2ab7"
+    },
+    {
+      "File": "T7E3_0478.rvf",
+      "Bytes": 673281,
+      "Checksum": 3615749348,
+      "FirstFrame": 22944,
+      "Frames": 48,
+      "SHA256": "81a989996f626c0eafb3a2042467181c63487df5359e71f6d8b4d9e5d05a5926"
+    },
+    {
+      "File": "T7E3_0479.rvf",
+      "Bytes": 884340,
+      "Checksum": 1694677214,
+      "FirstFrame": 22992,
+      "Frames": 48,
+      "SHA256": "876b29a96aadddb49eb18d2cf34ae7d217d18ef730cead789b560303a43b05c8"
+    },
+    {
+      "File": "T7E3_0480.rvf",
+      "Bytes": 1753955,
+      "Checksum": 2334597069,
+      "FirstFrame": 23040,
+      "Frames": 48,
+      "SHA256": "b7085c04e978e34383b71244bcd5b91b45824244e5ff25589d645bd762da27da"
+    },
+    {
+      "File": "T7E3_0481.rvf",
+      "Bytes": 1190165,
+      "Checksum": 3911813950,
+      "FirstFrame": 23088,
+      "Frames": 48,
+      "SHA256": "8048ea73b07e00783b774af50b4d5a3448266f7e833209cfc2b0df16cc778514"
+    },
+    {
+      "File": "T7E3_0482.rvf",
+      "Bytes": 417178,
+      "Checksum": 4008944636,
+      "FirstFrame": 23136,
+      "Frames": 48,
+      "SHA256": "687297c0c453cc20d3acf785b0455023f1bdb19793bac30fb26bdb8840d7bd68"
+    },
+    {
+      "File": "T7E3_0483.rvf",
+      "Bytes": 560523,
+      "Checksum": 1773668695,
+      "FirstFrame": 23184,
+      "Frames": 48,
+      "SHA256": "0256cc7af450b83e3da70ebd875e7b4d7f4723049c40034754283142ae97cb4e"
+    },
+    {
+      "File": "T7E3_0484.rvf",
+      "Bytes": 645636,
+      "Checksum": 3064227875,
+      "FirstFrame": 23232,
+      "Frames": 48,
+      "SHA256": "6c42c2f1c36ad9329d9e85ae85cb2306056d7281eeaabd746133c2604be58eb2"
+    },
+    {
+      "File": "T7E3_0485.rvf",
+      "Bytes": 570309,
+      "Checksum": 161266154,
+      "FirstFrame": 23280,
+      "Frames": 48,
+      "SHA256": "0560e50b204103752ad4a233c697ab5f670f2a45f285b25b76e6034e90d11ce8"
+    },
+    {
+      "File": "T7E3_0486.rvf",
+      "Bytes": 1175636,
+      "Checksum": 770807177,
+      "FirstFrame": 23328,
+      "Frames": 48,
+      "SHA256": "6f0d3c840ebeadb16a6c94e80c33dfd163d5ff276e0d594871879344906c0aea"
+    },
+    {
+      "File": "T7E3_0487.rvf",
+      "Bytes": 673232,
+      "Checksum": 892946660,
+      "FirstFrame": 23376,
+      "Frames": 48,
+      "SHA256": "20e8c3d646f2751ed653d3280f299ba44d07bc5e320dd9bc1cb4eb1ad0061a66"
+    },
+    {
+      "File": "T7E3_0488.rvf",
+      "Bytes": 839450,
+      "Checksum": 2323468694,
+      "FirstFrame": 23424,
+      "Frames": 48,
+      "SHA256": "e0d556c7d9a6dd7ee7bb28c81d3d0cf3f467bee7afe08968d707180dee13d40c"
+    },
+    {
+      "File": "T7E3_0489.rvf",
+      "Bytes": 1297735,
+      "Checksum": 4042972714,
+      "FirstFrame": 23472,
+      "Frames": 48,
+      "SHA256": "50f2b0b0fc62554d4af630f14d10a40c1c5abde69c0748d00fefe01e58e0706e"
+    },
+    {
+      "File": "T7E3_0490.rvf",
+      "Bytes": 1002621,
+      "Checksum": 3906383764,
+      "FirstFrame": 23520,
+      "Frames": 48,
+      "SHA256": "e1a07518c154a1461751e7e1050de7bde39c720efeb6ce27ed95849ad07c7bb7"
+    },
+    {
+      "File": "T7E3_0491.rvf",
+      "Bytes": 957697,
+      "Checksum": 1476180348,
+      "FirstFrame": 23568,
+      "Frames": 48,
+      "SHA256": "285ff7a12810c8e905636b29e79a52ec9da83d9bafba035a9a0dd8aa5d5f77ad"
+    },
+    {
+      "File": "T7E3_0492.rvf",
+      "Bytes": 460229,
+      "Checksum": 2702500131,
+      "FirstFrame": 23616,
+      "Frames": 48,
+      "SHA256": "8c86ac38ee5dcfdbf78326105c8449c7c5a080b58ae3f4585e28af6e41553e9e"
+    },
+    {
+      "File": "T7E3_0493.rvf",
+      "Bytes": 392254,
+      "Checksum": 602372625,
+      "FirstFrame": 23664,
+      "Frames": 48,
+      "SHA256": "96d4c9dc11ea0a3795e80b6fe95f1101a241da206af469caa6fa0a36f3c7537c"
+    },
+    {
+      "File": "T7E3_0494.rvf",
+      "Bytes": 454374,
+      "Checksum": 1706093563,
+      "FirstFrame": 23712,
+      "Frames": 48,
+      "SHA256": "cf34e14b8644aab5ee52969fcbe3222f4aec7e9bf2f95cdb31ece06150685667"
+    },
+    {
+      "File": "T7E3_0495.rvf",
+      "Bytes": 523877,
+      "Checksum": 2286102134,
+      "FirstFrame": 23760,
+      "Frames": 48,
+      "SHA256": "b23df46ea748fc06f818c1e073c27b6ccae5f1e6b23d5aadb68d9ea7be22198c"
+    },
+    {
+      "File": "T7E3_0496.rvf",
+      "Bytes": 797248,
+      "Checksum": 1375549055,
+      "FirstFrame": 23808,
+      "Frames": 48,
+      "SHA256": "5923e3909e1e9bf92b1255fe51303cf5350f794e0a62a4bddb37e9e3b79676dc"
+    },
+    {
+      "File": "T7E3_0497.rvf",
+      "Bytes": 578462,
+      "Checksum": 986648484,
+      "FirstFrame": 23856,
+      "Frames": 48,
+      "SHA256": "189cb28feb80495c53d29f5411fff30890c43685b7e6c287ed7a3a89361df633"
+    },
+    {
+      "File": "T7E3_0498.rvf",
+      "Bytes": 1718581,
+      "Checksum": 85319107,
+      "FirstFrame": 23904,
+      "Frames": 48,
+      "SHA256": "9ed8848d2db1664d81e6673c6b3f34c3662bae1807ba12a3edfc1ef4e88ba8ee"
+    },
+    {
+      "File": "T7E3_0499.rvf",
+      "Bytes": 1031500,
+      "Checksum": 3664613885,
+      "FirstFrame": 23952,
+      "Frames": 48,
+      "SHA256": "dcf8795a7d0a8d3e3d8a958141afd13c953d9398f349dce34cdb7a24c16f5ed1"
+    },
+    {
+      "File": "T7E3_0500.rvf",
+      "Bytes": 473716,
+      "Checksum": 2005080659,
+      "FirstFrame": 24000,
+      "Frames": 48,
+      "SHA256": "e6dd7bff3cfe5d4553e62c37c2eea89a32d2e5cd69d3e5efff004473b8f3ea2b"
+    },
+    {
+      "File": "T7E3_0501.rvf",
+      "Bytes": 663424,
+      "Checksum": 2199322130,
+      "FirstFrame": 24048,
+      "Frames": 48,
+      "SHA256": "e70ed9d01442a9dfbd907580e885948ca81115f44dcf65b77c959f1e3804a6c5"
+    },
+    {
+      "File": "T7E3_0502.rvf",
+      "Bytes": 603795,
+      "Checksum": 1214909085,
+      "FirstFrame": 24096,
+      "Frames": 48,
+      "SHA256": "c9a46b395f9ebab11d57130cfcbfc5c5abcef763e113d566ac543f406d334d03"
+    },
+    {
+      "File": "T7E3_0503.rvf",
+      "Bytes": 619035,
+      "Checksum": 892359543,
+      "FirstFrame": 24144,
+      "Frames": 48,
+      "SHA256": "5a94ab1152d823d504220122961f6789e6ce560a2052487b23d94e4b630709cb"
+    },
+    {
+      "File": "T7E3_0504.rvf",
+      "Bytes": 581608,
+      "Checksum": 4006875215,
+      "FirstFrame": 24192,
+      "Frames": 48,
+      "SHA256": "7519f5bfd2cc33731384fec27847bf847d5841264a613154a89c3e214e404026"
+    },
+    {
+      "File": "T7E3_0505.rvf",
+      "Bytes": 425491,
+      "Checksum": 2402249832,
+      "FirstFrame": 24240,
+      "Frames": 48,
+      "SHA256": "1d70b82d6b370291e044cf6f1a92a7a4e1f571dfdae94abd304cfff21eca3b41"
+    },
+    {
+      "File": "T7E3_0506.rvf",
+      "Bytes": 676069,
+      "Checksum": 4117611131,
+      "FirstFrame": 24288,
+      "Frames": 48,
+      "SHA256": "ebeaed9812e5e21fa157389ab762194313aa59f2cfc5f0f2e5ce30e77ae26cf3"
+    },
+    {
+      "File": "T7E3_0507.rvf",
+      "Bytes": 673877,
+      "Checksum": 397159751,
+      "FirstFrame": 24336,
+      "Frames": 48,
+      "SHA256": "47038aa1419be8bfd15a2cbd2f387418123de4f2255d08265845c11a720d7523"
+    },
+    {
+      "File": "T7E3_0508.rvf",
+      "Bytes": 901323,
+      "Checksum": 945955017,
+      "FirstFrame": 24384,
+      "Frames": 48,
+      "SHA256": "038092b0dadbbd51d5e4fbef3c23b02ef5760a7b65e782d554fd66cc1dbbdb4f"
+    },
+    {
+      "File": "T7E3_0509.rvf",
+      "Bytes": 1352245,
+      "Checksum": 1600316096,
+      "FirstFrame": 24432,
+      "Frames": 48,
+      "SHA256": "f06d77eb61e133c1e10595f933906ec2b00dfb9722419a65579285cbd41ce1ce"
+    },
+    {
+      "File": "T7E3_0510.rvf",
+      "Bytes": 2462920,
+      "Checksum": 1478354364,
+      "FirstFrame": 24480,
+      "Frames": 48,
+      "SHA256": "9bc05d548f84e38b4cfefceb00a9bb3778eb877f6a99bd4c73a9df37aba3b7ef"
+    },
+    {
+      "File": "T7E3_0511.rvf",
+      "Bytes": 2003373,
+      "Checksum": 3445210292,
+      "FirstFrame": 24528,
+      "Frames": 48,
+      "SHA256": "7c2df1c80dbad4e40cf9229601a4eb2c20c29bd40f2379cc6f8713da457a6801"
+    },
+    {
+      "File": "T7E3_0512.rvf",
+      "Bytes": 1996257,
+      "Checksum": 2689527815,
+      "FirstFrame": 24576,
+      "Frames": 48,
+      "SHA256": "c94f5fdcc84399ad602065769e207d8e8b6fbae5d42a77fb67cfecf49e47b784"
+    },
+    {
+      "File": "T7E3_0513.rvf",
+      "Bytes": 2049485,
+      "Checksum": 2313673207,
+      "FirstFrame": 24624,
+      "Frames": 48,
+      "SHA256": "294ae5fe6bfb48b0a11308d37d3ba0c20de018214dc4ac09f578cd91c720e077"
+    },
+    {
+      "File": "T7E3_0514.rvf",
+      "Bytes": 1727674,
+      "Checksum": 3979810286,
+      "FirstFrame": 24672,
+      "Frames": 48,
+      "SHA256": "6813a322c9f2faaa00472869fe16ba09fd6c639ad4fa7d066e52c6dca2045f0b"
+    },
+    {
+      "File": "T7E3_0515.rvf",
+      "Bytes": 948061,
+      "Checksum": 2590138246,
+      "FirstFrame": 24720,
+      "Frames": 48,
+      "SHA256": "71e7aee4ca75429af8ede3a253d51f081fbf38e4b08a8d16aa4756377027c77e"
+    },
+    {
+      "File": "T7E3_0516.rvf",
+      "Bytes": 1389504,
+      "Checksum": 1636149159,
+      "FirstFrame": 24768,
+      "Frames": 48,
+      "SHA256": "52598a39108a90fda29fd9cdfc2ac49b95f840c3cbf47fca91d18bb305ab1d99"
+    },
+    {
+      "File": "T7E3_0517.rvf",
+      "Bytes": 1030722,
+      "Checksum": 3540487297,
+      "FirstFrame": 24816,
+      "Frames": 48,
+      "SHA256": "181058779ed28be16a16c8d71fa46c662d73192fff0a6084a49efb4d1e4f2edc"
+    },
+    {
+      "File": "T7E3_0518.rvf",
+      "Bytes": 823289,
+      "Checksum": 853293215,
+      "FirstFrame": 24864,
+      "Frames": 48,
+      "SHA256": "b1ad7504175d2f514a84657bd899abb1bd046a59937fa16955d3a68c78fd8fdd"
+    },
+    {
+      "File": "T7E3_0519.rvf",
+      "Bytes": 1328338,
+      "Checksum": 3383303863,
+      "FirstFrame": 24912,
+      "Frames": 48,
+      "SHA256": "08cc6c58f0e2f44f545bf7bbdf489483b349ef58d96d7e5a3cfb77f7f135e001"
+    },
+    {
+      "File": "T7E3_0520.rvf",
+      "Bytes": 1202138,
+      "Checksum": 530686846,
+      "FirstFrame": 24960,
+      "Frames": 48,
+      "SHA256": "fbfe10c7c61979bab0022d3803ab4e4c71315071ba34c1dae1ddbd17f6d05575"
+    },
+    {
+      "File": "T7E3_0521.rvf",
+      "Bytes": 1167422,
+      "Checksum": 347037952,
+      "FirstFrame": 25008,
+      "Frames": 48,
+      "SHA256": "7a1394ca3b6fe9ee694d7132367e16b75a86f5921727529c019aec7e4a53dfac"
+    },
+    {
+      "File": "T7E3_0522.rvf",
+      "Bytes": 1225007,
+      "Checksum": 2833203125,
+      "FirstFrame": 25056,
+      "Frames": 48,
+      "SHA256": "9892fa7143d7c8f8054387a2112a08b2074ce8be5a93d9bd6f305b26593b5e7b"
+    },
+    {
+      "File": "T7E3_0523.rvf",
+      "Bytes": 1147260,
+      "Checksum": 152754376,
+      "FirstFrame": 25104,
+      "Frames": 48,
+      "SHA256": "7aa424c16c50380f9208ce0e291174a671cf3b2ac4b13a91e73d41a70856be09"
+    },
+    {
+      "File": "T7E3_0524.rvf",
+      "Bytes": 752572,
+      "Checksum": 488872597,
+      "FirstFrame": 25152,
+      "Frames": 48,
+      "SHA256": "558a913886f89195764b5034a4cd8c69e07096eb90af5d305c4ce312250f0b6c"
+    },
+    {
+      "File": "T7E3_0525.rvf",
+      "Bytes": 1095926,
+      "Checksum": 97821099,
+      "FirstFrame": 25200,
+      "Frames": 48,
+      "SHA256": "966dcd81565096cea00bbbc7016faef049b7337cc05eb1bc0dda57aacd36dd9e"
+    },
+    {
+      "File": "T7E3_0526.rvf",
+      "Bytes": 1654986,
+      "Checksum": 3884355161,
+      "FirstFrame": 25248,
+      "Frames": 48,
+      "SHA256": "3f4b03cd5fa949a9403cf6d7acc0fcdc45eebc7c75dd4e80ea1eb6d22f8feb8a"
+    },
+    {
+      "File": "T7E3_0527.rvf",
+      "Bytes": 1307275,
+      "Checksum": 3043658940,
+      "FirstFrame": 25296,
+      "Frames": 48,
+      "SHA256": "8ef5094f7a1322fbbd2409a539a1e3562a365564e4c70287e6b4ce5d02432362"
+    },
+    {
+      "File": "T7E3_0528.rvf",
+      "Bytes": 1003968,
+      "Checksum": 4231785867,
+      "FirstFrame": 25344,
+      "Frames": 48,
+      "SHA256": "25f9d5ff9e016f80fd394da0dbace318259dff1dda4678a2d56a3e4276378b11"
+    },
+    {
+      "File": "T7E3_0529.rvf",
+      "Bytes": 1213023,
+      "Checksum": 2990428390,
+      "FirstFrame": 25392,
+      "Frames": 48,
+      "SHA256": "fde7d0cf5c33b3b19ab3ddb6ac576ad9e3390dd2130c6e2388943487300c786e"
+    },
+    {
+      "File": "T7E3_0530.rvf",
+      "Bytes": 1325664,
+      "Checksum": 593105087,
+      "FirstFrame": 25440,
+      "Frames": 48,
+      "SHA256": "910643a42d9506915d6e5ed19fd53aed87a1ae03a92161fcf9a042b1d3fd5a51"
+    },
+    {
+      "File": "T7E3_0531.rvf",
+      "Bytes": 1475674,
+      "Checksum": 2391006384,
+      "FirstFrame": 25488,
+      "Frames": 48,
+      "SHA256": "81e34cd0be6288dc363d69685c78e8cfa26497b247115e192cc1ceb781f4b810"
+    },
+    {
+      "File": "T7E3_0532.rvf",
+      "Bytes": 1757921,
+      "Checksum": 1147727436,
+      "FirstFrame": 25536,
+      "Frames": 48,
+      "SHA256": "f9302e15086096b62aa07ca576591b6a50bb8073db4e43fd20e1433fed641bc3"
+    },
+    {
+      "File": "T7E3_0533.rvf",
+      "Bytes": 1684947,
+      "Checksum": 3752290681,
+      "FirstFrame": 25584,
+      "Frames": 48,
+      "SHA256": "2747eeaacea7787c53138bd5862a4644a73fc9255cb60665b66b04bd274644fd"
+    },
+    {
+      "File": "T7E3_0534.rvf",
+      "Bytes": 2163777,
+      "Checksum": 1881437587,
+      "FirstFrame": 25632,
+      "Frames": 48,
+      "SHA256": "1e35a9e9a90a19310c69d16b8c05cea03d184a6de6bc3580c055c2bcba5b3c5f"
+    },
+    {
+      "File": "T7E3_0535.rvf",
+      "Bytes": 1743506,
+      "Checksum": 688578845,
+      "FirstFrame": 25680,
+      "Frames": 48,
+      "SHA256": "d7c0d88f0fa8c167b5d42fb00a3c69e2f59b1f733b882f2921a7b5fce1c5ceca"
+    },
+    {
+      "File": "T7E3_0536.rvf",
+      "Bytes": 1474594,
+      "Checksum": 223571714,
+      "FirstFrame": 25728,
+      "Frames": 48,
+      "SHA256": "e9823c3b25f3e871a5e56ad31c58a50c1da8c1614b746805df9c1d00914eec84"
+    },
+    {
+      "File": "T7E3_0537.rvf",
+      "Bytes": 1650948,
+      "Checksum": 2527650484,
+      "FirstFrame": 25776,
+      "Frames": 48,
+      "SHA256": "42e0c5b614ba805f1f392f09464a9c3f566d6e7449fc5f323317164977cb8aa0"
+    },
+    {
+      "File": "T7E3_0538.rvf",
+      "Bytes": 1480927,
+      "Checksum": 2425376343,
+      "FirstFrame": 25824,
+      "Frames": 48,
+      "SHA256": "6a6b13e0ede027d1ab4ee6e213b03cddadce65a05d7e72fe54426dfe06b060f2"
+    },
+    {
+      "File": "T7E3_0539.rvf",
+      "Bytes": 1479799,
+      "Checksum": 3532697295,
+      "FirstFrame": 25872,
+      "Frames": 48,
+      "SHA256": "fb9c95aa1246a16c1a6104544a3462d9bd9631b0b13bad5826a577e237635a34"
+    },
+    {
+      "File": "T7E3_0540.rvf",
+      "Bytes": 1984982,
+      "Checksum": 3679589801,
+      "FirstFrame": 25920,
+      "Frames": 48,
+      "SHA256": "e5180e92830c06a02df83b62466f77e1d1a58a312d0605a5916b142abcc11da4"
+    },
+    {
+      "File": "T7E3_0541.rvf",
+      "Bytes": 1146408,
+      "Checksum": 3492204606,
+      "FirstFrame": 25968,
+      "Frames": 48,
+      "SHA256": "a4f25b70b507ac6c3229b97abdc87c9796fdf1cd8551fc4cc2999a9ad79f737f"
+    },
+    {
+      "File": "T7E3_0542.rvf",
+      "Bytes": 1486702,
+      "Checksum": 1099870949,
+      "FirstFrame": 26016,
+      "Frames": 48,
+      "SHA256": "fc8382cc67fc7a63997164153a12642d92cdc094d518c471ed1ded630ac61361"
+    },
+    {
+      "File": "T7E3_0543.rvf",
+      "Bytes": 1603842,
+      "Checksum": 952408121,
+      "FirstFrame": 26064,
+      "Frames": 48,
+      "SHA256": "c4f09eee4c7d99e66becc1c5876f923a637b3c8db7b10d736de70b32f93839ae"
+    },
+    {
+      "File": "T7E3_0544.rvf",
+      "Bytes": 1719561,
+      "Checksum": 370735139,
+      "FirstFrame": 26112,
+      "Frames": 48,
+      "SHA256": "790eae36be416fdc68665296bf23f61f59d30ccdc7061e028528855ac7ec26fa"
+    },
+    {
+      "File": "T7E3_0545.rvf",
+      "Bytes": 1446473,
+      "Checksum": 3641154834,
+      "FirstFrame": 26160,
+      "Frames": 48,
+      "SHA256": "175e7950587a938b145f88fc14322283f3e9e0f06207ca60296cf2b57dc30a7a"
+    },
+    {
+      "File": "T7E3_0546.rvf",
+      "Bytes": 1704346,
+      "Checksum": 206690944,
+      "FirstFrame": 26208,
+      "Frames": 48,
+      "SHA256": "0f62386f9b59887a82491422e784a927f80921d341356134fd0cbb4a371624f1"
+    },
+    {
+      "File": "T7E3_0547.rvf",
+      "Bytes": 1330790,
+      "Checksum": 2961562680,
+      "FirstFrame": 26256,
+      "Frames": 48,
+      "SHA256": "53ee00c4982eff74b609a522f4b34ab12f7953d469d4a420ce46164f29dfec1f"
+    },
+    {
+      "File": "T7E3_0548.rvf",
+      "Bytes": 1080079,
+      "Checksum": 1671512579,
+      "FirstFrame": 26304,
+      "Frames": 48,
+      "SHA256": "20fe17bb29d4b29e683fc06e1f1657b9d0ec050ecf351507342d9ca93edc2e64"
+    },
+    {
+      "File": "T7E3_0549.rvf",
+      "Bytes": 1351247,
+      "Checksum": 3180521475,
+      "FirstFrame": 26352,
+      "Frames": 48,
+      "SHA256": "baf8862c973b98629a5eec1217f1087d2b0aa481ebc3792ddfffcd990b116f9f"
+    },
+    {
+      "File": "T7E3_0550.rvf",
+      "Bytes": 1778565,
+      "Checksum": 3226028892,
+      "FirstFrame": 26400,
+      "Frames": 48,
+      "SHA256": "412636d0569a1e5fb901c368786a26715d81edb4ded7e5cb6d0b7f5af794bc87"
+    },
+    {
+      "File": "T7E3_0551.rvf",
+      "Bytes": 1831142,
+      "Checksum": 3969401919,
+      "FirstFrame": 26448,
+      "Frames": 48,
+      "SHA256": "e80aaf31b6265c38804a149b37a31b4d4998082862aab9db6113fbd9e7d6f4f3"
+    },
+    {
+      "File": "T7E3_0552.rvf",
+      "Bytes": 1111353,
+      "Checksum": 739472559,
+      "FirstFrame": 26496,
+      "Frames": 48,
+      "SHA256": "4a8857bb6e278ef9df83e13a476af228acd53b0cc6c27d4e0542e8f4fb59c97c"
+    },
+    {
+      "File": "T7E3_0553.rvf",
+      "Bytes": 1108537,
+      "Checksum": 717234884,
+      "FirstFrame": 26544,
+      "Frames": 48,
+      "SHA256": "1d2d32d91ce3cd468d199ae8ee1b725a95298a7b3d29dab0819a2b0785e1654c"
+    },
+    {
+      "File": "T7E3_0554.rvf",
+      "Bytes": 1261066,
+      "Checksum": 2626825061,
+      "FirstFrame": 26592,
+      "Frames": 48,
+      "SHA256": "fa6e9fc3d7e12ea07c4923b7c4b2e5dfb5e0f690877cb659b730f3bd97ef6a15"
+    },
+    {
+      "File": "T7E3_0555.rvf",
+      "Bytes": 1594141,
+      "Checksum": 1480975593,
+      "FirstFrame": 26640,
+      "Frames": 48,
+      "SHA256": "7b315b7ae52ffa8f3bdd23c67a0d4abf70d58020c6d2fde853d083db48943f96"
+    },
+    {
+      "File": "T7E3_0556.rvf",
+      "Bytes": 819598,
+      "Checksum": 1393019309,
+      "FirstFrame": 26688,
+      "Frames": 48,
+      "SHA256": "70a0fe2a0aaebcfff489a5a89d8c4c186ab84ccd31327361905abaa64274c5bc"
+    },
+    {
+      "File": "T7E3_0557.rvf",
+      "Bytes": 1168151,
+      "Checksum": 3776689363,
+      "FirstFrame": 26736,
+      "Frames": 48,
+      "SHA256": "9d47a2b4f53292d4a5af6ad37be0e212777935baa068414ea3ef3bd9bc2371b0"
+    },
+    {
+      "File": "T7E3_0558.rvf",
+      "Bytes": 341274,
+      "Checksum": 1063961131,
+      "FirstFrame": 26784,
+      "Frames": 48,
+      "SHA256": "91ab54d858904f281bf8526161802e9fe22151077beab003eebc32f08fc4f2e6"
+    },
+    {
+      "File": "T7E3_0559.rvf",
+      "Bytes": 556789,
+      "Checksum": 560356451,
+      "FirstFrame": 26832,
+      "Frames": 48,
+      "SHA256": "dda715a9b0ba1e74b713d5007fe8de4d7116dd01d8fcd0135894b458f5325794"
+    },
+    {
+      "File": "T7E3_0560.rvf",
+      "Bytes": 1076719,
+      "Checksum": 3494679547,
+      "FirstFrame": 26880,
+      "Frames": 48,
+      "SHA256": "73f59840a31c22daf8462bf752e2841dc2a66f6cac0fd72853cb3213d9aa9dfd"
+    },
+    {
+      "File": "T7E3_0561.rvf",
+      "Bytes": 848099,
+      "Checksum": 383917789,
+      "FirstFrame": 26928,
+      "Frames": 48,
+      "SHA256": "898fc3f974fc456666f44b3364e9b03b254f7c22650a305fd8e0b1114d5aad74"
+    },
+    {
+      "File": "T7E3_0562.rvf",
+      "Bytes": 755487,
+      "Checksum": 258246559,
+      "FirstFrame": 26976,
+      "Frames": 48,
+      "SHA256": "c9ce373c639bcecbeb1c54419ba3d652b262f091f824f524dbb84e264e0595fc"
+    },
+    {
+      "File": "T7E3_0563.rvf",
+      "Bytes": 780485,
+      "Checksum": 2605235266,
+      "FirstFrame": 27024,
+      "Frames": 48,
+      "SHA256": "5d2a43515ab677abd67362ff117d21d95b623c3ccb0b4d5a2856893e3a569972"
+    },
+    {
+      "File": "T7E3_0564.rvf",
+      "Bytes": 725153,
+      "Checksum": 1184936183,
+      "FirstFrame": 27072,
+      "Frames": 48,
+      "SHA256": "c41b2dce42e5ca73829b05472ddb0ec37b19a681749d974dbed832b44a8359b8"
+    },
+    {
+      "File": "T7E3_0565.rvf",
+      "Bytes": 693406,
+      "Checksum": 3623067750,
+      "FirstFrame": 27120,
+      "Frames": 48,
+      "SHA256": "879395f7143431287ac7fb0b04d8d2fb360efd9eb362cbeb36e644a7219c5880"
+    },
+    {
+      "File": "T7E3_0566.rvf",
+      "Bytes": 992059,
+      "Checksum": 2429388792,
+      "FirstFrame": 27168,
+      "Frames": 48,
+      "SHA256": "3f669313ae118dfc629c2f49d6e67a80b6460cc3b78b087238f4f02cf9e7944e"
+    },
+    {
+      "File": "T7E3_0567.rvf",
+      "Bytes": 1142666,
+      "Checksum": 1907819932,
+      "FirstFrame": 27216,
+      "Frames": 48,
+      "SHA256": "5d49ee8ad5db80d9a2f351d2486f13d3221c1aeaf3b3303ff4f31d27d68cb726"
+    },
+    {
+      "File": "T7E3_0568.rvf",
+      "Bytes": 1019339,
+      "Checksum": 3313168217,
+      "FirstFrame": 27264,
+      "Frames": 48,
+      "SHA256": "e3430afa29b81c30e300f5909191e100b9dca1a89744d7774c90771afc2bb3f0"
+    },
+    {
+      "File": "T7E3_0569.rvf",
+      "Bytes": 1089924,
+      "Checksum": 251010818,
+      "FirstFrame": 27312,
+      "Frames": 48,
+      "SHA256": "dc351e26becdf385c2925c56cfa83621b188cbeee5a7c9657ba8ca5da836eb48"
+    },
+    {
+      "File": "T7E3_0570.rvf",
+      "Bytes": 1374380,
+      "Checksum": 630924433,
+      "FirstFrame": 27360,
+      "Frames": 48,
+      "SHA256": "e954806b236a0dcaea591fa597288d82a4c0d7b34d927110efd461f7174c0c35"
+    },
+    {
+      "File": "T7E3_0571.rvf",
+      "Bytes": 1306313,
+      "Checksum": 3230587397,
+      "FirstFrame": 27408,
+      "Frames": 48,
+      "SHA256": "e4121dee7e4e234e119677a0e6e00ea5b1f32fc49dff1cf56f8ce336ef5a7b53"
+    },
+    {
+      "File": "T7E3_0572.rvf",
+      "Bytes": 1486035,
+      "Checksum": 1426393622,
+      "FirstFrame": 27456,
+      "Frames": 48,
+      "SHA256": "4e0302c2388c497e5edd786029ee7bc0b3b12e0defa5f21885244e69c72cf510"
+    },
+    {
+      "File": "T7E3_0573.rvf",
+      "Bytes": 1613109,
+      "Checksum": 3415744837,
+      "FirstFrame": 27504,
+      "Frames": 48,
+      "SHA256": "ce478501fac3550b58efb22035716f7fae71a5a34f27a9022a82110ac6501f81"
+    },
+    {
+      "File": "T7E3_0574.rvf",
+      "Bytes": 2162188,
+      "Checksum": 1247323926,
+      "FirstFrame": 27552,
+      "Frames": 48,
+      "SHA256": "c6b659d4c24aae21784725c955e949cd0b6401d0472c741b3f30d337d3f54b94"
+    },
+    {
+      "File": "T7E3_0575.rvf",
+      "Bytes": 1938711,
+      "Checksum": 3397517578,
+      "FirstFrame": 27600,
+      "Frames": 48,
+      "SHA256": "46e056d73b3bc8288abd946e35c4e9dabf6f5e477906ad14e271ed711bbbde6d"
+    },
+    {
+      "File": "T7E3_0576.rvf",
+      "Bytes": 2187519,
+      "Checksum": 3000450112,
+      "FirstFrame": 27648,
+      "Frames": 48,
+      "SHA256": "1b7bda65b9f8170ddc62c0538628bb64b175dc8a4e422e261c353c306d9a860d"
+    },
+    {
+      "File": "T7E3_0577.rvf",
+      "Bytes": 1455470,
+      "Checksum": 996302574,
+      "FirstFrame": 27696,
+      "Frames": 48,
+      "SHA256": "ae7ebccbb0ef10877eb0d53f97c4a24ab381d05d8f4572ee0633fb7ee0efab9e"
+    },
+    {
+      "File": "T7E3_0578.rvf",
+      "Bytes": 1473728,
+      "Checksum": 1979129221,
+      "FirstFrame": 27744,
+      "Frames": 48,
+      "SHA256": "aae1a7267938e93395187cd496aa46088fe40c780f56780099fe0e64ca9ece8d"
+    },
+    {
+      "File": "T7E3_0579.rvf",
+      "Bytes": 1564347,
+      "Checksum": 480066747,
+      "FirstFrame": 27792,
+      "Frames": 48,
+      "SHA256": "fa3ce189165dbd8313d191703e723bd6397626562647b71eabe93276d77fea68"
+    },
+    {
+      "File": "T7E3_0580.rvf",
+      "Bytes": 1641244,
+      "Checksum": 1395584232,
+      "FirstFrame": 27840,
+      "Frames": 48,
+      "SHA256": "62b796ef32b122dc7a1d292ffe1e5713279d2f6cb5438460823acc4960c97599"
+    },
+    {
+      "File": "T7E3_0581.rvf",
+      "Bytes": 1335161,
+      "Checksum": 3234749435,
+      "FirstFrame": 27888,
+      "Frames": 48,
+      "SHA256": "bdcf7d3508ed40ef63536fbfb4c513d5ec54af5c9cdc52ba9d05832ec1e1cd68"
+    },
+    {
+      "File": "T7E3_0582.rvf",
+      "Bytes": 738496,
+      "Checksum": 1162285665,
+      "FirstFrame": 27936,
+      "Frames": 48,
+      "SHA256": "723ac902715dbc777d5cdbab77f2019aed243b674cdb9533d94ed907aeffc798"
+    },
+    {
+      "File": "T7E3_0583.rvf",
+      "Bytes": 679003,
+      "Checksum": 479932858,
+      "FirstFrame": 27984,
+      "Frames": 48,
+      "SHA256": "75670fd1f4d330d2eef605d616a95f472d2cdcea74b5f9accf1fb8153607a2a2"
+    },
+    {
+      "File": "T7E3_0584.rvf",
+      "Bytes": 1018083,
+      "Checksum": 2257447822,
+      "FirstFrame": 28032,
+      "Frames": 48,
+      "SHA256": "739963194ad97e0f4e4eae39126d3b1c408f0f331ef5b8b76896ab8f037aed7d"
+    },
+    {
+      "File": "T7E3_0585.rvf",
+      "Bytes": 1345818,
+      "Checksum": 1525450756,
+      "FirstFrame": 28080,
+      "Frames": 48,
+      "SHA256": "fafc665aec2509c91ce4ac7c1627235d4cec76b3ec0b535e9866d5be864d2015"
+    },
+    {
+      "File": "T7E3_0586.rvf",
+      "Bytes": 1337603,
+      "Checksum": 992455906,
+      "FirstFrame": 28128,
+      "Frames": 48,
+      "SHA256": "e790b828237720da4c95bb157d5b0f404cc6c5cf321ff8d3c07755fb3ebb115b"
+    },
+    {
+      "File": "T7E3_0587.rvf",
+      "Bytes": 1416135,
+      "Checksum": 1902128746,
+      "FirstFrame": 28176,
+      "Frames": 48,
+      "SHA256": "6afca0205eed8cc3ba3d8e10a778d0d764af1bc7d82ef3013951fbe8e424f9c3"
+    },
+    {
+      "File": "T7E3_0588.rvf",
+      "Bytes": 1181310,
+      "Checksum": 57630036,
+      "FirstFrame": 28224,
+      "Frames": 48,
+      "SHA256": "a222f9380142b301a2c2a50406fca62fbf459fecd6bd79c14601d4571121bd68"
+    },
+    {
+      "File": "T7E3_0589.rvf",
+      "Bytes": 991737,
+      "Checksum": 493852868,
+      "FirstFrame": 28272,
+      "Frames": 48,
+      "SHA256": "9429dd5fe525d82b61febef73151b72fd3b0052795cecd5676ea2ed17b511d16"
+    },
+    {
+      "File": "T7E3_0590.rvf",
+      "Bytes": 1340231,
+      "Checksum": 1454369569,
+      "FirstFrame": 28320,
+      "Frames": 48,
+      "SHA256": "1fe37097291f209d02017a2294667ff55548809a313ab0f50b0a009abe136e72"
+    },
+    {
+      "File": "T7E3_0591.rvf",
+      "Bytes": 1734132,
+      "Checksum": 2496909742,
+      "FirstFrame": 28368,
+      "Frames": 48,
+      "SHA256": "9ef529fd1c6958bba3e9c27a6790dd8c6833defea8778675f2f9750b8fdc9cb9"
+    },
+    {
+      "File": "T7E3_0592.rvf",
+      "Bytes": 1833895,
+      "Checksum": 1359241601,
+      "FirstFrame": 28416,
+      "Frames": 48,
+      "SHA256": "7d3b6748524342922585be0a1f49ee740cde0c953a3abe862053b3fae476fda2"
+    },
+    {
+      "File": "T7E3_0593.rvf",
+      "Bytes": 1366736,
+      "Checksum": 4059818080,
+      "FirstFrame": 28464,
+      "Frames": 48,
+      "SHA256": "1ec5412f44b6496dd2efee5cc6fc0f32aef12f241a9948d27c99deb47cd54c30"
+    },
+    {
+      "File": "T7E3_0594.rvf",
+      "Bytes": 966275,
+      "Checksum": 1216290514,
+      "FirstFrame": 28512,
+      "Frames": 48,
+      "SHA256": "6f7a8eef5ae66feabd06635eb4340e554377bbf3c56420029c9b5f48b34617c8"
+    },
+    {
+      "File": "T7E3_0595.rvf",
+      "Bytes": 1426694,
+      "Checksum": 522147879,
+      "FirstFrame": 28560,
+      "Frames": 48,
+      "SHA256": "098cc297a741c28459652817c9be392c2f67f0fd77fdd24e426d1bb0f06efc85"
+    },
+    {
+      "File": "T7E3_0596.rvf",
+      "Bytes": 1929580,
+      "Checksum": 1006491369,
+      "FirstFrame": 28608,
+      "Frames": 48,
+      "SHA256": "d98e3663d808e7747dd260d9f3030d69cca5eb6c59d6832a252fc5f3c02c3f8e"
+    },
+    {
+      "File": "T7E3_0597.rvf",
+      "Bytes": 1033957,
+      "Checksum": 4020976610,
+      "FirstFrame": 28656,
+      "Frames": 48,
+      "SHA256": "87e19382a9aec87c48dfab6e54e82d48cadba45fa685f8ee3f1b0a87db2f6395"
+    },
+    {
+      "File": "T7E3_0598.rvf",
+      "Bytes": 1138374,
+      "Checksum": 2851451616,
+      "FirstFrame": 28704,
+      "Frames": 48,
+      "SHA256": "5a97b412d43012bddff0b4d92a2154f9ab554cbf60afaf7f82be06461d180b95"
+    },
+    {
+      "File": "T7E3_0599.rvf",
+      "Bytes": 1052842,
+      "Checksum": 1909502476,
+      "FirstFrame": 28752,
+      "Frames": 48,
+      "SHA256": "184f7364a9a1c74719e7beed567afd63fe9347f7ec3a909249d2ed60d636bdc1"
+    },
+    {
+      "File": "T7E3_0600.rvf",
+      "Bytes": 1011451,
+      "Checksum": 2024876062,
+      "FirstFrame": 28800,
+      "Frames": 48,
+      "SHA256": "6b7ab5f587781eb20ea0f2db9d02d751e7396b5feb3dae93330028cd9cdf39e8"
+    },
+    {
+      "File": "T7E3_0601.rvf",
+      "Bytes": 512617,
+      "Checksum": 3799747777,
+      "FirstFrame": 28848,
+      "Frames": 48,
+      "SHA256": "b4be15b3ac3b23f87c682e1cc5709a7f05afc17c38280b83d77b9a59daa98db7"
+    },
+    {
+      "File": "T7E3_0602.rvf",
+      "Bytes": 1480613,
+      "Checksum": 3034902653,
+      "FirstFrame": 28896,
+      "Frames": 48,
+      "SHA256": "7fc2ad3914867e99f18cdb805860665b173590db134840dbd53144135dc15779"
+    },
+    {
+      "File": "T7E3_0603.rvf",
+      "Bytes": 1501201,
+      "Checksum": 2081695690,
+      "FirstFrame": 28944,
+      "Frames": 48,
+      "SHA256": "1bee7f128d3afee1db8dbdc5a74a25d53a7225d0d3fd7441e8c78466b47c2657"
+    },
+    {
+      "File": "T7E3_0604.rvf",
+      "Bytes": 650102,
+      "Checksum": 606637309,
+      "FirstFrame": 28992,
+      "Frames": 48,
+      "SHA256": "8948d589a51c247d2c5a5c0ee3e866ab57d7fb305d1dd3b1a7a07ca230ae2c12"
+    },
+    {
+      "File": "T7E3_0605.rvf",
+      "Bytes": 810641,
+      "Checksum": 2910444913,
+      "FirstFrame": 29040,
+      "Frames": 48,
+      "SHA256": "81cba03743d4ccd60ee6f11504dfe16705869001734dd6936847e41bddee3c56"
+    },
+    {
+      "File": "T7E3_0606.rvf",
+      "Bytes": 652962,
+      "Checksum": 1656316485,
+      "FirstFrame": 29088,
+      "Frames": 48,
+      "SHA256": "040f0fb2b32732c923e690c580e3e1d3d275e2a8b929189653459166ae03eb94"
+    },
+    {
+      "File": "T7E3_0607.rvf",
+      "Bytes": 791365,
+      "Checksum": 2757644923,
+      "FirstFrame": 29136,
+      "Frames": 48,
+      "SHA256": "f6cef6548b489a8ec9ec6d57517955343677e5be1afeeb755eca1a117994384e"
+    },
+    {
+      "File": "T7E3_0608.rvf",
+      "Bytes": 512863,
+      "Checksum": 3610815106,
+      "FirstFrame": 29184,
+      "Frames": 48,
+      "SHA256": "d9bdbb156b4b9df78b04b1df1a0b08f80a67b24ee5962d4a07644b57c97063b4"
+    },
+    {
+      "File": "T7E3_0609.rvf",
+      "Bytes": 368348,
+      "Checksum": 2376116282,
+      "FirstFrame": 29232,
+      "Frames": 48,
+      "SHA256": "201bdbe50c0a3f8382d467d88903a31a0f0d62af046ba7eba447d32dd224beb4"
+    },
+    {
+      "File": "T7E3_0610.rvf",
+      "Bytes": 219146,
+      "Checksum": 562533033,
+      "FirstFrame": 29280,
+      "Frames": 48,
+      "SHA256": "8b4a3aaa9a1eda42326a952abb2c26fa78c7c18fb5e691019c2200ff928dfdd4"
+    },
+    {
+      "File": "T7E3_0611.rvf",
+      "Bytes": 220478,
+      "Checksum": 1914293080,
+      "FirstFrame": 29328,
+      "Frames": 48,
+      "SHA256": "179dfde4be8d339b74a09b89f952cc8ae18cfdf3542f69d2d7613fb6b79afefa"
+    },
+    {
+      "File": "T7E3_0612.rvf",
+      "Bytes": 358500,
+      "Checksum": 2879284448,
+      "FirstFrame": 29376,
+      "Frames": 48,
+      "SHA256": "3a399a68d62c11328961ecc8466e0f92da18684721ffc85438b6dae71ff14a7a"
+    },
+    {
+      "File": "T7E3_0613.rvf",
+      "Bytes": 675730,
+      "Checksum": 2892554654,
+      "FirstFrame": 29424,
+      "Frames": 48,
+      "SHA256": "6d1e96644e22f4890e5f301c5c412846408d9deee903117d4d7e6a17be698d9f"
+    },
+    {
+      "File": "T7E3_0614.rvf",
+      "Bytes": 719550,
+      "Checksum": 2226475335,
+      "FirstFrame": 29472,
+      "Frames": 48,
+      "SHA256": "33246ecd75ba82ff68885c5072e7c6f3b990ae382aedb55759861d27b6210022"
+    },
+    {
+      "File": "T7E3_0615.rvf",
+      "Bytes": 1112095,
+      "Checksum": 580201933,
+      "FirstFrame": 29520,
+      "Frames": 48,
+      "SHA256": "c0f3bea86cdb97a1364448cf63fd7dce703bb7846fcbfd7359288ea735dc907b"
+    },
+    {
+      "File": "T7E3_0616.rvf",
+      "Bytes": 951831,
+      "Checksum": 3670833808,
+      "FirstFrame": 29568,
+      "Frames": 48,
+      "SHA256": "317c80db8f7cda68a392cc62e77f5bfe5d34622fbb6129aa516d5fe51fdc431a"
+    },
+    {
+      "File": "T7E3_0617.rvf",
+      "Bytes": 878944,
+      "Checksum": 3319117126,
+      "FirstFrame": 29616,
+      "Frames": 48,
+      "SHA256": "094c32b61f7e55bb1c79e98061edfc919241b9f8c3bb9c106a57f07891db4541"
+    },
+    {
+      "File": "T7E3_0618.rvf",
+      "Bytes": 828620,
+      "Checksum": 3737288164,
+      "FirstFrame": 29664,
+      "Frames": 48,
+      "SHA256": "c2d79e85d2ee87e1dc7c0b0db302c86932e063646232a79cb34d60ae3402877a"
+    },
+    {
+      "File": "T7E3_0619.rvf",
+      "Bytes": 598739,
+      "Checksum": 1912198333,
+      "FirstFrame": 29712,
+      "Frames": 48,
+      "SHA256": "2c7b6989eac5366871be35e8877f6b17f4c6b1351ce0dce583d5f033d7f75b60"
+    },
+    {
+      "File": "T7E3_0620.rvf",
+      "Bytes": 694126,
+      "Checksum": 3767575083,
+      "FirstFrame": 29760,
+      "Frames": 48,
+      "SHA256": "af67d7071b14fc83b0af84ddd75fb7231f86ee1a86bdebead0705485a4370eb6"
+    },
+    {
+      "File": "T7E3_0621.rvf",
+      "Bytes": 1069708,
+      "Checksum": 94199807,
+      "FirstFrame": 29808,
+      "Frames": 48,
+      "SHA256": "eed340d50e79eb4d56f4be8312f0e44a90f6f3ea258b8fbeea7e3857a49bb4f6"
+    },
+    {
+      "File": "T7E3_0622.rvf",
+      "Bytes": 695923,
+      "Checksum": 1842459985,
+      "FirstFrame": 29856,
+      "Frames": 48,
+      "SHA256": "0329d0b2e1735acedc174ec419a33c0bc959e3286da63fdd90136f687fd17cd2"
+    },
+    {
+      "File": "T7E3_0623.rvf",
+      "Bytes": 736259,
+      "Checksum": 977006575,
+      "FirstFrame": 29904,
+      "Frames": 48,
+      "SHA256": "152f061224e9978b2a8272dbddd5b848d223a9ac2c285849b563882f75e290c4"
+    },
+    {
+      "File": "T7E3_0624.rvf",
+      "Bytes": 811058,
+      "Checksum": 972351336,
+      "FirstFrame": 29952,
+      "Frames": 48,
+      "SHA256": "674d60e97c9abb87ddcb73a868f01ab765cfd330b28dcd6a228b26fe4bb15430"
+    },
+    {
+      "File": "T7E3_0625.rvf",
+      "Bytes": 774719,
+      "Checksum": 3789763954,
+      "FirstFrame": 30000,
+      "Frames": 48,
+      "SHA256": "fa1ab17dee27cf75d7c4d77bc4e214b66a8327353d168296be1be83b9de51648"
+    },
+    {
+      "File": "T7E3_0626.rvf",
+      "Bytes": 1222377,
+      "Checksum": 1871879687,
+      "FirstFrame": 30048,
+      "Frames": 48,
+      "SHA256": "05a3500bad4b11c700b60f378732eb242b05c0267ef94fab5e5aa1ada61d05c0"
+    },
+    {
+      "File": "T7E3_0627.rvf",
+      "Bytes": 1238963,
+      "Checksum": 1184878475,
+      "FirstFrame": 30096,
+      "Frames": 48,
+      "SHA256": "cc2e7efe0c31373143303ca60ea36d5f480d80292b8310bf10c18cbb8940a760"
+    },
+    {
+      "File": "T7E3_0628.rvf",
+      "Bytes": 762721,
+      "Checksum": 1392882586,
+      "FirstFrame": 30144,
+      "Frames": 48,
+      "SHA256": "1d789e99db704d78edacdee3920913efef8e106c289cb77abbcc83f3c2daee32"
+    },
+    {
+      "File": "T7E3_0629.rvf",
+      "Bytes": 822661,
+      "Checksum": 2013821773,
+      "FirstFrame": 30192,
+      "Frames": 48,
+      "SHA256": "56bc6f205dd47578bf08cc0847b7907e66919b92d957c220de72e35f85dcf5d5"
+    },
+    {
+      "File": "T7E3_0630.rvf",
+      "Bytes": 452151,
+      "Checksum": 3091284161,
+      "FirstFrame": 30240,
+      "Frames": 48,
+      "SHA256": "5575c92b998d9ecb25dfd63330260970fc47ad3b0c5ccad3ef1cd8772c5f8874"
+    },
+    {
+      "File": "T7E3_0631.rvf",
+      "Bytes": 832429,
+      "Checksum": 2329867207,
+      "FirstFrame": 30288,
+      "Frames": 48,
+      "SHA256": "65c4e8daccfb379d2cd819cd8b6865a45d59ef594ae997c0ee659f0e8a98739f"
+    },
+    {
+      "File": "T7E3_0632.rvf",
+      "Bytes": 1015732,
+      "Checksum": 864289910,
+      "FirstFrame": 30336,
+      "Frames": 48,
+      "SHA256": "283e08b85b13de603b725d5276112a09e423d60e74e965f792e5850a7edd4aee"
+    },
+    {
+      "File": "T7E3_0633.rvf",
+      "Bytes": 949222,
+      "Checksum": 903776502,
+      "FirstFrame": 30384,
+      "Frames": 48,
+      "SHA256": "284536d99ea83853420e93f93ed19c97b0da7b748c47315d5a10f2b9216b8ead"
+    },
+    {
+      "File": "T7E3_0634.rvf",
+      "Bytes": 830679,
+      "Checksum": 795708874,
+      "FirstFrame": 30432,
+      "Frames": 48,
+      "SHA256": "d563fd33be7c65f9c5c2371358a33538473eea3f6c2ec2f0cb128003fb1866f0"
+    },
+    {
+      "File": "T7E3_0635.rvf",
+      "Bytes": 1466066,
+      "Checksum": 872875557,
+      "FirstFrame": 30480,
+      "Frames": 48,
+      "SHA256": "f425eca6504215c45445311b684d168b15e32e4b921ae85e075d4822271974c7"
+    },
+    {
+      "File": "T7E3_0636.rvf",
+      "Bytes": 943216,
+      "Checksum": 683937471,
+      "FirstFrame": 30528,
+      "Frames": 48,
+      "SHA256": "7c85ce3c85820e01f6f347f19863edea74fe02c82e5c90ffa8375db953d320a7"
+    },
+    {
+      "File": "T7E3_0637.rvf",
+      "Bytes": 978982,
+      "Checksum": 1700358934,
+      "FirstFrame": 30576,
+      "Frames": 48,
+      "SHA256": "11495c6e28372e78e7cbaac25efea8bab18d24a809854fa35fafc647872e27d5"
+    },
+    {
+      "File": "T7E3_0638.rvf",
+      "Bytes": 849137,
+      "Checksum": 2050946085,
+      "FirstFrame": 30624,
+      "Frames": 48,
+      "SHA256": "73dd880ac64aad992db1eaf1956254ae33b29d5fcbf1ab9204542f0c4c044af6"
+    },
+    {
+      "File": "T7E3_0639.rvf",
+      "Bytes": 828826,
+      "Checksum": 2262040854,
+      "FirstFrame": 30672,
+      "Frames": 48,
+      "SHA256": "db41475467882c8238a3f3a4205eca00875a11134e109c7eba6cbcf4266cafd2"
+    },
+    {
+      "File": "T7E3_0640.rvf",
+      "Bytes": 828345,
+      "Checksum": 591187521,
+      "FirstFrame": 30720,
+      "Frames": 48,
+      "SHA256": "1ede3ff425a872a409b0e4413413fb3514c0614bf0a12e7ff6c47b7eca380e61"
+    },
+    {
+      "File": "T7E3_0641.rvf",
+      "Bytes": 940294,
+      "Checksum": 461910397,
+      "FirstFrame": 30768,
+      "Frames": 48,
+      "SHA256": "8969ed8b927df571f654f2501177191377928631ed0f3aa8967a7f351a01a2ac"
+    },
+    {
+      "File": "T7E3_0642.rvf",
+      "Bytes": 643762,
+      "Checksum": 826055676,
+      "FirstFrame": 30816,
+      "Frames": 48,
+      "SHA256": "a2c81ca4618d37432d8dcb1fc6ddfffa5bc62270bceb28ff697e6130a667c3c4"
+    },
+    {
+      "File": "T7E3_0643.rvf",
+      "Bytes": 874723,
+      "Checksum": 4136205581,
+      "FirstFrame": 30864,
+      "Frames": 48,
+      "SHA256": "089862552f4381f09f459cb3acf4766bee1a0d4d985cb22732a0043f01c758bf"
+    },
+    {
+      "File": "T7E3_0644.rvf",
+      "Bytes": 1148116,
+      "Checksum": 1690796276,
+      "FirstFrame": 30912,
+      "Frames": 48,
+      "SHA256": "e9863cffca3b753cc1b865dbadf8316a3e26a546b1525deb0f4d6cc966672a00"
+    },
+    {
+      "File": "T7E3_0645.rvf",
+      "Bytes": 820458,
+      "Checksum": 2996204319,
+      "FirstFrame": 30960,
+      "Frames": 48,
+      "SHA256": "7f1a17e798750046eb912e3cd5664d0318b3148b1f68f6c2790f4c7d8568d100"
+    },
+    {
+      "File": "T7E3_0646.rvf",
+      "Bytes": 680325,
+      "Checksum": 2896361999,
+      "FirstFrame": 31008,
+      "Frames": 48,
+      "SHA256": "209381dc1f956aeb4ab7d87b846014dcbc9bc7cc199a877ba0e58f85885c4248"
+    },
+    {
+      "File": "T7E3_0647.rvf",
+      "Bytes": 817044,
+      "Checksum": 3384052696,
+      "FirstFrame": 31056,
+      "Frames": 48,
+      "SHA256": "8d41d73714776f5cb548e89de9a78b0207bd2d0ebb7ec49c04f19f28fd71a39d"
+    },
+    {
+      "File": "T7E3_0648.rvf",
+      "Bytes": 881986,
+      "Checksum": 2561036194,
+      "FirstFrame": 31104,
+      "Frames": 48,
+      "SHA256": "ee117709a524e7e2f59b5adfadad5f3b108286d7e5217be6d7d9f78f127d4cd3"
+    },
+    {
+      "File": "T7E3_0649.rvf",
+      "Bytes": 786555,
+      "Checksum": 3636205737,
+      "FirstFrame": 31152,
+      "Frames": 48,
+      "SHA256": "8397abc229512ad3ccd3b0f0ed57e49b7b040fd7271ee977fce8f9a2e3f84388"
+    },
+    {
+      "File": "T7E3_0650.rvf",
+      "Bytes": 587965,
+      "Checksum": 2030097158,
+      "FirstFrame": 31200,
+      "Frames": 48,
+      "SHA256": "5e73195ce9cb0631e859adea154f080646bdddc3d81873efb454f2ce05c0081a"
+    },
+    {
+      "File": "T7E3_0651.rvf",
+      "Bytes": 1108033,
+      "Checksum": 1015762863,
+      "FirstFrame": 31248,
+      "Frames": 48,
+      "SHA256": "d20ce68f6974a9b29c50257d5a2979bcd676cde564c2257fc5069343a1ae0d1e"
+    },
+    {
+      "File": "T7E3_0652.rvf",
+      "Bytes": 842688,
+      "Checksum": 3894050789,
+      "FirstFrame": 31296,
+      "Frames": 48,
+      "SHA256": "23a0731ec906b16f5ddd8b895dfe9919269530fc6dbcc4f6a27b02fbb4a805c1"
+    },
+    {
+      "File": "T7E3_0653.rvf",
+      "Bytes": 528370,
+      "Checksum": 3677456958,
+      "FirstFrame": 31344,
+      "Frames": 48,
+      "SHA256": "5d72adf67b96e6f8396dbf3d3d7bfff0af25c29aca8ed8844a7378793bffdf34"
+    },
+    {
+      "File": "T7E3_0654.rvf",
+      "Bytes": 592674,
+      "Checksum": 2577086611,
+      "FirstFrame": 31392,
+      "Frames": 48,
+      "SHA256": "755618c2a22736f7f986dbbe61b9be7d49fa52bc0adf6f2c6329091b25fbb97f"
+    },
+    {
+      "File": "T7E3_0655.rvf",
+      "Bytes": 906529,
+      "Checksum": 3554511897,
+      "FirstFrame": 31440,
+      "Frames": 48,
+      "SHA256": "d368e1fe55524f11a97fbc8c2fde43b05fe47b397b34b6c08485651ad3db07b8"
+    },
+    {
+      "File": "T7E3_0656.rvf",
+      "Bytes": 788319,
+      "Checksum": 3359324497,
+      "FirstFrame": 31488,
+      "Frames": 48,
+      "SHA256": "204a0704b7cf4bc0c0e7f6dfff54913c6d5a07078d99aa9c32ce2b2ac26ca306"
+    },
+    {
+      "File": "T7E3_0657.rvf",
+      "Bytes": 987065,
+      "Checksum": 4234067211,
+      "FirstFrame": 31536,
+      "Frames": 48,
+      "SHA256": "1383da7ef877e8834f0db29e01c53f9a6fe782a937ecba152d6a5b0a7291c1ce"
+    },
+    {
+      "File": "T7E3_0658.rvf",
+      "Bytes": 598840,
+      "Checksum": 1819678411,
+      "FirstFrame": 31584,
+      "Frames": 48,
+      "SHA256": "c58bcfd1608b93b82516c7f81fd200e79f9ca7cefa51bc96f657144ea91ff004"
+    },
+    {
+      "File": "T7E3_0659.rvf",
+      "Bytes": 722802,
+      "Checksum": 1904782333,
+      "FirstFrame": 31632,
+      "Frames": 48,
+      "SHA256": "cd42403032087663d204445f598ce7c517948cdc5605009ffff208a1755ae657"
+    },
+    {
+      "File": "T7E3_0660.rvf",
+      "Bytes": 770901,
+      "Checksum": 1202684340,
+      "FirstFrame": 31680,
+      "Frames": 48,
+      "SHA256": "f910b3e623ee3a97fa72f24d9064788c145df8c6eeb329091b0c16125e68cb70"
+    },
+    {
+      "File": "T7E3_0661.rvf",
+      "Bytes": 1040619,
+      "Checksum": 4195361233,
+      "FirstFrame": 31728,
+      "Frames": 48,
+      "SHA256": "9ecb30455446998edaeb138815e980efeeaf2f0d61e955eed814078579861714"
+    },
+    {
+      "File": "T7E3_0662.rvf",
+      "Bytes": 1039540,
+      "Checksum": 1349285741,
+      "FirstFrame": 31776,
+      "Frames": 48,
+      "SHA256": "deb9d95c8fff2486834f4ca35b24bc863a6d4759ff0e9f16d6b61fa331903871"
+    },
+    {
+      "File": "T7E3_0663.rvf",
+      "Bytes": 671267,
+      "Checksum": 1291515121,
+      "FirstFrame": 31824,
+      "Frames": 48,
+      "SHA256": "2b8fc9890dca28858ea3d9e628f45eaa5f5a603dc17aa29f83b68bdb9d08f30c"
+    },
+    {
+      "File": "T7E3_0664.rvf",
+      "Bytes": 598819,
+      "Checksum": 1119819125,
+      "FirstFrame": 31872,
+      "Frames": 48,
+      "SHA256": "56fc8cc2293cb11fa572c12f9842e176aecad77c34f6e80fb3e140c9f2597c8b"
+    },
+    {
+      "File": "T7E3_0665.rvf",
+      "Bytes": 426425,
+      "Checksum": 4270204078,
+      "FirstFrame": 31920,
+      "Frames": 48,
+      "SHA256": "a74bee91b188f05d759a82a4f10a8f0e62278bb54d46ee58327add2716106967"
+    },
+    {
+      "File": "T7E3_0666.rvf",
+      "Bytes": 801500,
+      "Checksum": 1152479791,
+      "FirstFrame": 31968,
+      "Frames": 48,
+      "SHA256": "7d17098c7f635feca786dd9215d7e9f100982019db50b29c78684f45f3da4a41"
+    },
+    {
+      "File": "T7E3_0667.rvf",
+      "Bytes": 553381,
+      "Checksum": 1545631310,
+      "FirstFrame": 32016,
+      "Frames": 48,
+      "SHA256": "e4892464f17dcba819c78c7829a72d33e6b191807071eee5544f6fdaa55d1a1c"
+    },
+    {
+      "File": "T7E3_0668.rvf",
+      "Bytes": 899398,
+      "Checksum": 987091790,
+      "FirstFrame": 32064,
+      "Frames": 48,
+      "SHA256": "03896760347b27d31744e23b1d43fc6d14fa19c8a7fa6f6afb0279df57c0b644"
+    },
+    {
+      "File": "T7E3_0669.rvf",
+      "Bytes": 725663,
+      "Checksum": 514522000,
+      "FirstFrame": 32112,
+      "Frames": 48,
+      "SHA256": "49aae1b7a8158937d1cb3f978f44de7450f011a55ef51942bdd44c448b1e5ca3"
+    },
+    {
+      "File": "T7E3_0670.rvf",
+      "Bytes": 569717,
+      "Checksum": 1463652851,
+      "FirstFrame": 32160,
+      "Frames": 48,
+      "SHA256": "6348e2807dd7b623f30575222edaa126ed13dbd7344aa963ba48d892ff3a6d08"
+    },
+    {
+      "File": "T7E3_0671.rvf",
+      "Bytes": 543552,
+      "Checksum": 1590970705,
+      "FirstFrame": 32208,
+      "Frames": 48,
+      "SHA256": "3885f7f203dfa33cbf443b2063384dd45259b84831232c4ee12870df64ecce0b"
+    },
+    {
+      "File": "T7E3_0672.rvf",
+      "Bytes": 535916,
+      "Checksum": 3505799576,
+      "FirstFrame": 32256,
+      "Frames": 48,
+      "SHA256": "17d40301031da1e4bc2b16b4793eb74a358f1cb5e4bcdc90fb033acccbefed0f"
+    },
+    {
+      "File": "T7E3_0673.rvf",
+      "Bytes": 718794,
+      "Checksum": 460334122,
+      "FirstFrame": 32304,
+      "Frames": 48,
+      "SHA256": "452eaa49582f7e88ca9f3ba34ade62669f6ba84ababb2323178c77136cca5063"
+    },
+    {
+      "File": "T7E3_0674.rvf",
+      "Bytes": 836888,
+      "Checksum": 2905389169,
+      "FirstFrame": 32352,
+      "Frames": 48,
+      "SHA256": "305c6789a1823cdf698740f262e5c9195a0070aef140ee143da39cb04491b55b"
+    },
+    {
+      "File": "T7E3_0675.rvf",
+      "Bytes": 1178570,
+      "Checksum": 2040912334,
+      "FirstFrame": 32400,
+      "Frames": 48,
+      "SHA256": "894330f4bfe72d714baed21e5a0e50f7264c83133552e5f7f501be7e2f14b918"
+    },
+    {
+      "File": "T7E3_0676.rvf",
+      "Bytes": 1792902,
+      "Checksum": 631287478,
+      "FirstFrame": 32448,
+      "Frames": 48,
+      "SHA256": "b38a45e3a81d45173ac18f1443bff6d35f0990f1100201c9e80f5fbd20f9b2b9"
+    },
+    {
+      "File": "T7E3_0677.rvf",
+      "Bytes": 1176528,
+      "Checksum": 845285880,
+      "FirstFrame": 32496,
+      "Frames": 48,
+      "SHA256": "1e5b3f88445f519b7b27ccbd14754357b25c04537c79760ec0c876e7d1591f35"
+    },
+    {
+      "File": "T7E3_0678.rvf",
+      "Bytes": 1041700,
+      "Checksum": 2405378565,
+      "FirstFrame": 32544,
+      "Frames": 48,
+      "SHA256": "89072d3e872c803799723daab25bb957e0056fb070462d1de29ffd0d6b836337"
+    },
+    {
+      "File": "T7E3_0679.rvf",
+      "Bytes": 578332,
+      "Checksum": 319075000,
+      "FirstFrame": 32592,
+      "Frames": 48,
+      "SHA256": "28a7c6d4278b9bba578e6b13cfe2f828ffbfa8fed68befe40499e9d48ea8e886"
+    },
+    {
+      "File": "T7E3_0680.rvf",
+      "Bytes": 891136,
+      "Checksum": 445069460,
+      "FirstFrame": 32640,
+      "Frames": 48,
+      "SHA256": "ad74a777371594d0aa074ae8366f9e9489e442986941cc1dd829655d4776f78c"
+    },
+    {
+      "File": "T7E3_0681.rvf",
+      "Bytes": 756864,
+      "Checksum": 2257472727,
+      "FirstFrame": 32688,
+      "Frames": 48,
+      "SHA256": "cbb938257ecfa322ccc2f5a44250d9a991aefd9f3b34b59a0c6de93796f84408"
+    },
+    {
+      "File": "T7E3_0682.rvf",
+      "Bytes": 832349,
+      "Checksum": 1022053134,
+      "FirstFrame": 32736,
+      "Frames": 48,
+      "SHA256": "05d8ad3408e6092812de2ac156c2c562c512735cb1bb6919058fc3532a0c4fb7"
+    },
+    {
+      "File": "T7E3_0683.rvf",
+      "Bytes": 752631,
+      "Checksum": 1732606216,
+      "FirstFrame": 32784,
+      "Frames": 48,
+      "SHA256": "afd14e4d21578a289c6230a0ef94b60724c64f544edcd171287003b7af5dcfdc"
+    },
+    {
+      "File": "T7E3_0684.rvf",
+      "Bytes": 561768,
+      "Checksum": 1749260222,
+      "FirstFrame": 32832,
+      "Frames": 48,
+      "SHA256": "a740aba22a26f105d84a2f912b227a75b9541d6ca238ec8389223971652f59bd"
+    },
+    {
+      "File": "T7E3_0685.rvf",
+      "Bytes": 558707,
+      "Checksum": 537537258,
+      "FirstFrame": 32880,
+      "Frames": 48,
+      "SHA256": "d0d58193cb6fa17b337dcbaaf0dbee195dacbb5284df8069c511808794316bed"
+    },
+    {
+      "File": "T7E3_0686.rvf",
+      "Bytes": 789981,
+      "Checksum": 1998135663,
+      "FirstFrame": 32928,
+      "Frames": 48,
+      "SHA256": "60e4238e2094a3557eae0fe0b5d37b76ca9781a1a2c311b8db7004e8f03a0e95"
+    },
+    {
+      "File": "T7E3_0687.rvf",
+      "Bytes": 983907,
+      "Checksum": 670907888,
+      "FirstFrame": 32976,
+      "Frames": 48,
+      "SHA256": "04fad56bcd14804691148f1f6c3fba102bb5f8c62b2e1e84783fad320208fc4c"
+    },
+    {
+      "File": "T7E3_0688.rvf",
+      "Bytes": 794622,
+      "Checksum": 894073933,
+      "FirstFrame": 33024,
+      "Frames": 48,
+      "SHA256": "91b71619f781360937fbebae770e465f9995dafe257c9e5211b0da93eed261cf"
+    },
+    {
+      "File": "T7E3_0689.rvf",
+      "Bytes": 936843,
+      "Checksum": 1616255775,
+      "FirstFrame": 33072,
+      "Frames": 48,
+      "SHA256": "ec875ad3945108aadf5804651d465cac719723673940268ab1bf4ff8b715eb6c"
+    },
+    {
+      "File": "T7E3_0690.rvf",
+      "Bytes": 869757,
+      "Checksum": 1036751449,
+      "FirstFrame": 33120,
+      "Frames": 48,
+      "SHA256": "64516636c5fdc47f46705c2fc58cbab1f6912a67fa3a717e16cc5b4e65e168b4"
+    },
+    {
+      "File": "T7E3_0691.rvf",
+      "Bytes": 802711,
+      "Checksum": 2389611510,
+      "FirstFrame": 33168,
+      "Frames": 48,
+      "SHA256": "a5be9cfca4f914d4b98272d080ba47ca4f456bdede9902debd550016947b1adc"
+    },
+    {
+      "File": "T7E3_0692.rvf",
+      "Bytes": 884066,
+      "Checksum": 3133564157,
+      "FirstFrame": 33216,
+      "Frames": 48,
+      "SHA256": "8588bce614c023eab13c7ddf684148b888c7fa794520de6bda2272afccc1245d"
+    },
+    {
+      "File": "T7E3_0693.rvf",
+      "Bytes": 788086,
+      "Checksum": 166274758,
+      "FirstFrame": 33264,
+      "Frames": 48,
+      "SHA256": "e4d8b2af9e501a8f7546a824cab75e71a8c7d1dbde08bdd42612d61159b488e0"
+    },
+    {
+      "File": "T7E3_0694.rvf",
+      "Bytes": 727669,
+      "Checksum": 3752342141,
+      "FirstFrame": 33312,
+      "Frames": 48,
+      "SHA256": "e48012d981aa2e4163e4c56d873bc159c0fdd7b449b3bc29c1e413d487993561"
+    },
+    {
+      "File": "T7E3_0695.rvf",
+      "Bytes": 662836,
+      "Checksum": 955024899,
+      "FirstFrame": 33360,
+      "Frames": 48,
+      "SHA256": "fe37f7fb4074098bfac77a93f063bf114c727c0a045a446dd49b27c8eb66ebe2"
+    },
+    {
+      "File": "T7E3_0696.rvf",
+      "Bytes": 786018,
+      "Checksum": 1430105925,
+      "FirstFrame": 33408,
+      "Frames": 48,
+      "SHA256": "d3603c985a4852f684fdb9a3b68dbc3f668603958bcd36fdb05fc738068ad302"
+    },
+    {
+      "File": "T7E3_0697.rvf",
+      "Bytes": 721467,
+      "Checksum": 3249954721,
+      "FirstFrame": 33456,
+      "Frames": 48,
+      "SHA256": "2b6985071146cd2486111e8d26a8ddd72332bd1d25e694399cc05888deb1df3a"
+    },
+    {
+      "File": "T7E3_0698.rvf",
+      "Bytes": 567350,
+      "Checksum": 3897547217,
+      "FirstFrame": 33504,
+      "Frames": 48,
+      "SHA256": "7edb7769890d32a7db6ba7ba355926dcf930d9286ceda318786df35bb08c0172"
+    },
+    {
+      "File": "T7E3_0699.rvf",
+      "Bytes": 799098,
+      "Checksum": 4166742693,
+      "FirstFrame": 33552,
+      "Frames": 48,
+      "SHA256": "dc34e3f56727056f7f3df59cae5420750aacfa2285230425f909d45087cbc1d9"
+    },
+    {
+      "File": "T7E3_0700.rvf",
+      "Bytes": 847709,
+      "Checksum": 1683393427,
+      "FirstFrame": 33600,
+      "Frames": 48,
+      "SHA256": "478e4584e9e587407f25a12f8b9e1a703d549be30afde68398fe14f6d3a2c2fc"
+    },
+    {
+      "File": "T7E3_0701.rvf",
+      "Bytes": 1102253,
+      "Checksum": 652729152,
+      "FirstFrame": 33648,
+      "Frames": 48,
+      "SHA256": "3490d69c1fc194cb201c50c15625feb003d1c5294ebfb1834085ab9fe9ef039b"
+    },
+    {
+      "File": "T7E3_0702.rvf",
+      "Bytes": 1189182,
+      "Checksum": 2189346649,
+      "FirstFrame": 33696,
+      "Frames": 48,
+      "SHA256": "7ed432ccab5004950d4a6a62b30df6d8d335a0dcc0196b7e6edd6bed81ee90b8"
+    },
+    {
+      "File": "T7E3_0703.rvf",
+      "Bytes": 1221592,
+      "Checksum": 679705917,
+      "FirstFrame": 33744,
+      "Frames": 48,
+      "SHA256": "6588e5c11591e5dc31cd9b3eb95c166cc189886b9be4193f91da0e746b658790"
+    },
+    {
+      "File": "T7E3_0704.rvf",
+      "Bytes": 1135909,
+      "Checksum": 798290479,
+      "FirstFrame": 33792,
+      "Frames": 48,
+      "SHA256": "cff1e1f2b1d09771410554b315bcadd1520618f1fa10c07e4cc4a5dc4dfe6e42"
+    },
+    {
+      "File": "T7E3_0705.rvf",
+      "Bytes": 1023169,
+      "Checksum": 1829165217,
+      "FirstFrame": 33840,
+      "Frames": 48,
+      "SHA256": "c119f6c08fa7ce204d3834c269247faeda38d0115ffc683543ffba6a5b6958e1"
+    },
+    {
+      "File": "T7E3_0706.rvf",
+      "Bytes": 1018485,
+      "Checksum": 3125916223,
+      "FirstFrame": 33888,
+      "Frames": 48,
+      "SHA256": "6954c41bd704f682fb1a6e6cd0058fd97c8c26ef28a91bf0a886ea6933682dbd"
+    },
+    {
+      "File": "T7E3_0707.rvf",
+      "Bytes": 953757,
+      "Checksum": 946997497,
+      "FirstFrame": 33936,
+      "Frames": 48,
+      "SHA256": "3c81e0d915892ed7f577e9d973433e8ee87f3c0e5decdba8b789e19cfda36c5b"
+    },
+    {
+      "File": "T7E3_0708.rvf",
+      "Bytes": 995402,
+      "Checksum": 3698667825,
+      "FirstFrame": 33984,
+      "Frames": 48,
+      "SHA256": "07ba2c66aac096ef7b7656edac24938163275cb033c6bd81ce907974c6344ebe"
+    },
+    {
+      "File": "T7E3_0709.rvf",
+      "Bytes": 868785,
+      "Checksum": 3547231047,
+      "FirstFrame": 34032,
+      "Frames": 48,
+      "SHA256": "107c0033227996c07a41ab08ced088352981338e84b73dbf7f2eccdb0f3fb1b5"
+    },
+    {
+      "File": "T7E3_0710.rvf",
+      "Bytes": 129148,
+      "Checksum": 3823283330,
+      "FirstFrame": 34080,
+      "Frames": 48,
+      "SHA256": "56cd01542c3a57eb208158051f4d7369ce48be984db1030b6c76bb0109d0c506"
+    },
+    {
+      "File": "T7E3_0711.rvf",
+      "Bytes": 193389,
+      "Checksum": 2639821534,
+      "FirstFrame": 34128,
+      "Frames": 36,
+      "SHA256": "529259f2e22ed3872420b4c4bd2c9b6970812a6d8c3f36e19204861fc3fe0f47"
+    }
+  ]
+}
