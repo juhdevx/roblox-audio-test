@@ -1,0 +1,26 @@
+const ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+const BuiltInGuards = ReplicatedStorage.CmdrClient.Shared.BuiltInGuards
+const MaxArrayLength = require(BuiltInGuards.MaxArrayLength) :: (number, number) -> (any) -> string?
+
+return {
+	Name = "unban",
+	Description = "Unbans a player or set of players.",
+	Group = "DefaultAdmin",
+	Args = {
+		{
+			Type = "playerIds",
+			Name = "Players",
+			Description = "The players to unban (max 50).",
+		},
+		{
+			Type = "boolean",
+			Name = "Apply to universe",
+			Description = "Remove the ban across all places in this experience.",
+			Default = true,
+		},
+	},
+	Guards = {
+		MaxArrayLength(1, 50),
+	},
+}

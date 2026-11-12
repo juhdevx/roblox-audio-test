@@ -1,0 +1,32 @@
+return {
+	Name = "resolve",
+	Description = "Resolves Argument Value Operators into lists. E.g., resolve players * gives you a list of all players.",
+	Group = "DefaultUtil",
+	AutoExec = {
+		'alias "me|Displays your username." resolve players .',
+	},
+	Args = {
+		{
+			Type = "type",
+			Name = "Type",
+			Description = "The type for which to resolve.",
+		},
+		function(context: any)
+			if context:GetArgument(1):Validate() == false then
+				return
+			end
+
+			return {
+				Type = context:GetArgument(1):GetValue(),
+				Name = "Argument Value Operator",
+				Description = "The value operator to resolve. One of: * ** . ? ?N",
+				Optional = true,
+			}
+		end,
+	},
+
+	ClientRun = function(context: any): string
+		const arg = context:GetArgument(2)
+		return if arg then table.concat(arg.RawSegments, ",") else ""
+	end,
+}

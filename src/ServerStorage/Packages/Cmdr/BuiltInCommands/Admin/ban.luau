@@ -1,0 +1,59 @@
+const ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+const BuiltInGuards = ReplicatedStorage.CmdrClient.Shared.BuiltInGuards
+const MaxArrayLength = require(BuiltInGuards.MaxArrayLength) :: (number, number) -> (any) -> string?
+const MaxStringLength = require(BuiltInGuards.MaxStringLength) :: (number, number) -> (any) -> string?
+const NonEmptyString = require(BuiltInGuards.NonEmptyString) :: (number) -> (any) -> string?
+
+return {
+	Name = "ban",
+	Description = "Bans a player or set of players.",
+	Group = "DefaultAdmin",
+	Args = {
+		{
+			Type = "playerIds",
+			Name = "Players",
+			Description = "The players to ban (max 50).",
+		},
+		{
+			Type = "duration",
+			Name = "Duration",
+			Description = "How long the ban lasts (negative values indicate a permanent ban).",
+		},
+		{
+			Type = "string",
+			Name = "Public reason",
+			Description = "Ban message shown to the player.",
+		},
+		{
+			Type = "string",
+			Name = "Private reason",
+			Description = "Internal staff notes for ban history.",
+			Optional = true,
+		},
+		{
+			Type = "boolean",
+			Name = "Exclude alt accounts",
+			Description = "Skip banning their alternate accounts.",
+			Default = false,
+		},
+		{
+			Type = "boolean",
+			Name = "Apply to universe",
+			Description = "Ban from all places in this experience.",
+			Default = true,
+		},
+		{
+			Type = "boolean",
+			Name = "Apply device block",
+			Description = "Block their device from rejoining for 24 hours.",
+			Default = false,
+		},
+	},
+	Guards = {
+		MaxArrayLength(1, 50),
+		NonEmptyString(3),
+		MaxStringLength(3, 400),
+		MaxStringLength(4, 1000),
+	},
+}
