@@ -9,3 +9,12 @@ Este repositório hospeda o áudio para verificar o download HTTP a partir do se
 - O arquivo é mantido no formato MP3 original, sem conversão para eventos musicais.
 
 O teste de download e o teste de reprodução são etapas distintas. Um download bem-sucedido confirma o acesso ao arquivo; a reprodução dentro do Roblox depende de um backend de áudio compatível.
+
+## Código do jogo e ferramentas (place "filho")
+
+- `docs/COMANDOS.md` — referência do console admin (Cmdr, tecla F2): grupos Emote, Media, Staff e Admin.
+- `tools/media-studio/` — fontes do conversor "Media Studio" (sem binários; o `ffmpeg` fica em `tools/bin` da pasta original).
+- `tools/studio-export/` — espelha os scripts do Studio em `src/`:
+  1. `py tools/studio-export/receive_sources.py` (fica ouvindo em 127.0.0.1:8765);
+  2. no Studio, em modo Edit com HTTP ligado, rode `tools/studio-export/export_sources.luau` na Command Bar.
+- `src/` — espelho dos scripts do place (`.server.luau`, `.client.luau`, `.luau`; módulos com filhos viram `init.luau`).
