@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lab_background">#FF0E0F14</color>
+    <style name="Theme.QuestLab" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/lab_background</item>
+    </style>
+</resources>

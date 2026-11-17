@@ -11,7 +11,8 @@ object NativeAudioBridge {
         System.loadLibrary("voiceshift_audio")
         null
     } catch (e: UnsatisfiedLinkError) {
-        e.message ?: "UnsatisfiedLinkError"
+        // Keep it readable in the UI: drop the (very long) library search path.
+        (e.message ?: "UnsatisfiedLinkError").substringBefore(" in java.library.path").take(200)
     }
 
     @JvmStatic external fun nativeCreate(): Long

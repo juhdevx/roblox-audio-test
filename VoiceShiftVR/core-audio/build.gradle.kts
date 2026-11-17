@@ -18,7 +18,7 @@ android {
             }
         }
         ndk {
-            abiFilters += listOf("arm64-v8a", "armeabi-v7a", "x86_64")
+            abiFilters += providers.gradleProperty("voiceshift.abis").getOrElse("arm64-v8a").split(",").map { it.trim() }.filter { it.isNotEmpty() }
         }
     }
 

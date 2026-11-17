@@ -1,0 +1,28 @@
+{
+  // GitHub Codespaces environment for VoiceShift VR (works from a mobile browser).
+  // Choose a 4-core machine: the native + Kotlin build needs ~6 GB RAM.
+  "name": "VoiceShift VR (Android)",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": { "version": "3.12" }
+  },
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "8gb"
+  },
+  "containerEnv": {
+    "ANDROID_HOME": "/home/vscode/android-sdk",
+    "ANDROID_SDK_ROOT": "/home/vscode/android-sdk"
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y --no-install-recommends cmake ninja-build unzip && bash VoiceShiftVR/tools/setup-android-sdk.sh && python3 -m pip install --user onnx==1.19.0 numpy",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "fwcd.kotlin",
+        "ms-vscode.cmake-tools",
+        "ms-vscode.cpptools",
+        "github.vscode-github-actions"
+      ]
+    }
+  }
+}

@@ -1,0 +1,163 @@
+# Builds VoiceShift VR (VoiceShiftVR/) on every push: native DSP tests, JVM/Robolectric tests,
+# debug APKs for the phone app and the experimental Quest app, UI screenshots, and diagnostic ONNX
+# models. Download the APK from the run's "Artifacts" section (works from a phone browser).
+name: VoiceShift VR Android
+
+on:
+  push:
+    paths:
+      - "VoiceShiftVR/**"
+      - ".github/workflows/voiceshift-android.yml"
+  pull_request:
+    paths:
+      - "VoiceShiftVR/**"
+      - ".github/workflows/voiceshift-android.yml"
+  workflow_dispatch:
+    inputs:
+      all_abis:
+        description: "Also package armeabi-v7a and x86_64 (bigger APK; for old 32-bit phones/emulators)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: voiceshift-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: VoiceShiftVR
+
+jobs:
+  native-tests:
+    name: C++ DSP tests (host)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - name: Configure
+        run: cmake -S tests/native -B tests/native/build -DCMAKE_BUILD_TYPE=Release
+      - name: Build
+        run: cmake --build tests/native/build -j 4
+      - name: Run
+        run: ctest --test-dir tests/native/build --output-on-failure
+
+  android:
+    name: APKs + JVM tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      NDK_VERSION: "28.2.13676358"
+      ABI_FLAG: ${{ inputs.all_abis && '-Pvoiceshift.abis=arm64-v8a,armeabi-v7a,x86_64' || '' }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - uses: gradle/actions/setup-gradle@v6
+
+      - name: Install Android SDK packages
+        run: |
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SDKMANAGER" --licenses > /dev/null || true
+          "$SDKMANAGER" --install "platforms;android-37.0" "build-tools;37.0.0" "ndk;${NDK_VERSION}" "cmake;3.22.1" > /dev/null
+          echo "sdk.dir=$ANDROID_HOME" > local.properties
+
+      - name: Unit tests (JVM, ONNX Runtime, Robolectric UI smoke test)
+        run: ./gradlew testDebugUnitTest :core-dsp:test :core-models:test -Pvoiceshift.screenshots=true $ABI_FLAG --stacktrace
+
+      - name: Assemble debug APKs
+        run: ./gradlew :app-android:assembleDebug :app-quest-experimental:assembleDebug $ABI_FLAG --stacktrace
+
+      - name: Lint (report only)
+        continue-on-error: true
+        run: ./gradlew :app-android:lintDebug $ABI_FLAG
+
+      - name: Upload phone APK
+        uses: actions/upload-artifact@v7
+        with:
+          name: voiceshift-vr-debug-apk
+          path: VoiceShiftVR/app-android/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload Quest Lab APK (experimental)
+        uses: actions/upload-artifact@v7
+        with:
+          name: voiceshift-quest-lab-debug-apk
+          path: VoiceShiftVR/app-quest-experimental/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload UI screenshots
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: ui-screenshots
+          path: VoiceShiftVR/app-android/build/screenshots/*.png
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Upload test and lint reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: reports
+          path: |
+            VoiceShiftVR/**/build/reports/
+            VoiceShiftVR/**/build/test-results/
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Build summary
+        if: always()
+        run: |
+          {
+            echo "## VoiceShift VR build"
+            echo
+            echo "| Artifact | Size |"
+            echo "|---|---|"
+            for f in app-android/build/outputs/apk/debug/*.apk app-quest-experimental/build/outputs/apk/debug/*.apk; do
+              [ -f "$f" ] && echo "| $(basename "$f") | $(du -h "$f" | cut -f1) |"
+            done
+            echo
+            tests=0; failures=0
+            for x in $(find . -path "*build/test-results/*" -name "*.xml"); do
+              t=$(grep -o 'tests="[0-9]*"' "$x" | head -1 | grep -o '[0-9]*'); f=$(grep -o 'failures="[0-9]*"' "$x" | head -1 | grep -o '[0-9]*'); e=$(grep -o 'errors="[0-9]*"' "$x" | head -1 | grep -o '[0-9]*')
+              tests=$((tests + ${t:-0})); failures=$((failures + ${f:-0} + ${e:-0}))
+            done
+            echo "JVM tests: **$tests** run, **$failures** failed"
+            echo
+            if [ "${{ job.status }}" != "success" ]; then
+              echo "### Build failed — where to look"
+              echo "- Open the failed step above; Gradle prints the first error under 'What went wrong'."
+              echo "- Kotlin errors start with \`e:\`; C++ errors with \`error:\`."
+              echo "- Download the **reports** artifact for HTML test reports."
+              echo "- See VoiceShiftVR/docs/BUILD_FROM_PHONE.md → 'When CI fails'."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  diagnostic-models:
+    name: Diagnostic ONNX models
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Generate
+        run: |
+          python -m pip install --quiet onnx==1.19.0 numpy
+          python tools/onnx/make_test_models.py --diagnostic
+      - uses: actions/upload-artifact@v7
+        with:
+          name: diagnostic-onnx-models
+          path: VoiceShiftVR/tools/onnx/out/*.onnx
+          if-no-files-found: error
+          retention-days: 30

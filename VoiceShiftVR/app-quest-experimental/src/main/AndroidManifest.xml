@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  VoiceShift Quest Lab: EXPERIMENTAL research app for Meta Quest (Horizon OS, Android-based).
+  It runs as a normal 2D panel app. It cannot and does not install a virtual microphone or modify
+  Horizon OS; audio it receives is played inside this app only.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- Local-network UDP receiver (Route C). -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <uses-feature android:name="android.hardware.usb.host" android:required="false" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="VoiceShift Quest Lab"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuestLab">
+        <activity
+            android:name=".QuestLabActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

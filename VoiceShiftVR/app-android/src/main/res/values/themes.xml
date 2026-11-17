@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window theme only; all UI colours come from Compose (ui/theme/Theme.kt). -->
+    <style name="Theme.VoiceShift" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/vs_background</item>
+        <item name="android:colorBackground">@color/vs_background</item>
+    </style>
+</resources>

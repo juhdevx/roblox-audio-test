@@ -35,10 +35,11 @@ class CompatibilityAnalyzerTest {
         val meta = mapOf("voiceshift.contract" to "stream-v1", "voiceshift.sample_rate" to "16000", "voiceshift.context_samples" to "400")
         val a = CompatibilityAnalyzer.analyze(ModelIntrospection(listOf(t("w", 1, 1, 2000)), listOf(t("o", 1, 1, 2000)), meta))
         assertEquals(Compatibility.COMPATIBLE, a.report.compatibility)
-        assertEquals(1600, a.spec!!.chunkFrames)
+        val spec = requireNotNull(a.spec)
+        assertEquals(1600, spec.chunkFrames)
         val out = FloatArray(2000) { it.toFloat() }
-        assertEquals(400f, a.spec!!.selectChunk(out)!!.first(), 0f)
-        assertNull(a.spec!!.selectChunk(FloatArray(10)))
+        assertEquals(400f, spec.selectChunk(out)!!.first(), 0f)
+        assertNull(spec.selectChunk(FloatArray(10)))
     }
 
     @Test

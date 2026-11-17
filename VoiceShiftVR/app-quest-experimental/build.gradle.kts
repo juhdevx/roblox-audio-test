@@ -16,8 +16,7 @@ android {
         versionCode = 1
         versionName = "0.1.0-experimental"
         ndk {
-            // Quest 3 / 3S are arm64 devices; x86_64 kept for emulator smoke tests.
-            abiFilters += listOf("arm64-v8a", "x86_64")
+            abiFilters += providers.gradleProperty("voiceshift.abis").getOrElse("arm64-v8a").split(",").map { it.trim() }.filter { it.isNotEmpty() }
         }
     }
 
@@ -48,6 +47,9 @@ android {
     packaging {
         jniLibs {
             pickFirsts += "**/libc++_shared.so"
+            // Compress native libraries inside the APK: a much smaller download for phone sideloading
+            // (ONNX Runtime alone is ~36 MB uncompressed per ABI).
+            useLegacyPackaging = true
         }
     }
 }

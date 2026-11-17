@@ -16,7 +16,7 @@ android {
         versionCode = 1
         versionName = "0.1.0"
         ndk {
-            abiFilters += listOf("arm64-v8a", "armeabi-v7a", "x86_64")
+            abiFilters += providers.gradleProperty("voiceshift.abis").getOrElse("arm64-v8a").split(",").map { it.trim() }.filter { it.isNotEmpty() }
         }
     }
 
@@ -56,12 +56,22 @@ android {
         jniLibs {
             // Oboe (via core-audio) and ONNX Runtime may both carry the shared C++ runtime.
             pickFirsts += "**/libc++_shared.so"
+            // Compress native libraries inside the APK: a much smaller download for phone sideloading
+            // (ONNX Runtime alone is ~36 MB uncompressed per ABI).
+            useLegacyPackaging = true
         }
     }
 
     testOptions {
         unitTests.isReturnDefaultValues = true
+        // Robolectric smoke test renders the real Compose UI and needs merged resources.
+        unitTests.isIncludeAndroidResources = true
     }
+}
+
+tasks.withType<Test>().configureEach {
+    // Opt-in screenshot capture: ./gradlew :app-android:testDebugUnitTest -Pvoiceshift.screenshots=true
+    systemProperty("voiceshift.screenshots", providers.gradleProperty("voiceshift.screenshots").getOrElse("false"))
 }
 
 dependencies {
@@ -96,4 +106,11 @@ dependencies {
 
     testImplementation(libs.junit)
     testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.androidx.test.ext.junit)
+    testImplementation(platform(libs.compose.bom))
+    testImplementation(libs.compose.ui.test.junit4)
+    testImplementation(libs.hilt.android.testing)
+    kspTest(libs.hilt.compiler)
+    debugImplementation(libs.compose.ui.test.manifest)
 }
