@@ -45,7 +45,13 @@ object NativeStats {
     const val MODE = 37
     const val BYPASS = 38
     const val FRAMES_PROCESSED = 39
-    const val COUNT = 40
+    const val INPUT_PITCH_HZ = 40
+    const val PITCH_CONFIDENCE = 41
+    const val MONITOR_ACTIVE = 42
+    const val MONITOR_UNDERRUNS = 43
+    const val MONITOR_DRIFT_CORRECTIONS = 44
+    const val MONITOR_DEVICE_ID = 45
+    const val COUNT = 46
 
     fun parse(raw: DoubleArray): EngineStats {
         require(raw.size >= COUNT) { "stats array too small: ${raw.size}" }
@@ -92,6 +98,12 @@ object NativeStats {
             mode = raw[MODE].toInt(),
             bypass = raw[BYPASS] > 0.5,
             framesProcessed = l(FRAMES_PROCESSED),
+            inputPitchHz = f(INPUT_PITCH_HZ),
+            pitchConfidence = f(PITCH_CONFIDENCE),
+            monitorActive = raw[MONITOR_ACTIVE] > 0.5,
+            monitorUnderruns = l(MONITOR_UNDERRUNS),
+            monitorDriftCorrections = l(MONITOR_DRIFT_CORRECTIONS),
+            monitorDeviceId = raw[MONITOR_DEVICE_ID].toInt(),
         )
     }
 }
@@ -138,6 +150,13 @@ data class EngineStats(
     val mode: Int = 0,
     val bypass: Boolean = false,
     val framesProcessed: Long = 0,
+    /** Median speaking pitch of the microphone signal, 0 when unvoiced/silent. */
+    val inputPitchHz: Float = 0f,
+    val pitchConfidence: Float = 0f,
+    val monitorActive: Boolean = false,
+    val monitorUnderruns: Long = 0,
+    val monitorDriftCorrections: Long = 0,
+    val monitorDeviceId: Int = 0,
 ) {
     /**
      * Estimated mic-to-speaker latency: platform input + output latency (when the device reports

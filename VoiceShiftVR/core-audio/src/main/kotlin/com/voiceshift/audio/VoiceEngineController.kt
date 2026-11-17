@@ -115,6 +115,7 @@ class VoiceEngineController(
     fun setMuted(muted: Boolean) = native.setMuted(muted)
     fun setTestSignal(signal: TestSignal) = native.setTestSignal(signal)
     fun setTapEnabled(enabled: Boolean) = native.setTapEnabled(enabled)
+    fun setMonitorGainDb(db: Float) = native.setMonitorGainDb(db)
 
     private fun resolve(request: EngineRequest): EngineRequest {
         val devices = deviceSource.devices.value
@@ -126,7 +127,12 @@ class VoiceEngineController(
         if (output != request.outputDeviceId) {
             log.log(EngineLog.Level.WARN, "Output device ${request.outputDeviceId} not available; using system default")
         }
-        return request.copy(inputDeviceId = input, outputDeviceId = output)
+        // A missing monitor device simply disables monitoring (it is optional).
+        val monitor = DeviceSelection.resolve(request.monitorDeviceId, devices, wantInput = false)
+        if (monitor != request.monitorDeviceId) {
+            log.log(EngineLog.Level.WARN, "Monitor device ${request.monitorDeviceId} not available; monitoring off")
+        }
+        return request.copy(inputDeviceId = input, outputDeviceId = output, monitorDeviceId = monitor)
     }
 
     private suspend fun monitor() {
@@ -149,11 +155,16 @@ class VoiceEngineController(
     private suspend fun restoreOriginalDevicesIfBack() {
         val want = requested ?: return
         val have = active ?: return
-        if (want.inputDeviceId == have.inputDeviceId && want.outputDeviceId == have.outputDeviceId) return
+        if (want.inputDeviceId == have.inputDeviceId && want.outputDeviceId == have.outputDeviceId &&
+            want.monitorDeviceId == have.monitorDeviceId
+        ) {
+            return
+        }
         val devices = deviceSource.devices.value
         val inputBack = DeviceSelection.resolve(want.inputDeviceId, devices, true) == want.inputDeviceId
         val outputBack = DeviceSelection.resolve(want.outputDeviceId, devices, false) == want.outputDeviceId
-        if (inputBack && outputBack) {
+        val monitorBack = DeviceSelection.resolve(want.monitorDeviceId, devices, false) == want.monitorDeviceId
+        if (inputBack && outputBack && monitorBack) {
             log.log(EngineLog.Level.INFO, "Selected device reconnected; switching back")
             reopen(want)
         }

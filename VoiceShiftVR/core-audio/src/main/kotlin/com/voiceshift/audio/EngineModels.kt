@@ -29,6 +29,8 @@ data class EngineRequest(
     val micMode: MicMode = MicMode.PERFORMANCE,
     val exclusive: Boolean = true,
     val neural: NeuralPathConfig? = null,
+    /** Optional second output for self-monitoring (0 = none). */
+    val monitorDeviceId: Int = 0,
 )
 
 /** Configures the native AI queues for a loaded model (model-rate frames). */

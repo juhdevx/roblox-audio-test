@@ -38,6 +38,8 @@ class FakeAudioEngineNative : AudioEngineNative {
     override fun setMuted(muted: Boolean) = Unit
     override fun setTestSignal(signal: TestSignal) = Unit
     override fun setTapEnabled(enabled: Boolean) = Unit
+    var lastMonitorGainDb = 0f
+    override fun setMonitorGainDb(db: Float) { lastMonitorGainDb = db }
 
     override fun readStats(into: DoubleArray): Int {
         into.fill(0.0)

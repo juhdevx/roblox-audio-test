@@ -18,6 +18,8 @@ interface AudioEngineNative {
     fun setMuted(muted: Boolean)
     fun setTestSignal(signal: TestSignal)
     fun setTapEnabled(enabled: Boolean)
+    /** Volume of the optional monitor output; <= -60 dB mutes it. */
+    fun setMonitorGainDb(db: Float)
     fun readStats(into: DoubleArray): Int
     fun lastError(): String
 
@@ -55,6 +57,7 @@ class OboeAudioEngineNative : AudioEngineNative {
             request.exclusive,
             request.neural?.modelSampleRate ?: 0,
             request.neural?.chunkFrames ?: 0,
+            request.monitorDeviceId,
         )
     }
 
@@ -93,6 +96,10 @@ class OboeAudioEngineNative : AudioEngineNative {
 
     override fun setTapEnabled(enabled: Boolean) {
         if (available) NativeAudioBridge.nativeSetTapEnabled(handle, enabled)
+    }
+
+    override fun setMonitorGainDb(db: Float) {
+        if (available) NativeAudioBridge.nativeSetMonitorGain(handle, db)
     }
 
     override fun readStats(into: DoubleArray): Int {

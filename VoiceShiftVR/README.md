@@ -13,9 +13,11 @@ microphone for **Roblox voice chat**. Offline, free and open source (Apache-2.0)
 
 | Area | State |
 |---|---|
-| Android app (Kotlin, Compose, Hilt, MVVM) | **Implemented**, builds in CI, UI smoke-tested (Robolectric) |
+| Android app (Kotlin, Compose, Hilt, MVVM) | **Implemented**; GitHub Actions builds it green; UI smoke-tested (Robolectric) |
 | Live mic capture + playback (Oboe/AAudio full duplex, C++17) | **Implemented**; not yet run on a physical phone by the authors |
-| DSP voice engine (pitch, formant, noise reduction, gate, AGC, EQ, compressor, limiter) | **Implemented and unit-tested** (35 native tests incl. pitch/formant accuracy) |
+| DSP voice engine (pitch, formant, noise reduction, gate, AGC, EQ, compressor, limiter) | **Implemented and unit-tested** (45 native tests incl. pitch/formant accuracy) |
+| Live pitch tracking + 10-second voice calibration (suggests pitch/formant for a target) | **Implemented and unit-tested** |
+| Separate monitor output (hear yourself on headphones while the main output feeds the Quest) | **Implemented**, drift handling unit-tested; depends on the phone allowing two outputs |
 | Feminine presets, user presets, persistence | **Implemented** |
 | Device selection + automatic recovery on unplug | **Implemented**, logic unit-tested with fakes |
 | Latency/CPU/memory/thermal diagnostics, round-trip latency probe | **Implemented** |
@@ -34,9 +36,22 @@ microphone for **Roblox voice chat**. Offline, free and open source (Apache-2.0)
 3. Extract it (Files app), tap `app-android-debug.apk`, allow "Install unknown apps" for your browser/Files app.
 4. Open VoiceShift VR → **Start voice** → allow the microphone. **Use headphones** (the phone speaker
    next to the microphone causes feedback).
+5. Voice tab → **Calibrate to your voice**: read a sentence aloud for 10 s and tap **Apply suggestion**.
 
 Every CI build is signed with the same committed debug key, so new builds install over old ones.
 Details, Codespaces and troubleshooting: [docs/BUILD_FROM_PHONE.md](docs/BUILD_FROM_PHONE.md).
+
+## Screenshots
+
+Rendered by the CI UI test (the native audio engine is not available in that test environment, so
+meters are idle):
+
+<p>
+<img src="docs/images/voice.png" width="200" alt="Voice tab: calibration and presets">
+<img src="docs/images/devices.png" width="200" alt="Devices tab: input, output, monitor and Route A">
+<img src="docs/images/models.png" width="200" alt="Models tab: ONNX library">
+<img src="docs/images/settings.png" width="200" alt="Settings tab">
+</p>
 
 ## How it works
 
@@ -46,7 +61,8 @@ mic ─▶ Oboe input ─▶ low cut ─▶ noise gate ─▶ AGC ─┬─▶ S
                                                     └─▶ [AI] resample ─▶ ONNX worker ─▶ ────┤ (crossfade, automatic
                                                                                             │  fallback to DSP)
           Oboe output ◀─ limiter ◀─ gain ◀─ compressor ◀─ body/presence/air EQ ◀───────────┘
-          (selected device: headphones, USB interface → Quest)       └─▶ tap ─▶ Wi-Fi bridge (optional)
+          (selected device: USB interface/cable → Quest)               ├─▶ tap ─▶ Wi-Fi bridge (optional)
+                                                                       └─▶ monitor stream ─▶ headphones (optional, own volume)
 ```
 
 * **Engine A (DSP)** — phase vocoder with peak phase-locking moves the harmonics, while a cepstral

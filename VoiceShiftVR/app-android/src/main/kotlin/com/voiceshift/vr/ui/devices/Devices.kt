@@ -96,6 +96,8 @@ class DevicesViewModel @Inject constructor(private val session: VoiceSession) : 
 
     fun selectInput(id: Int) = viewModelScope.launch { session.selectInputDevice(id) }
     fun selectOutput(id: Int) = viewModelScope.launch { session.selectOutputDevice(id) }
+    fun selectMonitor(id: Int) = viewModelScope.launch { session.selectMonitorDevice(id) }
+    fun setMonitorVolume(db: Float) = session.setMonitorVolume(db)
     fun refresh() {
         session.refreshDevices()
         runChecks()
@@ -150,6 +152,7 @@ fun DevicesScreen(vm: DevicesViewModel = hiltViewModel()) {
                 outputs.forEach { d -> DeviceOption(describe(d), ui.settings.outputDeviceId == d.id) { vm.selectOutput(d.id) } }
             }
         }
+        item { MonitorCard(ui, outputs, vm) }
         item { RouteCard(ui, vm) }
         item { LatencyCard(ui, vm) }
         item {
@@ -182,6 +185,40 @@ private fun DeviceOption(label: String, selected: Boolean, onSelect: () -> Unit)
     ) {
         RadioButton(selected = selected, onClick = onSelect)
         Text(label, style = MaterialTheme.typography.bodyMedium)
+    }
+}
+
+@Composable
+private fun MonitorCard(ui: DevicesUiState, outputs: List<AudioDevice>, vm: DevicesViewModel) {
+    var volume by remember(ui.settings.monitorVolumeDb) { mutableStateOf(ui.settings.monitorVolumeDb) }
+    SectionCard(
+        "Monitor (hear yourself)",
+        subtitle = "Optional second output, e.g. headphones, while the main output feeds the Quest. Its own volume; output mute does not affect it.",
+    ) {
+        DeviceOption("Off", ui.settings.monitorDeviceId == 0) { vm.selectMonitor(0) }
+        outputs.filter { it.id != ui.settings.outputDeviceId }.forEach { d ->
+            DeviceOption(describe(d), ui.settings.monitorDeviceId == d.id) { vm.selectMonitor(d.id) }
+        }
+        if (ui.settings.monitorDeviceId != 0) {
+            Text("Monitor volume: %.0f dB".format(volume), style = MaterialTheme.typography.bodySmall)
+            Slider(
+                value = volume,
+                onValueChange = { volume = it; vm.setMonitorVolume(it) },
+                valueRange = -40f..6f,
+            )
+            if (ui.running) {
+                StatRow(
+                    "Status",
+                    if (ui.stats.monitorActive) "active · underruns ${ui.stats.monitorUnderruns} · drift fixes ${ui.stats.monitorDriftCorrections}"
+                    else "not running — Android may not allow two outputs at once on this phone",
+                    if (ui.stats.monitorActive) VsColors.Green else VsColors.Amber,
+                )
+            }
+            val monitorDevice = outputs.firstOrNull { it.id == ui.settings.monitorDeviceId }
+            if (monitorDevice?.kind == com.voiceshift.audio.DeviceKind.BUILTIN_SPEAKER) {
+                Notice(NoticeKind.WARN, "Monitoring on the phone speaker will feed back into the microphone.")
+            }
+        }
     }
 }
 

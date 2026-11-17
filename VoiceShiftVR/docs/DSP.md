@@ -54,6 +54,19 @@ shifter is an identity system (tested: > 60 dB SNR).
 CPU: the whole chain with all features on processes 10 s of audio in ~0.27 s on one x86 host core
 (≈ 2.7 % of a core). Phone cores are slower; the app reports the real audio-thread load.
 
+## Pitch tracking and calibration
+
+`PitchDetector` (YIN, de Cheveigné & Kawahara 2002) runs on the raw microphone signal after
+anti-alias filtering and decimation to ~12 kHz: 32 ms window, 16 ms hop, 60–600 Hz, threshold 0.15,
+parabolic refinement, median of the last five voiced frames, held across short consonant gaps.
+Cost ≈ 80k multiply-adds per 16 ms. Tests: sines 85–520 Hz within 1 %, synthetic vowels within 2–3 Hz,
+noise and silence reported as unvoiced.
+
+The Voice tab's calibration listens for 10 s, keeps voiced readings with confidence ≥ 0.6, takes the
+median and suggests `pitch = 12·log2(target / median)` (0…+9 st, rounded to 0.5) and
+`formant ≈ 0.35 × pitch` (0…+3 st). Targets: 175, 200 (default) or 225 Hz — mid-range adult
+feminine speaking pitches. Home shows "input Hz → output Hz" live.
+
 ## Latency budget
 
 | Part | Typical | Source |

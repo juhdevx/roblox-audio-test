@@ -27,6 +27,7 @@ object NativeAudioBridge {
         exclusive: Boolean,
         aiModelRate: Int,
         aiChunkFrames: Int,
+        monitorDeviceId: Int,
     ): Int
     @JvmStatic external fun nativeStop(handle: Long)
     @JvmStatic external fun nativeSetParam(handle: Long, id: Int, value: Float)
@@ -35,6 +36,7 @@ object NativeAudioBridge {
     @JvmStatic external fun nativeSetMuted(handle: Long, muted: Boolean)
     @JvmStatic external fun nativeSetTestSignal(handle: Long, type: Int, frequencyHz: Float, levelDb: Float)
     @JvmStatic external fun nativeSetTapEnabled(handle: Long, enabled: Boolean)
+    @JvmStatic external fun nativeSetMonitorGain(handle: Long, db: Float)
     @JvmStatic external fun nativeGetStats(handle: Long, out: DoubleArray): Int
     @JvmStatic external fun nativeGetLastError(handle: Long): String
     @JvmStatic external fun nativeAiAvailable(handle: Long): Int

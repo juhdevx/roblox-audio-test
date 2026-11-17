@@ -33,6 +33,7 @@
 | Thread | Work | Rules |
 |---|---|---|
 | Oboe output callback (real-time) | reads mic non-blocking, runs `DuplexProcessor`, writes output | no locks, no allocation, no logging, no JNI |
+| Oboe monitor callback (optional) | pulls the processed voice from `MonitorBridge` for a second output | lock-free; never blocks the main callback |
 | Oboe error thread | records disconnects/errors in atomics | |
 | `VoiceShift-Inference` | pulls model-rate chunks, runs ONNX Runtime, pushes results | never touches the callback; JNI calls guarded by `workerMutex_` |
 | `VoiceShift-UdpSender` | reads the output tap, sends UDP packets | |
@@ -61,6 +62,12 @@ stopped and re-applied on every start.
   transform that runs in parallel — the "automatic safe bypass". If the model is persistently slower
   than real time or throws, the worker stops and the app switches back to DSP.
 
+* **Monitor output (optional):** a second shared-mode output stream (e.g. headphones) receives the
+  processed voice *before* the output mute through `MonitorBridge`, a lock-free queue that keeps its
+  fill near two bursts: excess from clock drift is skipped, an empty queue re-primes. Losing the
+  monitor never stops the main path. Android may refuse two simultaneous outputs on some phones; the
+  app reports that instead of failing.
+
 ## Recovery
 
 `VoiceEngineController` polls native stats every 50 ms. A `Disconnected` or `Error` state triggers up
@@ -82,7 +89,7 @@ defaults are used. Backups and device transfer are disabled so voice models neve
 | Phase vocoder + cepstral envelope instead of PSOLA | Independent pitch/formant control, deterministic and testable; PSOLA depends on fragile pitch marking. |
 | 2048-point frames by default | 1024 points cannot resolve harmonics of ~100 Hz voices (verified by tests); 1024 kept as low-latency option. |
 | Own minimal test harness for C++ | No network access needed to build tests; zero dependencies. |
-| Single output stream | Simplest reliable routing. A second monitor stream to another device is a roadmap item. |
+| Optional second (monitor) stream | Lets you hear yourself while the main output feeds the Quest; failure is non-fatal. |
 | `stream-v1` model contract | A complete, verifiable AI path today, without pretending RVC works. |
 | Committed debug keystore | Phone-only users can update the app in place from each CI build. |
 | arm64-v8a only by default | ONNX Runtime adds ~36 MB per ABI; Android 10+ phones and Quest 3S are arm64. |

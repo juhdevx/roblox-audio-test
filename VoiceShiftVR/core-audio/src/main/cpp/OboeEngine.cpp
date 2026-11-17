@@ -150,6 +150,11 @@ int OboeEngine::start(const EngineConfig& config) {
     loadAvg_.store(0.0f);
     loadPeak_.store(0.0f);
 
+    // The optional monitor is opened (not started) before any callback runs: callbacks read its pointer.
+    if (config.monitorDeviceId != 0 && config.monitorDeviceId != output_->getDeviceId()) {
+        openMonitor(config.monitorDeviceId, sampleRate);
+    }
+
     // Start capture first so data is waiting when the first playback callback asks for it.
     result = input_->requestStart();
     if (result == oboe::Result::OK) result = output_->requestStart();
@@ -158,6 +163,14 @@ int OboeEngine::start(const EngineConfig& config) {
         stopLocked();
         state_.store(static_cast<int>(EngineState::Error));
         return static_cast<int>(result);
+    }
+
+    if (monitor_) {
+        if (monitor_->requestStart() == oboe::Result::OK) {
+            monitorActive_.store(true);
+        } else {
+            LOGW("Monitor stream could not start");
+        }
     }
 
     state_.store(static_cast<int>(EngineState::Running));
@@ -169,6 +182,74 @@ int OboeEngine::start(const EngineConfig& config) {
     return 0;
 }
 
+void OboeEngine::openMonitor(int deviceId, int sampleRate) {
+    // A second, shared-mode output. Failure is not fatal: Android may refuse to drive two output
+    // devices at once (e.g. a USB headset and wired headphones on the same codec).
+    monitorBridge_ = std::make_unique<MonitorBridge>(static_cast<float>(sampleRate));
+    monitorFeed_.assign(static_cast<size_t>(kMaxCallbackSlice), 0.0f);
+    monitorPull_.assign(static_cast<size_t>(kMaxCallbackSlice), 0.0f);
+    oboe::AudioStreamBuilder builder;
+    builder.setDirection(oboe::Direction::Output)
+        ->setPerformanceMode(oboe::PerformanceMode::LowLatency)
+        ->setSharingMode(oboe::SharingMode::Shared)
+        ->setFormat(oboe::AudioFormat::Float)
+        ->setFormatConversionAllowed(true)
+        ->setChannelCount(oboe::ChannelCount::Stereo)
+        ->setChannelConversionAllowed(true)
+        ->setSampleRate(sampleRate)
+        ->setSampleRateConversionQuality(oboe::SampleRateConversionQuality::Medium)
+        ->setUsage(oboe::Usage::Media)
+        ->setContentType(oboe::ContentType::Speech)
+        ->setDeviceId(deviceId)
+        ->setDataCallback(this)
+        ->setErrorCallback(this);
+    oboe::Result result = builder.openStream(monitor_);
+    if (result == oboe::Result::OK) {
+        monitorChannels_ = std::max(1, monitor_->getChannelCount());
+        const int burst = std::max(1, monitor_->getFramesPerBurst());
+        monitor_->setBufferSizeInFrames(burst * 2);
+        monitorBridge_->setTargetFrames(burst * 2);
+    }
+    if (result != oboe::Result::OK) {
+        LOGW("Monitor stream on device %d unavailable: %s", deviceId, oboe::convertToText(result));
+        if (monitor_) {
+            monitor_->close();
+            monitor_.reset();
+        }
+        monitorBridge_.reset();
+        return;
+    }
+    monitorPtr_.store(monitor_.get());
+    LOGI("Monitor stream on device %d (%d Hz)", monitor_->getDeviceId(), monitor_->getSampleRate());
+}
+
+oboe::DataCallbackResult OboeEngine::renderMonitor(void* audioData, int32_t numFrames) {
+    auto* out = static_cast<float*>(audioData);
+    MonitorBridge* bridge = monitorBridge_.get();
+    if (bridge == nullptr) {
+        std::memset(out, 0, sizeof(float) * static_cast<size_t>(numFrames) * static_cast<size_t>(monitorChannels_));
+        return oboe::DataCallbackResult::Continue;
+    }
+    const float gain = monitorGain_.load(std::memory_order_relaxed);
+    int offset = 0;
+    while (offset < numFrames) {
+        const int chunk = std::min(numFrames - offset, kMaxCallbackSlice);
+        bridge->pull(monitorPull_.data(), chunk, gain);
+        float* dst = out + static_cast<size_t>(offset) * static_cast<size_t>(monitorChannels_);
+        for (int i = 0; i < chunk; ++i) {
+            for (int c = 0; c < monitorChannels_; ++c) dst[i * monitorChannels_ + c] = monitorPull_[static_cast<size_t>(i)];
+        }
+        offset += chunk;
+    }
+    return oboe::DataCallbackResult::Continue;
+}
+
+void OboeEngine::setMonitorGainDb(float db) {
+    std::lock_guard<std::mutex> lock(controlMutex_);
+    monitorGainDb_ = db;
+    monitorGain_.store(db <= -60.0f ? 0.0f : dsp::dbToGain(dsp::clampf(db, -60.0f, 12.0f)));
+}
+
 void OboeEngine::stop() {
     std::lock_guard<std::mutex> lock(controlMutex_);
     stopLocked();
@@ -176,9 +257,11 @@ void OboeEngine::stop() {
 
 void OboeEngine::stopLocked() {
     // stop() blocks until the data callback has returned, so the processor can be released after.
+    if (monitor_) monitor_->stop();
     if (output_) output_->stop();
     if (input_) input_->stop();
     closeStreams();
+    monitorBridge_.reset();
     {
         std::lock_guard<std::mutex> workerLock(workerMutex_);
         processor_.reset();
@@ -187,6 +270,12 @@ void OboeEngine::stopLocked() {
 }
 
 void OboeEngine::closeStreams() {
+    monitorPtr_.store(nullptr);
+    if (monitor_) {
+        monitor_->close();
+        monitor_.reset();
+    }
+    monitorActive_.store(false);
     if (output_) {
         output_->close();
         output_.reset();
@@ -197,7 +286,8 @@ void OboeEngine::closeStreams() {
     }
 }
 
-oboe::DataCallbackResult OboeEngine::onAudioReady(oboe::AudioStream* /*stream*/, void* audioData, int32_t numFrames) {
+oboe::DataCallbackResult OboeEngine::onAudioReady(oboe::AudioStream* stream, void* audioData, int32_t numFrames) {
+    if (stream != nullptr && stream == monitorPtr_.load(std::memory_order_relaxed)) return renderMonitor(audioData, numFrames);
     auto* out = static_cast<float*>(audioData);
     DuplexProcessor* processor = processor_.get();
     if (processor == nullptr || !input_) {
@@ -241,7 +331,9 @@ oboe::DataCallbackResult OboeEngine::onAudioReady(oboe::AudioStream* /*stream*/,
             }
         }
 
-        processor->process(monoInput_.data(), monoBuffer_.data(), chunk);
+        MonitorBridge* monitor = monitorActive_.load(std::memory_order_relaxed) ? monitorBridge_.get() : nullptr;
+        processor->process(monoInput_.data(), monoBuffer_.data(), chunk, monitor != nullptr ? monitorFeed_.data() : nullptr);
+        if (monitor != nullptr) monitor->push(monitorFeed_.data(), chunk);
 
         float* dst = out + static_cast<size_t>(offset) * static_cast<size_t>(outputChannels_);
         for (int i = 0; i < chunk; ++i) {
@@ -279,6 +371,12 @@ bool OboeEngine::onError(oboe::AudioStream* /*stream*/, oboe::Result /*error*/) 
 }
 
 void OboeEngine::onErrorAfterClose(oboe::AudioStream* stream, oboe::Result error) {
+    if (stream != nullptr && stream == monitorPtr_.load()) {
+        // Losing the optional monitor (e.g. headphones unplugged) must not stop the main path.
+        LOGW("Monitor stream closed: %s", oboe::convertToText(error));
+        monitorActive_.store(false);
+        return;
+    }
     const bool isOutput = stream != nullptr && stream->getDirection() == oboe::Direction::Output;
     LOGW("%s stream closed after error: %s", isOutput ? "Output" : "Input", oboe::convertToText(error));
     lastErrorCode_.store(static_cast<int>(error));
@@ -361,6 +459,12 @@ int OboeEngine::fillStats(double* out, int capacity) {
     s[kStatLastError] = lastErrorCode_.load();
     s[kStatMode] = mode_;
     s[kStatBypass] = bypass_ ? 1.0 : 0.0;
+    s[kStatMonitorActive] = monitorActive_.load() ? 1.0 : 0.0;
+    if (monitor_) s[kStatMonitorDeviceId] = monitor_->getDeviceId();
+    if (monitorBridge_) {
+        s[kStatMonitorUnderruns] = static_cast<double>(monitorBridge_->underruns());
+        s[kStatMonitorDriftCorrections] = static_cast<double>(monitorBridge_->driftCorrections());
+    }
     if (processor_) {
         const DuplexProcessor::Stats& ps = processor_->stats();
         s[kStatInputPeakDb] = ps.inputPeakDb.load();
@@ -379,6 +483,8 @@ int OboeEngine::fillStats(double* out, int capacity) {
         s[kStatCompressorReductionDb] = ps.compressorReductionDb.load();
         s[kStatTapOverflows] = static_cast<double>(ps.tapOverflows.load());
         s[kStatFramesProcessed] = static_cast<double>(ps.framesProcessed.load());
+        s[kStatInputPitchHz] = ps.inputPitchHz.load();
+        s[kStatPitchConfidence] = ps.pitchConfidence.load();
         if (AiBridge* ai = processor_->aiBridge()) {
             s[kStatAiLatencyMs] = ai->latencyMs();
             s[kStatAiUnderruns] = static_cast<double>(ai->underruns());

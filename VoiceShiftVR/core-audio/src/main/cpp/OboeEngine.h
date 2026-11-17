@@ -10,6 +10,7 @@
 #include <vector>
 
 #include "DuplexProcessor.h"
+#include "MonitorBridge.h"
 #include "voiceshift/dsp/VoiceParams.h"
 
 namespace voiceshift::audio {
@@ -23,6 +24,7 @@ struct EngineConfig {
     bool exclusive = true;
     int aiModelRate = 0;     // 0 = no neural path
     int aiChunkFrames = 0;
+    int monitorDeviceId = 0; // 0 = no separate monitor stream
 };
 
 enum class EngineState : int { Stopped = 0, Running = 1, Error = 2, Disconnected = 3 };
@@ -69,6 +71,12 @@ enum StatIndex : int {
     kStatMode,
     kStatBypass,
     kStatFramesProcessed,
+    kStatInputPitchHz,
+    kStatPitchConfidence,
+    kStatMonitorActive,
+    kStatMonitorUnderruns,
+    kStatMonitorDriftCorrections,
+    kStatMonitorDeviceId,
     kStatCount
 };
 
@@ -91,6 +99,8 @@ public:
     void setMuted(bool muted);
     void setTestSignal(int type, float frequencyHz, float levelDb);
     void setTapEnabled(bool enabled);
+    // Volume of the optional monitor stream; <= -60 dB mutes it.
+    void setMonitorGainDb(float db);
 
     int fillStats(double* out, int capacity);
     std::string lastError();
@@ -107,6 +117,8 @@ public:
     void onErrorAfterClose(oboe::AudioStream* stream, oboe::Result error) override;
 
 private:
+    void openMonitor(int deviceId, int sampleRate);
+    oboe::DataCallbackResult renderMonitor(void* audioData, int32_t numFrames);
     void stopLocked();
     void closeStreams();
     void setError(const std::string& message, int code);
@@ -115,6 +127,15 @@ private:
     std::mutex workerMutex_;   // guards processor_ lifetime against worker threads
     std::shared_ptr<oboe::AudioStream> output_;
     std::shared_ptr<oboe::AudioStream> input_;
+    std::shared_ptr<oboe::AudioStream> monitor_;
+    std::atomic<oboe::AudioStream*> monitorPtr_{nullptr};  // identity check from callbacks
+    std::unique_ptr<MonitorBridge> monitorBridge_;
+    std::vector<float> monitorFeed_;
+    std::vector<float> monitorPull_;
+    int monitorChannels_ = 2;
+    std::atomic<bool> monitorActive_{false};
+    std::atomic<float> monitorGain_{1.0f};
+    float monitorGainDb_ = 0.0f;
     std::unique_ptr<DuplexProcessor> processor_;
 
     std::vector<float> inputBuffer_;

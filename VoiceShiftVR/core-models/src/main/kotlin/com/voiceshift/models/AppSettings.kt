@@ -19,6 +19,9 @@ data class AppSettings(
     val monitorMuted: Boolean = false,
     val inputDeviceId: Int = 0,
     val outputDeviceId: Int = 0,
+    /** Optional second output for hearing yourself while the main output feeds the Quest (0 = off). */
+    val monitorDeviceId: Int = 0,
+    val monitorVolumeDb: Float = 0f,
     val quality: String = "QUALITY",
     val micMode: String = "PERFORMANCE",
     val exclusiveAudio: Boolean = true,

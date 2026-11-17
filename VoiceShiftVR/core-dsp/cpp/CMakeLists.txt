@@ -9,6 +9,7 @@ add_library(voiceshift_dsp STATIC
     src/Biquad.cpp
     src/Dynamics.cpp
     src/Fft.cpp
+    src/PitchDetector.cpp
     src/Resampler.cpp
     src/SpectralVoiceShifter.cpp
     src/VoiceChain.cpp

@@ -20,6 +20,7 @@ DuplexProcessor::DuplexProcessor(const ProcessorConfig& config)
     outputMeter_.prepare(config.sampleRate);
     toneDetector_.prepare(config.sampleRate, 1000.0f, static_cast<int>(config.sampleRate / 20));  // 50 ms blocks
     toneGenerator_.prepare(config.sampleRate);
+    pitchDetector_.prepare(config.sampleRate);
     probe_.prepare(config.sampleRate);
     if (config.aiModelRate > 0.0f && config.aiChunkFrames > 0) {
         ai_ = std::make_unique<AiBridge>(config.sampleRate, config.aiModelRate, config.maxBlock, config.aiChunkFrames);
@@ -55,16 +56,16 @@ void DuplexProcessor::syncParams() {
     appliedParamVersion_ = version;
 }
 
-void DuplexProcessor::process(const float* input, float* output, int n) {
+void DuplexProcessor::process(const float* input, float* output, int n, float* preMuteOut) {
     int offset = 0;
     while (offset < n) {
         const int slice = std::min(config_.maxBlock, n - offset);
-        processSlice(input + offset, output + offset, slice);
+        processSlice(input + offset, output + offset, slice, preMuteOut != nullptr ? preMuteOut + offset : nullptr);
         offset += slice;
     }
 }
 
-void DuplexProcessor::processSlice(const float* input, float* output, int n) {
+void DuplexProcessor::processSlice(const float* input, float* output, int n, float* preMuteOut) {
     syncParams();
 
     inputMeter_.process(input, n);
@@ -88,6 +89,7 @@ void DuplexProcessor::processSlice(const float* input, float* output, int n) {
         dry_[static_cast<size_t>(i)] = ok ? x : 0.0f;
     }
     if (inputFault) stats_.dspFaults.fetch_add(1, std::memory_order_relaxed);
+    pitchDetector_.process(dry_.data(), n);
     std::copy(dry_.begin(), dry_.begin() + n, work_.begin());
 
     bool testActive = true;
@@ -156,6 +158,8 @@ void DuplexProcessor::processSlice(const float* input, float* output, int n) {
         stats_.dspFaults.fetch_add(1, std::memory_order_relaxed);
     }
 
+    if (preMuteOut != nullptr) std::copy(work_.begin(), work_.begin() + n, preMuteOut);
+
     const float muteTarget = muted_.load(std::memory_order_relaxed) ? 0.0f : 1.0f;
     for (int i = 0; i < n; ++i) {
         muteGain_ = muteTarget > muteGain_ ? std::min(muteTarget, muteGain_ + rampStep_)
@@ -182,6 +186,8 @@ void DuplexProcessor::processSlice(const float* input, float* output, int n) {
     stats_.limiterReductionDb.store(chain_.limiterReductionDb(), std::memory_order_relaxed);
     stats_.compressorReductionDb.store(chain_.compressorReductionDb(), std::memory_order_relaxed);
     stats_.probeLatencyMs.store(probe_.latencyMs(), std::memory_order_relaxed);
+    stats_.inputPitchHz.store(pitchDetector_.pitchHz(), std::memory_order_relaxed);
+    stats_.pitchConfidence.store(pitchDetector_.confidence(), std::memory_order_relaxed);
     stats_.gateOpen.store(chain_.gateOpen() ? 1 : 0, std::memory_order_relaxed);
     stats_.framesProcessed.store(frameIndex_, std::memory_order_relaxed);
 }

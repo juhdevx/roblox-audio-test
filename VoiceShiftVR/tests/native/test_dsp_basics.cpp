@@ -270,3 +270,47 @@ TEST_CASE(latency_probe_measures_loopback_delay) {
     CHECK(probe.measurementCount() >= 5);
     CHECK_NEAR(probe.latencyMs(), 1000.0 * delay / sr, 0.25);
 }
+
+#include "voiceshift/dsp/PitchDetector.h"
+
+namespace {
+float detect(const std::vector<float>& x, float sr = 48000.0f) {
+    PitchDetector d;
+    d.prepare(sr);
+    for (size_t off = 0; off < x.size(); off += 240) {
+        d.process(x.data() + off, static_cast<int>(std::min<size_t>(240, x.size() - off)));
+    }
+    return d.pitchHz();
+}
+}  // namespace
+
+TEST_CASE(pitch_detector_tracks_sines) {
+    for (float f : {85.0f, 110.0f, 196.0f, 330.0f, 520.0f}) {
+        CHECK_NEAR(detect(sine(f, 0.3f, 24000, 48000.0f)), f, f * 0.01);
+    }
+}
+
+TEST_CASE(pitch_detector_tracks_voice_like_signal) {
+    CHECK_NEAR(detect(syntheticVowel(118.0f, 650.0f, 1900.0f, 48000, 48000.0f)), 118.0, 2.0);
+    CHECK_NEAR(detect(syntheticVowel(205.0f, 800.0f, 2300.0f, 48000, 48000.0f)), 205.0, 3.0);
+}
+
+TEST_CASE(pitch_detector_reports_zero_for_noise_and_silence) {
+    CHECK(detect(std::vector<float>(48000, 0.0f)) == 0.0f);
+    CHECK(detect(noise(48000, 0.3f, 17u)) == 0.0f);
+}
+
+TEST_CASE(pitch_detector_holds_then_releases_after_speech) {
+    PitchDetector d;
+    d.prepare(48000.0f);
+    std::vector<float> v = sine(150.0f, 0.3f, 24000, 48000.0f);
+    d.process(v.data(), static_cast<int>(v.size()));
+    CHECK_NEAR(d.pitchHz(), 150.0, 1.5);
+    CHECK(d.confidence() > 0.8f);
+    std::vector<float> gap(4800, 0.0f);  // 100 ms consonant-like gap: value held
+    d.process(gap.data(), static_cast<int>(gap.size()));
+    CHECK_NEAR(d.pitchHz(), 150.0, 1.5);
+    std::vector<float> silence(48000, 0.0f);  // 1 s of silence: released
+    d.process(silence.data(), static_cast<int>(silence.size()));
+    CHECK(d.pitchHz() == 0.0f);
+}

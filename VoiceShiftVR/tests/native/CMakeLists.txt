@@ -21,6 +21,7 @@ add_executable(voiceshift_native_tests
     # Oboe-independent parts of the Android engine.
     ${VS_ROOT}/core-audio/src/main/cpp/AiBridge.cpp
     ${VS_ROOT}/core-audio/src/main/cpp/DuplexProcessor.cpp
+    ${VS_ROOT}/core-audio/src/main/cpp/MonitorBridge.cpp
 )
 target_include_directories(voiceshift_native_tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} ${VS_ROOT}/core-audio/src/main/cpp)
 target_link_libraries(voiceshift_native_tests PRIVATE voiceshift_dsp Threads::Threads)

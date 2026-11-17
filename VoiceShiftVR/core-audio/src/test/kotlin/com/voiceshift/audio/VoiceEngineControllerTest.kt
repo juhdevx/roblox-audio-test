@@ -97,6 +97,21 @@ class VoiceEngineControllerTest {
     }
 
     @Test
+    fun missingMonitorDeviceDisablesMonitoringAndReturnsWhenReplugged() = runTest {
+        val c = controller()
+        devices.flow.value = listOf(MIC, USB_OUT)  // headphones (monitor) not connected yet
+        c.start(EngineRequest(inputDeviceId = MIC.id, outputDeviceId = USB_OUT.id, monitorDeviceId = HEADPHONES.id))
+        assertEquals(0, native.startedWith.last().monitorDeviceId)
+        assertEquals(USB_OUT.id, native.startedWith.last().outputDeviceId)
+        devices.flow.value = listOf(MIC, USB_OUT, HEADPHONES)
+        advanceTimeBy(60)
+        runCurrent()
+        assertEquals(HEADPHONES.id, native.startedWith.last().monitorDeviceId)
+        c.setMonitorGainDb(-12f)
+        assertEquals(-12f, native.lastMonitorGainDb, 0f)
+    }
+
+    @Test
     fun recoveryGivesUpAfterMaxAttempts() = runTest {
         val c = controller(maxAttempts = 2)
         c.start(EngineRequest())

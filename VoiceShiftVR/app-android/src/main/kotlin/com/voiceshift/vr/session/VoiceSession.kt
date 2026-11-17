@@ -164,6 +164,7 @@ class VoiceSession @Inject constructor(
             native.setBypass(s.bypass)
             native.setMuted(s.monitorMuted)
             native.setMode(EngineMode.DSP)
+            native.setMonitorGainDb(s.monitorVolumeDb)
         }
         log.i("App", "VoiceShift ${BuildConfig.VERSION_NAME} on ${Build.MANUFACTURER} ${Build.MODEL}, Android ${Build.VERSION.RELEASE} (API ${Build.VERSION.SDK_INT})")
         if (settingsRepo.recoveredFromCorruption) message("Settings file was damaged and has been reset.")
@@ -195,6 +196,7 @@ class VoiceSession @Inject constructor(
         micMode = MicMode.entries.firstOrNull { it.name == s.micMode } ?: MicMode.PERFORMANCE,
         exclusive = s.exclusiveAudio,
         neural = inference?.spec?.let { NeuralPathConfig(it.sampleRate, it.chunkFrames) },
+        monitorDeviceId = s.monitorDeviceId,
     )
 
     private fun effectiveMode(s: AppSettings): EngineMode =
@@ -338,6 +340,16 @@ class VoiceSession @Inject constructor(
     suspend fun selectOutputDevice(id: Int) {
         settingsRepo.update { it.copy(outputDeviceId = id) }
         restartIfRunning()
+    }
+
+    suspend fun selectMonitorDevice(id: Int) {
+        settingsRepo.update { it.copy(monitorDeviceId = id) }
+        restartIfRunning()
+    }
+
+    fun setMonitorVolume(db: Float) {
+        native.setMonitorGainDb(db)
+        scope.launch { settingsRepo.update { it.copy(monitorVolumeDb = db) } }
     }
 
     suspend fun setQuality(quality: DspQuality) {
@@ -569,7 +581,8 @@ class VoiceSession @Inject constructor(
             .section(
                 "Settings",
                 listOf(
-                    "Devices" to "in=${s.inputDeviceId} out=${s.outputDeviceId}",
+                    "Devices" to "in=${s.inputDeviceId} out=${s.outputDeviceId} monitor=${s.monitorDeviceId} (${if (st.monitorActive) "active" else "off"}, underruns ${st.monitorUnderruns}, drift ${st.monitorDriftCorrections})",
+                    "Input pitch" to "%.0f Hz (confidence %.2f)".format(st.inputPitchHz, st.pitchConfidence),
                     "Quality / mic" to "${s.quality} / ${s.micMode}, exclusive=${s.exclusiveAudio}",
                     "Mode" to "${s.engineMode} bypass=${s.bypass} muted=${s.monitorMuted}",
                     "Voice" to _voice.value.toString(),

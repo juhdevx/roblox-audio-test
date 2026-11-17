@@ -1,10 +1,13 @@
 package com.voiceshift.vr
 
 import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.hasScrollAction
+import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.v2.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollToNode
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
@@ -43,6 +46,8 @@ class AppSmokeTest {
 
         compose.onNodeWithText("Voice").performClick()
         compose.onNodeWithText("Save as preset", substring = true).assertIsDisplayed()
+        compose.onNodeWithText("Calibrate to your voice").assertIsDisplayed()
+        compose.onNode(hasScrollAction()).performScrollToNode(hasText("Soft feminine"))
         compose.onNodeWithText("Soft feminine").assertIsDisplayed()
 
         compose.onNodeWithText("Models").performClick()

@@ -197,3 +197,100 @@ TEST_CASE(duplex_neural_path_uses_worker_then_falls_back) {
     CHECK(ai->underruns() >= 1);
     CHECK(rmsDb(after.data() + 24000, 24000) > -20.0);
 }
+
+TEST_CASE(duplex_reports_input_pitch) {
+    DuplexProcessor p(config());
+    const std::vector<float> in = syntheticVowel(125.0f, 700.0f, 2000.0f, 48000, 48000.0f);
+    std::vector<float> out;
+    run(p, in, out);
+    CHECK_NEAR(p.stats().inputPitchHz.load(), 125.0, 2.5);
+}
+
+#include "MonitorBridge.h"
+
+namespace {
+struct DriftResult {
+    int64_t underruns, corrections, overflows;
+    int maxFill;
+    bool contiguous;
+};
+
+// Producer writes a ramp at 48 kHz * (1 + producerPpm), consumer reads 96-frame bursts at 48 kHz.
+DriftResult simulateDrift(double producerPpm, int seconds = 60) {
+    MonitorBridge bridge(48000.0f);
+    bridge.setTargetFrames(192);
+    double prodAcc = 0.0;
+    float next = 0.0f;
+    std::vector<float> chunk(512), out(96);
+    int maxFill = 0;
+    bool contiguous = true;
+    float lastOut = -1.0f;
+    int64_t lastCorrections = 0, lastUnderruns = 0;
+    const int ticks = seconds * 500;  // 2 ms ticks
+    for (int t = 0; t < ticks; ++t) {
+        prodAcc += 96.0 * (1.0 + producerPpm * 1e-6);
+        const int n = static_cast<int>(prodAcc);
+        prodAcc -= n;
+        for (int i = 0; i < n; ++i) chunk[static_cast<size_t>(i)] = (next += 1.0f);
+        bridge.push(chunk.data(), n);
+        bridge.pull(out.data(), 96, 1.0f);
+        maxFill = std::max(maxFill, bridge.fillFrames());
+        // Samples must be consecutive except right after a reported correction/underrun.
+        for (float v : out) {
+            if (v == 0.0f) continue;
+            if (lastOut >= 0.0f && v != lastOut + 1.0f && bridge.driftCorrections() == lastCorrections &&
+                bridge.underruns() == lastUnderruns && t > 100) {
+                contiguous = false;
+            }
+            lastOut = v;
+        }
+        lastCorrections = bridge.driftCorrections();
+        lastUnderruns = bridge.underruns();
+    }
+    return {bridge.underruns(), bridge.driftCorrections(), bridge.overflows(), maxFill, contiguous};
+}
+}  // namespace
+
+TEST_CASE(monitor_bridge_matched_clocks_are_glitch_free) {
+    const DriftResult r = simulateDrift(0.0);
+    CHECK(r.underruns == 0);
+    CHECK(r.corrections == 0);
+    CHECK(r.overflows == 0);
+    CHECK(r.contiguous);
+}
+
+TEST_CASE(monitor_bridge_bounds_latency_when_producer_is_faster) {
+    const DriftResult r = simulateDrift(+500.0);  // 500 ppm: 24 extra frames per second
+    CHECK(r.corrections >= 1);
+    CHECK(r.underruns == 0);
+    CHECK(r.maxFill <= 3 * 192 + 2 * 96 + 96);
+    CHECK(r.contiguous);
+}
+
+TEST_CASE(monitor_bridge_recovers_when_consumer_is_faster) {
+    const DriftResult r = simulateDrift(-500.0);
+    CHECK(r.underruns >= 1);
+    CHECK(r.underruns < 60);  // a re-prime roughly every few seconds, not constantly
+    CHECK(r.contiguous);
+}
+
+TEST_CASE(monitor_bridge_ramps_gain) {
+    MonitorBridge bridge(48000.0f);
+    bridge.setTargetFrames(0);
+    std::vector<float> ones(4800, 1.0f), out(960);
+    bridge.push(ones.data(), 4800);
+    bridge.pull(out.data(), 960, 0.5f);
+    CHECK(out[0] < 0.01f);                // starts silent
+    CHECK_NEAR(out[959], 0.5f, 1e-6);     // reaches the target within 10 ms
+}
+
+TEST_CASE(duplex_pre_mute_output_feeds_monitor) {
+    DuplexProcessor p(config());
+    p.setMuted(true);
+    p.setBypass(true);
+    const std::vector<float> in = sine(400.0f, 0.2f, 9600, 48000.0f);
+    std::vector<float> out(in.size()), monitor(in.size());
+    for (size_t off = 0; off < in.size(); off += 480) p.process(in.data() + off, out.data() + off, 480, monitor.data() + off);
+    CHECK(rmsDb(out.data() + 4800, 4800) < -100.0);       // routed output muted
+    CHECK_NEAR(rmsDb(monitor.data() + 4800, 4800), rmsDb(in.data() + 4800, 4800), 0.1);  // monitor still hears it
+}

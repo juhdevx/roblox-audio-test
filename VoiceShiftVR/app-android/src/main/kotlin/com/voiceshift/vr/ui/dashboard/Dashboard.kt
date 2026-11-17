@@ -59,6 +59,7 @@ import com.voiceshift.audio.EngineMode
 import com.voiceshift.audio.EngineState
 import com.voiceshift.audio.EngineStats
 import com.voiceshift.diagnostics.PerfSnapshot
+import com.voiceshift.dsp.PitchMath
 import com.voiceshift.dsp.VoiceParameter
 import com.voiceshift.dsp.VoiceSettings
 import com.voiceshift.models.AppSettings
@@ -223,6 +224,7 @@ fun DashboardScreen(
                     if (ui.voice.agcEnabled) StatusPill("AGC %+.0f dB".format(ui.stats.agcGainDb), VsColors.Violet)
                     if (ui.stats.limiterReductionDb < -0.5f) StatusPill("Limit %.0f dB".format(ui.stats.limiterReductionDb), VsColors.Amber)
                 }
+                StatRow("Speaking pitch", pitchText(ui), if (ui.stats.inputPitchHz > 0f) VsColors.Pink else Color.Unspecified)
             }
         }
 
@@ -278,6 +280,19 @@ private fun EngineStatePill(state: EngineState) {
     }
 }
 
+/** "118 Hz → 158 Hz" while voiced; the output figure is exact for DSP mode (pitch ratio applied). */
+private fun pitchText(ui: DashboardUiState): String {
+    val input = ui.stats.inputPitchHz
+    if (!ui.running) return "—"
+    if (input <= 0f) return "speak to measure"
+    val dsp = !ui.settings.bypass && ui.stats.aiState != AiPathState.ACTIVE
+    return if (dsp) {
+        "%.0f Hz → %.0f Hz".format(input, input * PitchMath.semitonesToRatio(ui.voice.pitchSemitones))
+    } else {
+        "%.0f Hz (input)".format(input)
+    }
+}
+
 private fun engineSubtitle(ui: DashboardUiState): String = when {
     ui.settings.engineMode == EngineMode.NEURAL.name && ui.neural.loadedModelName != null ->
         "AI: ${ui.neural.loadedModelName} — DSP stays ready as automatic fallback."
@@ -323,6 +338,13 @@ private fun PerformanceCard(ui: DashboardUiState, onOpenDevices: () -> Unit) {
         StatRow("Measured round trip", if (s.probeLatencyMs >= 0) "%.1f ms".format(s.probeLatencyMs) else "run probe in Devices")
         StatRow("Audio thread load", "%.0f %% avg / %.0f %% peak".format(s.callbackLoadAvgPct, s.callbackLoadPeakPct),
             if (s.callbackLoadAvgPct > 70) VsColors.Amber else Color.Unspecified)
+        if (ui.settings.monitorDeviceId != 0 && ui.running) {
+            StatRow(
+                "Monitor output",
+                if (s.monitorActive) "active (${s.monitorUnderruns} underruns)" else "not available",
+                if (s.monitorActive) Color.Unspecified else VsColors.Amber,
+            )
+        }
         StatRow("Stream", if (ui.running) "${s.sampleRate} Hz · burst ${s.framesPerBurst} · ${if (s.outputExclusive) "exclusive" else "shared"}" else "—")
         StatRow("Glitches (xrun / underflow)", "${s.xRunCount} / ${s.inputUnderflows}", if (s.xRunCount + s.inputUnderflows > 0) VsColors.Amber else Color.Unspecified)
         ui.perf?.let { p ->

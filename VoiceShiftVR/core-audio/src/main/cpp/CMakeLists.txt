@@ -14,6 +14,7 @@ find_package(oboe REQUIRED CONFIG)
 add_library(voiceshift_audio SHARED
     AiBridge.cpp
     DuplexProcessor.cpp
+    MonitorBridge.cpp
     OboeEngine.cpp
     jni_bridge.cpp
 )

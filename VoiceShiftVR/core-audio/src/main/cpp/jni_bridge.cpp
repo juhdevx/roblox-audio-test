@@ -25,7 +25,7 @@ JNIEXPORT void JNICALL Java_com_voiceshift_audio_NativeAudioBridge_nativeDestroy
 
 JNIEXPORT jint JNICALL Java_com_voiceshift_audio_NativeAudioBridge_nativeStart(
     JNIEnv*, jclass, jlong handle, jint inputDeviceId, jint outputDeviceId, jint sampleRate, jint fftSize,
-    jint inputPreset, jboolean exclusive, jint aiModelRate, jint aiChunkFrames) {
+    jint inputPreset, jboolean exclusive, jint aiModelRate, jint aiChunkFrames, jint monitorDeviceId) {
     EngineConfig config;
     config.inputDeviceId = inputDeviceId;
     config.outputDeviceId = outputDeviceId;
@@ -35,6 +35,7 @@ JNIEXPORT jint JNICALL Java_com_voiceshift_audio_NativeAudioBridge_nativeStart(
     config.exclusive = exclusive == JNI_TRUE;
     config.aiModelRate = aiModelRate;
     config.aiChunkFrames = aiChunkFrames;
+    config.monitorDeviceId = monitorDeviceId;
     return engine(handle)->start(config);
 }
 
@@ -71,6 +72,11 @@ JNIEXPORT void JNICALL Java_com_voiceshift_audio_NativeAudioBridge_nativeSetTest
 JNIEXPORT void JNICALL Java_com_voiceshift_audio_NativeAudioBridge_nativeSetTapEnabled(JNIEnv*, jclass, jlong handle,
                                                                                        jboolean enabled) {
     engine(handle)->setTapEnabled(enabled == JNI_TRUE);
+}
+
+JNIEXPORT void JNICALL Java_com_voiceshift_audio_NativeAudioBridge_nativeSetMonitorGain(JNIEnv*, jclass, jlong handle,
+                                                                                       jfloat db) {
+    engine(handle)->setMonitorGainDb(db);
 }
 
 JNIEXPORT jint JNICALL Java_com_voiceshift_audio_NativeAudioBridge_nativeGetStats(JNIEnv* env, jclass, jlong handle,

@@ -9,6 +9,7 @@
 #include "AiBridge.h"
 #include "voiceshift/dsp/Analysis.h"
 #include "voiceshift/dsp/Dynamics.h"
+#include "voiceshift/dsp/PitchDetector.h"
 #include "voiceshift/dsp/RingBuffer.h"
 #include "voiceshift/dsp/VoiceChain.h"
 #include "voiceshift/dsp/VoiceParams.h"
@@ -44,7 +45,8 @@ public:
 
     // ---- audio thread
     // input and output are mono; n may be any size (processed in maxBlock slices).
-    void process(const float* input, float* output, int n);
+    // preMuteOut (optional) receives the processed signal before the output mute, for a monitor.
+    void process(const float* input, float* output, int n, float* preMuteOut = nullptr);
 
     // ---- worker threads
     AiBridge* aiBridge() { return ai_.get(); }
@@ -64,6 +66,8 @@ public:
         std::atomic<float> limiterReductionDb{0.0f};
         std::atomic<float> compressorReductionDb{0.0f};
         std::atomic<float> probeLatencyMs{-1.0f};
+        std::atomic<float> inputPitchHz{0.0f};
+        std::atomic<float> pitchConfidence{0.0f};
         std::atomic<int> gateOpen{1};
         std::atomic<int> aiState{0};
         std::atomic<int64_t> dspFaults{0};
@@ -77,7 +81,7 @@ public:
     bool bypass() const { return bypass_.load(std::memory_order_relaxed); }
 
 private:
-    void processSlice(const float* input, float* output, int n);
+    void processSlice(const float* input, float* output, int n, float* preMuteOut);
     void syncParams();
 
     const ProcessorConfig config_;
@@ -87,6 +91,7 @@ private:
     dsp::LevelMeter inputMeter_;
     dsp::LevelMeter outputMeter_;
     dsp::ToneDetector toneDetector_;
+    dsp::PitchDetector pitchDetector_;
     dsp::ToneGenerator toneGenerator_;
     dsp::LatencyProbe probe_;
     std::unique_ptr<AiBridge> ai_;

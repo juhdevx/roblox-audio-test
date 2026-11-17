@@ -22,7 +22,9 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.FilterChip
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
@@ -35,11 +37,16 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewModelScope
+import com.voiceshift.audio.EngineState
+import com.voiceshift.dsp.CalibrationResult
+import com.voiceshift.dsp.PitchCalibration
 import com.voiceshift.dsp.VoiceParameter
 import com.voiceshift.dsp.VoiceSettings
 import com.voiceshift.models.PresetEngine
@@ -50,6 +57,9 @@ import com.voiceshift.vr.ui.components.SectionCard
 import com.voiceshift.vr.ui.components.SwitchRow
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
@@ -60,13 +70,79 @@ data class VoiceUiState(
     val voice: VoiceSettings = VoiceSettings(),
     val presets: List<VoicePreset> = emptyList(),
     val activePresetId: String = "",
+    val engineRunning: Boolean = false,
+    val calibration: CalibrationUi = CalibrationUi(),
+)
+
+data class CalibrationUi(
+    val running: Boolean = false,
+    val progress: Float = 0f,
+    val voicedReadings: Int = 0,
+    val targetHz: Float = PitchCalibration.DEFAULT_TARGET_HZ,
+    val result: CalibrationResult? = null,
+    val message: String? = null,
 )
 
 @HiltViewModel
 class VoiceViewModel @Inject constructor(private val session: VoiceSession) : ViewModel() {
-    val state: StateFlow<VoiceUiState> = combine(session.voice, session.presets, session.settings) { v, p, s ->
-        VoiceUiState(v, p, s.activePresetId)
+    private val calibration = MutableStateFlow(CalibrationUi())
+    private val readings = mutableListOf<Pair<Float, Float>>()
+    private var calibrationJob: Job? = null
+
+    val state: StateFlow<VoiceUiState> = combine(
+        session.voice, session.presets, session.settings, session.engineState, calibration,
+    ) { v, p, s, e, c ->
+        VoiceUiState(v, p, s.activePresetId, e is EngineState.Running, c)
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), VoiceUiState())
+
+    /** Listens to the live pitch tracker for 10 s while the user reads aloud. */
+    fun startCalibration() {
+        calibrationJob?.cancel()
+        readings.clear()
+        calibration.value = calibration.value.copy(running = true, progress = 0f, voicedReadings = 0, result = null, message = null)
+        calibrationJob = viewModelScope.launch {
+            val durationMs = 10_000L
+            val stepMs = 50L
+            var elapsed = 0L
+            while (elapsed < durationMs) {
+                val st = session.stats.value
+                readings += st.inputPitchHz to st.pitchConfidence
+                elapsed += stepMs
+                val voiced = readings.count { (hz, conf) -> hz > 0f && conf >= PitchCalibration.MIN_CONFIDENCE }
+                calibration.value = calibration.value.copy(progress = elapsed / durationMs.toFloat(), voicedReadings = voiced)
+                delay(stepMs)
+            }
+            finishCalibration()
+        }
+    }
+
+    fun cancelCalibration() {
+        calibrationJob?.cancel()
+        calibration.value = calibration.value.copy(running = false)
+    }
+
+    fun setCalibrationTarget(hz: Float) {
+        calibration.value = calibration.value.copy(targetHz = hz)
+        if (calibration.value.result != null) finishCalibration()
+    }
+
+    private fun finishCalibration() {
+        val c = PitchCalibration(calibration.value.targetHz)
+        readings.forEach { (hz, conf) -> c.add(hz, conf) }
+        val result = c.result()
+        calibration.value = calibration.value.copy(
+            running = false,
+            result = result,
+            message = if (result == null) "Not enough voiced speech was heard. Read a sentence aloud at normal volume, closer to the microphone." else null,
+        )
+    }
+
+    fun applyCalibration() {
+        val r = calibration.value.result ?: return
+        session.setVoiceParameter(VoiceParameter.PITCH_SEMITONES, r.suggestedPitchSemitones)
+        session.setVoiceParameter(VoiceParameter.FORMANT_SEMITONES, r.suggestedFormantSemitones)
+        session.message("Applied: %+.1f st pitch, %+.1f st formant".format(r.suggestedPitchSemitones, r.suggestedFormantSemitones))
+    }
 
     fun set(p: VoiceParameter, value: Float) = session.setVoiceParameter(p, value)
     fun apply(p: VoicePreset) = session.applyPreset(p)
@@ -108,6 +184,7 @@ fun VoiceScreen(vm: VoiceViewModel = hiltViewModel()) {
                 }
             }
         }
+        item { CalibrationCard(ui, vm) }
         items(ui.presets, key = { it.id }) { preset ->
             PresetRow(
                 preset = preset,
@@ -181,6 +258,53 @@ fun VoiceScreen(vm: VoiceViewModel = hiltViewModel()) {
             confirmButton = { TextButton(onClick = { vm.delete(preset.id); pendingDelete = null }) { Text("Delete") } },
             dismissButton = { TextButton(onClick = { pendingDelete = null }) { Text("Cancel") } },
         )
+    }
+}
+
+@Composable
+private fun CalibrationCard(ui: VoiceUiState, vm: VoiceViewModel) {
+    val c = ui.calibration
+    SectionCard(
+        "Calibrate to your voice",
+        subtitle = "Measures your speaking pitch and suggests pitch and formant shifts to reach the target.",
+    ) {
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
+            Text("Target", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            PitchCalibration.TARGETS.forEach { (label, hz) ->
+                FilterChip(
+                    selected = c.targetHz == hz,
+                    onClick = { vm.setCalibrationTarget(hz) },
+                    label = { Text("${hz.toInt()} Hz") },
+                    modifier = Modifier.semantics { contentDescription = "$label target ${hz.toInt()} hertz" },
+                )
+            }
+        }
+        when {
+            !ui.engineRunning && !c.running -> Text(
+                "Start the voice engine on Home, then read a sentence aloud for 10 seconds.",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            c.running -> {
+                Text("Read aloud at your normal speaking voice… (${c.voicedReadings} voiced readings)", style = MaterialTheme.typography.bodySmall)
+                LinearProgressIndicator(progress = { c.progress }, modifier = Modifier.fillMaxWidth())
+                OutlinedButton(onClick = vm::cancelCalibration) { Text("Cancel") }
+            }
+            else -> Button(onClick = vm::startCalibration) { Text(if (c.result == null) "Start 10 s calibration" else "Measure again") }
+        }
+        c.message?.let { Text(it, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error) }
+        c.result?.let { r ->
+            Text(
+                "Your speaking pitch: %.0f Hz (most speech %.0f–%.0f Hz).\nSuggested: %+.1f st pitch, %+.1f st formant → about %.0f Hz.".format(
+                    r.medianHz, r.lowHz, r.highHz, r.suggestedPitchSemitones, r.suggestedFormantSemitones, r.expectedOutputHz,
+                ),
+                style = MaterialTheme.typography.bodyMedium,
+            )
+            if (r.suggestedPitchSemitones == 0f) {
+                Text("Your voice is already at or above the target; consider only formant/EQ changes.", style = MaterialTheme.typography.bodySmall)
+            }
+            Button(onClick = vm::applyCalibration) { Text("Apply suggestion") }
+        }
     }
 }
 

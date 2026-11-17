@@ -29,6 +29,8 @@ into the Quest.**
   level/clipping while the tone plays.
 * Round-trip latency probe for any output→input loopback.
 * Output gain and limiter (protects a mic input from clipping).
+* Optional **monitor output** (Devices → Monitor) so you can hear yourself on headphones while the main
+  output feeds the cable; the main output can be muted independently.
 
 ### Candidate wiring (choose one; all unverified)
 
