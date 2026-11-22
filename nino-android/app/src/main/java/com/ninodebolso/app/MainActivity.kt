@@ -35,6 +35,7 @@ class MainActivity : Activity() {
     private lateinit var setupBox: LinearLayout
     private lateinit var taskBox: LinearLayout
     private lateinit var memBox: LinearLayout
+    private lateinit var learnBox: LinearLayout
     private lateinit var keyInput: EditText
     private lateinit var keyStatus: TextView
     private var pendingDue: Long? = null
@@ -60,6 +61,7 @@ class MainActivity : Activity() {
         buildPersonality()
         buildTasks()
         buildMemory()
+        buildLearned()
         buildAbout()
         setContentView(scroll)
         edgeToEdge(scroll)
@@ -175,6 +177,7 @@ class MainActivity : Activity() {
         val c = card()
         val top = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL; gravity = Gravity.CENTER_VERTICAL }
         heroPet = PetView(this)
+        heroPet.look = Store.look
         heroPet.setOnClickListener {
             heroPet.hearts(3)
             heroPet.express(listOf("carinhoso", "animado", "brincalhao").random(), 2200)
@@ -207,6 +210,7 @@ class MainActivity : Activity() {
         c.addView(mainBtn, LinearLayout.LayoutParams(-1, -2).apply { topMargin = dp(12) })
         val row = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
         row.addView(button("Conversar", false) { startActivity(Intent(this, ChatActivity::class.java)) }, LinearLayout.LayoutParams(0, -2, 1f))
+        row.addView(button("Visual", false) { startActivity(Intent(this, WardrobeActivity::class.java)) }, LinearLayout.LayoutParams(0, -2, 1f).apply { leftMargin = dp(8) })
         row.addView(button("Olhar a tela", false) { askEyes() }, LinearLayout.LayoutParams(0, -2, 1f).apply { leftMargin = dp(8) })
         c.addView(row, LinearLayout.LayoutParams(-1, -2).apply { topMargin = dp(8) })
     }
@@ -243,8 +247,13 @@ class MainActivity : Activity() {
 
     private fun buildBrain() {
         val c = card()
-        h2(c, "Cérebro de IA")
-        note(c, "Pra conversar, entender sua tela e ajudar de verdade, o Nino usa o Claude com uma chave da API da Anthropic. Crie em console.anthropic.com, em API Keys. O uso é cobrado por mensagem na sua conta da Anthropic. Sem chave, ele ainda brinca, come, dorme e lembra das suas tarefas.")
+        h2(c, "Cérebro do Nino")
+        note(c, "O Nino tem um cérebro próprio, grátis, que roda no celular: entende pedidos comuns, aprende o que você ensina e pesquisa na Wikipédia, vê o clima, faz contas e cria lembretes.")
+        note(c, "Pra conversar de verdade, entender sua tela e pesquisar na internet toda, ele pode usar o Claude com uma chave da API da Anthropic. Crie em console.anthropic.com, em API Keys. O uso é cobrado por mensagem na sua conta da Anthropic.", 8)
+        label(c, "Qual cérebro usar")
+        segmented(c, listOf("auto" to "Claude quando tiver chave", "proprio" to "Só o cérebro próprio"), { Store.brainMode }) {
+            Store.brainMode = it; Store.changed()
+        }
         label(c, "Chave da API")
         keyInput = input("sk-ant-...", Store.apiKey, password = true)
         c.addView(keyInput, LinearLayout.LayoutParams(-1, -2).apply { topMargin = dp(6) })
@@ -261,7 +270,29 @@ class MainActivity : Activity() {
         segmented(c, listOf(MODEL_OPUS to "Opus 5.5 (mais esperto)", MODEL_SONNET to "Sonnet 5.5 (equilibrado)", MODEL_HAIKU to "Haiku 5.5 (mais barato)"), { Store.model }) {
             Store.model = it; Store.changed()
         }
-        note(c, "A chave fica só neste celular, guardada no app.", 10)
+        switchRow(c, "Claude pode pesquisar na internet", Store.webSearch) { Store.webSearch = it; Store.changed() }
+        note(c, "Cada pesquisa na internet custa um pouquinho a mais na sua conta da Anthropic. A chave fica só neste celular, guardada no app.", 10)
+    }
+
+    private fun buildLearned() {
+        val c = card()
+        h2(c, "O que o Nino aprendeu")
+        note(c, "Ensine respostas pra ele. Também dá pela conversa: “quando eu falar X, responde Y”. As pesquisas que ele fez ficam guardadas aqui.")
+        val q = input("Quando eu falar...", "")
+        c.addView(q, LinearLayout.LayoutParams(-1, -2).apply { topMargin = dp(10) })
+        val a = input("Ele responde...", "")
+        c.addView(a, LinearLayout.LayoutParams(-1, -2).apply { topMargin = dp(6) })
+        c.addView(button("Ensinar", true) {
+            val qq = q.text.toString().trim()
+            val aa = a.text.toString().trim()
+            if (qq.isEmpty() || aa.isEmpty()) { Toast.makeText(this, "Preencha as duas partes.", Toast.LENGTH_SHORT).show(); return@button }
+            Store.addKnowledge(qq, aa, "ensinado")
+            q.setText(""); a.setText("")
+            heroPet.express("animado", 2000); heroPet.sparkles()
+            Toast.makeText(this, "Aprendi!", Toast.LENGTH_SHORT).show()
+        }, LinearLayout.LayoutParams(-2, -2).apply { topMargin = dp(8) })
+        learnBox = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
+        c.addView(learnBox, LinearLayout.LayoutParams(-1, -2).apply { topMargin = dp(8) })
     }
 
     private fun saveKey() {
@@ -372,6 +403,7 @@ class MainActivity : Activity() {
         title.text = Store.petName
         levelText.text = "Nível ${Store.level()} · ${(Store.levelProgress() * 100).toInt()}% pro próximo"
         heroPet.level = Store.level()
+        if (heroPet.look != Store.look) heroPet.look = Store.look
         heroPet.sleeping = Store.sleeping
         heroPet.face = when { Store.energy < 15 -> "sonolento"; Store.food < 18 -> "fome"; Store.joy < 22 -> "triste"; else -> "feliz" }
         val vals = mapOf("food" to Store.food, "energy" to Store.energy, "joy" to Store.joy)
@@ -421,6 +453,14 @@ class MainActivity : Activity() {
             label(taskBox, "Feitas")
             done.take(8).forEach { t -> taskBox.addView(taskRow(t)) }
             taskBox.addView(button("Limpar feitas", false) { Store.clearDone() }, LinearLayout.LayoutParams(-2, -2).apply { topMargin = dp(8) })
+        }
+
+        learnBox.removeAllViews()
+        if (Store.knowledge.isEmpty()) note(learnBox, "Ainda nada. Ensine alguma coisa ou peça uma pesquisa na conversa.", 6)
+        Store.knowledge.reversed().take(40).forEach { k ->
+            val title = when (k.kind) { "ensinado" -> "“${k.q}” → “${k.a}”"; "fato" -> k.q; else -> k.q.replaceFirstChar { it.uppercase() } }
+            val sub = when (k.kind) { "ensinado" -> "você ensinou"; "fato" -> "fato que você contou"; else -> "pesquisado: " + k.a.take(90) + if (k.a.length > 90) "…" else "" }
+            learnBox.addView(itemRow(title, sub, false, null) { Store.removeKnowledge(k.id) })
         }
 
         memBox.removeAllViews()

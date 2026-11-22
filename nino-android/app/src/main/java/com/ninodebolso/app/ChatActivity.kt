@@ -50,6 +50,7 @@ class ChatActivity : Activity() {
         if (Store.chat.size != renderedCount) render()
         keyBanner.visibility = if (Brain.hasKey()) View.GONE else View.VISIBLE
         headPet.level = Store.level()
+        if (headPet.look != Store.look) headPet.look = Store.look
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,7 +62,7 @@ class ChatActivity : Activity() {
         }
         root.addView(header())
         keyBanner = TextView(this).apply {
-            text = "O ${Store.petName} ainda não tem cérebro de IA. Toque aqui para colocar a chave."
+            text = "Cérebro próprio ligado: pesquisa na Wikipédia, clima, contas e lembretes. Toque aqui para colocar a chave do Claude e deixar o ${Store.petName} bem mais esperto."
             setTextColor(p.ink)
             textSize = 14f
             setPadding(dp(14), dp(10), dp(14), dp(10))
@@ -112,6 +113,7 @@ class ChatActivity : Activity() {
             setPadding(dp(10), dp(6), dp(8), dp(6))
         }
         headPet = PetView(this)
+        headPet.look = Store.look
         headPet.setOnClickListener { headPet.hearts(3); headPet.express("carinhoso", 2000) }
         row.addView(headPet, LinearLayout.LayoutParams(dp(64), dp(68)))
         val col = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
@@ -202,16 +204,21 @@ class ChatActivity : Activity() {
                 setTextColor(p.ink); textSize = 19f; typeface = Typeface.DEFAULT_BOLD
             })
             list.addView(TextView(this).apply {
-                text = "Ele conversa, tira dúvidas, escreve mensagens, organiza seu dia, cria lembretes e olha a sua tela quando você pede. Experimente:"
+                text = if (Brain.hasKey() && Store.brainMode != "proprio")
+                    "Ele conversa, tira dúvidas, pesquisa na internet, escreve mensagens, cria lembretes e olha a sua tela quando você pede. Experimente:"
+                else
+                    "Com o cérebro próprio ele pesquisa na Wikipédia, vê o clima, faz contas, cria lembretes e aprende o que você ensinar. Experimente:"
                 setTextColor(p.muted); textSize = 14.5f
                 setPadding(0, dp(6), 0, dp(10))
             })
             val chips = FlowLayout(this)
             listOf(
+                "O que é um buraco negro?",
                 "Me lembra de beber água daqui 30 minutos",
-                "Me ajuda a organizar meu dia",
+                "Como tá o tempo em São Paulo?",
+                "Quando eu falar bom dia, responde bom dia, flor do dia!",
+                "Quanto é 15% de 80?",
                 "O que você sabe fazer?",
-                "Conta uma curiosidade",
             ).forEach { s ->
                 chips.addView(TextView(this).apply {
                     text = s
@@ -263,12 +270,33 @@ class ChatActivity : Activity() {
             maxWidth = maxW - dp(24)
             setTextIsSelectable(true)
         })
+        if (m.links.isNotEmpty()) {
+            val row = FlowLayout(this)
+            m.links.forEach { (label, url) ->
+                row.addView(TextView(this).apply {
+                    text = label
+                    textSize = 13.5f
+                    typeface = Typeface.DEFAULT_BOLD
+                    setPadding(dp(12), dp(6), dp(12), dp(6))
+                    setTextColor(p.accent)
+                    background = rounded(p.accentSoft, dpf(99))
+                    setOnClickListener { openLink(url) }
+                })
+            }
+            b.addView(row, LinearLayout.LayoutParams(-2, -2).apply { topMargin = dp(8) })
+        }
         b.setOnLongClickListener {
             getSystemService(ClipboardManager::class.java).setPrimaryClip(ClipData.newPlainText("Nino", m.text))
             Toast.makeText(this, "Copiado", Toast.LENGTH_SHORT).show()
             true
         }
         return b
+    }
+
+    private fun openLink(url: String) {
+        try { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url))) } catch (e: Exception) {
+            Toast.makeText(this, "Não achei um navegador pra abrir.", Toast.LENGTH_SHORT).show()
+        }
     }
 
     // --------------------------------------------------------------- sending
@@ -287,7 +315,7 @@ class ChatActivity : Activity() {
         render()
         Brain.chat(shown, img) { r ->
             waiting = false
-            Store.addChat(ChatMsg("p", r.text, err = r.error))
+            Store.addChat(ChatMsg("p", r.text, err = r.error, links = r.links))
             status.text = "online, pronto pra ajudar"
             headPet.express(r.emotion ?: "feliz", 4000)
             if (Store.level() > 0) headPet.level = Store.level()

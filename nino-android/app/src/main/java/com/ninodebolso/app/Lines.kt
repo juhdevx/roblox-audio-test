@@ -10,7 +10,7 @@ object Lines {
     val TAP = listOf("Oi! Tô aqui!", "Me chamou?", "Hihi, oi!", "Boop!", "O que vamos fazer?", "Opa! Precisa de mim?")
     val PET = listOf("Hmmm... que gostoso.", "Mais! Mais!", "Eu amo carinho.", "Fico todo vermelhinho assim.", "Ronrom... espera, isso é coisa de gato.")
     val WAKE = listOf("Hã? Já é de manhã?", "Eu tava sonhando com biscoitos...", "Zzz... ah, oi. Acordei.", "Bocejo... tô de pé! Mais ou menos.")
-    val DONE = listOf("Boa! Menos uma!", "Mandou bem! Riscado da lista.", "Isso aí! Orgulho de você.", "Tarefa feita, folhinha feliz!")
+    val DONE = listOf("Boa! Menos uma!", "Mandou bem! Riscado da lista.", "Isso aí! Orgulho de você.", "Tarefa feita, que orgulho!")
     val THROWN = listOf("Wheeee!", "Uaaau, eu voo!", "De novo! De novo!", "Opa! Pousei!")
     val THINK = listOf("Hmm, deixa eu ver...", "Deixa eu dar uma olhadinha...", "Peraí, tô olhando...")
     val HIDE = listOf("Vou ficar aqui no cantinho. Me toca quando precisar!", "Tô de olho daqui, viu?")
@@ -20,7 +20,11 @@ object Lines {
         "Sabia que os polvos têm três corações? Eu só tenho um, mas ele é grandão.",
         "Se precisar de ajuda com alguma coisa, me toca. Sou pequeno, mas sou esperto!",
         "Uma pausa de 5 minutinhos às vezes resolve tudo. Bora alongar?",
-        "Já bebeu água hoje? Eu já reguei minha folhinha.",
+        "Já bebeu água hoje? Eu já bebi a minha!",
+        "Sabia que dá pra me ensinar? Fala na conversa: quando eu falar “bom dia”, responde “bom dia, flor do dia!”.",
+        "Me pergunta “o que é um buraco negro?” que eu pesquiso pra você!",
+        "Quer saber o clima? Me pergunta “como tá o tempo em ...” com o nome da sua cidade.",
+        "Toca em mim e escolhe “Visual” pra trocar meu chapéu, cabelo e roupa!",
         "Me conta uma coisa legal que aconteceu hoje?",
         "Curiosidade: o mel quase não estraga. Já acharam mel de milhares de anos em tumbas no Egito!",
         "Dica: me toca e escolhe “Olhar a tela” que eu te explico o que tá aparecendo.",
@@ -30,6 +34,25 @@ object Lines {
         "Recebeu mensagem pedindo PIX ou código? Me mostra antes que eu dou uma olhada.",
         "Tô de olho em tudo por aqui. Pode contar comigo.",
     )
+    private val CURIOSITIES = listOf(
+        "Os polvos têm três corações e sangue azul!",
+        "O mel quase não estraga: já acharam mel de milhares de anos em tumbas no Egito.",
+        "Pra botânica, a banana é uma baga e o morango não é.",
+        "Os flamingos ficam rosa por causa do que comem: camarõezinhos e algas.",
+        "O coração de uma baleia-azul é do tamanho de um carro pequeno.",
+        "As abelhas conseguem reconhecer rostos humanos.",
+        "Um dia em Vênus dura mais que um ano em Vênus!",
+        "Os cavalos-marinhos machos é que ficam grávidos.",
+    )
+
+    fun curiosity(): String = "Curiosidade: " + CURIOSITIES.random()
+
+    fun levelUp(level: Int): String = when (Store.look.species) {
+        "broto" -> "Subi pro nível $level! Olha minha folhinha crescendo!"
+        "bebe" -> "Subi pro nível $level! Tô crescendo, já sei até falar mais coisas!"
+        else -> "Subi pro nível $level! Tô ficando cada vez mais esperto!"
+    }
+
     private val HUNGRY = listOf("Minha barriga tá roncando... me dá um lanchinho?", "Fome... me toca e escolhe Comer?")
     private val SLEEPY = listOf("Tô com soninho... me põe pra dormir?", "Bocejo... minha energia tá acabando.")
     private val BORED = listOf("Tô meio entediado... brinca comigo?", "Faz um carinho em mim? Toca duas vezes na minha cabeça.", "Me joga pro alto! Arrasta e solta, é divertido!")

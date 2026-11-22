@@ -53,6 +53,13 @@
             android:windowSoftInputMode="adjustResize" />
 
         <activity
+            android:name=".WardrobeActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:label="Visual"
+            android:taskAffinity="com.ninodebolso.app.visual" />
+
+        <activity
             android:name=".CaptureActivity"
             android:exported="false"
             android:excludeFromRecents="true"

@@ -25,8 +25,24 @@ class Task(
 
 class Memory(val id: String, val text: String, val at: Long = now())
 
-/** role: "u" = you, "p" = the pet, "s" = a note from the pet (reminders). */
-class ChatMsg(val role: String, val text: String, val at: Long = now(), val img: Boolean = false, val err: Boolean = false)
+/**
+ * role: "u" = you, "p" = the pet, "s" = a note from the pet (reminders).
+ * [links] are buttons shown under the message: label to web address.
+ */
+class ChatMsg(
+    val role: String,
+    val text: String,
+    val at: Long = now(),
+    val img: Boolean = false,
+    val err: Boolean = false,
+    val links: List<Pair<String, String>> = emptyList(),
+)
+
+/**
+ * Something Nino learned. kind: "ensinado" (you taught a reply: when you say [q], it answers [a]),
+ * "fato" (a fact you told it), "pesquisa" (something it looked up, with the source in [url]).
+ */
+class Knowledge(val id: String, val q: String, val a: String, val kind: String, val url: String = "", val at: Long = now())
 
 /** Everything the pet remembers, kept on the phone in private app storage. Touch it on the main thread. */
 object Store {
@@ -45,6 +61,10 @@ object Store {
     var autoHelpMin = 5
     var size = 1
     var petActive = false
+    var look = Look()
+    var brainMode = "auto"
+    var webSearch = true
+    var city = ""
 
     // the pet
     var food = 80.0
@@ -59,6 +79,7 @@ object Store {
     val tasks = mutableListOf<Task>()
     val memories = mutableListOf<Memory>()
     val chat = mutableListOf<ChatMsg>()
+    val knowledge = mutableListOf<Knowledge>()
 
     private val listeners = LinkedHashSet<() -> Unit>()
 
@@ -186,8 +207,27 @@ object Store {
         changed()
     }
 
+    /** Saves something learned; a new answer for the same question replaces the old one. */
+    fun addKnowledge(q: String, a: String, kind: String, url: String = ""): Knowledge {
+        val key = OwnBrain.norm(q).trim()
+        knowledge.removeAll { OwnBrain.norm(it.q).trim() == key && it.kind == kind }
+        val k = Knowledge(newId(), q.trim().take(200), a.trim().take(1200), kind, url)
+        knowledge.add(k)
+        while (knowledge.size > 300) {
+            val old = knowledge.firstOrNull { it.kind == "pesquisa" } ?: knowledge.first()
+            knowledge.remove(old)
+        }
+        changed()
+        return k
+    }
+
+    fun removeKnowledge(id: String) {
+        knowledge.removeAll { it.id == id }
+        changed()
+    }
+
     fun addChat(m: ChatMsg) {
-        chat.add(ChatMsg(m.role, m.text.take(4000), m.at, m.img, m.err))
+        chat.add(ChatMsg(m.role, m.text.take(4000), m.at, m.img, m.err, m.links))
         while (chat.size > 60) chat.removeAt(0)
         lastSeen = now()
         changed()
@@ -195,7 +235,8 @@ object Store {
 
     fun resetAll() {
         tasks.forEach { Reminders.cancel(app, it.id) }
-        tasks.clear(); memories.clear(); chat.clear()
+        tasks.clear(); memories.clear(); chat.clear(); knowledge.clear()
+        look = Look(); city = ""
         food = 80.0; energy = 85.0; joy = 75.0; statsAt = now(); sleeping = false; xp = 0
         petName = "Nino"; userName = ""
         changed()
@@ -207,6 +248,7 @@ object Store {
         o.put("petName", petName); o.put("userName", userName); o.put("model", model)
         o.put("voice", voice); o.put("chatty", chatty); o.put("autoHelp", autoHelp); o.put("autoHelpMin", autoHelpMin)
         o.put("size", size); o.put("petActive", petActive)
+        o.put("look", look.toJson()); o.put("brainMode", brainMode); o.put("webSearch", webSearch); o.put("city", city)
         o.put("food", food); o.put("energy", energy); o.put("joy", joy); o.put("statsAt", statsAt)
         o.put("sleeping", sleeping); o.put("xp", xp); o.put("lastSeen", lastSeen); o.put("morningDay", morningDay)
         o.put("tasks", JSONArray().apply {
@@ -219,7 +261,13 @@ object Store {
         })
         o.put("memories", JSONArray().apply { memories.forEach { put(JSONObject().put("id", it.id).put("text", it.text).put("at", it.at)) } })
         o.put("chat", JSONArray().apply {
-            chat.forEach { put(JSONObject().put("r", it.role).put("t", it.text).put("at", it.at).put("img", it.img).put("err", it.err)) }
+            chat.forEach { m ->
+                val links = JSONArray().apply { m.links.forEach { (l, u) -> put(JSONObject().put("l", l).put("u", u)) } }
+                put(JSONObject().put("r", m.role).put("t", m.text).put("at", m.at).put("img", m.img).put("err", m.err).put("links", links))
+            }
+        })
+        o.put("knowledge", JSONArray().apply {
+            knowledge.forEach { put(JSONObject().put("id", it.id).put("q", it.q).put("a", it.a).put("kind", it.kind).put("url", it.url).put("at", it.at)) }
         })
         prefs.edit().putString("state", o.toString()).putString("apiKey", apiKey).apply()
     }
@@ -238,6 +286,10 @@ object Store {
             autoHelpMin = o.optInt("autoHelpMin", 5)
             size = o.optInt("size", 1)
             petActive = o.optBoolean("petActive", false)
+            look = Look.from(o.optJSONObject("look"))
+            brainMode = o.optString("brainMode", "auto")
+            webSearch = o.optBoolean("webSearch", true)
+            city = o.optString("city", "")
             food = o.optDouble("food", 80.0); energy = o.optDouble("energy", 85.0); joy = o.optDouble("joy", 75.0)
             statsAt = o.optLong("statsAt", now()); sleeping = o.optBoolean("sleeping", false); xp = o.optInt("xp", 0)
             lastSeen = o.optLong("lastSeen", 0); morningDay = o.optString("morningDay", "")
@@ -261,7 +313,16 @@ object Store {
             o.optJSONArray("chat")?.let { a ->
                 for (i in 0 until a.length()) {
                     val m = a.getJSONObject(i)
-                    chat.add(ChatMsg(m.getString("r"), m.getString("t"), m.optLong("at"), m.optBoolean("img"), m.optBoolean("err")))
+                    val links = mutableListOf<Pair<String, String>>()
+                    m.optJSONArray("links")?.let { la -> for (j in 0 until la.length()) la.getJSONObject(j).let { links += it.getString("l") to it.getString("u") } }
+                    chat.add(ChatMsg(m.getString("r"), m.getString("t"), m.optLong("at"), m.optBoolean("img"), m.optBoolean("err"), links))
+                }
+            }
+            knowledge.clear()
+            o.optJSONArray("knowledge")?.let { a ->
+                for (i in 0 until a.length()) {
+                    val k = a.getJSONObject(i)
+                    knowledge.add(Knowledge(k.getString("id"), k.getString("q"), k.getString("a"), k.optString("kind", "ensinado"), k.optString("url", ""), k.optLong("at")))
                 }
             }
         } catch (e: Exception) {

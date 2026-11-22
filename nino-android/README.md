@@ -2,6 +2,8 @@
 
 O Nino é um bichinho virtual que anda por cima dos seus apps no Android. Ele conversa com você, cria lembretes que tocam na hora, lembra do que você conta, olha a sua tela quando você deixa e dá dicas sozinho.
 
+Ele pode ser um **broto**, um **bebê** ou um **humaninho**, e você escolhe o tom de pele ou a cor, o cabelo e a cor do cabelo, o chapéu (boné, gorro, coroa, festa, bruxa, cartola, laço, palha), os óculos, a roupa e extras como chupeta, cachecol e gravatinha. Toque no Nino e escolha **Visual**, ou use o botão **Visual** no app.
+
 ## Instalar
 
 1. Baixe `release/Nino.apk` no celular.
@@ -13,27 +15,45 @@ O Nino é um bichinho virtual que anda por cima dos seus apps no Android. Ele co
    - **Não deixar o celular fechar o Nino**: opcional, ajuda em celulares que economizam bateria demais.
 4. Toque em **Soltar o Nino na tela**.
 
-## Cérebro de IA
+## Cérebro próprio (grátis)
 
-O Nino usa o Claude pela API da Anthropic, com a sua chave:
+Sem chave nenhuma, o Nino tem um cérebro próprio que roda no celular:
+
+- **Aprende com você**: "quando eu falar bom dia, responde bom dia, flor do dia!". Também guarda fatos ("aprende que meu gato se chama Mingau") e esquece quando você pede ("esquece o que eu te ensinei sobre bom dia").
+- **Pesquisa o que as pessoas já escreveram**: "o que é um buraco negro?", "quem foi Santos Dumont?". Ele busca na Wikipédia e no DuckDuckGo, mostra a fonte e tem um botão **Ver no Google**. O que ele pesquisa fica guardado, e da próxima vez ele já sabe.
+- **Clima**: "como tá o tempo em Recife?", "vai chover amanhã?" (dados do Open-Meteo).
+- **Contas**: "quanto é 15% de 80?", "7 x 8".
+- **Lembretes**: "me lembra de tomar remédio às 21h", "me lembra daqui meia hora de tirar o bolo", "anota comprar leite".
+- **Sobre você**: "meu nome é Ana", "eu moro em São Paulo", "eu gosto de pizza", "o que você aprendeu?".
+- Papo, piadas, curiosidades, data e hora.
+
+Tudo o que ele aprendeu aparece no app, em **O que o Nino aprendeu**, onde você pode ensinar ou apagar.
+
+O cérebro próprio não é uma IA como o Claude: ele entende frases comuns e busca respostas prontas. Para conversar sobre qualquer coisa, use o Claude.
+
+## Cérebro do Claude (com chave)
+
+Com uma chave da API, o Nino usa o Claude, que conversa sobre qualquer assunto, entende prints da tela e pode pesquisar na internet. Para isso:
 
 1. Crie uma chave em [console.anthropic.com](https://console.anthropic.com), na seção **API Keys**.
 2. Cole a chave no app e toque em **Testar**.
 
-O uso da API é cobrado por mensagem na sua conta da Anthropic, separado de qualquer assinatura do claude.ai. O modelo padrão é o Claude Opus 5.5. Nos ajustes você pode trocar para o Sonnet 5.5 ou para o Haiku 5.5, que é bem mais barato. A chave fica só no celular.
+O uso da API é cobrado por mensagem na sua conta da Anthropic, separado de qualquer assinatura do claude.ai. Cada pesquisa na internet custa um pouco a mais. O modelo padrão é o Claude Opus 5.5. Nos ajustes você pode trocar para o Sonnet 5.5 ou para o Haiku 5.5, que é bem mais barato, desligar a pesquisa na internet ou escolher **Só o cérebro próprio**. A chave fica só no celular.
 
-Sem chave, o Nino continua brincando, comendo, dormindo e lembrando das suas tarefas. Só não conversa nem entende a tela.
+O Claude também sabe o visual do Nino e o que você ensinou. Se ele não responder (chave errada ou sem créditos), o cérebro próprio responde no lugar.
+
+Se a pesquisa na internet não funcionar, pode ser preciso liberá-la para a sua organização no console da Anthropic.
 
 ## Como brincar com ele
 
 | Gesto | O que acontece |
 | --- | --- |
-| Tocar | Abre o menu: Conversar, Olhar a tela, Comer, Brincar, Dormir, Esconder e Guardar |
+| Tocar | Abre o menu: Conversar, Olhar a tela, Comer, Visual, Brincar, Dormir, Esconder e Guardar |
 | Tocar duas vezes | Carinho, com coraçõezinhos |
 | Segurar | Abre a conversa direto |
 | Arrastar e soltar | Ele voa, quica e cai no chão. Dá para jogar ele longe! |
 
-Ele tem barriga, energia e alegria, que mudam com o tempo. Também sobe de nível, a folhinha cresce e no nível 5 nasce uma flor. Ele dorme de noite e acorda quando descansa.
+Ele tem barriga, energia e alegria, que mudam com o tempo, e sobe de nível. No broto, a folhinha cresce e no nível 5 nasce uma flor. Ele dorme de noite e acorda quando descansa.
 
 ## O que ele faz sozinho
 
@@ -48,7 +68,7 @@ Ele tem barriga, energia e alegria, que mudam com o tempo. Também sobe de níve
 
 Toque em **Olhar a tela** no menu. O próprio Android pede permissão e mostra que a tela está sendo compartilhada. Escolha **Tela inteira** para ele ajudar em qualquer app. A visão vale até você tocar em **Parar** no aviso do Android ou reiniciar o celular. Apps protegidos, como os de banco, aparecem pretos para ele.
 
-As imagens da tela só vão para a IA da Anthropic quando o Nino olha (por pedido seu ou pela ajuda automática que você ligou). Conversas, tarefas e memórias ficam no celular.
+As imagens da tela só vão para a IA da Anthropic quando o Nino olha (por pedido seu ou pela ajuda automática que você ligou). Conversas, tarefas e memórias ficam no celular. O cérebro próprio só manda para a internet o termo pesquisado (para a Wikipédia, o DuckDuckGo ou o Open-Meteo).
 
 ## Limites
 

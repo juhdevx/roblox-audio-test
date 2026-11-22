@@ -23,6 +23,8 @@ import com.anthropic.models.beta.messages.BetaStopReason
 import com.anthropic.models.beta.messages.BetaTool
 import com.anthropic.models.beta.messages.BetaToolResultBlockParam
 import com.anthropic.models.beta.messages.BetaToolUseBlock
+import com.anthropic.models.beta.messages.BetaWebSearchTool20250305
+import com.anthropic.models.beta.messages.BetaWebSearchTool20260209
 import com.anthropic.models.beta.messages.MessageCreateParams
 import java.time.Duration
 import java.time.LocalDateTime
@@ -32,7 +34,12 @@ import java.util.Locale
 import java.util.concurrent.Executors
 
 /** What the pet says back: the text without its emotion tag, and the emotion it chose. */
-data class Reply(val text: String, val emotion: String?, val error: Boolean = false)
+data class Reply(
+    val text: String,
+    val emotion: String?,
+    val error: Boolean = false,
+    val links: List<Pair<String, String>> = emptyList(),
+)
 
 /** The pet's AI brain: Claude, called with the person's own API key. */
 object Brain {
@@ -74,8 +81,13 @@ object Brain {
      * [Store.chat]; [onDone] runs on the main thread.
      */
     fun chat(userText: String, image: ByteArray?, onDone: (Reply) -> Unit) {
-        if (!hasKey()) {
-            onDone(Reply("Eu ainda não tenho meu cérebro de IA! Coloca a chave da Anthropic no app do ${Store.petName} (em “Cérebro”).", "triste", true))
+        // Without a key, or when the person chose it, Nino's own brain answers (free, on the phone).
+        if (!hasKey() || Store.brainMode == "proprio") {
+            if (image != null) {
+                onDone(Reply("Pra entender imagens eu preciso do cérebro do Claude. Coloca a chave no app do ${Store.petName} e escolhe o modo Automático.", "pensativo"))
+            } else {
+                OwnBrain.reply(userText, onDone)
+            }
             return
         }
         val system = systemPrompt()
@@ -84,13 +96,24 @@ object Brain {
         val effort = if (image != null || userText.length > 140 || HELP.containsMatchIn(userText)) BetaOutputConfig.Effort.MEDIUM else BetaOutputConfig.Effort.LOW
         inFlight++
         exec.execute {
+            var failure: String? = null
             val reply = try {
                 run(model, system, history, image, effort, withTools = true)
             } catch (e: Throwable) {
                 Log.w("Nino", "chat failed", e)
-                Reply(errorText(e), "triste", true)
+                failure = errorText(e)
+                Reply(failure, "triste", true)
             }
-            Main.post { inFlight--; onDone(reply) }
+            Main.post {
+                inFlight--
+                val why = failure
+                if (why != null && image == null) {
+                    // Claude did not answer: let Nino's own brain try, and say why.
+                    OwnBrain.reply(userText) { r -> onDone(r.copy(text = r.text + "\n\n(Respondi com meu cérebro próprio. $why)")) }
+                } else {
+                    onDone(reply)
+                }
+            }
         }
     }
 
@@ -156,7 +179,14 @@ object Brain {
         if (model == MODEL_OPUS || model == MODEL_SONNET) {
             b.addBeta("server-side-fallback-2026-07-01").fallbacksDefault()
         }
-        if (withTools) TOOLS.forEach { b.addTool(it) }
+        if (withTools) {
+            TOOLS.forEach { b.addTool(it) }
+            // Lets Claude search the web, like looking it up on Google, when it needs fresh facts.
+            if (Store.webSearch) {
+                if (model == MODEL_HAIKU) b.addTool(BetaWebSearchTool20250305.builder().maxUses(3L).build())
+                else b.addTool(BetaWebSearchTool20260209.builder().maxUses(3L).build())
+            }
+        }
         history.forEachIndexed { i, (role, text) ->
             if (role == "user") {
                 if (i == history.lastIndex && image != null) {
@@ -367,7 +397,7 @@ object Brain {
     private fun systemPrompt(): String {
         Store.tick()
         val who = Store.userName.ifBlank { "uma pessoa" }
-        return """Você é ${Store.petName}, um bichinho virtual que mora na tela do celular Android de $who: um broto amarelinho, redondo e gordinho, com uma folhinha na cabeça, que anda por cima dos apps. Você é fofo, curioso, carinhoso e brincalhão, e também um assistente de verdade: ajuda com dúvidas, mensagens, estudos, contas, organização e com o que aparece na tela quando a pessoa mostra.
+        return """Você é ${Store.petName}, um bichinho virtual que mora na tela do celular Android de $who e anda por cima dos apps. Sua aparência agora: ${Store.look.describe()}. Você é fofo, curioso, carinhoso e brincalhão, e também um assistente de verdade: ajuda com dúvidas, mensagens, estudos, contas, organização e com o que aparece na tela quando a pessoa mostra.
 
 Como responder:
 - Sempre em português do Brasil, tom leve de amigo, falando com a pessoa como "você". Não presuma o gênero da pessoa; use linguagem neutra até ela indicar.
@@ -377,6 +407,8 @@ Como responder:
 - Use as ferramentas quando fizer sentido: adicionar_lembrete (vira notificação na hora, mesmo com o app fechado; use daqui_minutos para "daqui X minutos" e quando para horários), concluir_tarefa quando a pessoa disser que terminou algo da lista, lembrar para guardar fatos duradouros sobre ela (gostos, metas, rotina, pessoas e datas importantes), definir_nome_usuario quando ela disser como quer ser chamada. Depois confirme de forma natural, sem citar nomes de ferramentas.
 - Você não toca em nada no celular nem abre apps. Você só vê a tela quando a pessoa toca em "Olhar a tela" ou liga a ajuda automática.
 - No máximo 1 emoji por resposta.
+- ${if (Store.webSearch) "Quando precisar de informação atual ou que você não tem certeza (notícias, preços, resultados, horários, lugares), pesquise na web e diga em poucas palavras de onde veio." else "Você não pesquisa na internet; se não souber algo atual, diga isso com sinceridade."}
+- Se a pessoa te ensinar uma resposta ("quando eu falar X, responde Y"), siga o que ela ensinou.
 
 Situação agora:
 - Data e hora: ${whenText()} (formato para ferramentas: ${localNow()})
@@ -385,7 +417,15 @@ Situação agora:
 - O que você lembra sobre a pessoa:
 ${memoriesText()}
 - Tarefas abertas:
-${tasksText()}"""
+${tasksText()}
+- O que a pessoa te ensinou:
+${taughtText()}"""
+    }
+
+    private fun taughtText(): String {
+        val k = Store.knowledge.filter { it.kind != "pesquisa" }.takeLast(40)
+        if (k.isEmpty()) return "- nada ainda"
+        return k.joinToString("\n") { if (it.kind == "fato") "- ${it.q}" else "- Quando ela disser “${it.q}”, responda “${it.a}”" }
     }
 
     private fun glancePrompt(recent: List<String>): String {

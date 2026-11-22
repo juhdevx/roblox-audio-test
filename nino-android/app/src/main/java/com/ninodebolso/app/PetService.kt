@@ -157,6 +157,7 @@ class PetService : Service() {
         if (Store.sleeping) { mode = Mode.SLEEP; pet.sleeping = true }
         lastLevel = Store.level()
         pet.level = lastLevel
+        pet.look = Store.look
         pet.setOnTouchListener { _, e -> onPetTouch(e); true }
         Voice.listen(voiceListener)
         Store.listen(storeListener)
@@ -453,12 +454,13 @@ class PetService : Service() {
     }
 
     private val storeListener: () -> Unit = {
+        if (pet.look != Store.look) pet.look = Store.look
         val lv = Store.level()
         pet.level = lv
         if (lv > lastLevel) {
             h.postDelayed({
                 pet.sparkles(); pet.hearts(5); hop()
-                say("Subi pro nível $lv! Olha minha folhinha crescendo!", "animado", speak = true)
+                say(Lines.levelUp(lv), "animado", speak = true)
             }, 1500)
         }
         lastLevel = lv
@@ -844,6 +846,7 @@ class PetService : Service() {
             "Conversar" to { hideBubble(); openChat(true) },
             "Olhar a tela" to { hideBubble(); lookAtScreen() },
             "Comer" to { hideBubble(); feed() },
+            "Visual" to { hideBubble(); startActivity(Intent(this, WardrobeActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)) },
             "Brincar" to { hideBubble(); zoomies() },
             sleepLabel to { hideBubble(); toggleSleep() },
             "Esconder" to { hideBubble(); hide() },
