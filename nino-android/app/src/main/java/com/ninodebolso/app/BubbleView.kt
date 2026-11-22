@@ -31,7 +31,12 @@ class FlowLayout(ctx: Context) : ViewGroup(ctx) {
         for (i in 0 until childCount) {
             val ch = getChildAt(i)
             if (ch.visibility == GONE) continue
-            ch.measure(MeasureSpec.makeMeasureSpec(maxW, MeasureSpec.AT_MOST), MeasureSpec.UNSPECIFIED)
+            val lp = ch.layoutParams
+            val ws = if (lp != null && lp.width > 0) MeasureSpec.makeMeasureSpec(lp.width, MeasureSpec.EXACTLY)
+            else MeasureSpec.makeMeasureSpec(maxW, MeasureSpec.AT_MOST)
+            val hs = if (lp != null && lp.height > 0) MeasureSpec.makeMeasureSpec(lp.height, MeasureSpec.EXACTLY)
+            else MeasureSpec.UNSPECIFIED
+            ch.measure(ws, hs)
             if (x > 0 && x + ch.measuredWidth > maxW) { x = 0; y += rowH + gap; rowH = 0 }
             x += ch.measuredWidth + gap
             usedW = max(usedW, x - gap)

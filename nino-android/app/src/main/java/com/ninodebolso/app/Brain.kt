@@ -48,6 +48,7 @@ object Brain {
     private var clientKey = ""
 
     private var inFlight = 0
+    private var lastFallbackNote = 0L
     /** True while a call is running or queued. Read and changed on the main thread. */
     val busy get() = inFlight > 0
 
@@ -108,8 +109,9 @@ object Brain {
                 inFlight--
                 val why = failure
                 if (why != null && image == null) {
-                    // Claude did not answer: let Nino's own brain try, and say why.
-                    OwnBrain.reply(userText) { r -> onDone(r.copy(text = r.text + "\n\n(Respondi com meu cérebro próprio. $why)")) }
+                    // Claude did not answer: let Nino's own brain try, and say why now and then.
+                    val note = if (now() - lastFallbackNote > 10 * 60_000) { lastFallbackNote = now(); "\n\n(O Claude não respondeu, então usei meu cérebro próprio. $why)" } else ""
+                    OwnBrain.reply(userText) { r -> onDone(r.copy(text = r.text + note)) }
                 } else {
                     onDone(reply)
                 }
