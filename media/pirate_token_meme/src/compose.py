@@ -15,7 +15,7 @@ S = "/tmp/claude-0/-home-user-roblox-audio-test/12f87363-e15b-5a02-b8dd-9c1989d7
 U = "/root/.claude/uploads/12f87363-e15b-5a02-b8dd-9c1989d7812c"
 SRC_DIR = f"{S}/src"
 GS_DIR = f"{S}/gs"
-CHEST_DIR = f"{S}/chest"
+CHEST_DIR = f"{S}/chest2"
 PHOTO = f"{U}/93b884e5-image.jpg"
 TRACK = f"{S}/work/track_full.npz"
 
@@ -30,11 +30,15 @@ OUTRO_PH, OUTRO_P = 0.412, 0.4140        # outro song (144.9 bpm)
 T_S2 = ONDA_PH + 2 * ONDA_P             # 0.914  punch-in face cut
 T_S3 = ONDA_PH + 5 * ONDA_P             # 1.922  continuous run into the bushes
 T_NOTICE = ONDA_PH + 11 * ONDA_P        # 3.938  music stops, awkward sting, punch-in on chest
-T_NOTICE_END = 4.85
+T_NOTICE_END = 5.00
 SRC_S1, SRC_S2 = 3.00, 5.45
 T_SHAKE = 6.20         # chest starts rumbling (src 11.70)
 T_BURST = 7.80         # lid bursts (src 13.30)
 SRC_S3 = 11.70 - (T_SHAKE - T_S3)
+T_EMOTE_STOP = T_S3 + (7.81 - SRC_S3)     # he drops his hands (src frame 188/189): emote cancelled
+DUN_STEPS = [T_NOTICE, T_NOTICE + 0.30, T_NOTICE + 0.60]
+T_REACT0, T_REACT1 = T_BURST + 0.45, T_BURST + 1.15   # reaction zoom on his face
+FACE_FREEZE = np.array([584.0, 590.0])
 T_FINAL = 12.60        # golden flash -> static image (GS t = 5.0)
 DUR = T_FINAL + 11 * OUTRO_P            # ends on an outro beat (17.154)
 OUTRO_START = T_FINAL - OUTRO_PH        # outro file t=0 placed so its first beat hits the flash
@@ -46,8 +50,8 @@ GS_FPS = 30000 / 1001
 GS_HOLD_IDX = 151      # banner fully open (GS t ~ 5.0 s)
 FREEZE_SRC = 13.30
 
-REF_ANCHOR = np.array([460.0, 1310.0])   # chest ground anchor in reference frame 313
-CHEST_W_REF = 355.0                      # px between base corners in ref frame
+REF_ANCHOR = np.array([432.0, 1322.0])   # chest ground anchor in reference frame 313
+CHEST_W_REF = 318.0                      # px between base corners in ref frame
 
 GOLD = np.array([0.32, 0.74, 1.0], np.float32)     # BGR
 GOLD_DEEP = np.array([0.12, 0.55, 1.0], np.float32)
@@ -206,11 +210,11 @@ def load_sprite(cf):
     obj = a * (lum > 0.004)            # object (no shadow)
     # match footage: slightly lower contrast/brightness, lifted blacks
     lum_s = rgb[..., 0:1] * 0.114 + rgb[..., 1:2] * 0.587 + rgb[..., 2:3] * 0.299
-    rgb = lum_s + (rgb - lum_s) * 0.84
+    rgb = lum_s + (rgb - lum_s) * 0.95
     # keep the hot treasure golden instead of clipping to white
     hl = np.clip((lum_s - 0.62) / 0.38, 0, 1)
     rgb = rgb * (1 - 0.55 * hl) + hl * 0.55 * np.array([0.30, 0.74, 1.0], np.float32) * np.minimum(lum_s * 1.15, 1.0)
-    rgb = rgb * 0.66 + 0.018
+    rgb = rgb * 0.70 + 0.018
     rgb[..., 0] += 0.012   # slight cool/magenta night cast in the blacks
     rgb[..., 2] += 0.006
     prem = rgb * obj                   # premultiplied object colour (shadow pixels -> 0 colour)
@@ -752,10 +756,16 @@ def camera(t):
     elif t < T_NOTICE:
         z = 1.0 + 0.03 * (t - T_S3) / 2.1
         dx, dy = impulse(T_S3, 16); sx += dx; sy += dy
+        if t >= T_EMOTE_STOP:     # emote cancelled -> abrupt awkward push-in
+            z += 0.11 * ease_out((t - T_EMOTE_STOP) / 0.05) + 0.03 * (t - T_EMOTE_STOP)
     elif t < T_NOTICE_END:
-        z = 1.0 + 0.32 * ease_out((t - T_NOTICE) / 0.07) + 0.05 * (t - T_NOTICE)
-        c = 0.45 * np.array([540.0, 960.0]) + 0.55 * chest_center_frame(t)
-        dx, dy = impulse(T_NOTICE, 22); sx += dx; sy += dy
+        # "dun dun DUN": three stepped punch-ins on the chest
+        lv = [1.0, 1.28, 1.58, 1.95]
+        k = sum(1 for st in DUN_STEPS if t >= st)
+        z = lv[k - 1] + (lv[k] - lv[k - 1]) * ease_out((t - DUN_STEPS[k - 1]) / 0.05)
+        c = 0.2 * np.array([540.0, 960.0]) + 0.8 * chest_center_frame(t)
+        for i, st in enumerate(DUN_STEPS):
+            dx, dy = impulse(st, 14 + 10 * i, dec=0.12); sx += dx; sy += dy
     elif t < T_SHAKE:
         z = 1.04 + 0.02 * (t - T_NOTICE_END)
         dx, dy = impulse(T_NOTICE_END, 14); sx += dx; sy += dy
@@ -778,6 +788,13 @@ def camera(t):
         sx += 55 * e * shake_noise(t, 48, 4.4) + 3 * shake_noise(t, 9, 1.0)
         sy += 55 * e * shake_noise(t, 53, 0.4) + 3 * shake_noise(t, 7, 2.0)
         rot += 3.5 * e * shake_noise(t, 31, 5.1)
+        # reaction zoom on his shocked face (freeze frame)
+        if T_REACT0 <= t < T_REACT1:
+            z = 2.05 + 0.15 * (t - T_REACT0)
+            c = FACE_FREEZE - (np.array([540.0, 1180.0]) - np.array([540.0, 960.0])) / z
+            dx, dy = impulse(T_REACT0, 42, dec=0.12, freq=58, seed=2.0); sx += dx; sy += dy
+        elif t >= T_REACT1:
+            dx, dy = impulse(T_REACT1, 20, dec=0.10); sx += dx; sy += dy
         # hits synced to the token UI sound (ring flash, title slam)
         for th, st in GS_HITS:
             if t >= th:
@@ -785,7 +802,7 @@ def camera(t):
                 sx += dx; sy += dy
                 z *= 1 + 0.06 * st * math.exp(-(t - th) / 0.10)
     # beat pulses on the funk ("onda onda") while it plays
-    if t < T_NOTICE:
+    if t < T_EMOTE_STOP:
         pe = 0.0
         for k, b in enumerate(ONDA_BEATS):
             if 0 <= t - b < 0.4:
@@ -951,7 +968,8 @@ def render_scene(t):
 
     # --- rays + shockwave
     mouth = local_to_frame(sim, mouth_local(cf))
-    if rays > 0:
+    in_react = T_REACT0 <= t < T_REACT1
+    if rays > 0 and not in_react:
         tb = t - T_BURST
         lay = draw_rays(mouth, t, rays, 1700 * max(s, 0.6) * (0.6 + 0.4 * ease_out(tb / 0.25)), rot=0.05 * math.sin(t * 0.8))
         add_rays(img, lay, gain=0.75)
@@ -970,6 +988,8 @@ def render_scene(t):
     items = []
     mloc = mouth_local(cf)
     for p in PARTS:
+        if in_react:
+            break
         st = particle_state(p, t)
         if st is None:
             continue
@@ -982,7 +1002,7 @@ def render_scene(t):
     if debris.any():
         db = cv2.GaussianBlur(debris, (0, 0), 0.8)[..., None]
         img[:] = img * (1 - db * 0.85) + db * 0.85 * np.array([0.42, 0.50, 0.55], np.float32)
-    if t >= T_BURST:
+    if t >= T_BURST and not in_react:
         draw_coins(img, dust, t, sim, mouth_local(97))
     add_glow_layers(img, core, dust)
 
@@ -1009,10 +1029,19 @@ def render_frame(t):
             out[..., 0] = np.roll(out[..., 0], -ca, axis=1)
         # dim + blur background for the token overlay
         dimf = smoothstep(0.25, 0.8, tb)
+        if T_REACT0 <= t < T_REACT1:
+            dimf = 0.0
+        elif t >= T_REACT1:
+            dimf = min(dimf, smoothstep(T_REACT1, T_REACT1 + 0.35, t))
         if dimf > 0:
             bl = cv2.GaussianBlur(out, (0, 0), 1 + 5 * dimf)
             out = (out * (1 - dimf) + bl * dimf) * (1 - 0.40 * dimf)
             out *= 1 - (1 - vignette()) * dimf
+        if T_REACT0 <= t < T_REACT0 + 0.22:
+            k = math.exp(-(t - T_REACT0) / 0.07)
+            lum = out.mean(axis=2, keepdims=True)
+            out = np.clip((out - 0.45) * (1 + 0.6 * k) + 0.45, 0, None)
+            out = lum + (out - lum) * (1 + 0.8 * k)
         gs_idx = int(math.floor((GS_T0 + tb) * GS_FPS)) + 1
         shk = (sh[0] * 0.35, sh[1] * 0.35)
         comp_gs(out, gs_idx, (540 + shk[0], 880 + shk[1]))

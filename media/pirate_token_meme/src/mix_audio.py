@@ -41,12 +41,45 @@ def place(x, t_edit, src_t0=0.0, src_t1=None, gain_db=0.0, fade_in=0.004, fade_o
 
 onda, awk, outro, gs = load("onda"), load("awkward"), load("outro"), load("gs")
 TARGET = -17.0
-# 1) funk under the dance, hard cut on the beat when the chest is spotted
-g = TARGET - rms_db(onda[: int(C.T_NOTICE * SR)])
-place(onda, 0.0, 0.0, C.T_NOTICE, g, fade_in=0.002, fade_out=0.010)
-# 2) awkward-moment sting on the punch-in (normalise its peak)
-g = -3.0 - 20 * np.log10(np.abs(awk).max())
-place(awk, C.T_NOTICE + 0.01, gain_db=g, fade_out=0.05)
+# 1) funk = his "emote": cuts dead the frame he stops dancing (Fortnite emote cancel)
+g = TARGET - rms_db(onda[: int(C.T_EMOTE_STOP * SR)])
+place(onda, 0.0, 0.0, C.T_EMOTE_STOP, g, fade_in=0.002, fade_out=0.006)
+# 2) awkward-moment as he wanders into the bushes
+g = 2.5 - 20 * np.log10(np.abs(awk).max())
+place(awk, C.T_EMOTE_STOP + 0.03, gain_db=g, fade_out=0.05)
+
+
+def reverb_tail(x, secs=1.2, mix=0.35, seed=3):
+    r = np.random.default_rng(seed)
+    n = int(secs * SR)
+    ir = r.normal(0, 1, n) * np.exp(-np.arange(n) / (0.28 * SR))
+    ir /= np.sqrt((ir ** 2).sum())
+    wet = np.convolve(x, ir)
+    out = wet * mix
+    out[: len(x)] += x * (1 - mix)
+    return out
+
+
+def stab(freq, dur, amp=1.0):
+    n = int(dur * SR); tt = np.arange(n) / SR
+    sig = np.zeros(n)
+    for mult, a_ in ((1.0, 1.0), (1.189, 0.6), (1.498, 0.7), (2.0, 0.4)):    # minor triad + octave
+        f = freq * mult
+        ph = (tt * f) % 1.0
+        saw = 2 * ph - 1
+        sig += a_ * saw
+    k = int(SR / (freq * 6))                                   # crude low-pass
+    sig = np.convolve(sig, np.ones(k) / k, "same")
+    env = np.minimum(tt / 0.008, 1) * np.exp(-tt / (dur * 0.55))
+    sub = np.sin(2 * np.pi * (freq / 2) * tt) * np.exp(-tt / (dur * 0.5))
+    out = (sig / np.abs(sig).max() * 0.6 + sub * 0.7) * env * amp
+    return out
+
+
+# 3) "dun dun DUNNN" on the three punch-ins at the chest
+for i, (st, f, d) in enumerate(zip(C.DUN_STEPS, (130.8, 130.8, 92.5), (0.26, 0.26, 1.1))):
+    x = reverb_tail(stab(f, d, amp=0.8 if i < 2 else 1.0), secs=0.9, mix=0.3, seed=i)
+    place(np.stack([x, x], 1), st, gain_db=-4.0, fade_in=0.0, fade_out=0.05)
 
 # 3) rumble + riser while the chest shakes (synthesised support SFX)
 rng = np.random.default_rng(5)
@@ -89,6 +122,14 @@ seg = gs[int(0.2 * SR): int(6.8 * SR)]
 g = -16.5 - rms_db(seg[: int(4.5 * SR)])
 end_t = C.T_FINAL + 0.35
 place(gs, C.T_BURST, 0.2, 0.2 + (end_t - C.T_BURST), g, fade_in=0.002, fade_out=0.35)
+
+# 5b) "boom" on the reaction zoom to his face
+n = int(1.3 * SR); tt = np.arange(n) / SR
+f = 48 + 30 * np.exp(-tt / 0.05)
+ph = 2 * np.pi * np.cumsum(f) / SR
+vb = (np.sin(ph) + 0.35 * np.sin(2 * ph) + 0.15 * np.sin(3 * ph)) * np.minimum(tt / 0.004, 1) * np.exp(-tt / 0.55)
+vb = reverb_tail(vb, secs=1.0, mix=0.25, seed=9)
+place(np.stack([vb, vb], 1), C.T_REACT0, gain_db=-6.0, fade_in=0.0, fade_out=0.08)
 
 # 6) whoosh into the golden flash
 n = int(0.45 * SR); tt = np.arange(n) / SR

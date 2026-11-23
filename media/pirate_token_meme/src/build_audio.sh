@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -eo pipefail
 S=/tmp/claude-0/-home-user-roblox-audio-test/12f87363-e15b-5a02-b8dd-9c1989d7812c/scratchpad
 cd $S/work
 $S/venv/bin/python mix_audio.py $S/audio $S/audio/mix_raw.wav $S/work | tail -1

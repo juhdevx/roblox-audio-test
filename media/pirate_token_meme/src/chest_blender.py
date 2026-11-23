@@ -250,79 +250,234 @@ def cylinder(name, loc, r, h, mat, parent=None, rot=(0, 0, 0), seg=24):
     return ob
 
 
-# ---------------------------------------------------------------- chest
-W, D, HB = 0.80, 0.50, 0.36
+# ---------------------------------------------------------------- chest (Fortnite-style pirate chest, from the user's reference)
+from mathutils import Matrix
+
+W, D, HB = 0.82, 0.62, 0.36        # body width / depth / height
+LH = 0.20                           # vertical part of the lid front
 R = D / 2
-KZ = 0.82          # flattened dome
-T = 0.028          # plank thickness
+KZ = 0.42                           # barrel-top flattening
+T = 0.028
+
+# extra materials
+WOODW = [mat_wood(f"WoodW{i}", (0.10, 0.045, 0.015), (0.42, 0.22, 0.08), scale=5.0, seed=i * 2.3 + 1) for i in range(3)]
+GOLDC = mat_principled("GoldC", (1.0, 0.70, 0.17), metallic=1.0, rough=0.30)
+GOLD_EM = GOLD   # keep animated emission hook name
+
+
+def mat_moss(name):
+    m = bpy.data.materials.new(name)
+    m.use_nodes = True
+    nt = m.node_tree
+    b = nt.nodes.get("Principled BSDF")
+    tc = nt.nodes.new("ShaderNodeTexCoord")
+    nz = nt.nodes.new("ShaderNodeTexNoise")
+    nz.inputs["Scale"].default_value = 9.0
+    nz.inputs["Detail"].default_value = 6.0
+    nz.inputs["Roughness"].default_value = 0.65
+    rc = nt.nodes.new("ShaderNodeValToRGB")
+    rc.color_ramp.elements[0].position = 0.52
+    rc.color_ramp.elements[0].color = (0.62, 0.62, 0.58, 1)
+    rc.color_ramp.elements[1].position = 0.60
+    rc.color_ramp.elements[1].color = (0.22, 0.30, 0.09, 1)
+    rr = nt.nodes.new("ShaderNodeValToRGB")
+    rr.color_ramp.elements[0].position = 0.52
+    rr.color_ramp.elements[0].color = (0.38, 0.38, 0.38, 1)
+    rr.color_ramp.elements[1].position = 0.60
+    rr.color_ramp.elements[1].color = (0.85, 0.85, 0.85, 1)
+    mm = nt.nodes.new("ShaderNodeValToRGB")
+    mm.color_ramp.elements[0].position = 0.52
+    mm.color_ramp.elements[0].color = (0.75, 0.75, 0.75, 1)
+    mm.color_ramp.elements[1].position = 0.60
+    mm.color_ramp.elements[1].color = (0.0, 0.0, 0.0, 1)
+    L = nt.links
+    L.new(tc.outputs["Object"], nz.inputs["Vector"])
+    L.new(nz.outputs["Fac"], rc.inputs["Fac"])
+    L.new(nz.outputs["Fac"], rr.inputs["Fac"])
+    L.new(nz.outputs["Fac"], mm.inputs["Fac"])
+    L.new(rc.outputs["Color"], b.inputs["Base Color"])
+    L.new(rr.outputs["Color"], b.inputs["Roughness"])
+    L.new(mm.outputs["Color"], b.inputs["Metallic"])
+    return m
+
+
+BONE = mat_moss("SkullMoss")
+DARK = mat_principled("Dark", (0.02, 0.015, 0.012), rough=0.6)
+PINK = mat_principled("Pink", (0.85, 0.06, 0.70), metallic=0.0, rough=0.06, emis=(0.95, 0.12, 0.80), emis_str=0.35, coat=1.0)
+ORANGE = mat_principled("Orange", (1.0, 0.20, 0.01), metallic=0.0, rough=0.06, emis=(1.0, 0.22, 0.01), emis_str=1.2, coat=1.0)
+CYAN = mat_principled("Cyan", (0.02, 0.55, 1.0), metallic=0.0, rough=0.05, emis=(0.02, 0.6, 1.0), emis_str=1.6, coat=1.0)
+
+
+def mesh_obj(name, verts, faces, mat, parent, smooth=False):
+    me = bpy.data.meshes.new(name)
+    me.from_pydata(verts, [], faces)
+    me.update(); me.validate()
+    ob = bpy.data.objects.new(name, me)
+    ob.data.materials.append(mat)
+    for p in ob.data.polygons:
+        p.use_smooth = smooth
+    link(ob, parent)
+    return ob
+
+
+def gem(name, loc, r, sides, mat, parent, rot=(math.radians(90), 0, 0), crown=0.45, table=0.55, pav=0.55):
+    """faceted gem along +Z (crown up), then rotated (default: facing front -Y)"""
+    v = []
+    f = []
+    for i in range(sides):
+        a = 2 * math.pi * (i + 0.5) / sides
+        v.append((r * math.cos(a), r * math.sin(a), 0.0))
+    for i in range(sides):
+        a = 2 * math.pi * i / sides
+        v.append((r * table * math.cos(a), r * table * math.sin(a), r * crown))
+    v.append((0, 0, r * crown))          # table centre
+    v.append((0, 0, -r * pav))           # culet
+    ct, cu = 2 * sides, 2 * sides + 1
+    for i in range(sides):
+        j = (i + 1) % sides
+        f.append((i, j, sides + j))
+        f.append((i, sides + j, sides + i))
+        f.append((sides + i, sides + j, ct))
+        f.append((j, i, cu))
+    ob = mesh_obj(name, v, f, mat, parent)
+    ob.location = loc
+    ob.rotation_euler = rot
+    return ob
+
+
+def torus(name, loc, Rm, rm, mat, parent, basis, su=16, sv=8, stretch=1.0):
+    v, f = [], []
+    for i in range(su):
+        u = 2 * math.pi * i / su
+        cx, cy = math.cos(u) * (Rm * stretch), math.sin(u) * Rm
+        for j in range(sv):
+            w = 2 * math.pi * j / sv
+            nx, ny = math.cos(u), math.sin(u)
+            v.append((cx + nx * rm * math.cos(w), cy + ny * rm * math.cos(w), rm * math.sin(w)))
+    for i in range(su):
+        for j in range(sv):
+            a = i * sv + j
+            b = ((i + 1) % su) * sv + j
+            c = ((i + 1) % su) * sv + (j + 1) % sv
+            d = i * sv + (j + 1) % sv
+            f.append((a, b, c, d))
+    ob = mesh_obj(name, v, f, mat, parent, smooth=True)
+    ob.matrix_local = Matrix.Translation(loc) @ basis.to_4x4()
+    return ob
+
+
+def bone(name, p0, p1, width, mat, parent, yf):
+    """flat-ish bone relief in the front plane between p0 and p1 (x,z), at depth y = yf"""
+    dx, dz = p1[0] - p0[0], p1[1] - p0[1]
+    L = math.hypot(dx, dz)
+    ang = math.atan2(dz, dx)
+    cx, cz = (p0[0] + p1[0]) / 2, (p0[1] + p1[1]) / 2
+    ob = box(name, (0, 0, 0), (L, 0.022, width), mat, parent, bev=width * 0.35, seg=3)
+    ob.location = (cx, yf, cz)
+    ob.rotation_euler = (0, -ang, 0)
+    for sgn in (-1, 1):   # knobbly bone ends
+        ex, ez = p1 if sgn > 0 else p0
+        nx, nz = -math.sin(ang), math.cos(ang)
+        for k in (-1, 1):
+            sphere(f"{name}_k{sgn}{k}", (ex + nx * k * width * 0.45, yf, ez + nz * k * width * 0.45), width * 0.42, mat, parent,
+                   scale=(1, 0.55, 1), seg=14)
+    return ob
+
+
+def chain(name, p0, p1, p2, yf, parent, n=None):
+    """gold chain along a quadratic bezier in the front plane (x,z) at depth yf"""
+    pts = []
+    for i in range(400):
+        s = i / 399
+        x = (1 - s) ** 2 * p0[0] + 2 * (1 - s) * s * p1[0] + s * s * p2[0]
+        z = (1 - s) ** 2 * p0[1] + 2 * (1 - s) * s * p1[1] + s * s * p2[1]
+        pts.append((x, z))
+    seg = [math.hypot(pts[i + 1][0] - pts[i][0], pts[i + 1][1] - pts[i][1]) for i in range(399)]
+    total = sum(seg)
+    step = 0.040
+    acc, k, target, idx = 0.0, 0, 0.0, 0
+    links = []
+    for i in range(399):
+        while acc + seg[i] >= target:
+            fr = (target - acc) / seg[i]
+            x = pts[i][0] + (pts[i + 1][0] - pts[i][0]) * fr
+            z = pts[i][1] + (pts[i + 1][1] - pts[i][1]) * fr
+            tx, tz = (pts[i + 1][0] - pts[i][0]) / seg[i], (pts[i + 1][1] - pts[i][1]) / seg[i]
+            links.append((x, z, tx, tz))
+            target += step
+        acc += seg[i]
+    for li, (x, z, tx, tz) in enumerate(links):
+        t = Vector((tx, 0, tz)).normalized()
+        if li % 2 == 0:
+            nrm = Vector((0, -1, 0))                    # ring faces the viewer
+        else:
+            nrm = t.cross(Vector((0, -1, 0))).normalized()  # ring edge-on
+        yv = nrm.cross(t).normalized()
+        basis = Matrix((t, yv, nrm)).transposed()
+        torus(f"{name}{li}", Vector((x, yf - (0.006 if li % 2 else 0.0), z)), 0.019, 0.0068, GOLDC, parent, basis, stretch=1.45)
+
 
 root = bpy.data.objects.new("ChestRoot", None)   # ground anchor (tracked point)
 link(root)
 chest = bpy.data.objects.new("Chest", None)      # animated (shake / levitate)
 link(chest, root)
-root.rotation_euler = (0, 0, math.radians(22))
+root.rotation_euler = (0, 0, math.radians(20))
+YF = -D / 2                                       # front plane (body)
 
-# inner liner (dark) - open box (no top)
-box("LinerBottom", (0, 0, 0.03), (W - 0.06, D - 0.06, 0.02), WOOD_IN, chest, bev=0)
-box("LinerF", (0, -D / 2 + 0.04, HB / 2 + 0.01), (W - 0.06, 0.012, HB - 0.02), WOOD_IN, chest, bev=0)
-box("LinerB", (0, D / 2 - 0.04, HB / 2 + 0.01), (W - 0.06, 0.012, HB - 0.02), WOOD_IN, chest, bev=0)
-box("LinerL", (-W / 2 + 0.04, 0, HB / 2 + 0.01), (0.012, D - 0.06, HB - 0.02), WOOD_IN, chest, bev=0)
-box("LinerR", (W / 2 - 0.04, 0, HB / 2 + 0.01), (0.012, D - 0.06, HB - 0.02), WOOD_IN, chest, bev=0)
-
-# planks: 3 rows on every side
-z_lo, z_hi = 0.045, HB - 0.03
+# ---- body: liner, planks, base, gold frame
+box("LinerBottom", (0, 0, 0.06), (W - 0.08, D - 0.08, 0.02), WOOD_IN, chest, bev=0)
+box("LinerF", (0, -D / 2 + 0.05, HB / 2 + 0.02), (W - 0.08, 0.012, HB - 0.04), WOOD_IN, chest, bev=0)
+box("LinerB", (0, D / 2 - 0.05, HB / 2 + 0.02), (W - 0.08, 0.012, HB - 0.04), WOOD_IN, chest, bev=0)
+box("LinerL", (-W / 2 + 0.05, 0, HB / 2 + 0.02), (0.012, D - 0.08, HB - 0.04), WOOD_IN, chest, bev=0)
+box("LinerR", (W / 2 - 0.05, 0, HB / 2 + 0.02), (0.012, D - 0.08, HB - 0.04), WOOD_IN, chest, bev=0)
+z_lo, z_hi = 0.06, HB - 0.035
 ph = (z_hi - z_lo) / 3
-k = 0
 for row in range(3):
     zc = z_lo + ph * (row + 0.5)
-    hh = ph - 0.008
     for sgn in (-1, 1):
-        box(f"PlankFB{row}{sgn}", (0, sgn * (D / 2 - T / 2), zc), (W - 0.01, T, hh), WOOD[k % 4], chest, bev=0.007); k += 1
-        box(f"PlankLR{row}{sgn}", (sgn * (W / 2 - T / 2), 0, zc), (T, D - 2 * T, hh), WOOD[k % 4], chest, bev=0.007); k += 1
-# bottom slab
-box("Bottom", (0, 0, 0.022), (W - 0.01, D - 0.01, 0.045), WOOD[1], chest, bev=0.006)
-
-# gold trims on body
-GT = 0.014
-box("TrimBot", (0, 0, 0.026), (W + 0.022, D + 0.022, 0.05), GOLD, chest, bev=0.006, seg=3)
-box("TrimTopF", (0, -D / 2 - 0.004, HB - 0.018), (W + 0.02, GT, 0.036), GOLD, chest, bev=0.005, seg=3)
-box("TrimTopB", (0, D / 2 + 0.004, HB - 0.018), (W + 0.02, GT, 0.036), GOLD, chest, bev=0.005, seg=3)
-box("TrimTopL", (-W / 2 - 0.004, 0, HB - 0.018), (GT, D + 0.02, 0.036), GOLD, chest, bev=0.005, seg=3)
-box("TrimTopR", (W / 2 + 0.004, 0, HB - 0.018), (GT, D + 0.02, 0.036), GOLD, chest, bev=0.005, seg=3)
-BX = 0.255
+        box(f"PlankFB{row}{sgn}", (0, sgn * (D / 2 - T / 2), zc), (W - 0.02, T, ph - 0.008), WOODW[row % 3], chest, bev=0.008)
+        box(f"PlankLR{row}{sgn}", (sgn * (W / 2 - T / 2), 0, zc), (T, D - 2 * T, ph - 0.008), WOODW[(row + 1) % 3], chest, bev=0.008)
+box("Bottom", (0, 0, 0.035), (W - 0.01, D - 0.01, 0.05), WOODW[1], chest, bev=0.006)
+box("Plinth", (0, 0, 0.03), (W + 0.05, D + 0.05, 0.06), GOLDC, chest, bev=0.012, seg=3)
 for sx in (-1, 1):
     for sy in (-1, 1):
-        box(f"Band{sx}{sy}", (sx * BX, sy * (D / 2 + 0.003), HB / 2), (0.062, GT, HB), GOLD, chest, bev=0.005, seg=3)
-        # corner brackets
-        box(f"CornerA{sx}{sy}", (sx * (W / 2 - 0.03), sy * (D / 2 + 0.006), HB / 2), (0.075, GT, HB + 0.004), GOLD, chest, bev=0.005, seg=3)
-        box(f"CornerB{sx}{sy}", (sx * (W / 2 + 0.006), sy * (D / 2 - 0.03), HB / 2), (GT, 0.075, HB + 0.004), GOLD, chest, bev=0.005, seg=3)
-        for z in (0.1, 0.19, 0.28):
-            sphere(f"Rivet{sx}{sy}{z}", (sx * BX, sy * (D / 2 + 0.012), z), 0.011, GOLD, chest)
-# lock plate + skull emblem
-box("LockPlate", (0, -D / 2 - 0.012, 0.215), (0.15, 0.016, 0.16), GOLD, chest, bev=0.012, seg=4)
-box("LockInset", (0, -D / 2 - 0.021, 0.205), (0.11, 0.006, 0.11), IRON, chest, bev=0.004, seg=2)
-skull_curve = bpy.data.curves.new("Skull", type='FONT')
-skull_curve.body = "☠"
-skull_curve.font = bpy.data.fonts.load("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
-skull_curve.size = 0.115
-skull_curve.extrude = 0.004
-skull_curve.align_x = 'CENTER'
-skull_curve.align_y = 'CENTER'
-skull = bpy.data.objects.new("SkullObj", skull_curve)
-skull.data.materials.append(GOLD)
-skull.location = (0, -D / 2 - 0.026, 0.203)
-skull.rotation_euler = (math.radians(90), 0, 0)
-link(skull, chest)
+        box(f"Foot{sx}{sy}", (sx * (W / 2 - 0.02), sy * (D / 2 - 0.02), 0.012), (0.12, 0.12, 0.03), GOLDC, chest, bev=0.01, seg=3)
+        # corner pillars (wrap both faces)
+        box(f"PilA{sx}{sy}", (sx * (W / 2 - 0.04), sy * (D / 2 + 0.008), HB / 2), (0.10, 0.026, HB), GOLDC, chest, bev=0.008, seg=3)
+        box(f"PilB{sx}{sy}", (sx * (W / 2 + 0.008), sy * (D / 2 - 0.04), HB / 2), (0.026, 0.10, HB), GOLDC, chest, bev=0.008, seg=3)
+box("RimF", (0, -D / 2 - 0.006, HB - 0.02), (W + 0.02, 0.024, 0.04), GOLDC, chest, bev=0.007, seg=3)
+box("RimB", (0, D / 2 + 0.006, HB - 0.02), (W + 0.02, 0.024, 0.04), GOLDC, chest, bev=0.007, seg=3)
+box("RimL", (-W / 2 - 0.006, 0, HB - 0.02), (0.024, D + 0.02, 0.04), GOLDC, chest, bev=0.007, seg=3)
+box("RimR", (W / 2 + 0.006, 0, HB - 0.02), (0.024, D + 0.02, 0.04), GOLDC, chest, bev=0.007, seg=3)
+# lower front gems on gold diamond plates
+for sx in (-1, 1):
+    gx, gz = sx * 0.255, 0.125
+    cylinder(f"LowPlate{sx}", (gx, YF - 0.014, gz), 0.085, 0.02, GOLDC, chest, rot=(math.radians(90), 0, 0), seg=32)
+    torus(f"LowBezel{sx}", Vector((gx, YF - 0.03, gz)), 0.055, 0.012, GOLDC, chest,
+          Matrix(((1, 0, 0), (0, 0, 1), (0, -1, 0))).transposed(), su=24, sv=8)
+    gem(f"LowGem{sx}", (gx, YF - 0.032, gz), 0.052, 8, PINK, chest)
+    for k, (dx, dz) in enumerate([(-0.07, -0.07), (0.07, -0.07)]):
+        cylinder(f"LowScrew{sx}{k}", (gx + dx * 1.35, YF - 0.026, gz + dz * 0.0 - 0.085), 0.013, 0.01, GOLDC, chest,
+                 rot=(math.radians(90), 0, 0), seg=16)
+# skull jaw + teeth (on the body) and lower bones
+yS = YF - 0.04
+for sx in (-1, 1):
+    bone(f"BoneLow{sx}", (sx * 0.08, HB - 0.13), (sx * 0.21, 0.085), 0.085, BONE, chest, YF - 0.022)
+jaw = box("Jaw", (0, yS, HB - 0.14), (0.27, 0.055, 0.11), BONE, chest, bev=0.035, seg=1)
+for i, x in enumerate((-0.069, -0.023, 0.023, 0.069)):
+    box(f"Tooth{i}", (x, yS - 0.006, HB - 0.045), (0.042, 0.05, 0.088), BONE, chest, bev=0.009, seg=2)
+# chains from the sides into the skull's mouth
+for sx in (-1, 1):
+    chain(f"Chain{sx}", (sx * (W / 2 + 0.01), 0.27), (sx * 0.25, 0.10), (sx * 0.10, HB - 0.06), YF - 0.07, chest)
 
 # treasure (glowing gold pile) inside
-sphere("Pile", (0, 0, HB - 0.07), 1.0, TREASURE, chest, scale=(W * 0.40, D * 0.36, 0.11), seg=24)
+sphere("Pile", (0, 0, HB - 0.08), 1.0, TREASURE, chest, scale=(W * 0.40, D * 0.36, 0.12), seg=24)
 rnd = random.Random(7)
 for i in range(26):
     x = rnd.uniform(-W * 0.33, W * 0.33)
     y = rnd.uniform(-D * 0.28, D * 0.28)
-    zz = HB - 0.07 + 0.11 * math.sqrt(max(0.0, 1 - (x / (W * 0.40)) ** 2 - (y / (D * 0.36)) ** 2)) + 0.004
-    cylinder(f"Coin{i}", (x, y, zz), 0.03, 0.007, TREASURE, chest,
-             rot=(rnd.uniform(-0.5, 0.5), rnd.uniform(-0.5, 0.5), 0))
+    zz = HB - 0.08 + 0.12 * math.sqrt(max(0.0, 1 - (x / (W * 0.40)) ** 2 - (y / (D * 0.36)) ** 2)) + 0.004
+    cylinder(f"Coin{i}", (x, y, zz), 0.03, 0.007, TREASURE, chest, rot=(rnd.uniform(-0.5, 0.5), rnd.uniform(-0.5, 0.5), 0))
 glow_light = bpy.data.lights.new("InnerGlow", type='POINT')
 glow_light.color = (1.0, 0.68, 0.25)
 glow_light.energy = 0.0
@@ -331,30 +486,79 @@ gl = bpy.data.objects.new("InnerGlow", glow_light)
 gl.location = (0, 0, HB + 0.12)
 link(gl, chest)
 
-# lid
+# ---- lid (hinged at the back top edge of the body)
 pivot = bpy.data.objects.new("LidPivot", None)
 link(pivot, chest)
 pivot.location = (0, D / 2, HB)
-cy, cz = -D / 2, 0.0       # dome centre relative to pivot
-nsl = 5
-gap = 0.022
+cy = -D / 2        # lid centre (relative to pivot)
+yfl = -D           # lid front plane (relative)
+# box part: front / back / side planks + inner liner
+for i in range(2):
+    zc = 0.012 + (LH - 0.012) * (i + 0.5) / 2
+    box(f"LidPlankF{i}", (0, yfl + T / 2, zc), (W - 0.02, T, (LH - 0.012) / 2 - 0.008), WOODW[i], pivot, bev=0.008)
+    box(f"LidPlankB{i}", (0, -T / 2, zc), (W - 0.02, T, (LH - 0.012) / 2 - 0.008), WOODW[i + 1], pivot, bev=0.008)
+    for sgn in (-1, 1):
+        box(f"LidPlankS{i}{sgn}", (sgn * (W / 2 - T / 2), cy, zc), (T, D - 2 * T, (LH - 0.012) / 2 - 0.008), WOODW[(i + 2) % 3], pivot, bev=0.008)
+box("LidLiner", (0, cy, LH * 0.5 + 0.01), (W - 0.08, D - 0.08, 0.012), WOOD_IN, pivot, bev=0)
+# barrel top: planks + end caps
+nsl = 4
+gap = 0.02
 for i in range(nsl):
     a0 = math.pi * i / nsl + gap / 2
     a1 = math.pi * (i + 1) / nsl - gap / 2
-    shell(f"LidSlat{i}", -W / 2 + 0.012, W / 2 - 0.012, R - T, R, a0, a1, cy, cz, KZ, WOOD[i % 4], pivot)
-shell("LidInner", -W / 2 + 0.03, W / 2 - 0.03, R - T - 0.012, R - T - 0.002, 0.02, math.pi - 0.02, cy, cz, KZ, WOOD_IN, pivot, bev=0)
+    shell(f"LidSlat{i}", -W / 2 + 0.015, W / 2 - 0.015, R - T, R, a0, a1, cy, LH, KZ, WOODW[i % 3], pivot)
 for sx in (-1, 1):
-    semi_disc(f"LidEnd{sx}", sx * (W / 2 - 0.016), 0.03, R - 0.004, cy, cz, KZ, WOOD[2], pivot)
-    shell(f"LidEdge{sx}", sx * (W / 2 + 0.008) - 0.024, sx * (W / 2 + 0.008) + 0.024, R - 0.006, R + 0.012, -0.02, math.pi + 0.02, cy, cz, KZ, GOLD, pivot)
-    shell(f"LidBand{sx}", sx * BX - 0.031, sx * BX + 0.031, R - 0.004, R + 0.012, -0.02, math.pi + 0.02, cy, cz, KZ, GOLD, pivot)
-    for j in range(1, 6):
-        a = math.pi * j / 6
-        rr = R + 0.014
-        sphere(f"LidRivet{sx}{j}", (sx * BX, cy + rr * math.cos(a), cz + rr * math.sin(a) * KZ), 0.011, GOLD, pivot)
-box("LidRimF", (0, cy - R - 0.004, 0.018), (W + 0.02, GT, 0.036), GOLD, pivot, bev=0.005, seg=3)
-box("LidRimB", (0, cy + R + 0.004, 0.018), (W + 0.02, GT, 0.036), GOLD, pivot, bev=0.005, seg=3)
-box("Hasp", (0, cy - R - 0.016, -0.03), (0.06, 0.016, 0.11), GOLD, pivot, bev=0.008, seg=3)
-cylinder("Keyhole", (0, cy - R - 0.026, -0.045), 0.011, 0.008, IRON, pivot, rot=(math.radians(90), 0, 0), seg=16)
+    semi_disc(f"LidEnd{sx}", sx * (W / 2 - 0.016), 0.03, R - 0.004, cy, LH, KZ, WOODW[2], pivot)
+    # gold bands over the barrel (continuing the pillars) and on the end edges
+    shell(f"LidBand{sx}", sx * (W / 2 - 0.04) - 0.05, sx * (W / 2 - 0.04) + 0.05, R - 0.004, R + 0.016, -0.02, math.pi + 0.02, cy, LH, KZ, GOLDC, pivot)
+    shell(f"LidEdge{sx}", sx * (W / 2 + 0.008) - 0.016, sx * (W / 2 + 0.008) + 0.016, R - 0.01, R + 0.014, -0.02, math.pi + 0.02, cy, LH, KZ, GOLDC, pivot)
+    # vertical gold pillars on the lid's box part (front & back) + sides
+    box(f"LidPilF{sx}", (sx * (W / 2 - 0.04), yfl - 0.008, LH / 2), (0.10, 0.026, LH), GOLDC, pivot, bev=0.008, seg=3)
+    box(f"LidPilB{sx}", (sx * (W / 2 - 0.04), 0.008, LH / 2), (0.10, 0.026, LH), GOLDC, pivot, bev=0.008, seg=3)
+    box(f"LidPilS{sx}", (sx * (W / 2 + 0.008), yfl + 0.04, LH / 2), (0.026, 0.10, LH), GOLDC, pivot, bev=0.008, seg=3)
+    box(f"LidPilS2{sx}", (sx * (W / 2 + 0.008), -0.04, LH / 2), (0.026, 0.10, LH), GOLDC, pivot, bev=0.008, seg=3)
+box("LidRimF", (0, yfl - 0.006, 0.02), (W + 0.02, 0.024, 0.04), GOLDC, pivot, bev=0.007, seg=3)
+box("LidRimB", (0, 0.006, 0.02), (W + 0.02, 0.024, 0.04), GOLDC, pivot, bev=0.007, seg=3)
+box("LidTopF", (0, yfl - 0.004, LH - 0.012), (W + 0.02, 0.03, 0.05), GOLDC, pivot, bev=0.008, seg=3)
+# gold side plates with slot screws on the lid front
+for sx in (-1, 1):
+    pl = box(f"LidPlate{sx}", (sx * 0.265, yfl - 0.016, 0.075), (0.12, 0.016, 0.10), GOLDC, pivot, bev=0.02, seg=1)
+    sc = cylinder(f"LidScrew{sx}", (sx * 0.265, yfl - 0.028, 0.075), 0.022, 0.012, GOLDC, pivot, rot=(math.radians(90), 0, 0), seg=20)
+    sl = box(f"LidSlot{sx}", (0, 0, 0), (0.034, 0.006, 0.007), DARK, pivot, bev=0)
+    sl.location = (sx * 0.265, yfl - 0.035, 0.075)
+    sl.rotation_euler = (0, math.radians(35 * sx), 0)
+    for k in (-1, 1):
+        cylinder(f"LidRivet{sx}{k}", (sx * (W / 2 - 0.04), yfl - 0.024, LH / 2 + k * 0.06), 0.014, 0.012, GOLDC, pivot,
+                 rot=(math.radians(90), 0, 0), seg=16)
+# upper pink gems on the barrel front corners (tilted up)
+ang_up = math.radians(40)
+for sx in (-1, 1):
+    a = math.radians(140)       # position on the barrel (from back)
+    gy = cy + (R + 0.012) * math.cos(a)
+    gz = LH + (R + 0.012) * math.sin(a) * KZ
+    rot = (math.radians(90) - ang_up, 0, 0)
+    basis = Euler(rot).to_matrix()
+    torus(f"UpBezel{sx}", Vector((sx * 0.27, gy - 0.006, gz + 0.004)), 0.058, 0.013, GOLDC, pivot, basis, su=24, sv=8)
+    gem(f"UpGem{sx}", (sx * 0.27, gy - 0.008, gz + 0.006), 0.055, 8, PINK, pivot, rot=rot)
+# big cyan diamond on the top centre + gold V-plate under it
+a = math.radians(128)
+gy = cy + (R + 0.02) * math.cos(a)
+gz = LH + (R + 0.02) * math.sin(a) * KZ
+for k in (-1, 1):
+    vp = box(f"VPlate{k}", (0, 0, 0), (0.12, 0.03, 0.04), GOLDC, pivot, bev=0.008, seg=2)
+    vp.location = (k * 0.05, gy - 0.012, gz - 0.02)
+    vp.rotation_euler = (math.radians(-30), math.radians(-22 * k), 0)
+gem("TopGem", (0, gy - 0.01, gz + 0.025), 0.09, 10, CYAN, pivot, rot=(math.radians(35), 0, 0), crown=0.5, table=0.5, pav=0.6)
+# skull cranium on the lid front (octagonal / chamfered) + eye gems + keyhole + upper bones
+ySl = yfl - 0.04
+for sx in (-1, 1):
+    bone(f"BoneUp{sx}", (sx * 0.10, 0.10), (sx * 0.25, LH + 0.035), 0.085, BONE, pivot, yfl - 0.022)
+cran = box("Cranium", (0, ySl, 0.135), (0.36, 0.06, 0.26), BONE, pivot, bev=0.065, seg=1)
+for sx in (-1, 1):
+    box(f"Socket{sx}", (sx * 0.078, ySl - 0.027, 0.165), (0.105, 0.012, 0.092), DARK, pivot, bev=0.026, seg=1)
+    gem(f"Eye{sx}", (sx * 0.078, ySl - 0.034, 0.165), 0.055, 6, ORANGE, pivot, rot=(math.radians(90), math.radians(30), 0), crown=0.4, table=0.55)
+cylinder("KeyholeTop", (0, ySl - 0.031, 0.078), 0.019, 0.01, DARK, pivot, rot=(math.radians(90), 0, 0), seg=16)
+box("KeyholeSlot", (0, ySl - 0.031, 0.05), (0.017, 0.01, 0.05), DARK, pivot, bev=0)
 
 # ---------------------------------------------------------------- ground / shadow catcher
 gme = bpy.data.meshes.new("Ground")
