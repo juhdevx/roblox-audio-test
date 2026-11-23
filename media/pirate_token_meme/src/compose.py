@@ -21,15 +21,26 @@ TRACK = f"{S}/work/track_full.npz"
 
 W, H = 1080, 1920
 FPS = 60
-DUR = 16.0
 
-# ------------------------------------------------------------------ timeline
-T_S2 = 1.00            # punch-in face cut
-T_S3 = 1.80            # continuous run into the bushes
-SRC_S1, SRC_S2, SRC_S3 = 3.00, 5.45, 7.30
+# ------------------------------------------------------------------ music beat grids (measured from the mp3s)
+ONDA_PH, ONDA_P = 0.242, 0.3360          # "onda onda olha a onda" (178.6 bpm)
+OUTRO_PH, OUTRO_P = 0.412, 0.4140        # outro song (144.9 bpm)
+
+# ------------------------------------------------------------------ timeline (cuts on the beat)
+T_S2 = ONDA_PH + 2 * ONDA_P             # 0.914  punch-in face cut
+T_S3 = ONDA_PH + 5 * ONDA_P             # 1.922  continuous run into the bushes
+T_NOTICE = ONDA_PH + 11 * ONDA_P        # 3.938  music stops, awkward sting, punch-in on chest
+T_NOTICE_END = 4.85
+SRC_S1, SRC_S2 = 3.00, 5.45
 T_SHAKE = 6.20         # chest starts rumbling (src 11.70)
 T_BURST = 7.80         # lid bursts (src 13.30)
+SRC_S3 = 11.70 - (T_SHAKE - T_S3)
 T_FINAL = 12.60        # golden flash -> static image (GS t = 5.0)
+DUR = T_FINAL + 11 * OUTRO_P            # ends on an outro beat (17.154)
+OUTRO_START = T_FINAL - OUTRO_PH        # outro file t=0 placed so its first beat hits the flash
+ONDA_BEATS = [ONDA_PH + k * ONDA_P for k in range(12)]
+OUTRO_BEATS = [T_FINAL + k * OUTRO_P for k in range(12)]
+GS_HITS = [(T_BURST + 1.50 - 0.20, 0.6), (T_BURST + 1.75 - 0.20, 1.0)]   # ring flash, title slam
 GS_T0 = 0.20           # green-screen time at burst
 GS_FPS = 30000 / 1001
 GS_HOLD_IDX = 151      # banner fully open (GS t ~ 5.0 s)
@@ -71,6 +82,56 @@ def src_time(t):
 
 def src_index(ts):
     return int(min(353, max(1, math.floor(ts * 24 + 1e-6) + 1)))
+
+
+def src_pos(t):
+    """fractional 0-based source frame position (24 fps footage)"""
+    if t >= T_BURST:
+        return 319.0          # freeze frame r_0320
+    return min(351.99, max(0.0, src_time(t) * 24))
+
+
+# --- optical-flow frame interpolation (24 -> 60 fps without judder)
+_DIS = None
+_GY, _GX = None, None
+
+
+def _flow(i, j):
+    global _DIS
+    if _DIS is None:
+        _DIS = cv2.DISOpticalFlow_create(cv2.DISOPTICAL_FLOW_PRESET_MEDIUM)
+    a = cv2.cvtColor(cv2.resize(load_src_u8(i), (W // 2, H // 2), interpolation=cv2.INTER_AREA), cv2.COLOR_BGR2GRAY)
+    b = cv2.cvtColor(cv2.resize(load_src_u8(j), (W // 2, H // 2), interpolation=cv2.INTER_AREA), cv2.COLOR_BGR2GRAY)
+    f = _DIS.calc(a, b, None)
+    return cv2.resize(f, (W, H), interpolation=cv2.INTER_LINEAR) * 2
+
+
+@lru_cache(maxsize=6)
+def flow_pair(i, j):
+    return _flow(i, j), _flow(j, i)
+
+
+@lru_cache(maxsize=6)
+def load_src_u8(idx):
+    return cv2.imread(f"{SRC_DIR}/r_{idx:04d}.png")
+
+
+def load_src_at(fpos):
+    global _GY, _GX
+    a0 = int(math.floor(fpos))
+    al = fpos - a0
+    ia, ib = a0 + 1, min(353, a0 + 2)
+    if al < 0.03 or ia == ib:
+        return load_src(ia).copy()
+    if al > 0.97:
+        return load_src(ib).copy()
+    if _GY is None:
+        _GY, _GX = np.mgrid[0:H, 0:W].astype(np.float32)
+    fab, fba = flow_pair(ia, ib)
+    A, B = load_src_u8(ia), load_src_u8(ib)
+    wa = cv2.remap(A, _GX - al * fab[..., 0], _GY - al * fab[..., 1], cv2.INTER_LINEAR, borderMode=cv2.BORDER_REPLICATE)
+    wb = cv2.remap(B, _GX - (1 - al) * fba[..., 0], _GY - (1 - al) * fba[..., 1], cv2.INTER_LINEAR, borderMode=cv2.BORDER_REPLICATE)
+    return (wa.astype(np.float32) * (1 - al) + wb.astype(np.float32) * al) / 255.0
 
 
 def chest_frame(t):
@@ -117,6 +178,14 @@ SIM = {f: (_sims[f][0], float(_scs[i]), float(np.clip(_ans[i] * 0.6, math.radian
 def sim_for(fidx):
     fidx = min(max(fidx, _fr[0]), _fr[-1])
     return SIM[fidx]
+
+
+def sim_at(fpos):
+    """chest similarity at a fractional source position (lerp between tracked frames)"""
+    a0 = int(math.floor(fpos))
+    al = fpos - a0
+    sa, sb = sim_for(a0 + 1), sim_for(a0 + 2)
+    return (sa[0] * (1 - al) + sb[0] * al, sa[1] * (1 - al) + sb[1] * al, sa[2] * (1 - al) + sb[2] * al)
 
 
 # ------------------------------------------------------------------ chest sprites
@@ -223,6 +292,69 @@ def build_particles():
 
 PARTS = build_particles()
 
+
+# ------------------------------------------------------------------ gold coins bursting out of the chest
+def build_coins():
+    rng = random.Random(99)
+    cs = []
+
+    def add(t0, spd_lo, spd_hi, spread):
+        ang = rng.uniform(-math.pi * (0.5 + spread), -math.pi * (0.5 - spread))
+        spd = rng.uniform(spd_lo, spd_hi)
+        cs.append(dict(t0=t0, x=rng.uniform(-120, 120), y=rng.uniform(-10, 10), vx=math.cos(ang) * spd,
+                       vy=math.sin(ang) * spd, r=rng.uniform(17, 27), sp0=rng.uniform(0, 6.28),
+                       spr=rng.uniform(9, 24) * rng.choice([-1, 1]), tilt=rng.uniform(0, 180), trot=rng.uniform(-90, 90)))
+    for _ in range(38):
+        add(T_BURST + rng.uniform(0, 0.10), 1300, 2600, 0.36)
+    t = T_BURST + 0.35
+    while t < T_FINAL - 0.6:
+        t += rng.expovariate(4.0)
+        add(t, 900, 1700, 0.25)
+    return cs
+
+
+COINS = build_coins()
+COIN_G = 3200.0
+
+
+def draw_coins(img, glow, t, sim, mloc):
+    rgb = np.zeros_like(img)
+    acc = np.zeros(img.shape[:2], np.float32)
+    s = sim[1]
+    any_c = False
+    for c in COINS:
+        tau = t - c["t0"]
+        if tau < 0 or tau > 2.2:
+            continue
+        lx = mloc[0] + c["x"] + c["vx"] * tau
+        ly = mloc[1] + c["y"] + c["vy"] * tau + 0.5 * COIN_G * tau * tau
+        fx, fy = local_to_frame(sim, np.array([lx, ly]))
+        if fy > H + 60 or fx < -60 or fx > W + 60:
+            continue
+        any_c = True
+        phi = c["sp0"] + c["spr"] * tau
+        r = c["r"] * max(s, 0.55)
+        minor = r * max(0.14, abs(math.cos(phi)))
+        ang = c["tilt"] + c["trot"] * tau
+        shade = 0.55 + 0.45 * abs(math.sin(phi * 0.5 + 0.7))
+        glint = max(0.0, abs(math.cos(phi)) - 0.9) * 10
+        base = np.array([0.10, 0.52, 0.93]) * shade
+        ctr = (int(round(fx * 4)), int(round(fy * 4)))
+        ax_o = (max(1, int(r * 4)), max(1, int(minor * 4)))
+        ax_i = (max(1, int(r * 0.74 * 4)), max(1, int(minor * 0.74 * 4)))
+        rim = tuple(float(v) for v in base * 0.62)
+        face = tuple(float(min(1.0, v * 1.12 + glint * 0.45)) for v in base)
+        cv2.ellipse(rgb, ctr, ax_o, ang, 0, 360, rim, -1, cv2.LINE_AA, 2)
+        cv2.ellipse(rgb, ctr, ax_i, ang, 0, 360, face, -1, cv2.LINE_AA, 2)
+        cv2.ellipse(acc, ctr, ax_o, ang, 0, 360, 1.0, -1, cv2.LINE_AA, 2)
+        cv2.circle(glow, (int(fx), int(fy)), max(2, int(r * 0.6)), 0.3 + 0.6 * glint, -1, cv2.LINE_AA)
+    if not any_c:
+        return
+    acc = cv2.GaussianBlur(acc, (0, 0), 0.7)
+    rgb = cv2.GaussianBlur(rgb, (0, 0), 0.7)
+    a = np.clip(acc, 0, 1)[..., None]
+    img[:] = img * (1 - a) + rgb
+
 # final-card sparkles (screen space)
 def build_final_sparkles():
     rng = random.Random(7)
@@ -237,6 +369,23 @@ def build_final_sparkles():
 
 
 FINAL_PARTS = build_final_sparkles()
+
+
+def _bursts():
+    rng = random.Random(21)
+    out = []
+    for k, b in enumerate(OUTRO_BEATS):
+        if k % 2 or b > DUR - 0.2:
+            continue
+        for _ in range(22):
+            ang = rng.uniform(0, 2 * math.pi)
+            spd = rng.uniform(250, 700)
+            out.append(_mk(rng, b, rng.uniform(0.35, 0.7), 0.0, 0.0, math.cos(ang) * spd, math.sin(ang) * spd * 0.7,
+                           2.5, 0.0, rng.uniform(6, 15), "bstar" if rng.random() < 0.5 else "bdust"))
+    return out
+
+
+FINAL_PARTS = FINAL_PARTS + _bursts()
 
 
 def particle_state(p, t):
@@ -360,7 +509,7 @@ GS_CENTER = np.array([320.0, 108.0])    # content centre inside the GS frame
 GS_SCALE = 1.6875
 
 
-def comp_gs(img, idx, center, scale=GS_SCALE, opacity=1.0, bloom=0.35):
+def comp_gs(img, idx, center, scale=GS_SCALE, opacity=1.0, bloom=0.35, shine=None):
     fg, a, bl = gs_layer(idx, scale)
     sh, sw = a.shape
     x0 = int(round(center[0] - GS_CENTER[0] * scale))
@@ -375,6 +524,13 @@ def comp_gs(img, idx, center, scale=GS_SCALE, opacity=1.0, bloom=0.35):
     roi = img[fy0:fy1, fx0:fx1]
     aa = a[sl][..., None] * opacity
     roi[:] = roi * (1 - aa) + fg[sl] * 1.06 * opacity + bl[sl] * bloom * opacity
+    if shine is not None and 0.0 <= shine <= 1.0:
+        hh, ww = roi.shape[:2]
+        yy, xx = np.mgrid[0:hh, 0:ww].astype(np.float32)
+        d = (xx + sx0) + 0.45 * (yy + sy0)
+        pos = -200 + shine * (sw + 0.45 * sh + 400)
+        band = np.exp(-((d - pos) / (38 * scale / GS_SCALE)) ** 2)
+        roi += (band * a[sl])[..., None] * WARM_WHITE * 0.85
 
 
 # ------------------------------------------------------------------ captions
@@ -483,8 +639,9 @@ CAPTION_DEFS = {
     "c8": ([("TOKEN PIRATA", WHITE, 112), ("NA CONTA 🏴‍☠️", YELLOW, 112)], True),
     "c9": ([("CHANCE DE 1 EM 137.500", YELLOW, 70)], False),
 }
-# key, t0, t1, center_y, tilt_deg
-CAPTIONS = [
+# key, t0, t1, center_y, tilt_deg  (captions removed on request; kept for reference)
+CAPTIONS = []
+CAPTIONS_OLD = [
     ("c1", 0.05, T_S3 - 0.02, 360, -2.0),
     ("c3", 3.90, 4.75, 360, 2.0),
     ("c3b", 4.78, T_SHAKE, 360, -1.5),
@@ -567,8 +724,7 @@ def shake_noise(t, freq, seed):
 
 
 def chest_center_frame(t):
-    ts = src_time(t)
-    sim = sim_for(src_index(ts))
+    sim = sim_at(src_pos(t))
     return local_to_frame(sim, np.array([0.0, -170.0]))
 
 
@@ -593,16 +749,16 @@ def camera(t):
         z = 1.38 + 0.05 * (t - T_S2) / (T_S3 - T_S2)
         c = FACE_S2
         dx, dy = impulse(T_S2, 22); sx += dx; sy += dy
-    elif t < 3.90:
+    elif t < T_NOTICE:
         z = 1.0 + 0.03 * (t - T_S3) / 2.1
         dx, dy = impulse(T_S3, 16); sx += dx; sy += dy
-    elif t < 4.75:
-        z = 1.0 + 0.30 * ease_out((t - 3.90) / 0.08) + 0.04 * (t - 3.9)
+    elif t < T_NOTICE_END:
+        z = 1.0 + 0.32 * ease_out((t - T_NOTICE) / 0.07) + 0.05 * (t - T_NOTICE)
         c = 0.45 * np.array([540.0, 960.0]) + 0.55 * chest_center_frame(t)
-        dx, dy = impulse(3.90, 20); sx += dx; sy += dy
+        dx, dy = impulse(T_NOTICE, 22); sx += dx; sy += dy
     elif t < T_SHAKE:
-        z = 1.04 + 0.02 * (t - 4.75)
-        dx, dy = impulse(4.75, 14); sx += dx; sy += dy
+        z = 1.04 + 0.02 * (t - T_NOTICE_END)
+        dx, dy = impulse(T_NOTICE_END, 14); sx += dx; sy += dy
     elif t < T_BURST:
         e = (t - T_SHAKE) / (T_BURST - T_SHAKE)
         z = 1.07 + 0.16 * smoothstep(0, 1, e) + (0.07 if t >= 7.0 else 0.0)
@@ -622,6 +778,21 @@ def camera(t):
         sx += 55 * e * shake_noise(t, 48, 4.4) + 3 * shake_noise(t, 9, 1.0)
         sy += 55 * e * shake_noise(t, 53, 0.4) + 3 * shake_noise(t, 7, 2.0)
         rot += 3.5 * e * shake_noise(t, 31, 5.1)
+        # hits synced to the token UI sound (ring flash, title slam)
+        for th, st in GS_HITS:
+            if t >= th:
+                dx, dy = impulse(th, 30 * st, dec=0.13, freq=52, seed=th)
+                sx += dx; sy += dy
+                z *= 1 + 0.06 * st * math.exp(-(t - th) / 0.10)
+    # beat pulses on the funk ("onda onda") while it plays
+    if t < T_NOTICE:
+        pe = 0.0
+        for k, b in enumerate(ONDA_BEATS):
+            if 0 <= t - b < 0.4:
+                pe = max(pe, (1.0 if k % 2 == 0 else 0.55) * math.exp(-(t - b) / 0.085))
+        z *= 1 + 0.045 * pe
+        sy += 10 * pe
+        rot += 0.6 * pe * (1 if int((t - ONDA_PH) / ONDA_P) % 4 < 2 else -1)
     return z, c, rot, (sx, sy)
 
 
@@ -669,10 +840,9 @@ def fx_levels(t):
 
 def render_scene(t):
     """real footage + chest + light FX, before camera transform"""
-    ts = src_time(t)
-    sidx = src_index(ts)
-    bg = load_src(sidx).copy()
-    sim = sim_for(sidx)
+    fpos = src_pos(t)
+    bg = load_src_at(fpos)
+    sim = sim_at(fpos)
     cf = chest_frame(t)
     spr = load_sprite(cf)
     M = chest_affine(sim)
@@ -717,7 +887,7 @@ def render_scene(t):
         lay = cv2.GaussianBlur(lay, (0, 0), 0.9)
         # camera motion blur (velocity of the tracked anchor, 24 fps source)
         if t < T_BURST:
-            p_prev = sim_for(sidx - 1)[0]
+            p_prev = sim_at(max(0.0, fpos - 1.0))[0]
             v = (sim[0] - p_prev) * 0.5
             L = float(np.hypot(*v))
             if L > 2.0:
@@ -812,6 +982,8 @@ def render_scene(t):
     if debris.any():
         db = cv2.GaussianBlur(debris, (0, 0), 0.8)[..., None]
         img[:] = img * (1 - db * 0.85) + db * 0.85 * np.array([0.42, 0.50, 0.55], np.float32)
+    if t >= T_BURST:
+        draw_coins(img, dust, t, sim, mouth_local(97))
     add_glow_layers(img, core, dust)
 
     # --- flash
@@ -869,28 +1041,37 @@ def load_photo():
     return grade_pop(im, sat=1.28, sharpen=0.25)
 
 
+def outro_pulse(t):
+    pe = 0.0
+    for k, b in enumerate(OUTRO_BEATS):
+        if 0 <= t - b < 0.45:
+            pe = max(pe, (1.0 if k % 2 == 0 else 0.6) * math.exp(-(t - b) / 0.09))
+    return pe
+
+
 def render_final(t):
     tau = t - T_FINAL
+    pe = outro_pulse(t)
     photo = load_photo()
-    z = 1.045 + 0.035 * tau / 3.4 + 0.12 * math.exp(-tau / 0.14)
+    z = 1.045 + 0.03 * tau / 4.5 + 0.12 * math.exp(-tau / 0.14) + 0.022 * pe
     rot = 0.45 * math.sin(2 * math.pi * tau / 3.2)
     dy = 9 * math.sin(2 * math.pi * tau / 2.4)
     dx = 5 * math.sin(2 * math.pi * tau / 3.7)
     M = cv2.getRotationMatrix2D((540, 900), rot, z)
     M[:, 2] += [dx, dy]
     img = cv2.warpAffine(photo, M, (W, H), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REFLECT101)
-    # banner moves from overlay position up above his head, then floats
+    img *= 1 + 0.06 * pe
+    # banner moves from overlay position up above his head, then floats & pulses on the beat
     k = ease_out(tau / 0.55)
-    by = 880 * (1 - k) + 345 * k + 12 * math.sin(2 * math.pi * tau / 1.7) * k
+    by = 880 * (1 - k) + 335 * k + 10 * math.sin(2 * math.pi * tau / 1.656) * k
     bx = 540 + 4 * math.sin(2 * math.pi * tau / 2.3)
-    bs = GS_SCALE * (1.0 + 0.58 * k + 0.02 * math.sin(2 * math.pi * tau / 1.7))
-    # rotating gold rays behind the token
+    bs = GS_SCALE * (1.0 + 0.62 * k + 0.02 * math.sin(2 * math.pi * tau / 1.656) + 0.05 * pe * k)
     token = np.array([bx, by - 38 * bs])
     lay = np.zeros((H // 2, W // 2), np.float32)
-    n = 16
+    n = 18
     for i in range(n):
         a = 2 * math.pi * i / n + tau * 0.35
-        L = 900
+        L = 1000
         w1 = L * 0.10
         ox, oy = token / 2
         dxr, dyr = math.cos(a), math.sin(a)
@@ -899,13 +1080,17 @@ def render_final(t):
                         [ox + dxr * L / 2 + px * w1 / 2, oy + dyr * L / 2 + py * w1 / 2]], np.int32)
         cv2.fillConvexPoly(lay, pts, 0.6 + 0.4 * (i % 2), cv2.LINE_AA)
     d = np.sqrt((_XX - token[0] / 2) ** 2 + (_YY - token[1] / 2) ** 2)
-    lay = cv2.GaussianBlur(lay, (0, 0), 6) * np.exp(-d / 130) * 0.30 * (0.85 + 0.15 * math.sin(tau * 5))
-    halo = np.exp(-(d ** 2) / (2 * 70 ** 2)) * 0.22
-    img += cv2.resize(lay + halo, (W, H))[..., None] * (GOLD * 0.8 + WARM_WHITE * 0.3)
-    plate = np.exp(-(((_XQ * 4 - bx) / 560) ** 2) - (((_YQ * 4 - by) / 190) ** 2))
+    lay = cv2.GaussianBlur(lay, (0, 0), 6) * np.exp(-d / 140) * 0.30 * (0.8 + 0.6 * pe)
+    halo = np.exp(-(d ** 2) / (2 * 75 ** 2)) * (0.20 + 0.25 * pe)
+    img += cv2.resize(lay + halo, (W, H))[..., None] * (GOLD * 0.8 + WARM_WHITE * 0.3) * k
+    plate = np.exp(-(((_XQ * 4 - bx) / 600) ** 2) - (((_YQ * 4 - by) / 200) ** 2))
     img *= 1 - 0.55 * k * cv2.resize(plate, (W, H))[..., None]
-    comp_gs(img, GS_HOLD_IDX, (bx, by), scale=bs, bloom=0.45)
-    # sparkles
+    shine = None
+    if tau > 0.7:
+        ph = ((tau - 0.7) % (4 * OUTRO_P)) / 0.55
+        shine = ph if ph <= 1.0 else None
+    comp_gs(img, GS_HOLD_IDX, (bx, by), scale=bs, bloom=0.28 + 0.25 * pe, shine=shine)
+    # sparkles (+ bursts around the token on the downbeats)
     core = np.zeros((H, W), np.float32)
     dust = np.zeros((H, W), np.float32)
     items = []
@@ -913,15 +1098,15 @@ def render_final(t):
         st = particle_state(p, t)
         if st is None:
             continue
-        items.append((st[0], st[1], st[2] * 0.8, p.size, p.kind))
+        x, y = st[0], st[1]
+        if p.kind.startswith("b"):
+            x, y = x + token[0], y + token[1]
+        items.append((x, y, st[2] * 0.85, p.size, "star" if p.kind in ("star", "bstar") else "dust"))
     draw_particles(core, dust, dust, items)
     add_glow_layers(img, core, dust, glow_gain=0.8)
     # golden flash out of the transition
     fl = 1.1 * math.exp(-tau / 0.20)
     img += fl * (WARM_WHITE * 0.7 + GOLD * 0.3)
-    for key, t0, t1, cy, tilt in CAPTIONS:
-        if t0 <= t < t1:
-            comp_caption(img, key, t0, t, cy, tilt)
     return img
 
 
@@ -952,12 +1137,13 @@ if __name__ == "__main__":
     frames = list(range(int(round(t0 * FPS)), int(round(t1 * FPS))))
     cmd = ["ffmpeg", "-v", "error", "-y",
            "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
-           "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000",
+           *(["-ss", f"{t0:.4f}", "-i", os.environ["AUDIO"]] if os.environ.get("AUDIO")
+             else ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"]),
            "-map", "0:v", "-map", "1:a", "-shortest",
            "-c:v", "libx264", "-preset", preset, "-crf", crf, "-pix_fmt", "yuv420p",
            "-profile:v", "high", "-level", "5.2", "-x264-params", "aq-mode=3:deblock=-1,-1",
            "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv",
-           "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", out]
+           "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", out]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     import multiprocessing as mp
     nproc = int(os.environ.get("NPROC", "4"))
